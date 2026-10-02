@@ -1,0 +1,94 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.atomic_counters%b  s-atocou.adb	52627794 NE OL PK
+W system%s		system.ads		system.ali
+W system.atomic_primitives%s  s-atopri.adb	s-atopri.ali
+
+U system.atomic_counters%s  s-atocou.ads	df56e5a3 BN NE OL PR PU PK
+W system%s		system.ads		system.ali
+
+D interfac.ads		20261002145216 9111f9c1 interfaces%s
+D i-c.ads		20261002145216 8c120e30 interfaces.c%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-atocou.ads		20261002145216 dc18efc3 system.atomic_counters%s
+D s-atocou.adb		20261002145216 6fe685de system.atomic_counters%b
+D s-atopri.ads		20261002145216 e19c1d89 system.atomic_primitives%s
+D s-parame.ads		20261002145216 07f3e19f system.parameters%s
+G a e
+G c Z s b [increment system__atomic_counters 61 14 none]
+G c Z s b [decrement system__atomic_counters 65 13 none]
+G c Z s b [is_one system__atomic_counters 69 13 none]
+G c Z s b [initialize system__atomic_counters 73 14 none]
+G c Z s b [increment system__atomic_counters 84 14 none]
+G c Z s b [decrement system__atomic_counters 88 13 none]
+G c Z s b [decrement system__atomic_counters 91 14 none]
+G c Z s s [atomic_counterIP system__atomic_counters 106 9 none]
+G c Z b b [atomic_add_fetch system__atomic_counters 39 13 none]
+G c Z b b [atomic_sub_fetch system__atomic_counters 46 13 none]
+X 3 system.ads
+55K9*System 176e11 4|44r9 110r5 5|35r6 35r36 37r14 40r15 47r15 110r5
+85M9*Address 5|40r22 47r22
+X 4 s-atocou.ads
+44K16*Atomic_Counters 3|55k9 4|106E9 110l12 110e27 5|37b21 110l12 110t27
+49R9*Atomic_Counter 61r39 65r38 69r28 73r37 106c9 108e14 5|69r38 85r39 96r37
+. 105r28
+61U14*Increment 61=25 62r26 5|85b14 90l8 90t17
+61r25 Item{49R9} 5|85b25 87m28 87r28
+65V13*Decrement{boolean} 65=24 66r26 5|69b13 72l8 72t17
+65r24 Item{49R9} 5|69b24 71m32 71r32
+69V13*Is_One{boolean} 69>21 70r26 5|105b13 108l8 108t14
+69r21 Item{49R9} 5|105b21 107r14
+73U14*Initialize 73<26 74r26 5|96b14 99l8 99t18
+73r26 Item{49R9} 5|96b26 98m7
+79M9*Atomic_Unsigned 85r29 89r29 92r29 99r21 99r45 102r21 102r45 107r23 5|41r15
+. 43r13 48r15 50r13 57r47 64r46 78r47
+84U14*Increment 85=7 5|78b14 83l8 83t17
+85m7 Item{79M9} 5|78b25 80m28 80r28
+88V13*Decrement{boolean} 89=7 5|64b13 67l8 67t17
+89m7 Item{79M9} 5|64b24 66m32 66r32
+91U14*Decrement 92=7 5|57b14 62l8 62t17
+92m7 Item{79M9} 5|57b25 59m28 59r28
+98y14*"+"{79M9} 99>7 99>13
+99m7 Left{79M9}
+99m13 Right{79M9}
+101y14*"-"{79M9} 102>7 102>13
+102m7 Left{79M9}
+102m13 Right{79M9}
+107m7*Value{79M9} 5|71m37 87m33 98m12 107r19
+X 5 s-atocou.adb
+39V13 Atomic_Add_Fetch{4|79M9} 40>7 41>7 42>7 44b30 80s10 87s10
+40m7 Ptr{3|85M9}
+41m7 Val{4|79M9}
+42i7 Model{6|63I12}
+46V13 Atomic_Sub_Fetch{4|79M9} 47>7 48>7 49>7 51b30 59s10 66s14 71s14
+47m7 Ptr{3|85M9}
+48m7 Val{4|79M9}
+49i7 Model{6|63I12}
+X 6 s-atopri.ads
+38K16*Atomic_Primitives 5|35w13 35w43 6|167e29
+60N4*Seq_Cst 5|42r28 49r28
+63I12*Mem_Model{integer} 5|42r15 49r15
+

@@ -1,0 +1,159 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+
+U system.bb.cpu_primitives%b  s-bbcppr.adb	8e3999e1 NE OL PK
+W system%s		system.ads		system.ali
+W system.bb%s		s-bb.ads		s-bb.ali
+W system.bb.board_support%s  s-bbbosu.adb	s-bbbosu.ali
+W system.bb.cpu_specific%s  s-bbcpsp.adb	s-bbcpsp.ali
+W system.bb.threads%s	s-bbthre.adb		s-bbthre.ali
+W system.bb.threads.queues%s  s-bbthqu.adb	s-bbthqu.ali
+W system.multiprocessors%s  s-multip.adb	s-multip.ali
+
+U system.bb.cpu_primitives%s  s-bbcppr.ads	c9fc8cde BN NE OL PR PK
+W system%s		system.ads		system.ali
+W system.bb%s		s-bb.ads		s-bb.ali
+W system.bb.cpu_specific%s  s-bbcpsp.adb	s-bbcpsp.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+
+D interfac.ads		20261002145216 9111f9c1 interfaces%s
+D light_tasking_neorv32_config.ads  20261002145319 ceed05b4 light_tasking_neorv32_config%s
+D neorv32_runtime_config.ads  20261002145216 39990e2a neorv32_runtime_config%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-bb.ads		20261002145216 09e072ae system.bb%s
+D s-bbbopa.ads		20261002145216 b188db9e system.bb.board_parameters%s
+D s-bbbosu.ads		20261002145216 b43d4db6 system.bb.board_support%s
+D s-bbbosu.adb		20261002145216 3082c2fe system.bb.board_support%b
+D s-bbsumu.adb		20261002145216 cbb92b04 system.bb.board_support.multiprocessors
+D s-bbsuti.adb		20261002145216 3eb370fb system.bb.board_support.time
+D s-bbcppr.ads		20261002145216 2fdb8fbb system.bb.cpu_primitives%s
+D s-bbcppr.adb		20261002145216 fdd17c9b system.bb.cpu_primitives%b
+D s-bbcpsp.ads		20261002145216 2319a523 system.bb.cpu_specific%s
+D s-bbinte.ads		20261002145216 cf617f22 system.bb.interrupts%s
+D s-bbpara.ads		20261002145216 dca9174a system.bb.parameters%s
+D s-bbthre.ads		20261002145216 5f49caa9 system.bb.threads%s
+D s-bbthqu.ads		20261002145216 cd23d79e system.bb.threads.queues%s
+D s-bbtime.ads		20261002145216 ad086247 system.bb.time%s
+D s-maccod.ads		20261002145216 cdca081e system.machine_code%s
+D s-multip.ads		20261002145216 f33e0e35 system.multiprocessors%s
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+G a e
+G c Z s b [context_switch system__bb__cpu_primitives 54 14 none]
+G c Z s b [initialize_stack system__bb__cpu_primitives 58 14 none]
+G c Z s b [initialize_context system__bb__cpu_primitives 65 14 none]
+G c Z s b [install_error_handlers system__bb__cpu_primitives 79 14 none]
+G c Z s b [disable_interrupts system__bb__cpu_primitives 84 14 none]
+G c Z s b [enable_interrupts system__bb__cpu_primitives 88 14 none]
+G c Z s b [initialize_cpu system__bb__cpu_primitives 92 14 none]
+G c Z b b [pre_context_switch system__bb__cpu_primitives 65 13 none]
+X 4 system.ads
+55K9*System 176e11 11|42r6 43r6 45r9 52r30 67r25 68r25 69r25 95r5 12|40r6
+. 41r6 42r6 43r6 43r34 45r14 47r24 84r11 86r25 113r49 114r47 147r19 166r11
+. 171r29 186r25 187r25 188r25 233r5
+85M9*Address 11|59r23 61r27 67r32 68r32 69r32 12|52r32 55r30 113r56 114r54
+. 162r23 164r27 171r36 186r32 187r32 188r32 193r20
+87m4*Null_Address{85M9} 12|198r28
+99V14*"="{boolean} 12|198r26
+124I12*Any_Priority{integer}
+128I12*Interrupt_Priority{124I12} 12|98r25 147r26
+X 5 s-bb.ads
+41K16*BB 4|55k9 5|96e14 11|43r13 45r16 52r37 95r12 12|41r13 42r13 43r13 43r41
+. 45r21 84r18 233r12
+X 7 s-bbbosu.ads
+47K19*Board_Support 145e28 12|42w16 87r18 99r10 148r10
+85K12*Interrupts 124e18 12|99r24 148r24
+109U17*Set_Current_Priority 12|99s35 148s35
+126K12*Multiprocessors 144e23 12|87r32
+135V16*Current_CPU{20|23I12} 12|87s48
+X 11 s-bbcppr.ads
+45K19*CPU_Primitives 5|41k16 11|95l15 95e29 12|45b24 233l15 233t29
+52R12*Context_Buffer{13|55R9} 66r41 12|185r41
+54U14*Context_Switch 12|110b14 128l8 128t22
+58U14*Initialize_Stack 59>7 60>7 61<7 12|161b14 178l8 178t24 204s7
+59m7 Base{4|85M9} 12|162b7 173r37
+60i7 Size{21|54I9} 12|163b7 173r44
+61m7 Stack_Pointer{4|85M9} 12|164b7 177m7
+65U14*Initialize_Context 66^7 67>7 68>7 69>7 70r19 12|184b14 213l8 213t26
+66p7 Buffer(52R12) 12|185b7 206r7 207r7 211r7 212r7
+67m7 Program_Counter{4|85M9} 12|186b7 198r10 212r20
+68m7 Argument{4|85M9} 12|187b7 211r20
+69m7 Stack_Pointer{4|85M9} 12|188b7 204r25
+79U14*Install_Error_Handlers 12|228b14 231l8 231t30
+84U14*Disable_Interrupts 85r19 12|134b14 138l8 138t26
+88U14*Enable_Interrupts 88>33 89r19 12|144b14 155l8 155t25
+88i33 Level{integer} 12|144b33 147r10 148r57
+92U14*Initialize_CPU 93r19 12|219b14 222l8 222t22
+X 12 s-bbcppr.adb
+47K12 SSE=47:31 48r13 49r13
+51R9 Context_Switch_Params 57e14 58r26 59r36 65r39 83r39 118r16
+52m7*Running_Thread_Address{4|85M9} 126r34
+55m7*First_Thread_Address{4|85M9} 127r34
+65V13 Pre_Context_Switch{51R9} 66i24 83b13 104l8 104t26 122s17
+86i7 CPU_Id{20|23I12} 90r44 102r37 103r35
+89i7 New_Priority{integer} 98r10 99r57
+112U17*Context_Switch_Asm 113>10 114>10 115b27 126s7
+113m10 Running_Thread_Table_Element_Address{4|85M9}
+114m10 Ready_Thread_Table_Element_Address{4|85M9}
+118r7 Params{51R9} 122m7 126r27 127r27
+168m7 Minimum_Stack_Size_In_Bytes{21|92M9} 174r27
+171m7 Initial_SP{4|85M9} 177r24
+190U17*Start_Thread_Asm 191b27 206r20
+193m7 Initial_SP{4|85M9} 204m43 207r20
+X 13 s-bbcpsp.ads
+39K19*CPU_Specific 11|43w16 52r40 12|43w16 43w44 169r39 13|143e27
+55R9*Context_Buffer 11|52r53 13|87e14
+57m7*RA{4|85M9} 12|206m14
+61m7*SP{4|85M9} 12|207m14
+63m7*S1{4|85M9} 12|211m14
+64m7*S2{4|85M9} 12|212m14
+89N4*Stack_Alignment 12|169r52
+107M9*Register_Word
+128U14*Clear_Mstatus_Bits[117] 12|137s7
+129U14*Set_Mstatus_Bits[122] 12|153s10
+132m4*Mstatus_MIE{107M9} 12|137r27 153r28
+X 16 s-bbthre.ads
+169K19*Threads 12|41r16 84r21 16|419e22
+185P9*Thread_Id(182R9)
+218i7*Active_Priority{integer} 12|90r52
+X 17 s-bbthqu.ads
+41K27*Queues 12|41w24 84r29 17|315e29
+196a4*Running_Thread_Table(16|185P9) 12|102m15 102r15
+206a4*First_Thread_Table(16|185P9) 12|90r24 103m15 103r15
+X 20 s-multip.ads
+18K16*Multiprocessors 12|40w13 86r32 20|31e27
+21I9*CPU_Range<short_short_integer>
+23I12*CPU{21I9} 12|86r48
+X 21 s-stoele.ads
+43K16*Storage_Elements 11|42w13 60r23 12|47r31 163r23 166r18 21|104e28
+54I9*Storage_Offset<integer> 11|60r40 12|49r17 163r40
+74V14*"+"{4|85M9} 12|173r42
+92M9*Integer_Address 12|48r17 168r46
+96V13*To_Address{4|85M9} 12|172s22
+100V13*To_Integer{92M9} 12|173s25
+

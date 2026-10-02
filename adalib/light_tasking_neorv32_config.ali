@@ -1,0 +1,62 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P LC TF ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+
+U light_tasking_neorv32_config%s  light_tasking_neorv32_config.ads  ceed05b4 NE OO PU PK
+
+D light_tasking_neorv32_config.ads  20261002145319 ceed05b4 light_tasking_neorv32_config%s
+D system.ads		20261002145216 034e0a60 system%s
+G a e
+X 1 light_tasking_neorv32_config.ads
+5K9*Light_Tasking_Neorv32_Config 44l5 44e33
+8a4*Crate_Version{string}
+9a4*Crate_Name{string}
+11a4*Alire_Host_OS{string}
+13a4*Alire_Host_Arch{string}
+15a4*Alire_Host_Distro{string}
+17E9*Build_Profile_Kind 17e65 18r29
+17n32*release{17E9}
+17n41*validation{17E9}
+17n53*development{17E9} 18r51
+18e4*Build_Profile{17E9}
+20N4*Interrupt_Stack_Size_First
+21N4*Interrupt_Stack_Size_Last
+22N4*Interrupt_Stack_Size
+24N4*UART0_Baud_Rate_First
+25N4*UART0_Baud_Rate_Last
+26N4*UART0_Baud_Rate
+28N4*Main_Stack_Size_First
+29N4*Main_Stack_Size_Last
+30N4*Main_Stack_Size
+32N4*DMEM_Size_First
+33N4*DMEM_Size_Last
+34N4*DMEM_Size
+36N4*Clock_Frequency_First
+37N4*Clock_Frequency_Last
+38N4*Clock_Frequency
+40N4*IMEM_Size_First
+41N4*IMEM_Size_Last
+42N4*IMEM_Size
+

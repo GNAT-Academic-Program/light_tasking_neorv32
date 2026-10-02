@@ -1,0 +1,15 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-imfi32.ads"
+node: { title: "system__img_fixed_32__impl__set_image_fixed" label: "Set_Image_Fixed\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-imagef.adb:230:4\n144 bytes (dynamic)\n1 dynamic objects\n Digs /home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-imagef.adb:284:7" }
+node: { title: "system__exn_int__exponn_integer__expon" label: "Expon\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exponn.ads:41:13" shape : ellipse }
+edge: { sourcename: "system__img_fixed_32__impl__set_image_fixed" targetname: "system__exn_int__exponn_integer__expon" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-imagef.adb:262:39" }
+edge: { sourcename: "system__img_fixed_32__impl__set_image_fixed" targetname: "system__exn_int__exponn_integer__expon" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-imagef.adb:263:39" }
+node: { title: "system__arith_32__scaled_divide32" label: "Scaled_Divide32\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-arit32.ads:45:14" shape : ellipse }
+edge: { sourcename: "system__img_fixed_32__impl__set_image_fixed" targetname: "system__arith_32__scaled_divide32" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-imagef.adb:311:10" }
+edge: { sourcename: "system__img_fixed_32__impl__set_image_fixed" targetname: "system__arith_32__scaled_divide32" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-imagef.adb:325:10" }
+node: { title: "memcpy" label: "builtin_memcpy\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__img_fixed_32__impl__set_image_fixed" targetname: "memcpy" }
+node: { title: "system__img_util__set_decimal_digits" label: "Set_Decimal_Digits\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-imguti.ads:43:14" shape : ellipse }
+edge: { sourcename: "system__img_fixed_32__impl__set_image_fixed" targetname: "system__img_util__set_decimal_digits" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-imagef.adb:374:7" }
+node: { title: "system__img_fixed_32__impl__image_fixed" label: "Image_Fixed\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-imagef.adb:203:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__img_fixed_32__impl__image_fixed" targetname: "system__img_fixed_32__impl__set_image_fixed" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-imagef.adb:223:7" }
+}

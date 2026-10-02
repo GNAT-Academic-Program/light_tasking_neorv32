@@ -1,0 +1,120 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.text_io%b	s-textio.adb		f2a362e5 NE OL PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.neorv32%s	i-neorv32.ads		i-neorv32.ali
+W interfaces.neorv32.sysinfo%s  i-neorv32-sysinfo.ads  i-neorv32-sysinfo.ali
+W interfaces.neorv32.uart0%s  i-neorv32-uart0.ads  i-neorv32-uart0.ali
+W system%s		system.ads		system.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+
+U system.text_io%s	s-textio.ads		215985a9 NE OL PR PK
+W system%s		system.ads		system.ali
+
+D interfac.ads		20261002145216 9111f9c1 interfaces%s
+D i-neorv32.ads		20261002145216 c24753c8 interfaces.neorv32%s
+D i-neorv32-sysinfo.ads	20261002145216 991dee7f interfaces.neorv32.sysinfo%s
+D i-neorv32-uart0.ads	20261002145216 959c9536 interfaces.neorv32.uart0%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+D s-textio.ads		20261002145216 22178fc9 system.text_io%s
+D s-textio.adb		20261002145216 43bde884 system.text_io%b
+G a e
+G c Z s b [initialize system__text_io 43 14 none]
+G c Z s b [is_tx_ready system__text_io 55 13 none]
+G c Z s b [put system__text_io 62 14 none]
+G c Z s b [use_cr_lf_for_new_line system__text_io 66 13 none]
+G c Z s b [is_rx_ready system__text_io 74 13 none]
+G c Z s b [get system__text_io 79 13 none]
+X 1 interfac.ads
+47K9*Interfaces 247e15 8|46w6 46w38 47r6 47r38 48r6 48r38 49r6 49r38
+81M9*Unsigned_8
+92M9*Unsigned_32 8|67r24 67r39 69r28 70r9 73r18 75r18
+159V13*Shift_Right{92M9} 8|86s28 88s28
+X 2 i-neorv32.ads
+13K20*NEORV32 108e23 8|47w17 47w49 48r17 48r49 49r17 49r49
+21M9*UInt32<1|92M9>
+23M9*Byte<1|81M9> 8|157r30
+24M9*Bit
+28M9*UInt3
+40M9*UInt10
+X 3 i-neorv32-sysinfo.ads
+13K28*SYSINFO 248e31 8|49w25 49w57
+69M12*SOC_SYSINFO_SOC_IO_UART0_Field{2|24M9}
+120m7*SYSINFO_SOC_IO_UART0{69M12} 8|79r37
+227m7*CLK{2|21M9} 8|67r67
+231r7*SOC{86R9} 8|79r33
+245r4*SYSINFO_Periph{225R9} 8|67r52 79r18
+X 4 i-neorv32-uart0.ads
+13K28*UART0 145e29 8|48w25 48w57
+21M12*CTRL_UART_CTRL_EN_Field{2|24M9}
+24M12*CTRL_UART_CTRL_PRSC_Field{2|28M9} 8|108r18
+25M12*CTRL_UART_CTRL_BAUD_Field{2|40M9} 8|110r18
+26M12*CTRL_UART_CTRL_RX_NEMPTY_Field{2|24M9}
+29M12*CTRL_UART_CTRL_TX_NFULL_Field{2|24M9}
+30M12*CTRL_UART_CTRL_IRQ_RX_NEMPTY_Field{2|24M9}
+31M12*CTRL_UART_CTRL_IRQ_RX_FULL_Field{2|24M9}
+32M12*CTRL_UART_CTRL_IRQ_TX_EMPTY_Field{2|24M9}
+33M12*CTRL_UART_CTRL_IRQ_TX_NFULL_Field{2|24M9}
+38R9*CTRL_Register 73e6 8|103r28
+40m7*UART_CTRL_EN{21M12} 8|106m16
+46m7*UART_CTRL_PRSC{24M12} 8|107m16
+48m7*UART_CTRL_BAUD{25M12} 8|109m16
+50m7*UART_CTRL_RX_NEMPTY{26M12} 8|137r49
+56m7*UART_CTRL_TX_NFULL{29M12} 8|128r52
+58m7*UART_CTRL_IRQ_RX_NEMPTY{30M12} 8|111m16 111r47
+60m7*UART_CTRL_IRQ_RX_FULL{31M12} 8|112m16 112r47
+62m7*UART_CTRL_IRQ_TX_EMPTY{32M12} 8|113m16 113r47
+64m7*UART_CTRL_IRQ_TX_NFULL{33M12} 8|114m16 114r47
+95M12*DATA_UART_DATA_RTX_Field{2|23M9}
+103m7*UART_DATA_RTX{95M12} 8|146r47 157m13
+130r7*CTRL{38R9} 8|103r58 105m26 128r47 137r44
+132r7*DATA{100R9} 8|146r42 156m23
+142r4*UART0_Periph{128R9} 8|103r45 105m13 128r34 137r31 146r29 156m10
+X 5 system.ads
+55K9*System 176e11 7|35r9 82r5 8|51r6 53r14 71r12 167r5
+X 6 s-stoele.ads
+43K16*Storage_Elements 104e28 8|51w13 71r19
+92M9*Integer_Address
+100V13*To_Integer{92M9} 8|71s36
+X 7 s-textio.ads
+35K16*Text_IO 5|55k9 7|82l12 82e19 8|53b21 167l12 167t19
+43U14*Initialize 8|66b14 120l8 120t18
+47b4*Initialized{boolean} 8|119m7
+55V13*Is_Tx_Ready{boolean} 8|126b13 129l8 129t19
+62U14*Put 62>19 8|153b14 159l8 159t11
+62e19 C{character} 8|153b19 157r51
+66V13*Use_Cr_Lf_For_New_Line{boolean} 8|165b13
+74V13*Is_Rx_Ready{boolean} 8|135b13 138l8 138t19
+79V13*Get{character} 8|144b13 147l8 147t11
+X 8 s-textio.adb
+55e4 Baud_Rate_Symbol{character} 71r48
+59b4 Present{boolean} 79m7 81r10 128r18 137r14 155r10
+67m7 Clock{1|92M9} 73r33
+69m7 Baud_Rate{1|92M9} 73r46
+73m7 Baud_Div{1|92M9} 84r16 86m16 86r41 88m16 88r41 93r13 94m13 110r46
+75m7 Prsc_Sel{1|92M9} 85r16 85r37 90m13 90r25 108r45
+103r13 Old{4|38R9} 111r43 112r43 113r43 114r43
+

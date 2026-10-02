@@ -1,0 +1,36 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb"
+node: { title: "ada__characters__handling__is_alphanumeric" label: "Is_Alphanumeric\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:291:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__is_basic" label: "Is_Basic\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:300:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__is_control" label: "Is_Control\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:309:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__is_digit" label: "Is_Digit\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:318:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__is_graphic" label: "Is_Graphic\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:327:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__is_hexadecimal_digit" label: "Is_Hexadecimal_Digit\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:336:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__is_iso_646" label: "Is_Iso_646\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:345:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__is_iso_646__2" label: "Is_Iso_646\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:351:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__is_letter" label: "Is_Letter\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:368:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__is_line_terminator" label: "Is_Line_Terminator\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:377:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__is_lower" label: "Is_Lower\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:386:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__is_mark" label: "Is_Mark\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:395:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__is_nfkc" label: "Is_Nfkc\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:405:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__is_other_format" label: "Is_Other_Format\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:416:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__is_punctuation_connector" label: "Is_Punctuation_Connector\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:425:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__is_space" label: "Is_Space\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:434:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__is_special" label: "Is_Special\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:443:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__is_upper" label: "Is_Upper\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:452:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__to_basic" label: "To_Basic\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:461:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__F38b" label: "F38b\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__to_basic__2" label: "To_Basic\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:464:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "system__secondary_stack__ss_allocate" label: "Ss_Allocate\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.ads:117:14" shape : ellipse }
+edge: { sourcename: "ada__characters__handling__to_basic__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:464:4" }
+node: { title: "ada__characters__handling__to_iso_646" label: "To_Iso_646\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:482:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__to_iso_646__2" label: "To_Iso_646\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:487:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__characters__handling__to_iso_646__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:492:14" }
+node: { title: "ada__characters__handling__to_lower" label: "To_Lower\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:510:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__F96b" label: "F96b\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__to_lower__2" label: "To_Lower\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:513:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__characters__handling__to_lower__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:513:4" }
+node: { title: "ada__characters__handling__to_upper" label: "To_Upper\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:531:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__F125b" label: "F125b\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__characters__handling__to_upper__2" label: "To_Upper\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:534:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__characters__handling__to_upper__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-chahan.adb:534:4" }
+}

@@ -1,0 +1,6 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-expmod.adb"
+node: { title: "system__exp_mod__exp_modular" label: "Exp_Modular\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-expmod.adb:41:4\n32 bytes (static)\n0 dynamic objects" }
+node: { title: "__umoddi3" label: "umoddi3\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__exp_mod__exp_modular" targetname: "__umoddi3" }
+edge: { sourcename: "system__exp_mod__exp_modular" targetname: "__umoddi3" }
+}

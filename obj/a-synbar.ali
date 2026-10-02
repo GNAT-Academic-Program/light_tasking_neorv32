@@ -1,0 +1,100 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV SIMPLE_BARRIERS
+RV NO_PROTECTED_TYPES
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV MAX_PROTECTED_ENTRIES=1
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U ada.synchronous_barriers%b  a-synbar.adb	11f59dac NE OL PK
+W ada%s			ada.ads			ada.ali
+Z system%s		system.ads		system.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+Z system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
+
+U ada.synchronous_barriers%s  a-synbar.ads	d8452619 NE OL PR PK
+W ada%s			ada.ads			ada.ali
+Z system%s		system.ads		system.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-synbar.ads		20261002145216 ae3dbbb8 ada.synchronous_barriers%s
+D a-synbar.adb		20261002145216 bfc82614 ada.synchronous_barriers%b
+D a-unccon.ads		20261002145216 0e9b276f ada.unchecked_conversion%s
+D light_tasking_neorv32_config.ads  20261002145319 ceed05b4 light_tasking_neorv32_config%s
+D neorv32_runtime_config.ads  20261002145216 39990e2a neorv32_runtime_config%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-bb.ads		20261002145216 09e072ae system.bb%s
+D s-bbbopa.ads		20261002145216 b188db9e system.bb.board_parameters%s
+D s-bbbosu.ads		20261002145216 b43d4db6 system.bb.board_support%s
+D s-bbcppr.ads		20261002145216 2fdb8fbb system.bb.cpu_primitives%s
+D s-bbcpsp.ads		20261002145216 2319a523 system.bb.cpu_specific%s
+D s-bbinte.ads		20261002145216 cf617f22 system.bb.interrupts%s
+D s-bbpara.ads		20261002145216 dca9174a system.bb.parameters%s
+D s-bbthre.ads		20261002145216 5f49caa9 system.bb.threads%s
+D s-bbthqu.ads		20261002145216 cd23d79e system.bb.threads.queues%s
+D s-bbtime.ads		20261002145216 ad086247 system.bb.time%s
+D s-multip.ads		20261002145216 f33e0e35 system.multiprocessors%s
+D s-mufalo.ads		20261002145216 3dca0374 system.multiprocessors.fair_locks%s
+D s-musplo.ads		20261002145216 69fa25c4 system.multiprocessors.spin_locks%s
+D s-osinte.ads		20261002145216 0d949686 system.os_interface%s
+D s-parame.ads		20261002145216 07f3e19f system.parameters%s
+D s-secsta.ads		20261002145216 bd894d4b system.secondary_stack%s
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20261002145216 801abd01 system.task_info%s
+D s-taspri.ads		20261002145216 37f162b4 system.task_primitives%s
+D s-taskin.ads		20261002145216 f5005ad8 system.tasking%s
+D s-taprob.ads		20261002145216 c8fc0753 system.tasking.protected_objects%s
+D s-tpoben.ads		20261002145216 8351b91e system.tasking.protected_objects.entries%s
+D s-tpobop.ads		20261002145216 b9a5f7f5 system.tasking.protected_objects.operations%s
+G a e
+G c Z s b [wait_for_release ada__synchronous_barriers 48 14 none]
+G c Z s b [wait ada__synchronous_barriers__synchronous_barrier 54 13 none]
+G c Z s s [synchronous_barrierVIP ada__synchronous_barriers 53 4 none]
+G c Z s s [P2sIP ada__synchronous_barriers 54 7 none]
+X 1 ada.ads
+18K9*Ada 22e8 2|40r9 58r5 3|36r14 78r5
+X 2 a-synbar.ads
+40K13*Synchronous_Barriers 1|18k9 2|41r25 53E19 58l9 58e29 3|36b18 78l9 78t29
+43I12*Barrier_Limit{positive} 45r50 53r60
+45W9*Synchronous_Barrier 45d30 49r28 56E7 57l8 57e27 3|38b19 64l8 64t27 71r28
+45i30 Release_Threshold{43I12} 53r40 3|50r45
+48U14*Wait_For_Release 49=7 50<7 3|70b14 76l8 76t24
+49w7 The_Barrier{45W9} 3|71b7 75r7
+50b7 Notified{boolean} 3|72b7 75m25
+54Y13 Wait 54<19 3|49b13 50r32 57r23 62r22 63l11 63t15 75s19
+54b19 Notified{boolean} 3|62m10
+56b7 Keep_Open{boolean} 3|50r14 57r10
+X 3 a-synbar.adb
+49b19 Notified{boolean}
+X 23 s-secsta.ads
+105P9*SS_Stack_Ptr(102R9)
+X 27 s-taskin.ads
+395V13*Get_Sec_Stack{23|105P9} 396i<c,__gnat_get_secondary_stack>22
+

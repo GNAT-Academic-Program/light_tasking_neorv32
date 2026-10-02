@@ -1,0 +1,16 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libc.adb"
+node: { title: "system__libc__init_fini__initXn" label: "Init\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-liinfi.adb:43:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__libc__init_fini__finiXn" label: "Fini\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-liinfi.adb:49:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__libc__ThandlersBIP" label: "ThandlersBIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "__libc_init_array" label: "Libc_Init_Array\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libc.adb:80:4\n32 bytes (static)\n0 dynamic objects" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "__libc_init_array" targetname: "__indirect_call" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libc.adb:108:15" }
+edge: { sourcename: "__libc_init_array" targetname: "__indirect_call" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libc.adb:121:15" }
+node: { title: "__libc_fini_array" label: "Libc_Fini_Array\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libc.adb:129:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "__libc_fini_array" targetname: "__indirect_call" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libc.adb:148:15" }
+node: { title: "atexit" label: "Atexit\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libc.adb:162:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "exit" label: "C_Exit\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libc.adb:181:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "exit" targetname: "__indirect_call" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libc.adb:189:23" }
+node: { title: "_exit" label: "Os_Exit\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libc.adb:182:17" shape : ellipse }
+edge: { sourcename: "exit" targetname: "_exit" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libc.adb:194:7" }
+}

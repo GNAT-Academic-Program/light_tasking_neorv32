@@ -1,0 +1,29 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbtiev.adb"
+class {
+  classname: "system__bb__timing_events__timing_event"
+  label: "system__bb__timing_events__timing_event\s-bbtiev.ads:35:9"
+  parent: "system__bb__timing_events__timing_event"
+  virtuals: "1:system__bb__timing_events__set_handler\n
+             2:system__bb__timing_events__cancel_handler\n
+             3:system__bb__timing_events__time_of_event\n
+             -1:system__bb__timing_events___size"
+}
+node: { title: "system__bb__timing_events___size" label: "timing_events\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__timing_events__time_of_event" label: "Time_Of_Event\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbtiev.adb:346:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__timing_events__set_handler" label: "Set_Handler\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbtiev.adb:162:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__time__get_next_timeout" label: "Get_Next_Timeout\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbtime.ads:140:13" shape : ellipse }
+edge: { sourcename: "system__bb__timing_events__set_handler" targetname: "system__bb__time__get_next_timeout" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbtiev.adb:197:28" }
+node: { title: "system__bb__time__update_alarm" label: "Update_Alarm\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbtime.ads:143:14" shape : ellipse }
+edge: { sourcename: "system__bb__timing_events__set_handler" targetname: "system__bb__time__update_alarm" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbtiev.adb:198:14" }
+node: { title: "system__bb__timing_events__cancel_handler" label: "Cancel_Handler\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbtiev.adb:228:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__bb__timing_events__cancel_handler" targetname: "system__bb__time__get_next_timeout" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbtiev.adb:247:31" }
+edge: { sourcename: "system__bb__timing_events__cancel_handler" targetname: "system__bb__time__update_alarm" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbtiev.adb:248:17" }
+node: { title: "system__bb__timing_events__timing_eventIP" label: "timing_eventIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__timing_events__execute_expired_timing_events" label: "Execute_Expired_Timing_Events\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbtiev.adb:261:4\n48 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__threads__queues__change_priority" label: "Change_Priority\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbthqu.ads:119:14" shape : ellipse }
+edge: { sourcename: "system__bb__timing_events__execute_expired_timing_events" targetname: "system__bb__threads__queues__change_priority" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbtiev.adb:288:13" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "system__bb__timing_events__execute_expired_timing_events" targetname: "__indirect_call" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbtiev.adb:313:10" }
+edge: { sourcename: "system__bb__timing_events__execute_expired_timing_events" targetname: "system__bb__threads__queues__change_priority" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbtiev.adb:318:13" }
+node: { title: "system__bb__timing_events__get_next_timeout" label: "Get_Next_Timeout\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbtiev.adb:330:4\n0 bytes (static)\n0 dynamic objects" }
+}

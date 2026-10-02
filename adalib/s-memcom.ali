@@ -1,0 +1,78 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.memory_compare%b  s-memcom.adb		3db04ee7 NE OL PK
+W system%s		system.ads		system.ali
+W system.memory_types%s	s-memtyp.ads		s-memtyp.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+N A50:7 gnatcheck exempt_on "Exits_From_Conditional_Loops" "early return on failed comparison"
+N A67:7 gnatcheck exempt_off "Exits_From_Conditional_Loops"
+N A70:7 gnatcheck exempt_on "Improper_Returns" "early returns for performance"
+N A95:7 gnatcheck exempt_off "Improper_Returns"
+
+U system.memory_compare%s  s-memcom.ads		4cfaaf1d NE OL PR PK
+W system%s		system.ads		system.ali
+W system.memory_types%s	s-memtyp.ads		s-memtyp.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-memcom.ads		20261002145216 7885dee2 system.memory_compare%s
+D s-memcom.adb		20261002145216 beda3f72 system.memory_compare%b
+D s-memtyp.ads		20261002145216 37317b9f system.memory_types%s
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+G a e
+G c Z s b [memcmp system__memory_compare 42 13 none]
+X 1 system.ads
+55K9*System 176e11 2|36r6 38r9 57r5 3|32r6 32r35 33r6 33r35 35r14 98r5
+85M9*Address 2|43r12 44r12 3|41r26 41r40 42r15 43r15
+X 2 s-memcom.ads
+38K16*Memory_Compare 1|55k9 2|57l12 57e26 3|35b21 98l12 98t26
+42V13*memcmp{integer} 43>7 44>7 45>7 46i<c,memcmp>22 3|41b13 96l8 96t14
+43m7 S1{1|85M9} 3|41b21 42r26 53r24
+44m7 S2{1|85M9} 3|41b35 43r26 53r43
+45m7 N{4|40M9} 3|41b49 44r25
+X 3 s-memcom.adb
+42m7 S1_A{1|85M9} 57r52 62m13 62r21 75r49 88m10 88r18
+43m7 S2_A{1|85M9} 58r52 63m13 63r21 76r49 89m10 89r18
+44m7 C{4|40M9} 55r16 64m13 64r18 73r13 90m10 90r15
+45m7 V1{4|45M9} 78m13 82r13 84r16
+45m11 V2{4|45M9} 79m13 82r18 84r21
+57m16 S1_W{4|52M9} 60r26
+58m16 S2_W{4|52M9} 60r34
+75m13 S1_B{4|45M9} 78r19
+76m13 S2_B{4|45M9} 79r19
+X 4 s-memtyp.ads
+36K16*Memory_Types 2|36w13 45r12 3|32w13 32w42 4|60e24
+40M9*size_t 2|45r25 3|41r53 44r15
+45M9*Byte 3|45r16 75r20 76r20
+49N4*Byte_Unit 3|88r40 89r40 90r19
+52M9*Word 3|53r53 57r23 58r23
+57N4*Word_Unit 3|55r21 62r43 63r43 64r22
+X 5 s-stoele.ads
+43K16*Storage_Elements 3|33w13 33w42 5|104e28
+54I9*Storage_Offset<integer>
+56I12*Storage_Count{54I9} 3|62r28 63r28 88r25 89r25
+74V14*"+"{1|85M9} 3|62r26 63r26 88r23 89r23
+92M9*Integer_Address
+100V13*To_Integer{92M9} 3|53s12 53s31
+

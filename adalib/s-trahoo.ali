@@ -1,0 +1,81 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+
+U system.tracing_hooks%b  s-trahoo.adb		9fca7748 NE OL PK
+W system%s		system.ads		system.ali
+
+U system.tracing_hooks%s  s-trahoo.ads		3e0f757b BN NE OL PR PK
+W system%s		system.ads		system.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-trahoo.ads		20261002145216 3d417f1b system.tracing_hooks%s
+D s-trahoo.adb		20261002145216 a28b0853 system.tracing_hooks%b
+G a e
+G c Z s b [install_interrupt_hook system__tracing_hooks 61 14 none]
+G c Z s b [call_interrupt_hook system__tracing_hooks 68 14 none]
+G c Z s b [install_task_hook system__tracing_hooks 90 14 none]
+G c Z s b [call_task_hook system__tracing_hooks 98 14 none]
+G c Z b b [Tinterrupt_hook_arrayBIP system__tracing_hooks 38 4 none]
+G c Z b b [Ttask_hook_arrayBIP system__tracing_hooks 41 4 none]
+X 1 system.ads
+55K9*System 176e11 2|38r9 86r23 108r5 3|34r14 113r5
+85M9*Address 2|86r30
+X 2 s-trahoo.ads
+38K16*Tracing_Hooks 1|55k9 2|108l12 108e25 3|34b21 113l12 113t25
+42b4*Tracing_Enabled{boolean} 3|56r10 71r10 89r10 104r10
+55E9*Interrupt_Event 57e21 62r15 69r15 3|38r40 52r15 66r15
+56n7*Interrupt_Start{55E9}
+57n7*Interrupt_End{55E9}
+59P9*Interrupt_Hook 59>45 63r15 3|38r60 53r15 69r14
+59i45 ID{positive}
+61U14*Install_Interrupt_Hook 62>7 63>7 3|51b14 59l8 59t30
+62e7 Event{55E9} 3|52b7 57r27
+63p7 Hook{59P9} 3|53b7 57r37
+68U14*Call_Interrupt_Hook 69>7 70>7 3|65b14 78l8 78t27
+69e7 Event{55E9} 3|66b7 72r35
+70i7 ID{positive} 3|67b7 75r23
+82E9*Task_Event 84e26 91r15 99r15 3|41r35 85r15 99r15
+83n7*Context_Switch_In{82E9}
+84n7*Context_Switch_Out{82E9}
+86M12*Task_ID{1|85M9} 88r45 100r15 3|100r15
+88P9*Task_Hook 88>40 92r15 3|41r50 86r15 102r14
+88m40 ID{86M12}
+90U14*Install_Task_Hook 91>7 92>7 3|84b14 92l8 92t25
+91e7 Event{82E9} 3|85b7 90r22
+92p7 Hook{88P9} 3|86b7 90r32
+98U14*Call_Task_Hook 99>7 100>7 3|98b14 111l8 111t22
+99e7 Event{82E9} 3|99b7 105r30
+100m7 ID{86M12} 3|100b7 108r23
+X 3 s-trahoo.adb
+38A9 Interrupt_Hook_Array(2|59P9)<2|55E9> 44r22
+41A9 Task_Hook_Array(2|88P9)<2|82E9> 45r22
+44a4 Interrupt_Hooks{38A9} 57m10 72r18
+45a4 Task_Hooks{41A9} 90m10 105r18
+69p7 Hook{2|59P9} 72m10 74r13 75r13
+102p7 Hook{2|88P9} 105m10 107r13 108r13
+

@@ -1,0 +1,79 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_OBSOLESCENT_FEATURES
+
+U gnat.io%b		g-io.adb		d20d799c NE OL PK
+W gnat%s		gnat.ads		gnat.ali
+W system%s		system.ads		system.ali
+W system.text_io%s	s-textio.adb		s-textio.ali
+
+U gnat.io%s		g-io.ads		1ffb22d8 NE OL PR PK
+W gnat%s		gnat.ads		gnat.ali
+
+D gnat.ads		20261002145216 b5988c27 gnat%s
+D g-io.ads		20261002145216 aa63aeff gnat.io%s
+D g-io.adb		20261002145216 887ecfc1 gnat.io%b
+D g-io-put.adb		20261002145216 f01018a2 gnat.io.put
+D system.ads		20261002145216 034e0a60 system%s
+D s-textio.ads		20261002145216 22178fc9 system.text_io%s
+G a e
+G c Z s b [put gnat__io 49 14 none]
+G c Z s b [put gnat__io 55 14 none]
+G c Z s b [put gnat__io 60 14 none]
+G c Z s b [put_line gnat__io 65 14 none]
+G c Z s b [new_line gnat__io 71 14 none]
+X 1 gnat.ads
+40K9*GNAT 63e9 2|41r9 76r5 3|32r14 105r5 4|41r11
+X 2 g-io.ads
+41K14*IO 1|40k9 2|76l10 76e12 3|32b19 105l10 105t12 4|41r16
+44@22*File_System 45r22 51r27 57r27 62r27 67r27 73r27 3|35r21
+49U14*Put 49>19 3|55b14 82l8 82t11
+49i19 X{integer} 3|55b19 63r18 63r29 63r37 76r10
+55U14*Put 55>19 3|38b14 47s10 91s10 4|42b11 62l5 62t8
+55e19 C{character} 3|38b19 4|42b16 49r7 61r24
+60U14*Put 60>19 3|81s7 88b14 93l8 93t11 101s7
+60a19 S{string} 3|88b19 90r16 91r15
+65U14*Put_Line 65>24 3|99b14 103l8 103t16
+65a24 S{string} 3|99b24 101r12
+71U14*New_Line 71>24 3|44b14 49l8 49t16 102s7
+71i24 Spacing{positive} 3|44b24 46r21
+X 3 g-io.adb
+46i11 J{integer}
+56i7 Int{integer} 63m7 68r17 69m10 69r18 73r20
+57a7 S{string} 58r26 71m10 78m10 81r12 81r24
+58i7 First{natural} 70m10 70r19 71r13 77m10 77r19 78r13 81r15
+59i7 Val{integer} 68m10 69r24 71r60
+90i11 J{integer} 91r18
+X 5 system.ads
+55K9*System 4|39r6 39r26 54r7 61r4 5|176e11
+X 6 s-textio.ads
+35K16*Text_IO 4|39w13 39w33 54r14 61r11 6|82e19
+43U14*Initialize 4|45s7
+47b4*Initialized{boolean} 4|44r11
+55V13*Is_Tx_Ready{boolean} 4|50s17 57s14
+62U14*Put 4|54s22 61s19
+66V13*Use_Cr_Lf_For_New_Line{boolean} 4|49s29
+

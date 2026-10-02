@@ -1,0 +1,7 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-cautns.adb"
+node: { title: "system__case_util_nss__to_lower" label: "To_Lower\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-cautns.adb:47:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__case_util_nss__to_lower__2" label: "To_Lower\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-cautns.adb:61:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__case_util_nss__to_mixed" label: "To_Mixed\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-cautns.adb:75:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__case_util_nss__to_upper" label: "To_Upper\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-cautns.adb:103:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__case_util_nss__to_upper__2" label: "To_Upper\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-cautns.adb:117:4\n0 bytes (static)\n0 dynamic objects" }
+}

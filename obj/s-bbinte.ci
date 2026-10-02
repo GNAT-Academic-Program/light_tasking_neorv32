@@ -1,0 +1,27 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbinte.adb"
+node: { title: "system__bb__interrupts__Tinterrupt_stacksBIP" label: "Tinterrupt_stacksBIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__interrupts__Tinterrupt_stack_tableBIP" label: "Tinterrupt_stack_tableBIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__interrupts__Thandlers_tableBIP" label: "Thandlers_tableBIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__interrupts__attach_handler" label: "Attach_Handler\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbinte.adb:117:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__bb__interrupts__attach_handler" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbinte.adb:130:10" }
+node: { title: "system__bb__board_support__interrupts__install_interrupt_handler" label: "Install_Interrupt_Handler\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbbosu.ads:92:17" shape : ellipse }
+edge: { sourcename: "system__bb__interrupts__attach_handler" targetname: "system__bb__board_support__interrupts__install_interrupt_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbinte.adb:141:31" }
+node: { title: "system__bb__interrupts__current_interrupt" label: "Current_Interrupt\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbinte.adb:148:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__interrupts__interrupt_wrapper" label: "Interrupt_Wrapper\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbinte.adb:167:4\n32 bytes (static)\n0 dynamic objects" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "system__bb__interrupts__interrupt_wrapper" targetname: "__indirect_call" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbinte.adb:181:32" }
+node: { title: "system__bb__threads__queues__change_priority" label: "Change_Priority\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbthqu.ads:119:14" shape : ellipse }
+edge: { sourcename: "system__bb__interrupts__interrupt_wrapper" targetname: "system__bb__threads__queues__change_priority" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbinte.adb:210:21" }
+node: { title: "ada__exceptions__call_last_chance_handler_with_message" label: "Call_Last_Chance_Handler_With_Message\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:40:14" shape : ellipse }
+edge: { sourcename: "system__bb__interrupts__interrupt_wrapper" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbinte.adb:217:10" }
+edge: { sourcename: "system__bb__interrupts__interrupt_wrapper" targetname: "__indirect_call" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbinte.adb:219:40" }
+node: { title: "system__bb__cpu_specific__clear_mstatus_bits" label: "Clear_Mstatus_Bits\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.ads:128:14" shape : ellipse }
+edge: { sourcename: "system__bb__interrupts__interrupt_wrapper" targetname: "system__bb__cpu_specific__clear_mstatus_bits" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:137:7" }
+edge: { sourcename: "system__bb__interrupts__interrupt_wrapper" targetname: "__indirect_call" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbinte.adb:229:32" }
+edge: { sourcename: "system__bb__interrupts__interrupt_wrapper" targetname: "system__bb__threads__queues__change_priority" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbinte.adb:236:21" }
+node: { title: "system__bb__interrupts__within_interrupt_stack" label: "Within_Interrupt_Stack\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbinte.adb:267:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__interrupts__initialize_interrupts" label: "Initialize_Interrupts\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbinte.adb:279:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__cpu_primitives__initialize_stack" label: "Initialize_Stack\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.ads:58:14" shape : ellipse }
+edge: { sourcename: "system__bb__interrupts__initialize_interrupts" targetname: "system__bb__cpu_primitives__initialize_stack" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbinte.adb:283:24" }
+}

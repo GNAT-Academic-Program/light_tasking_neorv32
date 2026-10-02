@@ -1,0 +1,134 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.img_util%b	s-imguti.adb		eeeda2c4 NE OL PK
+W system%s		system.ads		system.ali
+W system.img_uns%s	s-imguns.ads		s-imguns.ali
+N A40:4 gnatcheck exempt_on "Unassigned_OUT_Parameters" "the OUT parameter is assigned by component"
+N A52:7 gnatcheck exempt_off "Unassigned_OUT_Parameters"
+N A126:10 gnatcheck exempt_on "Improper_Returns" "early returns for performance"
+N A189:10 gnatcheck exempt_off "Improper_Returns"
+N A257:7 gnatcheck exempt_on "Improper_Returns" "early returns for performance"
+N A413:7 gnatcheck exempt_off "Improper_Returns"
+N A420:4 gnatcheck exempt_on "Unassigned_OUT_Parameters" "the OUT parameter is assigned by component"
+N A430:7 gnatcheck exempt_off "Unassigned_OUT_Parameters"
+
+U system.img_util%s	s-imguti.ads		7457aed9 NE OL PK
+W system%s		system.ads		system.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-imageu.ads		20261002145216 95851461 system.image_u%s
+D s-imageu.adb		20261002145216 2d0619dc system.image_u%b
+D s-imguns.ads		20261002145216 34f2a7d6 system.img_uns%s
+D s-imguti.ads		20261002145216 7719a4b9 system.img_util%s
+D s-imguti.adb		20261002145216 ad06a1ab system.img_util%b
+D s-unstyp.ads		20261002145216 fa2a7f59 system.unsigned_types%s
+G a e
+G c Z s b [set_decimal_digits system__img_util 43 14 none]
+G c Z s b [set_floating_invalid_value system__img_util 69 14 none]
+X 1 system.ads
+55K9*System 176e11 5|36r9 82r5 6|32r6 32r26 34r14 501r5
+X 4 s-imguns.ads
+39K16*Img_Uns 74e19 6|32w13 32w33
+42M12*Unsigned{7|44M9} 6|293r33 296r33
+59U14*Set_Image_Unsigned=63:19 6|293s13 296s13
+X 5 s-imguti.ads
+36K16*Img_Util 1|55k9 5|82l12 82e20 6|34b21 501l12 501t20
+38N4*Max_Real_Image_Length
+43U14*Set_Decimal_Digits 44=7 45>7 46<7 47=7 48>7 49>7 50>7 51>7 6|42b14
+. 414l8 414t26
+44a7 Digs{string} 6|43b7 55r22 56r22 56r35 58r36 58r42 61r26 61r32 122r25
+. 123r25 123r38 141r31 141r37 142m16 142r22 144m16 144r22 161r37 163r16 164r33
+. 164r51 165r34 168r40 171m22 174m22 182m16 182r22 236r30 236r50 239r18 266r15
+. 293m51 296m52 381r35
+45i7 NDigs{natural} 6|44b7 54r22 69r23 72r23 121r25
+46a7 S{string} 6|45b7 198r31 198r52 207m10
+47i7 P{natural} 6|46b7 198r25 198r48 199r25 206m10 206r15 207r13
+48i7 Scale{integer} 6|47b7 75r45 318r23
+49i7 Fore{natural} 6|48b7 263r31 325r34 382r40 388r40 401r37
+50i7 Aft{natural} 6|49b7 81r64
+51i7 Exp{natural} 6|50b7 262r10 299r22
+67E9*Floating_Invalid_Value 67e75 70r14 6|423r14
+67n36*Minus_Infinity{67E9} 6|479r15
+67n52*Infinity{67E9} 6|486r15
+67n62*Not_A_Number{67E9} 6|493r15
+69U14*Set_Floating_Invalid_Value 70>7 71<7 72=7 73>7 74>7 75>7 6|422b14 499l8
+. 499t34
+70e7 V{67E9} 6|423b7 478r12
+71a7 S{string} 6|424b7 446r30 446r45 454m10
+72i7 P{natural} 6|425b7 446r25 453m10 453r15 454r13
+73i7 Fore{natural} 6|426b7 464r31 469r31
+74i7 Aft{natural} 6|427b7 464r42 469r42
+75i7 Exp{natural} 6|428b7 463r13 464r52
+X 6 s-imguti.adb
+58b7 Minus{boolean} 216r13
+61b7 Zero{boolean} 145m16 286r23
+66i7 FD{natural} 136r20 149m13 183m16 266r21 267m10 267r16 273r25 273r29
+. 275r25 362r31 362r35 365r31 381r41 389r31 402r31 405r28 405r32 407r28
+69i7 LD{natural} 131r18 150m13 156m13 157r28 160r19 275r29 318r17 365r35
+. 389r35 407r54
+72i7 ND{natural} 75r40 151m13 160m13 184m16 184r22 268r25 269m10 269r16 272r13
+. 276r46 289m10 293m57 293r57 296m58 296r58 299r28 300r25 343r24 366r36 376r16
+. 381r19 390r53 408r50
+75i7 Digits_Before_Point{integer} 148m13 148r36 185m16 185r39 286r40 324r13
+. 333r59 376r21 388r47 390r31 401r44 402r36 405r37 407r33 408r55
+81i7 Digits_After_Point{natural} 264r17 272r19 273r34 276r25 318r31 330r32
+. 396r28 408r28
+84i7 Expon{integer} 286m10 291r13 293r43 296r44
+87U17 Round 87>24 118b17 190l11 190t16 264s10 318s10
+87i24 N{integer} 118b24 131r13 136r16 141r16 156r19 161r28 163r22 164r64
+96U17 Set 96>22 97r22 196b17 208l11 208t14 218s16 221s13 225s16 239s13 250s13
+. 266s10 270s10 288s10 292s13 295s13 326s13 327s13 383s19 395s16 406s16
+96e22 C{character} 196b22 207r19
+100U17 Set_Blanks_And_Sign 100>38 214b17 228l11 228t30 263s10 325s13 382s19
+. 388s19 401s16
+100i38 N{integer} 214b38 217r27 224r27
+106U17 Set_Digits 106>29 106>32 107r22 234b17 241l11 241t21 273s13 275s13
+. 300s10 362s19 365s19 389s19 405s16 407s16
+106i29 S{natural} 234b29 236r25 238r19
+106i32 E{natural} 234b32 236r45 238r24
+110U17 Set_Zeroes 110>29 111r22 247b17 252l11 252t21 276s13 299s10 340s16
+. 366s19 390s19 396s16 408s16
+110i29 N{integer} 247b29 249r24
+119e10 D{character} 168m19 170r22 171r34
+164i20 J{integer} 165r40 168r46 171r28 174r28
+217i17 J{integer}
+224i17 J{integer}
+238i14 J{integer} 239r24
+249i14 J{integer}
+330i16 DA{natural} 333r54 341m16 341r22 343r19 362r40 366r31
+333i16 LZ{integer} 340r28 341r27
+432U17 Set 432>22 444b17 455l11 455t14 465s16 470s16 480s13 481s13 482s13
+. 483s13 487s13 488s13 489s13 490s13 494s13 495s13 496s13
+432e22 C{character} 444b22 454r19
+435U17 Set_Special_Fill 435>35 461b17 473l11 473t27 484s13 491s13 497s13
+435i35 N{natural} 461b35 464r22 469r22
+464i17 J{integer}
+469i17 J{integer}
+X 7 s-unstyp.ads
+44M9*Unsigned
+

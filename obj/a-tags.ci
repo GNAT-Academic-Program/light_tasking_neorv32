@@ -1,0 +1,21 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-tags.adb"
+node: { title: "ada__tags__tag_tableIP" label: "tag_tableIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__tags__address_arrayIP" label: "address_arrayIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__tags__type_specific_dataIP" label: "type_specific_dataIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__tags__dispatch_table_wrapperIP" label: "dispatch_table_wrapperIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__tags__no_dispatch_table_wrapperIP" label: "no_dispatch_table_wrapperIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__tags__cw_membership" label: "Cw_Membership\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-tags.ads:347:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__tags__expanded_name" label: "Expanded_Name\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-tags.adb:51:4\n32 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__exceptions__call_last_chance_handler_with_message" label: "Call_Last_Chance_Handler_With_Message\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:40:14" shape : ellipse }
+edge: { sourcename: "ada__tags__expanded_name" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-tags.adb:58:10" }
+node: { title: "system__secondary_stack__ss_allocate" label: "Ss_Allocate\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.ads:117:14" shape : ellipse }
+edge: { sourcename: "ada__tags__expanded_name" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-tags.adb:64:7" }
+node: { title: "memcpy" label: "builtin_memcpy\n<built-in>" shape : ellipse }
+edge: { sourcename: "ada__tags__expanded_name" targetname: "memcpy" }
+node: { title: "ada__tags__external_tag" label: "External_Tag\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-tags.adb:71:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__tags__external_tag" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-tags.adb:78:10" }
+edge: { sourcename: "ada__tags__external_tag" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-tags.adb:84:7" }
+edge: { sourcename: "ada__tags__external_tag" targetname: "memcpy" }
+node: { title: "ada__tags__parent_tag" label: "Parent_Tag\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-tags.adb:107:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__tags__parent_tag" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-tags.adb:113:10" }
+}

@@ -1,0 +1,6 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/i-neorv32-sysinfo.ads"
+node: { title: "interfaces__neorv32__sysinfo__misc_registerIP" label: "misc_registerIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "interfaces__neorv32__sysinfo__soc_registerIP" label: "soc_registerIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "interfaces__neorv32__sysinfo__cache_registerIP" label: "cache_registerIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "interfaces__neorv32__sysinfo__sysinfo_peripheralIP" label: "sysinfo_peripheralIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+}

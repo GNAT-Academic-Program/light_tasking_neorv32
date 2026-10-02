@@ -1,0 +1,101 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_UNCHECKED_CONVERSION
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.arith_32%b	s-arit32.adb		17f713c8 NE OL PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.unchecked_conversion%s
+W system%s		system.ads		system.ali
+
+U system.arith_32%s	s-arit32.ads		7dff47b6 NE OL PU PK
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-except.ads		20261002145216 5b5f0f2f ada.exceptions%s
+D a-except.adb		20261002145216 4da5c77f ada.exceptions%b
+D a-unccon.ads		20261002145216 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20261002145216 9111f9c1 interfaces%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-arit32.ads		20261002145216 efa0b417 system.arith_32%s
+D s-arit32.adb		20261002145216 f6cc80b0 system.arith_32%b
+G a e
+G c Z s b [scaled_divide32 system__arith_32 45 14 none]
+G c Z b b [to_int system__arith_32 50 13 none]
+G c Z b b [Oabs system__arith_32 56 13 none]
+G c Z b b [hi system__arith_32 63 13 none]
+G c Z b b [to_neg_int system__arith_32 66 13 none]
+G c Z b b [to_pos_int system__arith_32 72 13 none]
+G c Z b b [raise_error system__arith_32 77 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 8|37r6 50r27
+X 4 a-unccon.ads
+23v14*Unchecked_Conversion 8|37w10 50r31
+X 5 interfac.ads
+47K9*Interfaces 247e15 7|36w6 41r13 43r21 8|45r21 46r21 48r8
+65I9*Integer_32<integer> 7|41r24 43r32
+92M9*Unsigned_32 8|45r32
+95M9*Unsigned_64 8|46r32
+184V13*Shift_Right{95M9} 8|63s52
+X 6 system.ads
+55K9*System 176e11 7|38r9 76r5 8|39r14 194r5
+X 7 s-arit32.ads
+38K16*Arith_32 6|55k9 7|76l12 76e20 8|39b21 194l12 194t20
+43I12*Int32{5|65I9} 46r17 47r21 8|50r60 56r24 57r14 59r19 66r43 72r43 94r17
+. 95r21 166r43 167r20 168r28 184r43 185r20
+45U14*Scaled_Divide32 46>7 46>10 46>13 47<7 47<10 48>7 8|93b14 160l8 160t23
+46i7 X{43I12} 8|94b7 98r35 150r11 150r44
+46i10 Y{43I12} 8|94b10 99r35 150r27 150r59
+46i13 Z{43I12} 8|94b13 100r35 116r10 152r19 158r19
+47i7 Q{43I12} 8|95b7 152m10 158m10
+47i10 R{43I12} 8|95b10 151m10 157m10
+48b7 Round{boolean} 8|96b7 133r10
+X 8 s-arit32.adb
+45M12 Uns32{5|92M9} 50r53 56r38 58r12 59r12 63r35 63r45 66r29 72r29 98r22
+. 99r22 100r22 105r12 106r12 128r13 129r13 134r24 134r37 138r21 142r24 166r29
+. 184r29
+46M12 Uns64{5|95M9} 63r21 102r13 112r12 112r25 128r24 129r26
+50V13 To_Int[4|23]{5|65I9} 168s46 185s29
+56V14 "abs"{45M12} 56b14 56>20 98s31 99s31 100s31
+56i20 X{7|43I12} 57r10 59r30
+63V13 Hi{45M12} 63b13 63>17 122s10
+63m17 A{46M12} 63r65
+66V13 To_Neg_Int{7|43I12} 66>25 152s51 157s15 158s30 166b13 178l8 178t18
+66m25 A{45M12} 166b25 168r13 168r54
+72V13 To_Pos_Int{7|43I12} 72>25 151s15 152s30 158s51 184b13 192l8 192t18
+72m25 A{45M12} 184b25 185r37
+77U14 Raise_Error 84b14 87l8 87t19 117s10 123s10 139s16 176s10 190s10
+98m7 Xu{45M12} 112r19
+99m7 Yu{45M12} 112r32
+100m7 Zu{45M12} 122r20 128r31 129r33 134r19
+102m7 D{46M12} 112m7 122r14 128r20 129r20
+105m7 Qu{45M12} 128m7 138r16 142m13 142r19 152r42 152r63 158r42 158r63
+106m7 Ru{45M12} 129m7 134r13 151r27 157r27
+167i7 R{7|43I12} 173r10 174r17
+185i7 R{7|43I12} 187r10 188r17
+

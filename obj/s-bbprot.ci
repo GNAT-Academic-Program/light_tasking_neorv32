@@ -1,0 +1,12 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbprot.adb"
+node: { title: "system__bb__protection__enter_kernel" label: "Enter_Kernel\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbprot.adb:54:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__cpu_specific__clear_mstatus_bits" label: "Clear_Mstatus_Bits\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.ads:128:14" shape : ellipse }
+edge: { sourcename: "system__bb__protection__enter_kernel" targetname: "system__bb__cpu_specific__clear_mstatus_bits" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:137:7" }
+node: { title: "system__bb__protection__leave_kernel" label: "Leave_Kernel\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbprot.adb:66:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "system__bb__protection__leave_kernel" targetname: "__indirect_call" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbprot.adb:97:35" }
+node: { title: "system__bb__cpu_primitives__context_switch" label: "Context_Switch\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.ads:54:14" shape : ellipse }
+edge: { sourcename: "system__bb__protection__leave_kernel" targetname: "system__bb__cpu_primitives__context_switch" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbprot.adb:106:24" }
+node: { title: "system__bb__cpu_specific__set_mstatus_bits" label: "Set_Mstatus_Bits\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.ads:129:14" shape : ellipse }
+edge: { sourcename: "system__bb__protection__leave_kernel" targetname: "system__bb__cpu_specific__set_mstatus_bits" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:153:10" }
+}

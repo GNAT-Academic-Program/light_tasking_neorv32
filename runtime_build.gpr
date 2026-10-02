@@ -1,0 +1,135 @@
+with "target_options.gpr";
+with "gnat_user/light_tasking_neorv32_config.gpr";
+
+project Runtime_Build is
+  for Languages use ("Ada", "Asm_Cpp");
+  for Runtime ("Ada") use Project'Project_Dir;
+  for Target use "riscv64-elf";
+
+  for Library_Auto_Init use "False";
+  for Library_Name use "gnat";
+  for Library_Kind use Target_Options.Lib;
+  for Library_Options use Target_Options.LOPTIONS;
+
+   case Target_Options.Lib is
+      when "static" => null;
+      when "dynamic" =>
+         for Library_Version use
+            "libgnat-" & external ("LIGHT_TASKING_NEORV32_LIBRARY_VERSION", "") & ".so";
+         null;
+   end case;
+
+  for Library_Dir use "adalib";
+  for Object_Dir use "obj";
+
+  for Source_Dirs use ("gnat_user", "gnat");
+
+  type Profile_Kind is ("light", "light_tasking", "embedded");
+  Profile : Profile_Kind := "light_tasking";
+
+  Excluded_Sources := ();
+
+  case Profile is
+     when "embedded" =>
+        --  Exception propagation uses libgcc's registration based
+        --  _Unwind_Find_FDE (crtbegin's frame_dummy registers .eh_frame from
+        --  .init_array, which crt0 runs) because the GNAT FSF riscv64-elf
+        --  linker has no --eh-frame-hdr to build the table that the
+        --  runtime's own unwind-dw2-fde-bb.c expects. See link-zcx.spec.
+        Excluded_Sources := ("unwind-dw2-fde-bb.c");
+     when others =>
+        null;
+  end case;
+
+  for Excluded_Source_Files use Excluded_Sources;
+
+  GPR_Tool := external ("GPR_TOOL", "");
+  case GPR_Tool is
+    when "gnatprove" =>
+      for Externally_Built use "True";
+    when others =>
+      null;
+  end case;
+
+  --  Memory layout, stack sizes and the Ada.Text_IO baud rate, from the crate
+  --  configuration. They are handed to the linker script (ld/neorv32.ld) as
+  --  symbols.
+
+  IMEM_Size       := light_tasking_Neorv32_Config.IMEM_Size;
+  DMEM_Size       := light_tasking_Neorv32_Config.DMEM_Size;
+  Main_Stack_Size := light_tasking_Neorv32_Config.Main_Stack_Size;
+  UART0_Baud_Rate := light_tasking_Neorv32_Config.UART0_Baud_Rate;
+
+  --  Select linker script.
+  --
+  --  IMEM: code and constants in the instruction memory at 0x00000000, data
+  --        in the data memory at 0x80000000. This is the layout for all
+  --        NEORV32 boot modes (bootloader upload, pre-initialized IMEM, OCD).
+  --  USER: the application provides its own linker script.
+
+  type Loaders is ("IMEM", "USER");
+  Loader : Loaders := external("LOADER", "IMEM");
+
+  Linker_Switches := ();
+
+  case Loader is
+    when "IMEM" =>
+      Linker_Switches := Linker_Switches &
+        ("-L" & Runtime_Build'Project_Dir & "/ld_user",
+         "-L" & Runtime_Build'Project_Dir & "/ld",
+         "-T" & "neorv32.ld",
+         "-Wl,--defsym=__neorv32_rom_size=" & IMEM_Size,
+         "-Wl,--defsym=__neorv32_ram_size=" & DMEM_Size,
+         "-Wl,--defsym=__stack_size=" & Main_Stack_Size,
+         "-Wl,--defsym=__neorv32_uart0_baud=" & UART0_Baud_Rate,
+         --  The data memory is RWX by construction (stack trampolines)
+         "-Wl,--no-warn-rwx-segments");
+
+    when "USER" =>
+  end case;
+
+  package Naming is
+     for Spec_Suffix ("Asm_CPP") use ".inc";
+  end Naming;
+
+  package Compiler is
+     for Default_Switches ("C") use Target_Options.ALL_CFLAGS;
+     for Default_Switches ("Ada") use Target_Options.ALL_ADAFLAGS & ("-gnaty-d");
+     for Default_Switches ("Asm_Cpp") use Target_Options.ASMFLAGS;
+
+     --  Some runtime files need to be compiled with debug info, so that gdb
+     --  is not blind.
+     for Switches ("s-traceb.adb") use Target_Options.ALL_ADAFLAGS
+       & ("-g")
+       & ("-fno-optimize-sibling-calls", "-fno-inline-functions-called-once");
+     for Switches ("a-except.adb") use Target_Options.ALL_ADAFLAGS
+       & ("-g", "-O1", "-fno-inline", "-fno-toplevel-reorder");
+     for Switches ("s-excdeb.adb") use Target_Options.ALL_ADAFLAGS
+       & ("-g", "-O0");
+     for Switches ("s-assert.adb") use Target_Options.ALL_ADAFLAGS
+       & ("-g");
+     for Switches ("a-tags.adb") use Target_Options.ALL_ADAFLAGS
+       & ("-g");
+     for Switches ("raise-gcc.c") use Target_Options.ALL_CFLAGS
+       & ("-fexceptions");
+     for Switches ("unwind-sjlj-cert.c") use Target_Options.ALL_CFLAGS
+       & ("-fexceptions", "-Wno-error=unused-but-set-variable");
+
+     --  Don't inline System.Machine_Reset otherwise we can loose our common
+     --  exit system.
+
+     for Switches ("s-macres.adb") use Target_Options.ALL_ADAFLAGS
+       & ("-fno-inline");
+
+     --  Generate ada_target_properties to give target-specific information
+     --  to formal verification tools.
+
+     for Switches ("system.ads") use Target_Options.ALL_ADAFLAGS
+       & ("-gnatet=" & Project'Project_Dir & "/ada_target_properties");
+  end Compiler;
+
+  package CodePeer is
+    for Excluded_Source_Files use ("a-chahan.adb", "a-strbou.adb", "a-strfix.adb", "a-strmap.adb", "a-strsea.adb", "a-strsup.adb", "g-io.adb", "i-c.adb", "s-arit32.adb", "s-arit64.adb", "s-casuti.adb", "s-exnint.adb", "s-exnlli.adb", "s-exnllli.ads", "s-expint.adb", "s-explli.adb", "s-expllli.ads", "s-explllu.ads", "s-expllu.adb", "s-expmod.adb", "s-expuns.adb", "s-gearop.adb", "s-imgboo.adb", "s-imgint.adb", "s-imglli.adb", "s-imgllli.ads", "s-imglllu.ads", "s-imgllu.adb", "s-imguns.adb", "s-valboo.adb", "s-valint.adb", "s-vallli.adb", "s-valllli.ads", "s-vallllu.ads", "s-valllu.adb", "s-valuns.adb", "s-valuti.adb", "s-veboop.adb", "s-widint.ads", "s-widlli.adb", "s-widllli.ads", "s-widlllu.ads", "s-widllu.adb", "s-widuns.ads");
+  end CodePeer;
+
+end Runtime_Build;

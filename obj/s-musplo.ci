@@ -1,0 +1,7 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-musplo.adb"
+node: { title: "system__multiprocessors__spin_locks__spin_lockIP" label: "spin_lockIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__multiprocessors__spin_locks__lock" label: "Lock\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-musplo.adb:35:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__multiprocessors__spin_locks__locked" label: "Locked\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-musplo.adb:51:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__multiprocessors__spin_locks__try_lock" label: "Try_Lock\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-musplo.adb:60:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__multiprocessors__spin_locks__unlock" label: "Unlock\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-musplo.adb:76:4\n0 bytes (static)\n0 dynamic objects" }
+}

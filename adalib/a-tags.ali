@@ -1,0 +1,165 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -g
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF SS ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_CONVERSION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_OBSOLESCENT_FEATURES
+
+U ada.tags%b		a-tags.adb		95b34593 NE OL PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+
+U ada.tags%s		a-tags.ads		ea35eec3 NE OL PR PK
+W ada%s			ada.ads			ada.ali
+W ada.unchecked_conversion%s
+W system%s		system.ads		system.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+N A196:4 gnatcheck exempt_on "Discriminated_Records" "only variant records are disallowed"
+N A265:4 gnatcheck exempt_off "Discriminated_Records"
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-except.ads		20261002145216 5b5f0f2f ada.exceptions%s
+D a-except.adb		20261002145216 4da5c77f ada.exceptions%b
+D a-tags.ads		20261002145216 5d468a85 ada.tags%s
+D a-tags.adb		20261002145216 042b1bfe ada.tags%b
+D a-unccon.ads		20261002145216 0e9b276f ada.unchecked_conversion%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-parame.ads		20261002145216 07f3e19f system.parameters%s
+D s-secsta.ads		20261002145216 bd894d4b system.secondary_stack%s
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+G a e
+G c Z s b [expanded_name ada__tags 96 13 none]
+G c Z s b [external_tag ada__tags 102 13 none]
+G c Z s b [parent_tag ada__tags 108 13 none]
+G c Z s s [to_address ada__tags 322 13 none]
+G c Z s s [to_addr_ptr ada__tags 325 13 none]
+G c Z s s [to_type_specific_data_ptr ada__tags 328 13 none]
+G c Z s s [cw_membership ada__tags 347 13 none]
+G c Z s s [tag_tableIP ada__tags 130 9 none]
+G c Z s s [address_arrayIP ada__tags 133 9 none]
+G c Z s s [type_specific_dataIP ada__tags 198 9 none]
+G c Z s s [dispatch_table_wrapperIP ada__tags 246 9 none]
+G c Z s s [no_dispatch_table_wrapperIP ada__tags 270 9 none]
+G c Z b b [length ada__tags 43 13 none]
+X 1 ada.ads
+18K9*Ada 22e8 4|82r6 84r9 323r10 326r11 329r10 363r5 5|37r14 130r5
+X 4 a-tags.ads
+84K13*Tags 1|18k9 4|124E12 363l9 363e13 5|37b18 130l9 130t13
+88P9*Tag 89r41 93r22 96r32 102r31 108r29 108r41 130r50 141c9 142r31 181r22
+. 188r31 323r36 347r38 347r53 5|51r32 71r31 107r29 107r41
+93p4*No_Tag{88P9} 181c4 5|57r14 77r14 112r14 125r34
+96V13*Expanded_Name{string} 96>28 5|51b13 65l8 65t21
+96p28 T{88P9} 5|51b28 57r10 61r43
+102V13*External_Tag{string} 102>27 5|71b13 85l8 85t20
+102p27 T{88P9} 5|71b27 77r10 81r43
+108V13*Parent_Tag{88P9} 108>25 109r19 5|107b13 128l8 128t18
+108p25 T{88P9} 5|107b25 112r10 116r43
+116X4*Tag_Error 5|58r16 78r16 113r16
+124K12 SSE=124:31 193r41 257r23 275r36 276r29 281r37 282r30 287r36 288r29
+. 295r39 299r38
+126A12 Cstring{string}<integer> 127r35
+127P9 Cstring_Ptr(126A12) 128r31 213r23 214r23 5|43r27 52r17 72r17 91r27
+130A9 Tag_Table(88P9)<integer> 231r20
+132P9 Prim_Ptr 133r55
+133A9 Address_Array(132P9)<integer> 135r30 260r19 311r35
+135A12 Dispatch_Table{133A9}<integer> 141r27 143r37
+143P9 Interface_Tag(135A12)
+188P9 Tag_Ptr(88P9) 189r31
+193P9 Offset_To_Top_Ptr(10|54I9) 194r31
+198R9 Type_Specific_Data 198d29 234e14 243r46
+198i29*Idepth{natural} 231r36 357r52 357r69 5|125r18
+203i7*Access_Level{natural}
+212i7*Alignment{natural}
+213p7*Expanded_Name{127P9} 5|63r22
+214p7*External_Tag{127P9} 5|83r22
+223b7*Transportable{boolean}
+228b7*Needs_Finalization{boolean}
+231a7*Tags_Table{130A9} 359r36 5|126r38
+243P9 Type_Specific_Data_Ptr(198R9) 244r31 329r52 353r33 355r33 5|54r17 74r17
+. 109r17
+246R9 Dispatch_Table_Wrapper 246d33 264e14
+246i33*Num_Prims{natural} 260r39
+247m7*Predef_Prims{7|85M9}
+257i7*Offset_To_Top{10|54I9}
+258m7*TSD{7|85M9}
+260a7*Prims_Ptr{133A9}
+270R9 No_Dispatch_Table_Wrapper 273e14
+271m7*NDT_TSD{7|85M9}
+272i7*NDT_Prims_Ptr{natural}
+275i4 DT_Predef_Prims_Size{10|56I12} 302r35
+281i4 DT_Offset_To_Top_Size{10|56I12} 297r36 301r35
+287i4 DT_Typeinfo_Ptr_Size{10|56I12} 296r32 300r31 350r48 352r48 5|61r48
+. 81r48 116r48
+295i4 DT_Offset_To_Top_Offset{10|56I12}
+299i4 DT_Predef_Prims_Offset{10|56I12}
+305i4 Max_Predef_Prims{positive} 311r55
+311A12 Predef_Prims_Table{133A9}<integer> 312r42
+312P9 Predef_Prims_Table_Ptr(311A12) 313r31
+315P9 Addr_Ptr(7|85M9) 316r31 326r53 349r33 351r33 5|53r17 73r17 108r17
+322V13 To_Address[6|23]{7|85M9} 350s25 352s25 5|61s31 81s31 116s31
+325V13 To_Addr_Ptr[6|23]{315P9} 350s12 352s12 5|61s18 81s18 116s18
+328V13 To_Type_Specific_Data_Ptr[6|23]{243P9} 354s12 356s12 5|62s18 82s18
+. 117s18
+347V13 CW_Membership{boolean} 347b13 347>28 347>43
+347p28 Obj_Tag{88P9} 350r37
+347p43 Typ_Tag{88P9} 352r37 359r55
+349p10 Obj_TSD_Ptr{315P9} 354r39
+351p10 Typ_TSD_Ptr{315P9} 356r39
+353p10 Obj_TSD{243P9} 357r44 359r28
+355p10 Typ_TSD{243P9} 357r61
+357i10 Pos{integer} 359r10 359r48
+X 5 a-tags.adb
+43V13 Length{natural} 43>21 64s27 84s27 91b13 101l8 101t14
+43p21 Str{4|127P9} 91b21 96r13
+52p7 Result{4|127P9} 63m7 64r14 64r35
+53p7 TSD_Ptr{4|315P9} 61m7 62r45
+54p7 TSD{4|243P9} 62m7 63r18
+72p7 Result{4|127P9} 83m7 84r14 84r35
+73p7 TSD_Ptr{4|315P9} 81m7 82r45
+74p7 TSD{4|243P9} 82m7 83r18
+92i7 Len{integer} 95m7 96r18 97m10 97r17 100r14
+108p7 TSD_Ptr{4|315P9} 116m7 117r45
+109p7 TSD{4|243P9} 117m7 125r14 126r34
+X 6 a-unccon.ads
+23v14*Unchecked_Conversion 4|82w10 323r14 326r15 329r14
+X 7 system.ads
+55K9*System 4|80w6 81r6 124r24 247r22 258r23 271r23 278r39 284r40 290r39
+. 293r13 315r28 323r41 326r37 329r36 5|35r6 35r35 7|176e11
+85M9*Address 4|247r29 258r30 271r30 315r35 323r48 326r44 329r43
+89N4*Storage_Unit 4|278r46 284r47 290r46
+X 10 s-stoele.ads
+43K16*Storage_Elements 4|81w13 124r31 293r20 5|35w13 35w42 10|104e28
+54I9*Storage_Offset<integer> 4|193r45 257r27 293r37
+56I12*Storage_Count{54I9} 4|275r40 276r33 281r41 282r34 287r40 288r33 295r43
+. 299r42
+79V14*"-"{7|85M9} 4|350r46 352r46 5|61r46 81r46 116r46
+

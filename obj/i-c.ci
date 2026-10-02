@@ -1,0 +1,23 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/i-c.adb"
+node: { title: "interfaces__c__char_arrayIP" label: "char_arrayIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "interfaces__c__is_nul_terminated" label: "Is_Nul_Terminated\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/i-c.adb:42:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "interfaces__c__to_ada" label: "To_Ada\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/i-c.adb:59:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "interfaces__c__to_ada__2" label: "To_Ada\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/i-c.adb:66:4\n32 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__exceptions__call_last_chance_handler_with_message" label: "Call_Last_Chance_Handler_With_Message\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:40:14" shape : ellipse }
+edge: { sourcename: "interfaces__c__to_ada__2" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/i-c.adb:79:16" }
+node: { title: "system__secondary_stack__ss_allocate" label: "Ss_Allocate\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.ads:117:14" shape : ellipse }
+edge: { sourcename: "interfaces__c__to_ada__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/i-c.adb:93:7" }
+edge: { sourcename: "interfaces__c__to_ada__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/i-c.adb:93:7" }
+node: { title: "interfaces__c__to_ada__3" label: "To_Ada\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/i-c.adb:106:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "interfaces__c__to_ada__3" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/i-c.adb:120:16" }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+edge: { sourcename: "interfaces__c__to_ada__3" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/i-c.adb:135:10" }
+node: { title: "interfaces__c__to_c" label: "To_C\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/i-c.adb:160:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "interfaces__c__to_c__2" label: "To_C\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/i-c.adb:167:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "interfaces__c__to_c__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/i-c.adb:173:10" }
+edge: { sourcename: "interfaces__c__to_c__2" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/i-c.adb:196:13" }
+edge: { sourcename: "interfaces__c__to_c__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/i-c.adb:201:13" }
+node: { title: "interfaces__c__to_c__3" label: "To_C\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/i-c.adb:216:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "interfaces__c__to_c__3" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/i-c.adb:226:10" }
+edge: { sourcename: "interfaces__c__to_c__3" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/i-c.adb:238:16" }
+}

@@ -1,0 +1,81 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_RECURSION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.val_uns%s	s-valuns.ads		36c2ce2c NE OL PR PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W system%s		system.ads		system.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+W system.val_util%s	s-valuti.adb		s-valuti.ali
+W system.value_u%s
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-except.ads		20261002145216 5b5f0f2f ada.exceptions%s
+D a-except.adb		20261002145216 4da5c77f ada.exceptions%b
+D system.ads		20261002145216 034e0a60 system%s
+D s-imagei.ads		20261002145216 11a376a2 system.image_i%s
+D s-imgint.ads		20261002145216 86836590 system.img_int%s
+D s-unstyp.ads		20261002145216 fa2a7f59 system.unsigned_types%s
+D s-valuns.ads		20261002145216 c639d3c7 system.val_uns%s
+D s-valuti.ads		20261002145216 ecabe223 system.val_util%s
+D s-valueu.ads		20261002145216 099f68d2 system.value_u%s
+D s-valueu.adb		20261002145216 71ee8db2 system.value_u%b
+G a e
+G c Z s s [scan_raw_unsigned system__val_uns__impl 40 14 43_4]
+G c Z s s [scan_unsigned system__val_uns__impl 113 14 43_4]
+G c Z s s [value_unsigned system__val_uns__impl 124 13 43_4]
+X 4 system.ads
+55K9*System 176e11 8|35r6 36r6 38r9 63r5
+X 7 s-unstyp.ads
+38K16*Unsigned_Types 256e26 8|35w13 41r24
+44M9*Unsigned 8|41r39
+X 8 s-valuns.ads
+38K16*Val_Uns 4|55k9 8|63l12 63e19
+41M12*Unsigned{7|44M9} 43r33 49r17 56r17 60r28
+43K12*Impl[10|37] 50r14 57r14 61r14
+45U14*Scan_Raw_Unsigned=50:19
+46a7 Str{string}
+47p7 Ptr(integer)
+48i7 Max{integer}
+49m7 Res{7|44M9}
+52U14*Scan_Unsigned=57:19
+53a7 Str{string}
+54p7 Ptr(integer)
+55i7 Max{integer}
+56m7 Res{7|44M9}
+59V13*Value_Unsigned=61:19{7|44M9}
+60a7 Str{string}
+X 10 s-valueu.ads
+37k16*Value_U 8|36w13 43r24 10|130e19
+40U14*Scan_Raw_Unsigned 8|50r19[43]
+113U14*Scan_Unsigned 8|57r19[43]
+124V13*Value_Unsigned{7|44M9} 8|61r19[43]
+

@@ -1,0 +1,6 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-trahoo.adb"
+node: { title: "system__tracing_hooks__Tinterrupt_hook_arrayBIP" label: "Tinterrupt_hook_arrayBIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__tracing_hooks__Ttask_hook_arrayBIP" label: "Ttask_hook_arrayBIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__tracing_hooks__install_interrupt_hook" label: "Install_Interrupt_Hook\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-trahoo.adb:51:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__tracing_hooks__install_task_hook" label: "Install_Task_Hook\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-trahoo.adb:84:4\n0 bytes (static)\n0 dynamic objects" }
+}

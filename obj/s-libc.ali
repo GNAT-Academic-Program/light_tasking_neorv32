@@ -1,0 +1,100 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+
+U system.libc%b		s-libc.adb		7a470871 NE OL PK
+W system%s		system.ads		system.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+
+U system.libc%s		s-libc.ads		f05b8826 NE OL PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W system%s		system.ads		system.ali
+
+D interfac.ads		20261002145216 9111f9c1 interfaces%s
+D i-c.ads		20261002145216 8c120e30 interfaces.c%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-libc.ads		20261002145216 7f078c76 system.libc%s
+D s-libc.adb		20261002145216 4c6f3e06 system.libc%b
+D s-liinfi.adb		20261002145216 85f16ee9 system.libc.init_fini
+D s-parame.ads		20261002145216 07f3e19f system.parameters%s
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+G a e
+G c Z s b [libc_init_array system__libc 51 14 none]
+G c Z s b [libc_fini_array system__libc 54 14 none]
+G c Z s b [atexit system__libc 60 13 none]
+G c Z s b [c_exit system__libc 63 14 none]
+X 1 interfac.ads
+47K9*Interfaces 247e15 4|38r6 60r48 63r31 5|162r48 163r16 181r31 182r35
+X 2 i-c.ads
+36K20*C 247e17 4|38w17 60r59 63r42 5|162r59 163r27 181r42 182r46
+65I9*int<integer> 4|60r61 63r44 5|162r61 163r29 181r44 182r48
+X 3 system.ads
+55K9*System 176e11 4|40r9 66r5 5|32r6 32r35 34r14 197r5 6|35r11
+X 4 s-libc.ads
+40K16*Libc 3|55k9 4|66l12 66e16 5|34b21 197l12 197t16 6|35r18
+41P9*Proc_Access 60r28 5|38r26 41r24 44r23 47r21 50r23 53r21 73r48 85r10
+. 91r10 97r53 100r47 134r10 140r47 162r28
+51U14*Libc_Init_Array 5|80b14 123l8 123t23
+54U14*Libc_Fini_Array 5|129b14 156l8 156t23
+60V13*Atexit{2|65I9} 60>21 5|162b13 175l8 175t14
+60p21 Proc{41P9} 5|162b21 168r30
+63U14*C_Exit 63>22 5|181b14 195l8 195t14
+63i22 Status{2|65I9} 5|181b22 194r16
+X 5 s-libc.adb
+38p4 Preinit_Array_Start{4|41P9} 84m24 84r24 98m41 98r41
+41p4 Preinit_Array_End{4|41P9} 83m24 83r24
+44p4 Init_Array_Start{4|41P9} 90m24 90r24 101m41 101r41
+47p4 Init_Array_End{4|41P9} 89m24 89r24
+50p4 Fini_Array_Start{4|41P9} 133m24 133r24 141m41 141r41
+53p4 Fini_Array_End{4|41P9} 132m24 132r24
+59K12 Init_Fini 62l8 62e17 67b17 115r7 155r7 6|37b14 51l5 51t14
+60U17*Init 115s17
+61U17*Fini 155s17
+72N4 Max_Handlers 73r31 166r18
+73a4 Handlers(4|41P9) 168m10 188r25 189r10
+74i4 Count{natural} 166r10 167m10 167r19 168r20 187r29
+81i7 Preinit_Count{integer} 97r35
+87i7 Init_Count{integer} 100r32
+97a7 Preinit_Array(4|41P9) 106r19
+100a7 Init_Array(4|41P9) 119r19
+106p11 Proc=106:19{4|41P9} 107r25 108r10
+119p11 Proc=119:19{4|41P9} 120r25 121r10
+130i7 Fini_Count{integer} 140r32
+140a7 Fini_Array(4|41P9) 146r27
+146p11 Proc=146:27{4|41P9} 147r25 148r10
+182U17*Os_Exit 182>26 194s7
+182i26 Status{2|65I9}
+187i11 I{integer} 188r35 189r20
+X 6 s-liinfi.adb
+43U14 Init
+49U14 Fini
+X 8 s-stoele.ads
+43K16*Storage_Elements 5|32w13 32w42 8|104e28
+92M9*Integer_Address
+100V13*To_Integer{92M9} 5|83s12 84s12 89s12 90s12 132s12 133s12
+

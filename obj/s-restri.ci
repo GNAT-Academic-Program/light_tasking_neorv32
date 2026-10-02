@@ -1,0 +1,9 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-restri.adb"
+node: { title: "system__restrictions__rident__Trestriction_flagsBIP" label: "Trestriction_flagsBIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__restrictions__rident__Trestriction_valuesBIP" label: "Trestriction_valuesBIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__restrictions__rident__Tparameter_flagsBIP" label: "Tparameter_flagsBIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__restrictions__rident__restrictions_infoIP" label: "restrictions_infoIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__restrictions__rident__profile_dataIP" label: "profile_dataIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__restrictions__abort_allowed" label: "Abort_Allowed\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-restri.adb:39:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__restrictions__tasking_allowed" label: "Tasking_Allowed\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-restri.adb:50:4\n0 bytes (static)\n0 dynamic objects" }
+}

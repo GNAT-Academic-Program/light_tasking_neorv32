@@ -1,0 +1,48 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_LONG_LONG_INTEGERS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U gnat.secondary_stack_info%s  g-sestin.ads	9f7450b2 NE OL PK
+W gnat%s		gnat.ads		gnat.ali
+W system%s		system.ads		system.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D gnat.ads		20261002145216 b5988c27 gnat%s
+D g-sestin.ads		20261002145216 976591de gnat.secondary_stack_info%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-parame.ads		20261002145216 07f3e19f system.parameters%s
+D s-secsta.ads		20261002145216 bd894d4b system.secondary_stack%s
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+G a e
+X 1 gnat.ads
+40K9*GNAT 63e9 2|38r9 45r5
+X 2 g-sestin.ads
+38K14*Secondary_Stack_Info 1|40k9 2|45l10 45e30
+40V13*SS_Get_Max=41:37{long_long_integer}
+X 3 system.ads
+55K9*System 2|36r6 41r14 3|176e11
+X 5 s-secsta.ads
+96K16*Secondary_Stack 2|36w13 41r21 5|220e27
+134V13*SS_Get_Max{long_long_integer} 2|41r37
+

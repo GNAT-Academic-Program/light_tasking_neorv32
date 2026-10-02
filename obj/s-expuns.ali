@@ -1,0 +1,50 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.exp_uns%s	s-expuns.ads		30aad0d0 NE OL PK
+W system%s		system.ads		system.ali
+W system.exponu%s
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-expuns.ads		20261002145216 bacbc767 system.exp_uns%s
+D s-exponu.ads		20261002145216 7305628e system.exponu%s
+D s-exponu.adb		20261002145216 8a973155 system.exponu%b
+D s-unstyp.ads		20261002145216 fa2a7f59 system.unsigned_types%s
+G a e
+G c Z s s [exp_unsignedR system__exp_uns__exp_unsignedGP2802 46 13 none]
+G c Z s s [exp_unsigned system__exp_uns 46 13 none]
+X 1 system.ads
+55K9*System 176e11 2|38r6 39r6 41r9 55r5
+X 2 s-expuns.ads
+41K16*Exp_Uns 1|55k9 2|55l12 55e19
+44M12*Unsigned{5|44M9} 46r41
+46V13*Exp_Unsigned[3|37]{5|44M9} 47r26 4|32b17
+X 3 s-exponu.ads
+37v17*Exponu 1|55k9 2|38w13 46r33
+X 5 s-unstyp.ads
+38K16*Unsigned_Types 2|39w13 44r24 5|256e26
+44M9*Unsigned 2|44r39
+

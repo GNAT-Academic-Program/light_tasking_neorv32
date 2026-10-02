@@ -1,0 +1,43 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.powten_lflt%s	s-powlfl.ads		af4658a8 NE OL PU PK
+W system%s		system.ads		system.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-powlfl.ads		20261002145216 ac0852c8 system.powten_lflt%s
+G a e
+X 1 system.ads
+55K9*System 176e11 2|34r9 148r5
+X 2 s-powlfl.ads
+34K16*Powten_LFlt 1|55k9 2|148l12 148e23
+37N4*Maxpow_Exact 42r25
+42N4*Maxpow 45r35 101r34
+45a4*Powfive(long_float)
+92a4*Powfive_100(long_float)
+95a4*Powfive_200(long_float)
+98a4*Powfive_300(long_float)
+101a4*Powten(long_float)
+

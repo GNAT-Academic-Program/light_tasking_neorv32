@@ -1,0 +1,7 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-assert.adb"
+node: { title: "system__assertions__raise_assert_failure" label: "Raise_Assert_Failure\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-assert.adb:40:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "__gnat_last_chance_handler" label: "Last_Chance_Handler\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:34:14" shape : ellipse }
+edge: { sourcename: "system__assertions__raise_assert_failure" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-assert.adb:42:7" }
+node: { title: "ada__exceptions__call_last_chance_handler_with_message" label: "Call_Last_Chance_Handler_With_Message\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:40:14" shape : ellipse }
+edge: { sourcename: "system__assertions__raise_assert_failure" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-assert.adb:42:7" }
+}

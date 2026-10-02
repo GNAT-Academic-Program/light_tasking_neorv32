@@ -1,0 +1,583 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb"
+node: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:ada__strings__superbounded__F89b.part.0" label: "part\n<built-in>\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__exceptions__call_last_chance_handler_with_message" label: "Call_Last_Chance_Handler_With_Message\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:40:14" shape : ellipse }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:ada__strings__superbounded__F89b.part.0" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:137:16" }
+node: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:ada__strings__superbounded__F110b.part.0" label: "part\n<built-in>\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:ada__strings__superbounded__F110b.part.0" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:157:16" }
+node: { title: "ada__strings__superbounded__super_stringIP" label: "super_stringIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__strings__superbounded__super_stringPredicate" label: "super_stringPredicate\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__strings__superbounded__super_length" label: "Super_Length\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:85:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__strings__superbounded__super_to_string" label: "Super_To_String\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:121:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "system__secondary_stack__ss_allocate" label: "Ss_Allocate\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.ads:117:14" shape : ellipse }
+edge: { sourcename: "ada__strings__superbounded__super_to_string" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+node: { title: "memcpy" label: "builtin_memcpy\n<built-in>" shape : ellipse }
+edge: { sourcename: "ada__strings__superbounded__super_to_string" targetname: "memcpy" }
+node: { title: "ada__strings__superbounded__super_element" label: "Super_Element\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:625:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_element" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:630:13" }
+node: { title: "ada__strings__superbounded__super_slice" label: "Super_Slice\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:647:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_slice" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:655:13" }
+edge: { sourcename: "ada__strings__superbounded__super_slice" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:660:11" }
+edge: { sourcename: "ada__strings__superbounded__super_slice" targetname: "memcpy" }
+node: { title: "ada__strings__superbounded__F3b" label: "F3b\n<built-in>\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__F3b" targetname: "ada__exceptions__call_last_chance_handler_with_message" }
+node: { title: "memmove" label: "builtin_memmove\n<built-in>" shape : ellipse }
+edge: { sourcename: "ada__strings__superbounded__F3b" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:64:37" }
+edge: { sourcename: "ada__strings__superbounded__F3b" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:67:47" }
+node: { title: "ada__strings__superbounded__concat" label: "Concat\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:49:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__concat" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:49:4" }
+edge: { sourcename: "ada__strings__superbounded__concat" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:49:4" }
+edge: { sourcename: "ada__strings__superbounded__concat" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:49:4" }
+edge: { sourcename: "ada__strings__superbounded__concat" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:49:4" }
+node: { title: "ada__strings__superbounded__F35b" label: "F35b\n<built-in>\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__F35b" targetname: "ada__exceptions__call_last_chance_handler_with_message" }
+edge: { sourcename: "ada__strings__superbounded__F35b" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:89:37" }
+edge: { sourcename: "ada__strings__superbounded__F35b" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:92:47" }
+node: { title: "ada__strings__superbounded__concat__2" label: "Concat\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:75:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__concat__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:75:4" }
+edge: { sourcename: "ada__strings__superbounded__concat__2" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:75:4" }
+edge: { sourcename: "ada__strings__superbounded__concat__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:75:4" }
+edge: { sourcename: "ada__strings__superbounded__concat__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:75:4" }
+node: { title: "ada__strings__superbounded__F62b" label: "F62b\n<built-in>\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__F62b" targetname: "ada__exceptions__call_last_chance_handler_with_message" }
+edge: { sourcename: "ada__strings__superbounded__F62b" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:116:37" }
+edge: { sourcename: "ada__strings__superbounded__F62b" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:119:47" }
+node: { title: "ada__strings__superbounded__concat__3" label: "Concat\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:100:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__concat__3" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:100:4" }
+edge: { sourcename: "ada__strings__superbounded__concat__3" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:100:4" }
+edge: { sourcename: "ada__strings__superbounded__concat__3" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:100:4" }
+edge: { sourcename: "ada__strings__superbounded__concat__3" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:100:4" }
+node: { title: "ada__strings__superbounded__F89b" label: "F89b\n<built-in>\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__F89b" targetname: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:ada__strings__superbounded__F89b.part.0" }
+edge: { sourcename: "ada__strings__superbounded__F89b" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:140:37" }
+node: { title: "ada__strings__superbounded__concat__4" label: "Concat\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:127:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__concat__4" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:127:4" }
+edge: { sourcename: "ada__strings__superbounded__concat__4" targetname: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:ada__strings__superbounded__F89b.part.0" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:127:4" }
+edge: { sourcename: "ada__strings__superbounded__concat__4" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:127:4" }
+node: { title: "ada__strings__superbounded__F110b" label: "F110b\n<built-in>\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__F110b" targetname: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:ada__strings__superbounded__F110b.part.0" }
+edge: { sourcename: "ada__strings__superbounded__F110b" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:161:41" }
+node: { title: "ada__strings__superbounded__concat__5" label: "Concat\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:147:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__concat__5" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:147:4" }
+edge: { sourcename: "ada__strings__superbounded__concat__5" targetname: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:ada__strings__superbounded__F110b.part.0" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:147:4" }
+edge: { sourcename: "ada__strings__superbounded__concat__5" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:147:4" }
+node: { title: "ada__strings__superbounded__Oeq" label: "=\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:171:4\n32 bytes (static)\n0 dynamic objects" }
+node: { title: "system__secondary_stack__ss_mark" label: "Ss_Mark\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.ads:128:13" shape : ellipse }
+edge: { sourcename: "ada__strings__superbounded__Oeq" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__Oeq" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__Oeq" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__Oeq" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__Oeq" targetname: "memcpy" }
+node: { title: "memcmp" label: "builtin_memcmp\n<built-in>" shape : ellipse }
+edge: { sourcename: "ada__strings__superbounded__Oeq" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:176:37" }
+node: { title: "system__secondary_stack__ss_release" label: "Ss_Release\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.ads:131:14" shape : ellipse }
+edge: { sourcename: "ada__strings__superbounded__Oeq" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:176:0" }
+node: { title: "ada__strings__superbounded__equal__2" label: "Equal\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:179:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__equal__2" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__equal__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__equal__2" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__equal__2" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:184:37" }
+edge: { sourcename: "ada__strings__superbounded__equal__2" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:184:0" }
+node: { title: "ada__strings__superbounded__equal__3" label: "Equal\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:187:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__equal__3" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__equal__3" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__equal__3" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__equal__3" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:192:19" }
+edge: { sourcename: "ada__strings__superbounded__equal__3" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:192:0" }
+node: { title: "ada__strings__superbounded__greater" label: "Greater\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:199:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__greater" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__greater" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__greater" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__greater" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__greater" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__greater" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:204:37" }
+edge: { sourcename: "ada__strings__superbounded__greater" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:204:37" }
+edge: { sourcename: "ada__strings__superbounded__greater" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:204:0" }
+node: { title: "ada__strings__superbounded__greater__2" label: "Greater\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:207:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__greater__2" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__greater__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__greater__2" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__greater__2" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:212:37" }
+edge: { sourcename: "ada__strings__superbounded__greater__2" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:212:37" }
+edge: { sourcename: "ada__strings__superbounded__greater__2" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:212:0" }
+node: { title: "ada__strings__superbounded__greater__3" label: "Greater\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:215:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__greater__3" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__greater__3" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__greater__3" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__greater__3" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:220:19" }
+edge: { sourcename: "ada__strings__superbounded__greater__3" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:220:19" }
+edge: { sourcename: "ada__strings__superbounded__greater__3" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:220:0" }
+node: { title: "ada__strings__superbounded__greater_or_equal" label: "Greater_Or_Equal\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:227:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__greater_or_equal" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__greater_or_equal" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__greater_or_equal" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__greater_or_equal" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__greater_or_equal" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__greater_or_equal" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:232:37" }
+edge: { sourcename: "ada__strings__superbounded__greater_or_equal" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:232:37" }
+edge: { sourcename: "ada__strings__superbounded__greater_or_equal" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:232:0" }
+node: { title: "ada__strings__superbounded__greater_or_equal__2" label: "Greater_Or_Equal\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:235:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__greater_or_equal__2" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__greater_or_equal__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__greater_or_equal__2" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__greater_or_equal__2" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:240:37" }
+edge: { sourcename: "ada__strings__superbounded__greater_or_equal__2" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:240:37" }
+edge: { sourcename: "ada__strings__superbounded__greater_or_equal__2" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:240:0" }
+node: { title: "ada__strings__superbounded__greater_or_equal__3" label: "Greater_Or_Equal\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:243:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__greater_or_equal__3" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__greater_or_equal__3" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__greater_or_equal__3" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__greater_or_equal__3" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:248:19" }
+edge: { sourcename: "ada__strings__superbounded__greater_or_equal__3" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:248:19" }
+edge: { sourcename: "ada__strings__superbounded__greater_or_equal__3" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:248:0" }
+node: { title: "ada__strings__superbounded__less" label: "Less\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:255:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__less" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__less" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__less" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__less" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__less" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__less" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:260:37" }
+edge: { sourcename: "ada__strings__superbounded__less" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:260:37" }
+edge: { sourcename: "ada__strings__superbounded__less" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:260:0" }
+node: { title: "ada__strings__superbounded__less__2" label: "Less\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:263:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__less__2" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__less__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__less__2" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__less__2" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:268:37" }
+edge: { sourcename: "ada__strings__superbounded__less__2" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:268:37" }
+edge: { sourcename: "ada__strings__superbounded__less__2" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:268:0" }
+node: { title: "ada__strings__superbounded__less__3" label: "Less\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:271:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__less__3" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__less__3" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__less__3" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__less__3" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:276:19" }
+edge: { sourcename: "ada__strings__superbounded__less__3" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:276:19" }
+edge: { sourcename: "ada__strings__superbounded__less__3" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:276:0" }
+node: { title: "ada__strings__superbounded__less_or_equal" label: "Less_Or_Equal\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:283:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__less_or_equal" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__less_or_equal" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__less_or_equal" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__less_or_equal" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__less_or_equal" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__less_or_equal" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:288:37" }
+edge: { sourcename: "ada__strings__superbounded__less_or_equal" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:288:37" }
+edge: { sourcename: "ada__strings__superbounded__less_or_equal" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:288:0" }
+node: { title: "ada__strings__superbounded__less_or_equal__2" label: "Less_Or_Equal\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:291:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__less_or_equal__2" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__less_or_equal__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__less_or_equal__2" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__less_or_equal__2" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:296:37" }
+edge: { sourcename: "ada__strings__superbounded__less_or_equal__2" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:296:37" }
+edge: { sourcename: "ada__strings__superbounded__less_or_equal__2" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:296:0" }
+node: { title: "ada__strings__superbounded__less_or_equal__3" label: "Less_Or_Equal\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:299:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__less_or_equal__3" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__less_or_equal__3" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__less_or_equal__3" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__less_or_equal__3" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:304:19" }
+edge: { sourcename: "ada__strings__superbounded__less_or_equal__3" targetname: "memcmp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:304:19" }
+edge: { sourcename: "ada__strings__superbounded__less_or_equal__3" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:304:0" }
+node: { title: "ada__strings__superbounded__set_super_string" label: "Set_Super_String\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:311:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__set_super_string" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__set_super_string" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:327:46" }
+edge: { sourcename: "ada__strings__superbounded__set_super_string" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:332:46" }
+edge: { sourcename: "ada__strings__superbounded__set_super_string" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:337:16" }
+node: { title: "ada__strings__superbounded__super_append" label: "Super_Append\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:348:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_append" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:348:4" }
+edge: { sourcename: "ada__strings__superbounded__super_append" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:360:34" }
+edge: { sourcename: "ada__strings__superbounded__super_append" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:363:51" }
+edge: { sourcename: "ada__strings__superbounded__super_append" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_append" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:375:43" }
+edge: { sourcename: "ada__strings__superbounded__super_append" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:376:56" }
+edge: { sourcename: "ada__strings__superbounded__super_append" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_append" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:385:56" }
+edge: { sourcename: "ada__strings__superbounded__super_append" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:387:69" }
+edge: { sourcename: "ada__strings__superbounded__super_append" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:392:16" }
+node: { title: "ada__strings__superbounded__super_append__6" label: "Super_Append\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:401:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_append__6" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:413:51" }
+edge: { sourcename: "ada__strings__superbounded__super_append__6" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:421:56" }
+edge: { sourcename: "ada__strings__superbounded__super_append__6" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_append__6" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:430:56" }
+edge: { sourcename: "ada__strings__superbounded__super_append__6" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:432:69" }
+edge: { sourcename: "ada__strings__superbounded__super_append__6" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:437:16" }
+node: { title: "ada__strings__superbounded__super_append__2" label: "Super_Append\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:447:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_append__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:447:4" }
+edge: { sourcename: "ada__strings__superbounded__super_append__2" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_append__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:474:43" }
+edge: { sourcename: "ada__strings__superbounded__super_append__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:475:56" }
+edge: { sourcename: "ada__strings__superbounded__super_append__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:483:49" }
+edge: { sourcename: "ada__strings__superbounded__super_append__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:487:56" }
+edge: { sourcename: "ada__strings__superbounded__super_append__2" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_append__2" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:494:16" }
+edge: { sourcename: "ada__strings__superbounded__super_append__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:459:34" }
+edge: { sourcename: "ada__strings__superbounded__super_append__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:459:34" }
+edge: { sourcename: "ada__strings__superbounded__super_append__2" targetname: "memcpy" }
+node: { title: "ada__strings__superbounded__super_append__7" label: "Super_Append\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:503:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_append__7" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_append__7" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:524:56" }
+edge: { sourcename: "ada__strings__superbounded__super_append__7" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:531:49" }
+edge: { sourcename: "ada__strings__superbounded__super_append__7" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:536:56" }
+edge: { sourcename: "ada__strings__superbounded__super_append__7" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_append__7" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:543:16" }
+node: { title: "ada__strings__superbounded__super_append__3" label: "Super_Append\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:553:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_append__3" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:553:4" }
+edge: { sourcename: "ada__strings__superbounded__super_append__3" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_append__3" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:568:51" }
+edge: { sourcename: "ada__strings__superbounded__super_append__3" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:576:49" }
+edge: { sourcename: "ada__strings__superbounded__super_append__3" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_append__3" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:581:56" }
+edge: { sourcename: "ada__strings__superbounded__super_append__3" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:587:49" }
+edge: { sourcename: "ada__strings__superbounded__super_append__3" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:591:56" }
+edge: { sourcename: "ada__strings__superbounded__super_append__3" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:593:69" }
+edge: { sourcename: "ada__strings__superbounded__super_append__3" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:598:16" }
+node: { title: "ada__strings__superbounded__super_append__4" label: "Super_Append\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:609:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_append__4" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:609:4" }
+edge: { sourcename: "ada__strings__superbounded__super_append__4" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:620:34" }
+edge: { sourcename: "ada__strings__superbounded__super_append__4" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:628:16" }
+edge: { sourcename: "ada__strings__superbounded__super_append__4" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_append__4" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:631:50" }
+edge: { sourcename: "ada__strings__superbounded__super_append__4" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:638:16" }
+node: { title: "ada__strings__superbounded__super_append__8" label: "Super_Append\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:643:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_append__8" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:662:50" }
+edge: { sourcename: "ada__strings__superbounded__super_append__8" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:667:16" }
+node: { title: "ada__strings__superbounded__super_append__5" label: "Super_Append\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:675:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_append__5" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:675:4" }
+edge: { sourcename: "ada__strings__superbounded__super_append__5" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:687:38" }
+edge: { sourcename: "ada__strings__superbounded__super_append__5" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:695:46" }
+edge: { sourcename: "ada__strings__superbounded__super_append__5" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:701:16" }
+edge: { sourcename: "ada__strings__superbounded__super_append__5" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_append__5" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:704:16" }
+node: { title: "ada__strings__superbounded__super_count" label: "Super_Count\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:713:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_count" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_count" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_count" targetname: "memcpy" }
+node: { title: "ada__strings__search__count" label: "Count\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsea.ads:503:13" shape : ellipse }
+edge: { sourcename: "ada__strings__superbounded__super_count" targetname: "ada__strings__search__count" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:719:20" }
+edge: { sourcename: "ada__strings__superbounded__super_count" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:719:0" }
+node: { title: "ada__strings__superbounded__super_count__2" label: "Super_Count\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:722:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_count__2" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_count__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_count__2" targetname: "memcpy" }
+node: { title: "ada__strings__search__count__2" label: "Count\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsea.ads:511:13" shape : ellipse }
+edge: { sourcename: "ada__strings__superbounded__super_count__2" targetname: "ada__strings__search__count__2" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:728:20" }
+edge: { sourcename: "ada__strings__superbounded__super_count__2" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:728:0" }
+node: { title: "ada__strings__superbounded__super_count__3" label: "Super_Count\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:731:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_count__3" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_count__3" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_count__3" targetname: "memcpy" }
+node: { title: "ada__strings__search__count__3" label: "Count\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsea.ads:519:13" shape : ellipse }
+edge: { sourcename: "ada__strings__superbounded__super_count__3" targetname: "ada__strings__search__count__3" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:736:20" }
+edge: { sourcename: "ada__strings__superbounded__super_count__3" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:736:0" }
+node: { title: "ada__strings__superbounded__super_delete" label: "Super_Delete\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:743:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_delete" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:743:4" }
+edge: { sourcename: "ada__strings__superbounded__super_delete" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:754:10" }
+edge: { sourcename: "ada__strings__superbounded__super_delete" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_delete" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:757:10" }
+edge: { sourcename: "ada__strings__superbounded__super_delete" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:760:38" }
+edge: { sourcename: "ada__strings__superbounded__super_delete" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:765:38" }
+edge: { sourcename: "ada__strings__superbounded__super_delete" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:766:50" }
+node: { title: "ada__strings__superbounded__super_delete__2" label: "Super_Delete\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:773:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_delete__2" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:786:10" }
+edge: { sourcename: "ada__strings__superbounded__super_delete__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:793:54" }
+node: { title: "ada__strings__superbounded__super_find_token" label: "Super_Find_Token\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:802:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_find_token" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_find_token" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_find_token" targetname: "memcpy" }
+node: { title: "ada__strings__search__find_token" label: "Find_Token\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsea.ads:525:14" shape : ellipse }
+edge: { sourcename: "ada__strings__superbounded__super_find_token" targetname: "ada__strings__search__find_token" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:811:13" }
+edge: { sourcename: "ada__strings__superbounded__super_find_token" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:811:0" }
+node: { title: "ada__strings__superbounded__super_find_token__2" label: "Super_Find_Token\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:815:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_find_token__2" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_find_token__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_find_token__2" targetname: "memcpy" }
+node: { title: "ada__strings__search__find_token__2" label: "Find_Token\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsea.ads:579:14" shape : ellipse }
+edge: { sourcename: "ada__strings__superbounded__super_find_token__2" targetname: "ada__strings__search__find_token__2" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:823:13" }
+edge: { sourcename: "ada__strings__superbounded__super_find_token__2" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:823:0" }
+node: { title: "ada__strings__superbounded__super_head" label: "Super_Head\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:830:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_head" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:830:4" }
+edge: { sourcename: "ada__strings__superbounded__super_head" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:843:35" }
+edge: { sourcename: "ada__strings__superbounded__super_head" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:847:34" }
+node: { title: "memset" label: "builtin_memset\n<built-in>" shape : ellipse }
+edge: { sourcename: "ada__strings__superbounded__super_head" targetname: "memset" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:848:45" }
+edge: { sourcename: "ada__strings__superbounded__super_head" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:854:40" }
+edge: { sourcename: "ada__strings__superbounded__super_head" targetname: "memset" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:857:59" }
+edge: { sourcename: "ada__strings__superbounded__super_head" targetname: "memset" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:862:34" }
+edge: { sourcename: "ada__strings__superbounded__super_head" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:865:56" }
+edge: { sourcename: "ada__strings__superbounded__super_head" targetname: "memset" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:868:21" }
+edge: { sourcename: "ada__strings__superbounded__super_head" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:872:16" }
+node: { title: "ada__strings__superbounded__super_head__2" label: "Super_Head\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:881:4\n48 bytes (dynamic)\n1 dynamic objects\n Temp /home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:890:7" }
+edge: { sourcename: "ada__strings__superbounded__super_head__2" targetname: "memset" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:897:45" }
+edge: { sourcename: "ada__strings__superbounded__super_head__2" targetname: "memset" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:904:59" }
+edge: { sourcename: "ada__strings__superbounded__super_head__2" targetname: "memset" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:909:34" }
+edge: { sourcename: "ada__strings__superbounded__super_head__2" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_head__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:913:56" }
+edge: { sourcename: "ada__strings__superbounded__super_head__2" targetname: "memset" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:916:21" }
+edge: { sourcename: "ada__strings__superbounded__super_head__2" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:920:16" }
+node: { title: "ada__strings__superbounded__super_index" label: "Super_Index\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:931:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_index" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_index" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_index" targetname: "memcpy" }
+node: { title: "ada__strings__search__index" label: "Index\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsea.ads:108:13" shape : ellipse }
+edge: { sourcename: "ada__strings__superbounded__super_index" targetname: "ada__strings__search__index" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:938:20" }
+edge: { sourcename: "ada__strings__superbounded__super_index" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:938:0" }
+node: { title: "ada__strings__superbounded__super_index__2" label: "Super_Index\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:941:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_index__2" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_index__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_index__2" targetname: "memcpy" }
+node: { title: "ada__strings__search__index__2" label: "Index\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsea.ads:158:13" shape : ellipse }
+edge: { sourcename: "ada__strings__superbounded__super_index__2" targetname: "ada__strings__search__index__2" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:948:20" }
+edge: { sourcename: "ada__strings__superbounded__super_index__2" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:948:0" }
+node: { title: "ada__strings__superbounded__super_index__3" label: "Super_Index\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:951:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_index__3" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_index__3" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_index__3" targetname: "memcpy" }
+node: { title: "ada__strings__search__index__3" label: "Index\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsea.ads:205:13" shape : ellipse }
+edge: { sourcename: "ada__strings__superbounded__super_index__3" targetname: "ada__strings__search__index__3" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:958:20" }
+edge: { sourcename: "ada__strings__superbounded__super_index__3" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:958:0" }
+node: { title: "ada__strings__superbounded__super_index__4" label: "Super_Index\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:961:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_index__4" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_index__4" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_index__4" targetname: "memcpy" }
+node: { title: "ada__strings__search__index__4" label: "Index\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsea.ads:248:13" shape : ellipse }
+edge: { sourcename: "ada__strings__superbounded__super_index__4" targetname: "ada__strings__search__index__4" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:969:20" }
+edge: { sourcename: "ada__strings__superbounded__super_index__4" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:969:0" }
+node: { title: "ada__strings__superbounded__super_index__5" label: "Super_Index\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:973:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_index__5" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_index__5" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_index__5" targetname: "memcpy" }
+node: { title: "ada__strings__search__index__5" label: "Index\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsea.ads:305:13" shape : ellipse }
+edge: { sourcename: "ada__strings__superbounded__super_index__5" targetname: "ada__strings__search__index__5" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:981:20" }
+edge: { sourcename: "ada__strings__superbounded__super_index__5" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:981:0" }
+node: { title: "ada__strings__superbounded__super_index__6" label: "Super_Index\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:985:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_index__6" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_index__6" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_index__6" targetname: "memcpy" }
+node: { title: "ada__strings__search__index__6" label: "Index\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsea.ads:363:13" shape : ellipse }
+edge: { sourcename: "ada__strings__superbounded__super_index__6" targetname: "ada__strings__search__index__6" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:995:18" }
+edge: { sourcename: "ada__strings__superbounded__super_index__6" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:994:0" }
+node: { title: "ada__strings__superbounded__super_index_non_blank" label: "Super_Index_Non_Blank\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1008:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_index_non_blank" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_index_non_blank" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_index_non_blank" targetname: "memcpy" }
+node: { title: "ada__strings__search__index_non_blank" label: "Index_Non_Blank\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsea.ads:418:13" shape : ellipse }
+edge: { sourcename: "ada__strings__superbounded__super_index_non_blank" targetname: "ada__strings__search__index_non_blank" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1013:20" }
+edge: { sourcename: "ada__strings__superbounded__super_index_non_blank" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1013:0" }
+node: { title: "ada__strings__superbounded__super_index_non_blank__2" label: "Super_Index_Non_Blank\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1016:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_index_non_blank__2" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_index_non_blank__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_index_non_blank__2" targetname: "memcpy" }
+node: { title: "ada__strings__search__index_non_blank__2" label: "Index_Non_Blank\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsea.ads:454:13" shape : ellipse }
+edge: { sourcename: "ada__strings__superbounded__super_index_non_blank__2" targetname: "ada__strings__search__index_non_blank__2" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1022:20" }
+edge: { sourcename: "ada__strings__superbounded__super_index_non_blank__2" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1022:0" }
+node: { title: "ada__strings__superbounded__super_insert" label: "Super_Insert\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1029:4\n64 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_insert" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1029:4" }
+edge: { sourcename: "ada__strings__superbounded__super_insert" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1050:10" }
+edge: { sourcename: "ada__strings__superbounded__super_insert" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1053:34" }
+edge: { sourcename: "ada__strings__superbounded__super_insert" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_insert" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1058:56" }
+edge: { sourcename: "ada__strings__superbounded__super_insert" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1067:40" }
+edge: { sourcename: "ada__strings__superbounded__super_insert" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1070:54" }
+edge: { sourcename: "ada__strings__superbounded__super_insert" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_insert" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1080:61" }
+edge: { sourcename: "ada__strings__superbounded__super_insert" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1086:71" }
+edge: { sourcename: "ada__strings__superbounded__super_insert" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1092:59" }
+edge: { sourcename: "ada__strings__superbounded__super_insert" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_insert" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1099:53" }
+edge: { sourcename: "ada__strings__superbounded__super_insert" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1104:16" }
+node: { title: "ada__strings__superbounded__super_insert__2" label: "Super_Insert\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1113:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_insert__2" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_insert__2" targetname: "ada__strings__superbounded__super_insert" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1124:17" }
+edge: { sourcename: "ada__strings__superbounded__super_insert__2" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_insert__2" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1124:0" }
+node: { title: "ada__strings__superbounded__super_overwrite" label: "Super_Overwrite\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1131:4\n64 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_overwrite" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1131:4" }
+edge: { sourcename: "ada__strings__superbounded__super_overwrite" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1144:10" }
+edge: { sourcename: "ada__strings__superbounded__super_overwrite" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1147:10" }
+edge: { sourcename: "ada__strings__superbounded__super_overwrite" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_overwrite" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1150:34" }
+edge: { sourcename: "ada__strings__superbounded__super_overwrite" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_overwrite" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1165:42" }
+edge: { sourcename: "ada__strings__superbounded__super_overwrite" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_overwrite" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1184:48" }
+edge: { sourcename: "ada__strings__superbounded__super_overwrite" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1187:53" }
+edge: { sourcename: "ada__strings__superbounded__super_overwrite" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1192:49" }
+edge: { sourcename: "ada__strings__superbounded__super_overwrite" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1197:67" }
+edge: { sourcename: "ada__strings__superbounded__super_overwrite" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_overwrite" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1205:16" }
+node: { title: "ada__strings__superbounded__super_overwrite__2" label: "Super_Overwrite\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1214:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_overwrite__2" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1227:10" }
+edge: { sourcename: "ada__strings__superbounded__super_overwrite__2" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_overwrite__2" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_overwrite__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1243:53" }
+edge: { sourcename: "ada__strings__superbounded__super_overwrite__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1248:49" }
+edge: { sourcename: "ada__strings__superbounded__super_overwrite__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1253:67" }
+edge: { sourcename: "ada__strings__superbounded__super_overwrite__2" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_overwrite__2" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1261:16" }
+node: { title: "ada__strings__superbounded__super_replace_element" label: "Super_Replace_Element\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1272:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_replace_element" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1281:10" }
+node: { title: "ada__strings__superbounded__super_replace_slice" label: "Super_Replace_Slice\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1289:4\n80 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_replace_slice" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1302:10" }
+edge: { sourcename: "ada__strings__superbounded__super_replace_slice" targetname: "ada__strings__superbounded__super_insert" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1305:17" }
+edge: { sourcename: "ada__strings__superbounded__super_replace_slice" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1308:10" }
+edge: { sourcename: "ada__strings__superbounded__super_replace_slice" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1321:40" }
+edge: { sourcename: "ada__strings__superbounded__super_replace_slice" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_replace_slice" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1326:76" }
+edge: { sourcename: "ada__strings__superbounded__super_replace_slice" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1335:46" }
+edge: { sourcename: "ada__strings__superbounded__super_replace_slice" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1338:57" }
+edge: { sourcename: "ada__strings__superbounded__super_replace_slice" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_replace_slice" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1343:69" }
+edge: { sourcename: "ada__strings__superbounded__super_replace_slice" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1349:77" }
+edge: { sourcename: "ada__strings__superbounded__super_replace_slice" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1354:62" }
+edge: { sourcename: "ada__strings__superbounded__super_replace_slice" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_replace_slice" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1361:59" }
+edge: { sourcename: "ada__strings__superbounded__super_replace_slice" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1366:22" }
+node: { title: "ada__strings__superbounded__super_replace_slice__2" label: "Super_Replace_Slice\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1377:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_replace_slice__2" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_replace_slice__2" targetname: "ada__strings__superbounded__super_replace_slice" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1389:17" }
+edge: { sourcename: "ada__strings__superbounded__super_replace_slice__2" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_replace_slice__2" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1389:0" }
+node: { title: "ada__strings__superbounded__super_replicate" label: "Super_Replicate\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1396:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_replicate" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1396:4" }
+edge: { sourcename: "ada__strings__superbounded__super_replicate" targetname: "memset" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1406:38" }
+edge: { sourcename: "ada__strings__superbounded__super_replicate" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1410:10" }
+edge: { sourcename: "ada__strings__superbounded__super_replicate" targetname: "memset" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1413:43" }
+node: { title: "ada__strings__superbounded__super_replicate__2" label: "Super_Replicate\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1420:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_replicate__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1420:4" }
+edge: { sourcename: "ada__strings__superbounded__super_replicate__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1521:54" }
+edge: { sourcename: "ada__strings__superbounded__super_replicate__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1547:57" }
+edge: { sourcename: "ada__strings__superbounded__super_replicate__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1566:53" }
+edge: { sourcename: "ada__strings__superbounded__super_replicate__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1585:57" }
+edge: { sourcename: "ada__strings__superbounded__super_replicate__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1606:40" }
+edge: { sourcename: "ada__strings__superbounded__super_replicate__2" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1623:16" }
+node: { title: "ada__strings__superbounded__super_replicate__3" label: "Super_Replicate\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1632:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_replicate__3" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_replicate__3" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_replicate__3" targetname: "ada__strings__superbounded__super_replicate__2" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1639:9" }
+node: { title: "ada__strings__superbounded__super_slice__2" label: "Super_Slice\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1646:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_slice__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1653:14" }
+edge: { sourcename: "ada__strings__superbounded__super_slice__2" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1657:13" }
+edge: { sourcename: "ada__strings__superbounded__super_slice__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1660:33" }
+node: { title: "ada__strings__superbounded__super_slice__3" label: "Super_Slice\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1665:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_slice__3" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1676:10" }
+edge: { sourcename: "ada__strings__superbounded__super_slice__3" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1679:30" }
+node: { title: "ada__strings__superbounded__super_tail" label: "Super_Tail\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1687:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_tail" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1687:4" }
+edge: { sourcename: "ada__strings__superbounded__super_tail" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1701:38" }
+edge: { sourcename: "ada__strings__superbounded__super_tail" targetname: "memset" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1707:37" }
+edge: { sourcename: "ada__strings__superbounded__super_tail" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1710:45" }
+edge: { sourcename: "ada__strings__superbounded__super_tail" targetname: "memset" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1719:34" }
+edge: { sourcename: "ada__strings__superbounded__super_tail" targetname: "memset" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1722:46" }
+edge: { sourcename: "ada__strings__superbounded__super_tail" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1723:56" }
+edge: { sourcename: "ada__strings__superbounded__super_tail" targetname: "memset" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1728:56" }
+edge: { sourcename: "ada__strings__superbounded__super_tail" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1729:66" }
+edge: { sourcename: "ada__strings__superbounded__super_tail" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1733:16" }
+node: { title: "ada__strings__superbounded__super_tail__2" label: "Super_Tail\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1742:4\n48 bytes (dynamic)\n1 dynamic objects\n Temp /home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1752:7" }
+edge: { sourcename: "ada__strings__superbounded__super_tail__2" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_tail__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1759:38" }
+edge: { sourcename: "ada__strings__superbounded__super_tail__2" targetname: "memset" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1764:37" }
+edge: { sourcename: "ada__strings__superbounded__super_tail__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1767:45" }
+edge: { sourcename: "ada__strings__superbounded__super_tail__2" targetname: "memset" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1776:34" }
+edge: { sourcename: "ada__strings__superbounded__super_tail__2" targetname: "memset" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1779:46" }
+edge: { sourcename: "ada__strings__superbounded__super_tail__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1780:56" }
+edge: { sourcename: "ada__strings__superbounded__super_tail__2" targetname: "memset" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1791:56" }
+edge: { sourcename: "ada__strings__superbounded__super_tail__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1792:66" }
+edge: { sourcename: "ada__strings__superbounded__super_tail__2" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1796:16" }
+node: { title: "ada__strings__superbounded__super_translate" label: "Super_Translate\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1807:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_translate" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1807:4" }
+node: { title: "ada__strings__superbounded__super_translate__2" label: "Super_Translate\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1826:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__strings__superbounded__super_translate__3" label: "Super_Translate\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1839:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_translate__3" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1839:4" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "ada__strings__superbounded__super_translate__3" targetname: "__indirect_call" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1847:37" }
+node: { title: "ada__strings__superbounded__super_translate__4" label: "Super_Translate\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1864:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_translate__4" targetname: "__indirect_call" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1870:37" }
+node: { title: "ada__strings__superbounded__super_trim" label: "Super_Trim\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1887:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1887:4" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "ada__strings__search__index_non_blank" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1013:20" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1013:0" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1907:50" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "ada__strings__search__index_non_blank" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1013:20" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1013:0" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1922:40" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "ada__strings__search__index_non_blank" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1013:20" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1013:0" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "ada__strings__search__index_non_blank" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1013:20" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1013:0" }
+edge: { sourcename: "ada__strings__superbounded__super_trim" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1941:53" }
+node: { title: "ada__strings__superbounded__super_trim__2" label: "Super_Trim\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1951:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__2" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__2" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__2" targetname: "ada__strings__search__index_non_blank" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1013:20" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__2" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1013:0" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1968:53" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__2" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__2" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__2" targetname: "ada__strings__search__index_non_blank" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1013:20" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__2" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1013:0" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__2" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__2" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__2" targetname: "ada__strings__search__index_non_blank" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1013:20" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__2" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1013:0" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__2" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__2" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__2" targetname: "ada__strings__search__index_non_blank" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1013:20" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__2" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1013:0" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:1996:56" }
+node: { title: "ada__strings__superbounded__super_trim__3" label: "Super_Trim\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:2005:4\n64 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__3" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:2005:4" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__3" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__3" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__3" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__3" targetname: "ada__strings__search__index__3" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:958:20" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__3" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:958:0" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__3" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__3" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__3" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__3" targetname: "ada__strings__search__index__3" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:958:20" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__3" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:958:0" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__3" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:2032:44" }
+node: { title: "ada__strings__superbounded__super_trim__4" label: "Super_Trim\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:2039:4\n64 bytes (dynamic)\n1 dynamic objects\n Temp /home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:2045:7" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__4" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__4" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__4" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__4" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__4" targetname: "ada__strings__search__index__3" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:958:20" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__4" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:958:0" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__4" targetname: "system__secondary_stack__ss_mark" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__4" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.ads:122:8" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__4" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__4" targetname: "ada__strings__search__index__3" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:958:20" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__4" targetname: "system__secondary_stack__ss_release" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:958:0" }
+edge: { sourcename: "ada__strings__superbounded__super_trim__4" targetname: "memcpy" }
+node: { title: "ada__strings__superbounded__times" label: "Times\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:2083:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__times" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:2083:4" }
+edge: { sourcename: "ada__strings__superbounded__times" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:2092:10" }
+node: { title: "ada__strings__superbounded__times__2" label: "Times\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:2108:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__times__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:2108:4" }
+edge: { sourcename: "ada__strings__superbounded__times__2" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:2172:10" }
+edge: { sourcename: "ada__strings__superbounded__times__2" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:2177:52" }
+node: { title: "ada__strings__superbounded__times__3" label: "Times\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:2201:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__times__3" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:2201:4" }
+edge: { sourcename: "ada__strings__superbounded__times__3" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:2212:10" }
+edge: { sourcename: "ada__strings__superbounded__times__3" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:2217:52" }
+node: { title: "ada__strings__superbounded__to_super_string" label: "To_Super_String\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:2239:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__strings__superbounded__to_super_string" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:2239:4" }
+edge: { sourcename: "ada__strings__superbounded__to_super_string" targetname: "memcpy" }
+edge: { sourcename: "ada__strings__superbounded__to_super_string" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:2255:46" }
+edge: { sourcename: "ada__strings__superbounded__to_super_string" targetname: "memmove" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:2260:46" }
+edge: { sourcename: "ada__strings__superbounded__to_super_string" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-strsup.adb:2265:16" }
+}

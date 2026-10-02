@@ -1,0 +1,42 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-lidosq.adb"
+node: { title: "sqrt" label: "Sqrt\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-lidosq.adb:149:4\n64 bytes (static)\n0 dynamic objects" }
+node: { title: "__ledf2" label: "ledf2\n<built-in>" shape : ellipse }
+edge: { sourcename: "sqrt" targetname: "__ledf2" }
+node: { title: "__eqdf2" label: "eqdf2\n<built-in>" shape : ellipse }
+edge: { sourcename: "sqrt" targetname: "__eqdf2" }
+node: { title: "__gtdf2" label: "gtdf2\n<built-in>" shape : ellipse }
+edge: { sourcename: "sqrt" targetname: "__gtdf2" }
+edge: { sourcename: "sqrt" targetname: "__eqdf2" }
+node: { title: "__muldf3" label: "muldf3\n<built-in>" shape : ellipse }
+edge: { sourcename: "sqrt" targetname: "__muldf3" }
+edge: { sourcename: "sqrt" targetname: "__muldf3" }
+edge: { sourcename: "sqrt" targetname: "__muldf3" }
+node: { title: "__subdf3" label: "subdf3\n<built-in>" shape : ellipse }
+edge: { sourcename: "sqrt" targetname: "__subdf3" }
+edge: { sourcename: "sqrt" targetname: "__muldf3" }
+edge: { sourcename: "sqrt" targetname: "__muldf3" }
+edge: { sourcename: "sqrt" targetname: "__muldf3" }
+edge: { sourcename: "sqrt" targetname: "__subdf3" }
+edge: { sourcename: "sqrt" targetname: "__muldf3" }
+edge: { sourcename: "sqrt" targetname: "__muldf3" }
+edge: { sourcename: "sqrt" targetname: "__muldf3" }
+edge: { sourcename: "sqrt" targetname: "__subdf3" }
+edge: { sourcename: "sqrt" targetname: "__muldf3" }
+edge: { sourcename: "sqrt" targetname: "__muldf3" }
+edge: { sourcename: "sqrt" targetname: "__muldf3" }
+edge: { sourcename: "sqrt" targetname: "__subdf3" }
+edge: { sourcename: "sqrt" targetname: "__muldf3" }
+edge: { sourcename: "sqrt" targetname: "__eqdf2" }
+edge: { sourcename: "sqrt" targetname: "__muldf3" }
+edge: { sourcename: "sqrt" targetname: "__muldf3" }
+edge: { sourcename: "sqrt" targetname: "__muldf3" }
+edge: { sourcename: "sqrt" targetname: "__subdf3" }
+edge: { sourcename: "sqrt" targetname: "__muldf3" }
+edge: { sourcename: "sqrt" targetname: "__eqdf2" }
+edge: { sourcename: "sqrt" targetname: "__muldf3" }
+edge: { sourcename: "sqrt" targetname: "__muldf3" }
+edge: { sourcename: "sqrt" targetname: "__muldf3" }
+edge: { sourcename: "sqrt" targetname: "__subdf3" }
+edge: { sourcename: "sqrt" targetname: "__muldf3" }
+edge: { sourcename: "sqrt" targetname: "__muldf3" }
+}

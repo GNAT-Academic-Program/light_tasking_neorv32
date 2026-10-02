@@ -1,0 +1,8 @@
+config:light_tasking_neorv32.clock_frequency=50000000
+config:light_tasking_neorv32.dmem_size=65536
+config:light_tasking_neorv32.imem_size=131072
+config:light_tasking_neorv32.interrupt_stack_size=4096
+config:light_tasking_neorv32.main_stack_size=8192
+config:light_tasking_neorv32.uart0_baud_rate=19200
+profile:light_tasking_neorv32=DEVELOPMENT
+switches:light_tasking_neorv32=-Og,-fdata-sections,-ffunction-sections,-g,-gnatVa,-gnatW8,-gnatw.X,-gnatwa

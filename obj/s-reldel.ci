@@ -1,0 +1,11 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-reldel.adb"
+node: { title: "system__relative_delays__delay_for" label: "Delay_For\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-reldel.adb:36:4\n32 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__real_time__clock" label: "Clock\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-reatim.ads:79:13" shape : ellipse }
+edge: { sourcename: "system__relative_delays__delay_for" targetname: "ada__real_time__clock" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-reldel.adb:40:7" }
+node: { title: "ada__real_time__to_time_span" label: "To_Time_Span\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-reatim.ads:132:13" shape : ellipse }
+edge: { sourcename: "system__relative_delays__delay_for" targetname: "ada__real_time__to_time_span" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-reldel.adb:40:7" }
+node: { title: "ada__real_time__Oadd" label: "+\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-reatim.ads:83:13" shape : ellipse }
+edge: { sourcename: "system__relative_delays__delay_for" targetname: "ada__real_time__Oadd" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-reldel.adb:40:7" }
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-retide.ads:42:14" shape : ellipse }
+edge: { sourcename: "system__relative_delays__delay_for" targetname: "ada__real_time__delays__delay_until" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-reldel.adb:40:7" }
+}

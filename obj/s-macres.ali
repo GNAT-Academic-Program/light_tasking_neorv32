@@ -1,0 +1,50 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -fno-inline
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.machine_reset%b  s-macres.adb		322d29eb NE OL PK
+W system%s		system.ads		system.ali
+W system.machine_code%s	s-maccod.ads		s-maccod.ali
+
+U system.machine_reset%s  s-macres.ads		0b3c180d NE OL PK
+W system%s		system.ads		system.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-maccod.ads		20261002145216 cdca081e system.machine_code%s
+D s-macres.ads		20261002145216 0872126d system.machine_reset%s
+D s-macres.adb		20261002145216 f7953398 system.machine_reset%b
+G a e
+G c Z s b [stop system__machine_reset 39 14 none]
+X 1 system.ads
+55K9*System 176e11 3|36r9 43r5 4|41r6 41r31 43r14 90r5
+X 2 s-maccod.ads
+38K16*Machine_Code 142e24 4|41w13 41w38
+91U14*Asm 4|74s7 77s10
+96b6 Volatile{boolean} 4|74r32 77r22
+X 3 s-macres.ads
+36K16*Machine_Reset 1|55k9 3|43l12 43e25 4|43b21 90l12 90t25
+39U14*Stop 40r22 41i<c,__gnat_stop>22 4|85b14 88l8 88t12
+X 4 s-macres.adb
+45U14 Os_Exit 45>23 46r22 47r24 61s7 68b14 79l8 79t15 87s7
+45i23 Status{integer} 68b23 69r28
+50U14 Os_Abort 51r22 52r24 59b14 62l8 62t16
+

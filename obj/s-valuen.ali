@@ -1,0 +1,103 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_CONVERSION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.value_n%b	s-valuen.adb		c599f637 NE OL PK GE
+W ada%s			ada.ads			ada.ali
+W ada.unchecked_conversion%s
+W system%s		system.ads		system.ali
+W system.val_util%s	s-valuti.adb		s-valuti.ali
+
+U system.value_n%s	s-valuen.ads		58961b34 BN NE OL PR PK GE
+W system%s		system.ads		system.ali
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-unccon.ads		20261002145216 0e9b276f ada.unchecked_conversion%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-valuti.ads		20261002145216 ecabe223 system.val_util%s
+D s-valuen.ads		20261002145216 5bd81154 system.value_n%s
+D s-valuen.adb		20261002145216 7c71222f system.value_n%b
+G a e
+G c Z s b [value_n system 40 16 none]
+X 1 ada.ads
+18K9*Ada 22e8 6|32r6 74r13
+X 2 a-unccon.ads
+23v14*Unchecked_Conversion 6|32w10 74r17
+X 3 system.ads
+55K9*System 176e11 5|40r9 47r17 74r17 85r5 6|34r6 34r27 36r14 40r17 55r17
+. 74r39 122r17 140r17 160r5
+85M9*Address 5|47r24 74r24 6|40r24 55r24 74r46 122r24 140r24
+X 4 s-valuti.ads
+34K16*Val_Util 125e20 6|34w13 34w34
+37U14*Bad_Value 6|154s10
+40U14*Normalize_String 6|81s7
+43b7 To_Upper_Case{boolean} 6|81r34
+X 5 s-valuen.ads
+38I9 Index_Type 6|67r9 67r26 68r30
+40k16*Value_N 3|55k9 5|38z9 85l12 85e19 6|36b21 160l12 160t19
+43P9*Hash_Function_Ptr(integer) 43>47 48r17 75r17 6|41r17 56r17 123r17 141r17
+43a47 S{string}
+45V13*Value_Enumeration{natural} 46>7 47>7 48>7 49>7 50>7 51>7 6|138b13 158l8
+. 158t25
+46a7 Names{string} 6|139b7 148r32
+47m7 Indexes{3|85M9} 6|140b7 148r39
+48p7 Hash{43P9} 6|141b7 148r48
+49i7 Num{natural} 6|142b7 148r54
+50b7 Is_Wide{boolean} 6|143b7 148r59
+51a7 Str{string} 6|144b7 148r68 154r21
+72V13*Valid_Value_Enumeration{boolean} 73>7 74>7 75>7 76>7 77>7 78>7 6|120b13
+. 132l8 132t31
+73a7 Names{string} 6|121b7 131r32
+74m7 Indexes{3|85M9} 6|122b7 131r39
+75p7 Hash{43P9} 6|123b7 131r48
+76i7 Num{natural} 6|124b7 131r54
+77b7 Is_Wide{boolean} 6|125b7 131r59
+78a7 Str{string} 6|126b7 131r68
+X 6 s-valuen.adb
+38V13 Value_Enumeration_Pos{integer} 39>7 40>7 41>7 42>7 43>7 44>7 53b13
+. 114l8 114t29 131s9 148s9
+39a7 Names{string} 54b7 67r38 68r42 69r55 92r16 103r19
+40m7 Indexes{3|85M9} 55b7 76r66
+41p7 Hash{5|43P9} 56b7 89r19 89r37
+42i7 Num{natural} 57b7 78r22 102r27
+43b7 Is_Wide{boolean} 58b7 81r55
+44a7 Str{string} 59b7 64r20 64r34
+62i7 F{integer} 81m28 84r37
+62i10 L{integer} 81m31 84r42
+63i7 H{natural} 89m10 91r13 93r35 94r35 96r23
+64a7 S{string} 81m25 81r25 84r34
+66I15 Names_Index{5|38I9} 70r44
+69I15 Index{natural} 70r34
+70A12 Index_Table(66I15)<integer> 71r38
+71P12 Index_Table_Ptr(70A12) 74r55 76r27
+73V16 To_Index_Table_Ptr[2|23]{71P12} 76s46
+76p7 IndexesT{71P12} 78r33 93r25 94r25 104r28 105r28
+84a10 Normal{string} 89r47 94r50 105r53
+102i17 J{integer} 104r38 105r38 107r26
+147i7 Result{integer} 153r10 156r17
+

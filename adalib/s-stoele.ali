@@ -1,0 +1,73 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RR NO_ELABORATION_CODE
+
+U system.storage_elements%s  s-stoele.ads	cf90de88 NE OL PU PK
+W system%s		system.ads		system.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+G a e
+G c Z s s [Oadd system__storage_elements 74 13 none]
+G c Z s s [Oadd system__storage_elements 75 13 none]
+G c Z s s [Osubtract system__storage_elements 79 13 none]
+G c Z s s [Osubtract system__storage_elements 80 13 none]
+G c Z s s [Omod system__storage_elements 84 13 none]
+G c Z s s [to_address system__storage_elements 96 13 none]
+G c Z s s [to_integer system__storage_elements 100 13 none]
+G c Z s s [storage_arrayIP system__storage_elements 67 9 none]
+X 1 system.ads
+55K9*System 176e11 2|43r9 104r5
+85M9*Address 2|74r25 74r65 75r49 75r65 79r25 79r65 80r32 85r15 96r57 100r33
+89N4*Storage_Unit 2|60r37 61r33 69r41
+91N4*Memory_Size 2|54r34 54r53 92r32
+X 2 s-stoele.ads
+43K16*Storage_Elements 1|55k9 2|104l12 104e28
+54I9*Storage_Offset<integer> 56r29 56r55 68r13 74r42 75r25 79r42 80r48 86r15
+. 86r38
+56I12*Storage_Count{54I9}
+60M9*Storage_Element 61r8 64r31 68r49
+67A9*Storage_Array(60M9)<54I9> 69r8
+74V14*"+"{1|85M9} 74>18 74>34 76b31
+74m18 Left{1|85M9}
+74i34 Right{54I9}
+75V14*"+"{1|85M9} 75>18 75>41 76b31
+75i18 Left{54I9}
+75m41 Right{1|85M9}
+79V14*"-"{1|85M9} 79>18 79>34 81b31
+79m18 Left{1|85M9}
+79i34 Right{54I9}
+80V14*"-"{54I9} 80>18 80>24 81b31
+80m18 Left{1|85M9}
+80m24 Right{1|85M9}
+84V14*"mod"{54I9} 85>7 86>7 87b31
+85m7 Left{1|85M9}
+86i7 Right{54I9}
+92M9*Integer_Address 96r33 100r49
+96V13*To_Address{1|85M9} 96>25 97b30
+96m25 Value{92M9}
+100V13*To_Integer{92M9} 100>25 101b30
+100m25 Value{1|85M9}
+

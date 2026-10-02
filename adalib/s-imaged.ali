@@ -1,0 +1,77 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.image_d%b	s-imaged.adb		0530b8e9 NE OL PK GE
+W system%s		system.ads		system.ali
+W system.image_i%s
+W system.img_util%s	s-imguti.adb		s-imguti.ali
+
+U system.image_d%s	s-imaged.ads		107913f3 BN NE OL PK GE
+W system%s		system.ads		system.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-imaged.ads		20261002145216 13371993 system.image_d%s
+D s-imaged.adb		20261002145216 70bd7361 system.image_d%b
+D s-imagei.ads		20261002145216 11a376a2 system.image_i%s
+D s-imagei.adb		20261002145216 e81b26f1 system.image_i%b
+D s-imguti.ads		20261002145216 7719a4b9 system.img_util%s
+G a e
+G c Z s b [image_d system 38 16 none]
+X 1 system.ads
+55K9*System 176e11 2|38r9 69r5 3|32r6 33r6 33r27 35r14 37r27 106r5
+X 2 s-imaged.ads
+37I9 Int 41r15 53r15 3|37r43 40r11 50r15 74r15 82r37
+38k16*Image_D 1|55k9 2|37z9 69l12 69e19 3|35b21 106l12 106t19
+40U14*Image_Decimal 41>7 42=7 43<7 44>7 3|49b14 67l8 67t21
+41*7 V{37I9} 3|50b7 59r10 66r26
+42a7 S{string} 3|51b7 55r22 60m10 66m29
+43i7 P{natural} 3|52b7 61m10 63m10 66m32
+44i7 Scale{integer} 3|53b7 66r35 66r61
+52U14*Set_Image_Decimal 53>7 54=7 55=7 56>7 57>7 58>7 59>7 3|66s7 73b14 104l8
+. 104t25
+53*7 V{37I9} 3|74b7 92r10 99r26
+54a7 S{string} 3|75b7 103m40
+55i7 P{natural} 3|76b7 103m43
+56i7 Scale{integer} 3|77b7 103r46
+57i7 Fore{natural} 3|78b7 103r53
+58i7 Aft{natural} 3|79b7 103r59
+59i7 Exp{natural} 3|80b7 103r64
+X 3 s-imaged.adb
+37K12 Image_I[4|38] 43r14
+39U14 Set_Image_Integer=43:22 99s7
+40*7 V{2|37I9}
+41a7 S{string}
+42i7 P{natural}
+82i7 Maxdigs{natural} 85r28 101r51
+85a7 Digs{string} 93m10 99m29 99r29 103m27 103r27
+86i7 Ndigs{natural} 94m10 96m10 99m35 99r35 101r27 101r42 103r33
+X 4 s-imagei.ads
+38k16*Image_I 3|32w13 37r34 4|58e19
+48U14 Set_Image_Integer 3|43r22[37]
+X 6 s-imguti.ads
+36K16*Img_Util 3|33w13 33w34 6|82e20
+43U14*Set_Decimal_Digits 3|103s7
+

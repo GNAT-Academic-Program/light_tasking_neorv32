@@ -1,0 +1,111 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.image_f%b	s-imagef.adb		606fcd8d NE OL PK GE
+W system%s		system.ads		system.ali
+W system.image_i%s
+W system.img_util%s	s-imguti.adb		s-imguti.ali
+N A371:7 codepeer false_positive "test always true" "no digits were output for zero"
+
+U system.image_f%s	s-imagef.ads		0bf836ee BN NE OL PK GE
+W system%s		system.ads		system.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-imagef.ads		20261002145216 08b63c8e system.image_f%s
+D s-imagef.adb		20261002145216 0e632318 system.image_f%b
+D s-imagei.ads		20261002145216 11a376a2 system.image_i%s
+D s-imagei.adb		20261002145216 e81b26f1 system.image_i%b
+D s-imguti.ads		20261002145216 7719a4b9 system.img_util%s
+G a e
+G c Z s b [image_f system 44 16 none]
+X 1 system.ads
+55K9*System 176e11 2|44r9 86r5 3|32r6 33r6 33r27 35r14 57r27 377r5
+X 2 s-imagef.ads
+37I9 Int 40r22 41r23 47r14 50r14 51r14 66r14 69r14 70r14 3|37r34 57r43 60r11
+. 204r14 207r14 208r14 231r14 234r14 235r14 262r20 263r20 276r11 291r12 292r12
+39U19 Scaled_Divide 40>12 40>15 40>18 41<12 41<15 42>12 3|311s10 325s10
+40*12 X{37I9}
+40*15 Y{37I9}
+40*18 Z{37I9}
+41*12 Q{37I9}
+41*15 R{37I9} 3|311r39 325r39
+42b12 Round{boolean} 3|311r48 325r48
+44k16*Image_F 1|55k9 2|37z9 39z19 86l12 86e19 3|35b21 377l12 377t19
+46U14*Image_Fixed 47>7 48=7 49<7 50>7 51>7 52>7 53>7 3|203b14 224l8 224t19
+47*7 V{37I9} 3|204b7 216r10 223r24
+48a7 S{string} 3|205b7 212r22 217m10 223m27
+49i7 P{natural} 3|206b7 218m10 220m10 223m30
+50*7 Num{37I9} 3|207b7 223r33
+51*7 Den{37I9} 3|208b7 223r38
+52i7 For0{natural} 3|209b7 223r43
+53i7 Aft0{natural} 3|210b7 223r49 223r58
+65U14*Set_Image_Fixed 66>7 67=7 68=7 69>7 70>7 71>7 72>7 73>7 74>7 75>7 3|223s7
+. 230b14 375l8 375t23
+66*7 V{37I9} 3|231b7 291r19 301r10
+67a7 S{string} 3|232b7 374m40
+68i7 P{natural} 3|233b7 374m43
+69*7 Num{37I9} 3|234b7 242r22 262r31
+70*7 Den{37I9} 3|235b7 242r39 263r31
+71i7 For0{natural} 3|236b7 259r63
+72i7 Aft0{natural} 3|237b7 246r37
+73i7 Fore{natural} 3|238b7 374r53
+74i7 Aft{natural} 3|239b7 246r57 374r59
+75i7 Exp{natural} 3|240b7 246r26 374r64
+X 3 s-imagef.adb
+37i4 Maxdigs{natural} 259r27 259r52 273r41 273r56 280r26 284r36 320r20 327r30
+. 327r59 332r50 350r27 355r30 358r30 361r27
+57K12 Image_I[4|38] 63r14
+59U14 Set_Image_Integer=63:22 313s13 330s10
+60*7 V{2|37I9}
+61a7 S{string}
+62i7 P{natural}
+245i7 A{natural} 259r49 266r32
+258i7 D{integer} 262r57 263r58 266r36 316r27
+262*7 Y{2|37I9} 292r19
+263*7 Z{2|37I9} 311r33 325r33
+266i7 AF{natural} 273r36
+273i7 N{natural} 284r32 324r18
+276*7 Q{2|37I9} 311m36 312r13 313r32 325m36 327r40 327r51 330r33 338r16
+280a7 Buf{string} 330m36 330r36 343r39 355r52
+281i7 Len{natural} 329m10 330m41 330r41 332r30 332r43 343r27 343r49 344r25
+. 350r37 354r27 355r40
+284a7 Digs{string} 302m10 313m35 313r35 340m19 343m16 351m16 355m16 368m10
+. 374m27 374r27
+285i7 Ndigs{natural} 303m10 305m10 313m41 313r41 337r13 339r19 344m16 351r22
+. 355r22 358m13 358r22 367r10 369m10 374r33
+288i7 Scale{integer} 316m10 316r19 361m10 361r19 374r46
+291*7 XX{2|37I9} 310r10 311r25 311m44 324r29 325r25 325m44
+292*7 YY{2|37I9} 311r29 320m10 325r29
+295i7 J{natural} 323m7 324r13 362m10 362r15
+350i17 K{integer} 351r30
+354i17 K{integer} 355r46 355r57
+X 4 s-imagei.ads
+38k16*Image_I 3|32w13 57r34 4|58e19
+48U14 Set_Image_Integer 3|63r22[57]
+X 6 s-imguti.ads
+36K16*Img_Util 3|33w13 33w34 6|82e20
+43U14*Set_Decimal_Digits 3|374s7
+

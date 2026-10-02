@@ -1,0 +1,87 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_CONVERSION
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.compare_array_signed_16%b  s-casi16.adb  58fb6a37 NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.unchecked_conversion%s
+W system%s		system.ads		system.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+N A61:4 gnatcheck exempt_on "Improper_Returns" "early returns for performance"
+N A140:4 gnatcheck exempt_off "Improper_Returns"
+
+U system.compare_array_signed_16%s  s-casi16.ads  9e2b6b6a NE OL PK
+W system%s		system.ads		system.ali
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-unccon.ads		20261002145216 0e9b276f ada.unchecked_conversion%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-casi16.ads		20261002145216 9d65610a system.compare_array_signed_16%s
+D s-casi16.adb		20261002145216 07dbf8ba system.compare_array_signed_16%b
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+G a e
+G c Z s b [compare_array_s16 system__compare_array_signed_16 41 13 none]
+G c Z b b [w system__compare_array_signed_16 53 13 none]
+G c Z b b [h system__compare_array_signed_16 54 13 none]
+G c Z b b [u system__compare_array_signed_16 55 13 none]
+X 1 ada.ads
+18K9*Ada 22e8 5|34r6 53r22 54r22 55r22
+X 2 a-unccon.ads
+23v14*Unchecked_Conversion 5|34w10 53r26 54r26 55r26
+X 3 system.ads
+55K9*System 176e11 4|35r9 42r19 43r19 68r5 5|32r6 32r35 36r14 65r19 66r19
+. 141r5
+85M9*Address 4|42r26 43r26 5|53r48 54r48 55r48 65r26 66r26 73r11 74r11
+X 4 s-casi16.ads
+35K16*Compare_Array_Signed_16 3|55k9 4|68l12 68e35 5|36b21 141l12 141t35
+41V13*Compare_Array_S16{integer} 42>7 43>7 44>7 45>7 5|64b13 138l8 138t25
+42m7 Left{3|85M9} 5|65b7 73r22 80r10 94r10
+43m7 Right{3|85M9} 5|66b7 74r22 81r18 95r18
+44i7 Left_Len{natural} 5|67b7 70r38 131r10 133r13
+45i7 Right_Len{natural} 5|68b7 70r48 131r21 133r24
+X 5 s-casi16.adb
+38M9 Word 49r22
+41I9 Half<short_integer> 42r8 45r22 50r22
+45I9 Uhalf<41I9> 46r8 51r22
+49P9 WP(38M9) 53r57
+50P9 HP(41I9) 54r57
+51P9 UP(45I9) 55r57
+53V13 W[2|23]{49P9} 84s21 84s33
+54V13 H[2|23]{50P9} 98s16 98s29 99s19 99s31
+55V13 U[2|23]{51P9} 115s16 115s29 116s19 116s31
+70i7 Clen{natural} 83r16 86m13 86r21 97r16 106m13 106r21 114r16 123m13 123r21
+73m7 L{3|85M9} 84r24 87m13 87r18 98r19 99r22 107m13 107r18 115r19 116r22
+. 124m13 124r18
+74m7 R{3|85M9} 84r36 88m13 88r18 98r32 99r34 108m13 108r18 115r32 116r34
+. 125m13 125r18
+X 6 s-stoele.ads
+43K16*Storage_Elements 5|32w13 32w42 6|104e28
+54I9*Storage_Offset<integer> 5|80r19 81r28 87r22 88r22 94r19 95r28 107r22
+. 108r22 124r22 125r22
+74V14*"+"{3|85M9} 5|87r20 88r20 107r20 108r20 124r20 125r20
+79V14*"-"{3|85M9} 5|41r47
+84V14*"mod"{54I9} 5|80r15 81r24 94r15 95r24
+

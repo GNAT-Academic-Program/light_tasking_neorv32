@@ -1,0 +1,3 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-widllu.ads"
+node: { title: "system__wid_llu__width_uns__width" label: "Width\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-widthu.adb:34:4\n0 bytes (static)\n0 dynamic objects" }
+}

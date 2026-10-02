@@ -1,0 +1,104 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RR NO_ELABORATION_CODE
+
+U system.machine_code%s	s-maccod.ads		ce84027e NE OL PU PK
+W system%s		system.ads		system.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-maccod.ads		20261002145216 cdca081e system.machine_code%s
+G a e
+G c Z s s [asm system__machine_code 70 14 none]
+G c Z s s [asm system__machine_code 77 14 none]
+G c Z s s [asm system__machine_code 84 14 none]
+G c Z s s [asm system__machine_code 91 14 none]
+G c Z s s [asm system__machine_code 98 13 none]
+G c Z s s [asm system__machine_code 105 13 none]
+G c Z s s [asm system__machine_code 112 13 none]
+G c Z s s [asm system__machine_code 119 13 none]
+G c Z s s [asm_input_operand_listIP system__machine_code 57 9 none]
+G c Z s s [asm_output_operand_listIP system__machine_code 60 9 none]
+X 1 system.ads
+55K9*System 176e11 2|38r9 142r5
+X 2 s-maccod.ads
+38K16*Machine_Code 1|55k9 2|133E9 142l12 142e24
+47I9*Asm_Input_Operand<integer> 52r34 58r34 87r17 94r17 115r17 122r17 133c9
+. 139r34
+48I9*Asm_Output_Operand<integer> 53r34 61r34 79r17 93r17 107r17 121r17 134c9
+. 140r34
+52i4*No_Input_Operands{47I9} 87r38 94r39 115r38 122r39 139c4
+53i4*No_Output_Operands{48I9} 79r39 93r39 107r39 121r39 140c4
+57A9*Asm_Input_Operand_List(47I9)<integer> 73r17 80r17 101r17 108r17
+60A9*Asm_Output_Operand_List(48I9)<integer> 72r17 86r17 100r17 114r17
+66I9*Asm_Insn<integer> 103r42 110r42 117r42 124r42 135c9
+70U14*Asm 71>6 72>6 73>6 74>6 75>6 129b30
+71a6 Template{string}
+72a6 Outputs{60A9}
+73a6 Inputs{57A9}
+74a6 Clobber{string}
+75b6 Volatile{boolean}
+77U14*Asm 78>6 79>6 80>6 81>6 82>6 129b30
+78a6 Template{string}
+79i6 Outputs{48I9}
+80a6 Inputs{57A9}
+81a6 Clobber{string}
+82b6 Volatile{boolean}
+84U14*Asm 85>6 86>6 87>6 88>6 89>6 129b30
+85a6 Template{string}
+86a6 Outputs{60A9}
+87i6 Inputs{47I9}
+88a6 Clobber{string}
+89b6 Volatile{boolean}
+91U14*Asm 92>6 93>6 94>6 95>6 96>6 129b30
+92a6 Template{string}
+93i6 Outputs{48I9}
+94i6 Inputs{47I9}
+95a6 Clobber{string}
+96b6 Volatile{boolean}
+98V13*Asm{66I9} 99>6 100>6 101>6 102>6 103>6 129b30
+99a6 Template{string}
+100a6 Outputs{60A9}
+101a6 Inputs{57A9}
+102a6 Clobber{string}
+103b6 Volatile{boolean}
+105V13*Asm{66I9} 106>6 107>6 108>6 109>6 110>6 129b30
+106a6 Template{string}
+107i6 Outputs{48I9}
+108a6 Inputs{57A9}
+109a6 Clobber{string}
+110b6 Volatile{boolean}
+112V13*Asm{66I9} 113>6 114>6 115>6 116>6 117>6 129b30
+113a6 Template{string}
+114a6 Outputs{60A9}
+115i6 Inputs{47I9}
+116a6 Clobber{string}
+117b6 Volatile{boolean}
+119V13*Asm{66I9} 120>6 121>6 122>6 123>6 124>6 129b30
+120a6 Template{string}
+121i6 Outputs{48I9}
+122i6 Inputs{47I9}
+123a6 Clobber{string}
+124b6 Volatile{boolean}
+

@@ -1,0 +1,39 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.vectors%s	s-vector.ads		7e8ba5d0 NE OL PU PK
+W system%s		system.ads		system.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-vector.ads		20261002145216 7dc5afb0 system.vectors%s
+G a e
+X 1 system.ads
+55K9*System 176e11 2|42r9 45r26 47r35 47r54 48r24 52r5
+89N4*Storage_Unit 2|47r61
+90N4*Word_Size 2|45r33 47r42 48r31
+X 2 s-vector.ads
+42K16*Vectors 1|55k9 2|52l12 52e19
+45M9*Vector 46r8 48r8
+

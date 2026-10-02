@@ -1,0 +1,77 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.case_util_nss%b  s-cautns.adb		8b956324 NE OL PK
+W system%s		system.ads		system.ali
+
+U system.case_util_nss%s  s-cautns.ads		66218e4a NE OL PU PK
+W system%s		system.ads		system.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-cautns.ads		20261002145216 656f842a system.case_util_nss%s
+D s-cautns.adb		20261002145216 eefae70e system.case_util_nss%b
+G a e
+G c Z s b [to_upper system__case_util_nss 57 13 none]
+G c Z s b [to_upper system__case_util_nss 72 14 none]
+G c Z s b [to_lower system__case_util_nss 76 13 none]
+G c Z s b [to_lower system__case_util_nss 91 14 none]
+G c Z s b [to_mixed system__case_util_nss 95 14 none]
+X 1 system.ads
+55K9*System 176e11 2|52r9 106r5 3|40r14 127r5
+X 2 s-cautns.ads
+52K16*Case_Util_NSS 1|55k9 2|106l12 106e25 3|40b21 127l12 127t25
+57V13*To_Upper{character} 57>23 74s47 102s22 3|81s22 91s26 103b13 115l8 115t16
+. 120s19 123s50
+57e23 A{character} 60r60 62r21 68r38 3|103b23 104r50 107r10 113r17
+60i17 A_Val{natural} 63r28 64r28 66r53
+72U14*To_Upper 72=24 3|117b14 125l8 125t16
+72a24 A{string} 74r28 74r39 74r57 3|117b24 119r16 120m10 120r29 123r26 123r42
+. 123r60
+74i23 J{integer} 74r42 74r64
+76V13*To_Lower{character} 76>23 93s47 104s22 3|47b13 59l8 59t16 64s19 67s50
+. 83s22 93s26
+76e23 A{character} 79r60 81r21 87r38 3|47b23 48r50 51r10 57r17
+79i17 A_Val{natural} 82r28 83r28 85r53
+91U14*To_Lower 91=24 3|61b14 69l8 69t16
+91a24 A{string} 93r28 93r39 93r57 3|61b24 63r16 64m10 64r29 67r26 67r42 67r60
+93i23 J{integer} 93r42 93r64
+95U14*To_Mixed 95=24 3|75b14 97l8 97t16
+95a24 A{string} 98r22 99r19 100r22 102r14 102r32 104r14 104r32 3|75b24 79r16
+. 81m13 81r32 83m13 83r32 87r26 88r23 89r26 91r18 91r36 93r18 93r36 95r19
+98i17 J{integer} 99r15 100r29 102r17 102r39 104r17 104r39
+X 3 s-cautns.adb
+48i7 A_Val{natural} 52r17 53r17 55r32
+63i11 J{integer} 64r13 64r32 67r37
+67i21 K{integer} 67r45 67r74
+76b7 Ucase{boolean} 80r13 95m10
+79i11 J{integer} 81r16 81r35 83r16 83r35 87r37 95r22
+87i21 K{integer} 88r19 89r40 91r21 91r50 93r21 93r50
+104i7 A_Val{natural} 108r17 109r17 111r32
+119i11 J{integer} 120r13 120r32 123r37
+123i21 K{integer} 123r45 123r74
+

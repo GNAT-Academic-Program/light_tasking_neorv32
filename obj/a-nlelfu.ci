@@ -1,0 +1,254 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-nlelfu.ads"
+node: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-nlelfu.ads:ada__numerics__long_elementary_functions__arctan.part.0" label: "Part\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:479:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__exceptions__call_last_chance_handler_with_message" label: "Call_Last_Chance_Handler_With_Message\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:40:14" shape : ellipse }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-nlelfu.ads:ada__numerics__long_elementary_functions__arctan.part.0" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:95:10" }
+node: { title: "ada__numerics__long_elementary_functions__Oexpon" label: "**\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:125:4\n32 bytes (static)\n0 dynamic objects" }
+node: { title: "__nedf2" label: "nedf2\n<built-in>" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__Oexpon" targetname: "__nedf2" }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__Oexpon" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:133:10" }
+node: { title: "__unorddf2" label: "unorddf2\n<built-in>" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__Oexpon" targetname: "__unorddf2" }
+node: { title: "__ledf2" label: "ledf2\n<built-in>" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__Oexpon" targetname: "__ledf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__Oexpon" targetname: "__nedf2" }
+node: { title: "__eqdf2" label: "eqdf2\n<built-in>" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__Oexpon" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__Oexpon" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:95:10" }
+node: { title: "__ltdf2" label: "ltdf2\n<built-in>" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__Oexpon" targetname: "__ltdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__Oexpon" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:141:13" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__Oexpon" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__Oexpon" targetname: "__eqdf2" }
+node: { title: "pow" label: "Pow\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.ads:393:13" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__Oexpon" targetname: "pow" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:156:14" }
+node: { title: "ada__numerics__long_elementary_functions__arccos" label: "Arccos\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:181:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "acos" label: "Acos\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.ads:78:13" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccos" targetname: "acos" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:185:12" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccos" targetname: "__nedf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccos" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:95:10" }
+node: { title: "ada__numerics__long_elementary_functions__arccos__2" label: "Arccos\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:217:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccos__2" targetname: "__unorddf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccos__2" targetname: "__ledf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccos__2" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:95:10" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccos__2" targetname: "__unorddf2" }
+node: { title: "__gedf2" label: "gedf2\n<built-in>" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccos__2" targetname: "__gedf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccos__2" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccos__2" targetname: "__eqdf2" }
+node: { title: "__muldf3" label: "muldf3\n<built-in>" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccos__2" targetname: "__muldf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccos__2" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:95:10" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccos__2" targetname: "__muldf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccos__2" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccos__2" targetname: "acos" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:237:14" }
+node: { title: "__divdf3" label: "divdf3\n<built-in>" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccos__2" targetname: "__divdf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccos__2" targetname: "__muldf3" }
+node: { title: "ada__numerics__long_elementary_functions__arccosh" label: "Arccosh\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:256:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccosh" targetname: "__ltdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccosh" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:95:10" }
+node: { title: "acosh" label: "Acosh\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.ads:103:13" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccosh" targetname: "acosh" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:261:17" }
+node: { title: "ada__numerics__long_elementary_functions__arccot" label: "Arccot\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:286:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccot" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccot" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccot" targetname: "__nedf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccot" targetname: "__nedf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccot" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:95:10" }
+node: { title: "atan2" label: "Atan2\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.ads:185:13" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccot" targetname: "atan2" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:490:14" }
+node: { title: "ada__numerics__long_elementary_functions__arccoth" label: "Arccoth\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:331:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccoth" targetname: "__ledf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccoth" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccoth" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:335:13" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccoth" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:95:10" }
+node: { title: "__gtdf2" label: "gtdf2\n<built-in>" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccoth" targetname: "__gtdf2" }
+node: { title: "atanh" label: "Atanh\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.ads:219:13" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccoth" targetname: "atanh" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:341:17" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccoth" targetname: "__divdf3" }
+node: { title: "log" label: "Log\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.ads:328:13" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccoth" targetname: "log" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:347:24" }
+node: { title: "__adddf3" label: "adddf3\n<built-in>" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccoth" targetname: "__adddf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccoth" targetname: "log" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:347:48" }
+node: { title: "__subdf3" label: "subdf3\n<built-in>" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccoth" targetname: "__subdf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccoth" targetname: "__subdf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccoth" targetname: "__muldf3" }
+node: { title: "ada__numerics__long_elementary_functions__arcsin" label: "Arcsin\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:375:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arcsin" targetname: "__unorddf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arcsin" targetname: "__gedf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arcsin" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arcsin" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arcsin" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:95:10" }
+node: { title: "asin" label: "Asin\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.ads:124:13" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arcsin" targetname: "asin" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:391:14" }
+node: { title: "ada__numerics__long_elementary_functions__arcsin__2" label: "Arcsin\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:415:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arcsin__2" targetname: "__unorddf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arcsin__2" targetname: "__ledf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arcsin__2" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:95:10" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arcsin__2" targetname: "__unorddf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arcsin__2" targetname: "__gedf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arcsin__2" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arcsin__2" targetname: "__muldf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arcsin__2" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arcsin__2" targetname: "__muldf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arcsin__2" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:95:10" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arcsin__2" targetname: "asin" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:434:14" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arcsin__2" targetname: "__divdf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arcsin__2" targetname: "__muldf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arcsin__2" targetname: "__muldf3" }
+node: { title: "ada__numerics__long_elementary_functions__arcsinh" label: "Arcsinh\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:446:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "asinh" label: "Asinh\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.ads:149:13" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arcsinh" targetname: "asinh" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:447:7" }
+node: { title: "ada__numerics__long_elementary_functions__arctan" label: "Arctan\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:479:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan" targetname: "__nedf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan" targetname: "__nedf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan" targetname: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-nlelfu.ads:ada__numerics__long_elementary_functions__arctan.part.0" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan" targetname: "atan2" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:490:14" }
+node: { title: "ada__numerics__long_elementary_functions__arctan__2" label: "Arctan\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:519:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan__2" targetname: "__nedf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan__2" targetname: "__nedf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan__2" targetname: "__unorddf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan__2" targetname: "__ledf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan__2" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:95:10" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan__2" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan__2" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan__2" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:95:10" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan__2" targetname: "__gtdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan__2" targetname: "__muldf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan__2" targetname: "__ltdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan__2" targetname: "__muldf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan__2" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan__2" targetname: "__gtdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan__2" targetname: "__ltdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan__2" targetname: "__muldf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan__2" targetname: "atan2" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:555:14" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan__2" targetname: "__muldf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctan__2" targetname: "__divdf3" }
+node: { title: "ada__numerics__long_elementary_functions__arccot__2" label: "Arccot\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:305:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccot__2" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccot__2" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccot__2" targetname: "__nedf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccot__2" targetname: "__nedf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccot__2" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:95:10" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arccot__2" targetname: "ada__numerics__long_elementary_functions__arctan__2" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:319:17" }
+node: { title: "ada__numerics__long_elementary_functions__arctanh" label: "Arctanh\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:571:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctanh" targetname: "__unorddf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctanh" targetname: "__gedf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctanh" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctanh" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:575:13" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctanh" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:95:10" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__arctanh" targetname: "atanh" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:580:17" }
+node: { title: "ada__numerics__long_elementary_functions__cos" label: "Cos\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:598:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "cos" label: "Cos\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.ads:240:13" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__cos" targetname: "cos" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:600:14" }
+node: { title: "ada__numerics__long_elementary_functions__cosh" label: "Cosh\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:637:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "cosh" label: "Cosh\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.ads:263:13" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__cosh" targetname: "cosh" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:638:7" }
+node: { title: "ada__numerics__long_elementary_functions__cot" label: "Cot\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:652:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__cot" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__cot" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:655:10" }
+node: { title: "tan" label: "Tan\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.ads:482:13" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__cot" targetname: "tan" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:657:23" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__cot" targetname: "__divdf3" }
+node: { title: "ada__numerics__long_elementary_functions__cot__2" label: "Cot\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:673:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__cot__2" targetname: "__unorddf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__cot__2" targetname: "__ledf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__cot__2" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:95:10" }
+node: { title: "system__fat_lflt__attr_long_float__remainder" label: "Remainder\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-fatgen.ads:117:13" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__cot__2" targetname: "system__fat_lflt__attr_long_float__remainder" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:681:27" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__cot__2" targetname: "__divdf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__cot__2" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__cot__2" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__cot__2" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:685:10" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__cot__2" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__cot__2" targetname: "tan" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:692:20" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__cot__2" targetname: "__adddf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__cot__2" targetname: "__muldf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__cot__2" targetname: "__divdf3" }
+node: { title: "ada__numerics__long_elementary_functions__coth" label: "Coth\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:707:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__coth" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__coth" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:95:10" }
+node: { title: "tanh" label: "Tanh\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.ads:502:13" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__coth" targetname: "tanh" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:712:23" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__coth" targetname: "__divdf3" }
+node: { title: "ada__numerics__long_elementary_functions__exp" label: "Exp\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:730:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "exp" label: "Exp\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.ads:286:13" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__exp" targetname: "exp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:732:14" }
+node: { title: "ada__numerics__long_elementary_functions__log" label: "Log\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:753:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__log" targetname: "__unorddf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__log" targetname: "__ledf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__log" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__log" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:761:13" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__log" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:95:10" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__log" targetname: "log" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:767:14" }
+node: { title: "ada__numerics__long_elementary_functions__log__2" label: "Log\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:784:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__log__2" targetname: "__unorddf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__log__2" targetname: "__ledf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__log__2" targetname: "__unorddf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__log__2" targetname: "__ledf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__log__2" targetname: "__unorddf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__log__2" targetname: "__ledf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__log__2" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__log__2" targetname: "__unorddf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__log__2" targetname: "__ltdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__log__2" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:95:10" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__log__2" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__log__2" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:801:13" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__log__2" targetname: "log" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:805:14" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__log__2" targetname: "log" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:805:26" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__log__2" targetname: "__divdf3" }
+node: { title: "ada__numerics__long_elementary_functions__sin" label: "Sin\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:824:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "sin" label: "Sin\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.ads:429:13" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__sin" targetname: "sin" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:826:14" }
+node: { title: "ada__numerics__long_elementary_functions__sin__2" label: "Sin\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:843:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__sin__2" targetname: "__unorddf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__sin__2" targetname: "__ledf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__sin__2" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:95:10" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__sin__2" targetname: "system__fat_lflt__attr_long_float__remainder" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:851:27" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__sin__2" targetname: "__muldf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__sin__2" targetname: "__ltdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__sin__2" targetname: "__muldf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__sin__2" targetname: "__subdf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__sin__2" targetname: "__gtdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__sin__2" targetname: "__muldf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__sin__2" targetname: "__subdf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__sin__2" targetname: "sin" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:863:14" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__sin__2" targetname: "__divdf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__sin__2" targetname: "__adddf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__sin__2" targetname: "__muldf3" }
+node: { title: "ada__numerics__long_elementary_functions__cos__2" label: "Cos\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:617:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__cos__2" targetname: "ada__numerics__long_elementary_functions__sin__2" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:622:15" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__cos__2" targetname: "__muldf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__cos__2" targetname: "__subdf3" }
+node: { title: "ada__numerics__long_elementary_functions__sinh" label: "Sinh\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:875:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "sinh" label: "Sinh\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.ads:449:13" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__sinh" targetname: "sinh" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:876:7" }
+node: { title: "ada__numerics__long_elementary_functions__sqrt" label: "Sqrt\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:898:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__sqrt" targetname: "__unorddf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__sqrt" targetname: "__ltdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__sqrt" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:95:10" }
+node: { title: "system__libm_double__sqrt" label: "Sqrt\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.ads:469:13" shape : ellipse }
+edge: { sourcename: "ada__numerics__long_elementary_functions__sqrt" targetname: "system__libm_double__sqrt" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:904:14" }
+node: { title: "ada__numerics__long_elementary_functions__tan" label: "Tan\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:922:4\n0 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__tan" targetname: "tan" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:924:14" }
+node: { title: "ada__numerics__long_elementary_functions__tan__2" label: "Tan\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:941:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__tan__2" targetname: "__unorddf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__tan__2" targetname: "__ledf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__tan__2" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:95:10" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__tan__2" targetname: "system__fat_lflt__attr_long_float__remainder" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:950:27" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__tan__2" targetname: "__divdf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__tan__2" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__tan__2" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:959:10" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__tan__2" targetname: "__eqdf2" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__tan__2" targetname: "tan" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:966:14" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__tan__2" targetname: "__adddf3" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__tan__2" targetname: "__muldf3" }
+node: { title: "ada__numerics__long_elementary_functions__tanh" label: "Tanh\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:981:4\n0 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__numerics__long_elementary_functions__tanh" targetname: "tanh" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-gcmain.adb:982:7" }
+}

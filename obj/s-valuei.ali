@@ -1,0 +1,72 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_RECURSION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.value_i%b	s-valuei.adb		9696c541 NE OL PK GE
+W system%s		system.ads		system.ali
+W system.val_util%s	s-valuti.adb		s-valuti.ali
+
+U system.value_i%s	s-valuei.ads		76db31f8 BN NE OL PR PK GE
+W system%s		system.ads		system.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-valuti.ads		20261002145216 ecabe223 system.val_util%s
+D s-valuei.ads		20261002145216 75953b98 system.value_i%s
+D s-valuei.adb		20261002145216 0fa81cfa system.value_i%b
+G a e
+G c Z s b [value_i system 47 16 none]
+X 1 system.ads
+55K9*System 176e11 3|47r9 86r5 4|32r6 32r27 34r14 122r5
+X 2 s-valuti.ads
+34K16*Val_Util 125e20 4|32w13 32w34
+37U14*Bad_Value 4|60s10 71s13
+51U14*Scan_Sign 4|56s7
+104U14*Scan_Trailing_Blanks 4|116s13
+X 3 s-valuei.ads
+37I9 Int 54r17 80r49 4|44r17 67r22 68r40 69r20 77r19 82r17 90r49 107r17
+39M9 Uns 45r22 4|46r14 67r17 68r35
+41U19 Scan_Raw_Unsigned 42>12 43^12 44>12 45<12 4|63s7
+42a12 Str{string}
+43p12 Ptr(integer)
+44i12 Max{integer}
+45*12 Res{39M9}
+47k16*Value_I 1|55k9 3|37z9 39z9 41z19 86l12 86e19 4|34b21 122l12 122t19
+50U14*Scan_Integer 51>7 52^7 53>7 54<7 4|40b14 84l8 84t20 113s16
+51a7 Str{string} 4|41b7 56r18 58r10 60r21 63r26 71r24
+52p7 Ptr(integer) 4|42b7 56r23 58r15 59r10 63r31
+53i7 Max{integer} 4|43b7 56r28 63r36
+54*7 Res{37I9} 4|44b7 69m13 77m10 82m10
+80V13*Value_Integer{37I9} 80>28 4|90b13 100s20 120l8 120t21
+80a28 Str{string} 4|90b28 96r10 98r40 100r39 108r36 113r30 113r42 116r35
+X 4 s-valuei.adb
+46*7 Uval{3|39M9} 63m41 67r10 68r28 77r24 82r22
+49b7 Minus{boolean} 56m33 68r13 76r13
+52i7 Unused_Start{positive} 56m40 59r21
+98A21 NT{string}<integer> 100r35
+107*13 V{3|37I9} 113m52 117r20
+108i13 P{integer} 111m60 111r60 116r40
+111p16 P_Acc(integer) 113r35
+

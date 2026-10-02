@@ -1,0 +1,62 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.img_uns%s	s-imguns.ads		5813c68e NE OL PK
+W system%s		system.ads		system.ali
+W system.image_u%s
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-imageu.ads		20261002145216 95851461 system.image_u%s
+D s-imageu.adb		20261002145216 2d0619dc system.image_u%b
+D s-imguns.ads		20261002145216 34f2a7d6 system.img_uns%s
+D s-unstyp.ads		20261002145216 fa2a7f59 system.unsigned_types%s
+G a e
+G c Z s s [image_unsigned system__img_uns__impl 41 14 44_4]
+G c Z s s [set_image_unsigned system__img_uns__impl 49 14 44_4]
+X 1 system.ads
+55K9*System 176e11 4|36r6 37r6 39r9 74r5
+X 2 s-imageu.ads
+37M9 Uns 4|44r33
+39k16*Image_U 59e19 4|36w13 44r24
+41U14*Image_Unsigned 4|50r19[44]
+49U14*Set_Image_Unsigned 4|63r19[44]
+X 4 s-imguns.ads
+39K16*Img_Uns 1|55k9 4|74l12 74e19
+42M12*Unsigned{5|44M9} 44r40 47r11 60r11
+44K12*Impl[2|39] 50r14 63r14
+46U14*Image_Unsigned=50:19
+47m7 V{5|44M9}
+48a7 S{string}
+49i7 P{natural}
+59U14*Set_Image_Unsigned=63:19
+60m7 V{5|44M9}
+61a7 S{string}
+62i7 P{natural}
+X 5 s-unstyp.ads
+38K16*Unsigned_Types 4|37w13 42r24 5|256e26
+44M9*Unsigned 4|42r39
+

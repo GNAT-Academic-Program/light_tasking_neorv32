@@ -1,0 +1,6 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-imgwiu.ads"
+node: { title: "system__img_wiu__impl__set_image_width_unsigned" label: "Set_Image_Width_Unsigned\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-imagew.adb:83:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__img_wiu__impl__set_image_width_integer" label: "Set_Image_Width_Integer\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-imagew.adb:38:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__img_wiu__impl__set_image_width_integer" targetname: "system__img_wiu__impl__set_image_width_unsigned" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-imagew.adb:50:10" }
+edge: { sourcename: "system__img_wiu__impl__set_image_width_integer" targetname: "system__img_wiu__impl__set_image_width_unsigned" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-imagew.adb:64:13" }
+}

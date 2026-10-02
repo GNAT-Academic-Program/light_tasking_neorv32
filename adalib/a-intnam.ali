@@ -1,0 +1,106 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U ada.interrupts.names%s  a-intnam.ads		60fa614d NE OL PK
+W ada.interrupts%s	a-interr.adb		a-interr.ali
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-interr.ads		20261002145216 bdf68b51 ada.interrupts%s
+D a-intnam.ads		20261002145216 dd0cea1c ada.interrupts.names%s
+D a-taside.ads		20261002145216 c0a7c8d8 ada.task_identification%s
+D a-unccon.ads		20261002145216 0e9b276f ada.unchecked_conversion%s
+D light_tasking_neorv32_config.ads  20261002145319 ceed05b4 light_tasking_neorv32_config%s
+D neorv32_runtime_config.ads  20261002145216 39990e2a neorv32_runtime_config%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-bb.ads		20261002145216 09e072ae system.bb%s
+D s-bbbopa.ads		20261002145216 b188db9e system.bb.board_parameters%s
+D s-bbbosu.ads		20261002145216 b43d4db6 system.bb.board_support%s
+D s-bbcppr.ads		20261002145216 2fdb8fbb system.bb.cpu_primitives%s
+D s-bbcpsp.ads		20261002145216 2319a523 system.bb.cpu_specific%s
+D s-bbinte.ads		20261002145216 cf617f22 system.bb.interrupts%s
+D s-bbpara.ads		20261002145216 dca9174a system.bb.parameters%s
+D s-bbthre.ads		20261002145216 5f49caa9 system.bb.threads%s
+D s-bbthqu.ads		20261002145216 cd23d79e system.bb.threads.queues%s
+D s-bbtime.ads		20261002145216 ad086247 system.bb.time%s
+D s-interr.ads		20261002145216 d74bd991 system.interrupts%s
+D s-multip.ads		20261002145216 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20261002145216 0d949686 system.os_interface%s
+D s-parame.ads		20261002145216 07f3e19f system.parameters%s
+D s-secsta.ads		20261002145216 bd894d4b system.secondary_stack%s
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20261002145216 801abd01 system.task_info%s
+D s-taspri.ads		20261002145216 37f162b4 system.task_primitives%s
+D s-taskin.ads		20261002145216 f5005ad8 system.tasking%s
+G a e
+X 1 ada.ads
+18K9*Ada 22e8 3|42r9 103r5
+X 2 a-interr.ads
+40K13*Interrupts 1|18k9 2|100e19 3|42r13 103r9
+42I9*Interrupt_ID<19|65I9> 3|52r42 55r42 64r32 65r32 66r32 67r32 68r32 69r32
+. 70r32 71r32 72r32 73r32 74r32 75r32 76r32 77r32 78r32 79r32 87r33 88r33
+. 89r33 90r33 91r33 92r33 93r33 94r33 95r33 96r33 97r33 98r33 99r33 100r33
+. 101r33
+X 3 a-intnam.ads
+42K24*Names 2|40k13 3|103l20 103e25
+52i4*Machine_Software_Interrupt{2|42I9}
+55i4*Machine_External_Interrupt{2|42I9}
+64i4*FIRQ0_Interrupt{2|42I9}
+65i4*FIRQ1_Interrupt{2|42I9} 87r49
+66i4*FIRQ2_Interrupt{2|42I9} 88r49
+67i4*FIRQ3_Interrupt{2|42I9} 89r49
+68i4*FIRQ4_Interrupt{2|42I9} 90r49
+69i4*FIRQ5_Interrupt{2|42I9} 91r49
+70i4*FIRQ6_Interrupt{2|42I9} 92r49
+71i4*FIRQ7_Interrupt{2|42I9} 93r49
+72i4*FIRQ8_Interrupt{2|42I9} 94r49
+73i4*FIRQ9_Interrupt{2|42I9} 95r49
+74i4*FIRQ10_Interrupt{2|42I9} 96r49
+75i4*FIRQ11_Interrupt{2|42I9} 97r49
+76i4*FIRQ12_Interrupt{2|42I9} 98r49
+77i4*FIRQ13_Interrupt{2|42I9} 99r49
+78i4*FIRQ14_Interrupt{2|42I9} 100r49
+79i4*FIRQ15_Interrupt{2|42I9} 101r49
+87i4*CFS_Interrupt{2|42I9}
+88i4*UART0_Interrupt{2|42I9}
+89i4*UART1_Interrupt{2|42I9}
+90i4*TWD_Interrupt{2|42I9}
+91i4*TRACER_Interrupt{2|42I9}
+92i4*SPI_Interrupt{2|42I9}
+93i4*TWI_Interrupt{2|42I9}
+94i4*GPIO_Interrupt{2|42I9}
+95i4*NEOLED_Interrupt{2|42I9}
+96i4*DMA_Interrupt{2|42I9}
+97i4*SDI_Interrupt{2|42I9}
+98i4*GPTMR_Interrupt{2|42I9}
+99i4*ONEWIRE_Interrupt{2|42I9}
+100i4*SLINK_Interrupt{2|42I9}
+101i4*TRNG_Interrupt{2|42I9}
+X 19 s-interr.ads
+65I9*Ada_Interrupt_ID<integer>
+105U14*Install_Restricted_Handlers_Sequential 106i<c,__gnat_attach_all_handlers>22
+X 23 s-secsta.ads
+105P9*SS_Stack_Ptr(102R9)
+X 27 s-taskin.ads
+395V13*Get_Sec_Stack{23|105P9} 396i<c,__gnat_get_secondary_stack>22
+

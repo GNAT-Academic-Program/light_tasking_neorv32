@@ -1,0 +1,212 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF SS ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_CONVERSION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_OBSOLESCENT_FEATURES
+
+U interfaces.c.strings%b  i-cstrin.adb		826ae1de NE OL PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.unchecked_conversion%s
+W interfaces.c%s	i-c.adb			i-c.ali
+W system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+N A255:7 gnatcheck exempt_on "Improper_Returns" "early returns for performance"
+N A268:7 gnatcheck exempt_off "Improper_Returns"
+N A341:7 gnatcheck exempt_on "Improper_Returns" "early returns for performance"
+N A370:7 gnatcheck exempt_off "Improper_Returns"
+N A383:7 gnatcheck exempt_on "Improper_Returns" "early returns for performance"
+N A406:7 gnatcheck exempt_off "Improper_Returns"
+
+U interfaces.c.strings%s  i-cstrin.ads		c5fee3b7 NE OL PR PK
+W interfaces.c%s	i-c.adb			i-c.ali
+Z system%s		system.ads		system.ali
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-except.ads		20261002145216 5b5f0f2f ada.exceptions%s
+D a-except.adb		20261002145216 4da5c77f ada.exceptions%b
+D a-unccon.ads		20261002145216 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20261002145216 9111f9c1 interfaces%s
+D i-c.ads		20261002145216 8c120e30 interfaces.c%s
+D i-cstrin.ads		20261002145216 49eced87 interfaces.c.strings%s
+D i-cstrin.adb		20261002145216 0a8df5be interfaces.c.strings%b
+D system.ads		20261002145216 034e0a60 system%s
+D s-parame.ads		20261002145216 07f3e19f system.parameters%s
+D s-secsta.ads		20261002145216 bd894d4b system.secondary_stack%s
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+G a e
+G c Z s b [to_chars_ptr interfaces__c__strings 74 13 none]
+G c Z s b [new_char_array interfaces__c__strings 81 13 none]
+G c Z s b [new_string interfaces__c__strings 87 13 none]
+G c Z s b [free interfaces__c__strings 93 14 none]
+G c Z s b [value interfaces__c__strings 115 13 none]
+G c Z s b [value interfaces__c__strings 119 13 none]
+G c Z s b [value interfaces__c__strings 126 13 none]
+G c Z s b [value interfaces__c__strings 130 13 none]
+G c Z s b [strlen interfaces__c__strings 137 13 none]
+G c Z s b [update interfaces__c__strings 145 14 none]
+G c Z s b [update interfaces__c__strings 158 14 none]
+G c Z s s [chars_ptr_arrayIP interfaces__c__strings 69 9 none]
+G c Z b b [to_chars_ptr interfaces__c__strings 47 13 none]
+G c Z b b [to_address interfaces__c__strings 50 13 none]
+G c Z b b [peek interfaces__c__strings 57 13 none]
+G c Z b b [poke interfaces__c__strings 61 14 none]
+G c Z b b [Oadd interfaces__c__strings 65 13 none]
+G c Z b b [position_of_nul interfaces__c__strings 69 14 none]
+G c Z b b [memory_alloc interfaces__c__strings 78 13 none]
+G c Z b b [memory_free interfaces__c__strings 82 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 8|35r6 48r11 51r11
+X 4 a-unccon.ads
+23v14*Unchecked_Conversion 8|35w10 48r15 51r15
+X 5 interfac.ads
+47K9*Interfaces 247e15 7|48r9 183r5 8|37r14 409r5
+X 6 i-c.ads
+36K20*C 5|47k9 6|247e17 7|48r20 183r16 8|37r25 409r16
+95M9*size_t 7|69r35 121r16 132r16 137r46 147r16 153r59 154r35 160r16 166r33
+. 8|65r44 70r59 78r34 91r44 114r17 140r39 168r31 171r42 174r18 209r59 227r46
+. 228r20 253r15 277r16 295r27 301r16 338r16 378r47 395r28
+112E9*char<character> 8|57r44 61r28 190r44 192r14 199r28 380r11
+114e4*nul{112E9} 8|140r16 215r24 236r40 362r29 397r17
+123V13*To_Ada{character} 8|400s27
+127A9*char_array(112E9)<95M9> 7|57r41 81r37 115r45 121r31 148r16 8|70r14
+. 112r37 171r25 209r14 278r16 319r45 320r16 338r31 356r19
+149V13*To_C{127A9} 8|312s29
+151b7 Append_Nul{boolean} 8|312r40
+167V13*To_Ada{string} 8|375s14
+192U14*To_C 8|176s10
+193a7 Item{string} 8|177r13
+194a7 Target{127A9} 8|178r13
+195m7 Count{95M9} 8|179r13
+196b7 Append_Nul{boolean} 8|180r13
+245X4*Terminator_Error 8|262r19
+X 7 i-cstrin.ads
+48K22*Strings 6|36k20 7|174E9 183l18 183e25 8|37b27 409l18 409t25
+50@22*C_Memory 51r22 84r26 90r26 117r26 124r26 128r26 135r26 139r26 156r27
+. 168r27
+57P9*char_array_access(6|127A9) 58r8 60r31 75r19 8|249r19
+65P9*chars_ptr 69r63 71r24 76r44 81r56 87r46 93r34 115r27 120r16 126r27 131r16
+. 137r28 146r16 159r16 174c9 175r8 177r31 182r24 8|48r66 51r37 57r26 61r41
+. 65r25 65r59 78r49 82r37 91r25 91r59 100r34 112r56 115r17 150r46 159r16
+. 190r26 199r41 227r28 250r44 276r16 281r15 300r16 319r27 337r16 373r27 378r27
+69A9*chars_ptr_array(65P9)<6|95M9>
+71p4*Null_Ptr{65P9} 83r41 89r37 116r24 123r24 127r24 134r24 138r24 152r16
+. 165r16 182c4 8|102r18 104r18 231r17 258r17 285r17 323r17 343r17 390r17
+74V13*To_Chars_Ptr{65P9} 75>7 76>7 8|248b13 269l8 269t20
+75p7 Item{57P9} 8|249b7 257r10 260r27 266r28 266r34
+76b7 Nul_Check{boolean} 8|250b7 259r13
+81V13*New_Char_Array{65P9} 81>29 83r16 8|112b13 144l8 144t22
+81a29 Chars{6|127A9} 8|112b29 121r32 126r43 131r23 131r30 137r35 139r57 140r47
+87V13*New_String{65P9} 87>25 89r16 8|150b13 184l8 184t18
+87a25 Str{string} 8|150b25 161r16 177r27 177r32 177r45
+93U14*Free 93=20 8|100b14 106l8 106t12
+93p20 Item{65P9} 8|100b20 102r10 103r23 104m10
+98X4*Dereference_Error 8|232r16 286r16 324r16 344r16 391r16
+115V13*Value{6|127A9} 115>20 8|319b13 334l8 334t13 375s22
+115p20 Item{65P9} 116r16 8|319b20 320r41 323r10 330r30
+119V13*Value{6|127A9} 120>7 121>7 8|336b13 371l8 371t13
+120p7 Item{65P9} 123r16 8|337b7 343r10 360r33
+121m7 Length{6|95M9} 123r42 8|338b7 351r10 356r36
+126V13*Value{string} 126>20 8|373b13 376l8 376t13
+126p20 Item{65P9} 127r16 8|373b20 375r29
+130V13*Value{string} 131>7 132>7 8|378b13 407l8 407t13
+131p7 Item{65P9} 134r16 8|378b20 390r10 395r21
+132m7 Length{6|95M9} 134r42 8|378b38 379r38
+137V13*Strlen{6|95M9} 137>21 155s44 167s42 8|227b13 242l8 242t14 289s50 320s33
+137p21 Item{65P9} 138r16 8|227b21 231r10 236r19
+145U14*Update 146>7 147>7 148>7 149>7 8|128s10 139s10 275b14 297l8 297t14
+. 312s7
+146p7 Item{65P9} 152r8 155r52 8|129r13 139r18 276b7 281r28 285r10 289r58
+147m7 Offset{6|95M9} 154r49 155r34 8|130r13 139r35 277b7 281r35 289r25
+148a7 Chars{6|127A9} 153r20 153r45 154r19 155r19 8|131r13 139r48 278b7 289r34
+. 293r16 294r16
+149b7 Check{boolean} 8|132r13 139r64 279b7 289r10
+158U14*Update 159>7 160>7 161>7 162>7 8|299b14 313l8 313t14
+159p7 Item{65P9} 165r8 167r50 8|300b7 312r15
+160m7 Offset{6|95M9} 166r47 167r32 8|301b7 312r21
+161a7 Str{string} 166r19 167r19 8|302b7 312r35
+162b7 Check{boolean} 8|303b7 312r62
+170X4*Update_Error 8|290r16
+X 8 i-cstrin.adb
+47V13 To_chars_ptr[4|23]{7|65P9} 93s14 266s14
+50V13 To_Address[4|23]{9|85M9} 93s28 172s26
+57V13 Peek{6|112E9} 57>19 58r19 190b13 193l8 193t12 236s13 330s24 360s27
+. 395s15
+57p19 From{7|65P9} 190b19 192r20
+61U14 Poke 61>20 61>34 62r19 140s10 199b14 202l8 202t12 294s10
+61e20 Value{6|112E9} 199b20 201r30
+61p34 Into{7|65P9} 140r21 199b34 201r7 294r27
+65V14 "+"{7|65P9} 65>18 65>36 91b14 94l9 94t11 140s37 236s24 281s33 295s25
+. 330s35 360s38 395s26
+65p18 Left{7|65P9} 91b18 93r40
+65m36 Right{6|95M9} 91b36 93r64
+69U14 Position_Of_Nul 70>7 70<26 70<47 121s7 208b14 221l8 221t23 260s10
+70a7 Into{6|127A9} 121r24 209b7 214r16 215r13
+70b26 Found{boolean} 121r39 209b26 211m7 216m13
+70m47 Index{6|95M9} 121r55 209b47 212m7 217m13
+78V13 Memory_Alloc{7|65P9} 78>27 79b<c,__gnat_malloc>22 126s21 137s21 168s17
+78m27 Size{6|95M9}
+82U14 Memory_Free 82>27 83b<c,__gnat_free>22 103s10
+82p27 Address{7|65P9}
+113b7 Found{boolean} 121m48 125r10
+114m7 Index{6|95M9} 121m64 126r35 131r45
+115p7 Pointer{7|65P9} 126m10 129r23 137m10 139r26 140r29 143r14
+156i7 Len{natural} 165m10 165r17 168r39 171r50 177r57
+159p7 Result{7|65P9} 168m7 172r38 183r14
+161e11 C=161:16{character} 162r13
+171a10 Result_Array{6|127A9} 178m27
+174m10 Count{6|95M9} 179m27
+214m11 J{6|95M9} 215r19 217r22
+228m7 Item_Index{6|95M9} 236r26 237r20 240m10 240r24
+252b7 Found{boolean} 260m37 261r17
+253m7 Index{6|95M9} 260m44
+281p7 Index{7|65P9} 294r35 295m10 295r19
+293m11 J{6|95M9} 294r23
+320a7 Result{6|127A9} 329r16 330m10 333r14
+329m11 J{6|95M9} 330r18 330r37
+356a10 Result{6|127A9} 359r19 360m13 362r16 363r23 367r17
+359m14 J{6|95M9} 360r21 360r40 362r24 363r36
+379a7 Result{string} 394r16 398r20 400m13 404r14
+380e7 C{6|112E9} 395m10 397r13 400r35
+394i11 J{integer} 395r36 398r33 400r21
+X 9 system.ads
+55K9*System 7|58r35 175r27 8|32w6 32w18 33r6 33r35 48r37 51r48 79r36 9|176e11
+85M9*Address
+X 10 s-parame.ads
+49K16*Parameters 7|58r42 175r34 8|48r44 51r55 79r43 10|171e22
+98N4*ptr_bits 7|58r53 175r45
+99M12*C_Address{9|85M9} 8|48r55 51r66
+102a4*C_Malloc_Linkname{string} 8|79r54
+X 12 s-stoele.ads
+43K16*Storage_Elements 8|33w13 33w42 12|104e28
+54I9*Storage_Offset<integer> 8|93r48
+74V14*"+"{9|85M9} 8|93r46
+

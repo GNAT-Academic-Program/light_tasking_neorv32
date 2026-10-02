@@ -1,0 +1,96 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_RECURSION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.value_u%b	s-valueu.adb		94da0743 NE OL PK GE
+W system%s		system.ads		system.ali
+W system.val_util%s	s-valuti.adb		s-valuti.ali
+
+U system.value_u%s	s-valueu.ads		0ad162b2 BN NE OL PR PK GE
+W system%s		system.ads		system.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-valuti.ads		20261002145216 ecabe223 system.val_util%s
+D s-valueu.ads		20261002145216 099f68d2 system.value_u%s
+D s-valueu.adb		20261002145216 71ee8db2 system.value_u%b
+G a e
+G c Z s b [value_u system 37 16 none]
+X 1 system.ads
+55K9*System 176e11 3|37r9 130r5 4|32r6 32r39 34r14 342r5
+X 2 s-valuti.ads
+34K16*Val_Util 125e20 4|32w13 32w46
+37U14*Bad_Value 4|223s19 270s10 300s10
+76U14*Scan_Plus_Sign 4|293s7
+84U14*Scan_Exponent 4|244s7
+104U14*Scan_Trailing_Blanks 4|336s13
+108U14*Scan_Underscore 4|110s19 235s19
+X 3 s-valueu.ads
+36M9 Uns 44r17 117r17 124r50 4|44r17 49r14 61r14 64r15 93r26 93r34 96r28
+. 96r35 159r29 159r37 162r30 162r37 253r30 253r37 284r17 310r50 327r17
+37k16*Value_U 1|55k9 3|36z9 130l12 130e19 4|34b21 342l12 342t19
+40U14*Scan_Raw_Unsigned 41>7 42^7 43>7 44<7 4|40b14 274l8 274t25 303s7
+41a7 Str{string} 4|41b7 70r10 85r30 86r22 104r37 109r19 110r36 140r28 140r50
+. 141r23 171r19 172r43 174r22 176r36 178r22 180r36 223r30 228r19 234r22 235r36
+. 244r22 270r21
+42p7 Ptr(integer) 4|42b7 75r12 110r44 135r7 222r19 229r19 235r44 244r27
+43i7 Max{integer} 4|43b7 79r10 81r31 102r27 110r49 140r14 221r23 235r49 244r32
+44*7 Res{36M9} 4|44b7 272m10
+113U14*Scan_Unsigned 114>7 115^7 116>7 117<7 4|280b14 304l8 304t21 333s16
+114a7 Str{string} 4|281b7 293r23 298r10 300r21 303r26
+115p7 Ptr(integer) 4|282b7 293r28 298r15 299r10 303r31
+116i7 Max{integer} 4|283b7 293r33 303r36
+117*7 Res{36M9} 4|284b7 303m41
+124V13*Value_Unsigned{36M9} 124>29 4|310b13 320s20 340l8 340t22
+124a29 Str{string} 4|310b29 316r10 318r40 320r40 328r36 333r31 333r43 336r35
+X 4 s-valueu.adb
+46i7 P{integer} 75m7 79r16 82r48 85r35 86r27 87m7 87r12 102r23 104r42 109r24
+. 110m41 110r41 130m16 130r21 135r18 140r10 140r33 140r55 141r28 142m10 142r15
+. 171r24 172r48 174r27 176r41 178r27 180r41 219m16 219r21 221r19 222r30 228r24
+. 229r30 234r27 235m41 235r41
+49*7 Uval{3|36M9} 85m7 118r19 119m19 119r32 120r22 123m19 123r32 125r22 143r18
+. 144m10 188m19 202r22 203m19 203r34 204r22 207m19 207r34 209r22 246r30 257r19
+. 262m16 262r24 272r17
+52i7 Expon{integer} 244m37 246r10 256r27
+55b7 Overflow{boolean} 121m19 126m22 152m13 198m19 205m19 210m22 258m19 269r10
+58e7 Base_Char{character} 141m10 228r29
+61*7 Base{3|36M9} 143m10 151r13 153m13 159r48 159r60 162r48 188r27 189m19
+. 197r28 203r27 207r27 253r48 262r31
+64*7 Digit{3|36M9} 104m13 108r16 119r39 123r39 172m19 175m19 179m19 197r19
+. 203r41 207r41
+93*10 Umax{3|36M9} 118r27
+96*10 Umax10{3|36M9} 120r29 125r29
+159*13 Umax{3|36M9} 202r30
+162*13 UmaxB{3|36M9} 204r29 209r29
+253*13 UmaxB{3|36M9} 257r26
+256i17 J{integer}
+286i7 Start{positive} 293m38 299r21
+318A21 NT{string}<integer> 320r36
+327*13 V{3|36M9} 333m53 337r20
+328i13 P{integer} 331m60 331r60 336r40
+331p16 P_Acc(integer) 333r36
+

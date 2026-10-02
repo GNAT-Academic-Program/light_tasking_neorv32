@@ -1,0 +1,5 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-imgint.ads"
+node: { title: "system__img_int__impl__set_image_integer" label: "Set_Image_Integer\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-imagei.adb:111:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__img_int__impl__image_integer" label: "Image_Integer\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-imagei.adb:48:4\n0 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__img_int__impl__image_integer" targetname: "system__img_int__impl__set_image_integer" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-imagei.adb:67:7" }
+}

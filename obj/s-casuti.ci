@@ -1,0 +1,19 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-casuti.adb"
+node: { title: "system__case_util__to_lower__3" label: "To_Lower\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-casuti.adb:39:4\n64 bytes (static)\n0 dynamic objects" }
+node: { title: "system__secondary_stack__ss_allocate" label: "Ss_Allocate\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.ads:117:14" shape : ellipse }
+edge: { sourcename: "system__case_util__to_lower__3" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-casuti.adb:39:4" }
+node: { title: "memcpy" label: "builtin_memcpy\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__case_util__to_lower__3" targetname: "memcpy" }
+node: { title: "system__case_util_nss__to_lower__2" label: "To_Lower\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-cautns.ads:91:14" shape : ellipse }
+edge: { sourcename: "system__case_util__to_lower__3" targetname: "system__case_util_nss__to_lower__2" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-casuti.adb:42:7" }
+node: { title: "system__case_util__to_mixed__2" label: "To_Mixed\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-casuti.adb:50:4\n64 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__case_util__to_mixed__2" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-casuti.adb:50:4" }
+edge: { sourcename: "system__case_util__to_mixed__2" targetname: "memcpy" }
+node: { title: "system__case_util_nss__to_mixed" label: "To_Mixed\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-cautns.ads:95:14" shape : ellipse }
+edge: { sourcename: "system__case_util__to_mixed__2" targetname: "system__case_util_nss__to_mixed" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-casuti.adb:53:7" }
+node: { title: "system__case_util__to_upper__3" label: "To_Upper\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-casuti.adb:61:4\n64 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__case_util__to_upper__3" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-casuti.adb:61:4" }
+edge: { sourcename: "system__case_util__to_upper__3" targetname: "memcpy" }
+node: { title: "system__case_util_nss__to_upper__2" label: "To_Upper\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-cautns.ads:72:14" shape : ellipse }
+edge: { sourcename: "system__case_util__to_upper__3" targetname: "system__case_util_nss__to_upper__2" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-casuti.adb:64:7" }
+}

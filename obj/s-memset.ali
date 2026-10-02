@@ -1,0 +1,76 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.memory_set%b	s-memset.adb		f0952741 NE OL PK
+W system%s		system.ads		system.ali
+W system.memory_types%s	s-memtyp.ads		s-memtyp.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+
+U system.memory_set%s	s-memset.ads		6b304ced NE OL PK
+W system%s		system.ads		system.ali
+W system.memory_types%s	s-memtyp.ads		s-memtyp.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-memset.ads		20261002145216 5f4f3d12 system.memory_set%s
+D s-memset.adb		20261002145216 5435b524 system.memory_set%b
+D s-memtyp.ads		20261002145216 37317b9f system.memory_types%s
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+G a e
+G c Z s b [memset system__memory_set 41 13 none]
+X 1 system.ads
+55K9*System 176e11 2|36r6 38r9 52r5 3|32r6 32r31 33r6 33r35 35r14 91r5
+85M9*Address 2|42r11 42r68 3|44r25 44r69 46r12
+97V14*">"{boolean} 3|60r23
+X 2 s-memset.ads
+38K16*Memory_Set 1|55k9 2|52l12 52e22 3|35b21 91l12 91t22
+41V13*memset{1|85M9} 42>7 42>20 42>33 43i<c,memset>22 3|44b13 89l8 89t14
+42m7 M{1|85M9} 3|44b21 46r23 88r14
+42i20 C{integer} 3|44b34 45r35
+42m33 Size{4|40M9} 3|44b47 47r22
+X 3 s-memset.adb
+37V13 Shift_Left{4|52M9} 37>25 37>35 38b30 55s16 56s16 61s19
+37m25 V{4|52M9}
+37i35 Amount{natural}
+45m7 B{4|45M9} 54r22 82r19
+46m7 D{1|85M9} 53r23 67r50 72m13 72r18 80r47 85m10 85r15
+47m7 N{4|40M9} 65r16 71m13 71r18 78r13 84m10 84r15
+48m7 CW{4|52M9} 54m10 55m10 55r28 55r38 56m10 56r28 56r39 61m13 61r31 61r42
+. 69r22
+67m16 DW{4|52M9} 69m16
+80m13 DB{4|45M9} 82m13
+X 4 s-memtyp.ads
+36K16*Memory_Types 2|36w13 42r40 3|32w13 32w38 4|60e24
+40M9*size_t 2|42r53 3|44r54 47r12
+45M9*Byte 3|45r21 45r29 80r18
+49N4*Byte_Unit 3|84r19 85r34
+52M9*Word 3|37r29 37r60 48r12 53r31 54r16 67r21
+57N4*Word_Unit 3|60r13 65r21 71r22 72r37
+X 5 s-stoele.ads
+43K16*Storage_Elements 3|33w13 33w42 5|104e28
+54I9*Storage_Offset<integer>
+56I12*Storage_Count{54I9} 3|72r22 85r19
+74V14*"+"{1|85M9} 3|72r20 85r17
+92M9*Integer_Address
+100V13*To_Integer{92M9} 3|53s11
+

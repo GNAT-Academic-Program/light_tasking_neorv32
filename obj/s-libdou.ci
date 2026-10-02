@@ -1,0 +1,633 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb"
+node: { title: "system__libm_double__identity" label: "Identity\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.ads:519:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__libm_double__nan" label: "Nan\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.ads:524:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__libm_double__exact" label: "Exact\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.ads:526:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__libm_double__epsilon" label: "Epsilon\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.ads:528:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__libm_double__long_float_approximations__float_polynomials__polynomialIPXnb" label: "polynomialIPXnb\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__libm_double__long_float_approximations__approx_asinXn" label: "Approx_Asin\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:107:7\n96 bytes (static)\n0 dynamic objects" }
+node: { title: "__muldf3" label: "muldf3\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_asinXn" targetname: "__muldf3" }
+node: { title: "__adddf3" label: "adddf3\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_asinXn" targetname: "__adddf3" }
+node: { title: "__subdf3" label: "subdf3\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_asinXn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_asinXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_asinXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_asinXn" targetname: "__muldf3" }
+node: { title: "__divdf3" label: "divdf3\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_asinXn" targetname: "__divdf3" }
+node: { title: "system__libm_double__long_float_approximations__approx_atanXn" label: "Approx_Atan\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:157:7\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_atanXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_atanXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_atanXn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_atanXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_atanXn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_atanXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_atanXn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_atanXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_atanXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_atanXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_atanXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_atanXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_atanXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_atanXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_atanXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_atanXn" targetname: "__divdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_atanXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_atanXn" targetname: "__adddf3" }
+node: { title: "system__libm_double__long_float_approximations__approx_cosXn" label: "Approx_Cos\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:199:7\n96 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_cosXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_cosXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_cosXn" targetname: "__adddf3" }
+node: { title: "system__libm_double__long_float_approximations__approx_expXn" label: "Approx_Exp\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:250:7\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_expXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_expXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_expXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_expXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_expXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_expXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_expXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_expXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_expXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_expXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_expXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_expXn" targetname: "__divdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_expXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_expXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_expXn" targetname: "__adddf3" }
+node: { title: "system__libm_double__long_float_approximations__approx_logXn" label: "Approx_Log\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:299:7\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_logXn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_logXn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_logXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_logXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_logXn" targetname: "__divdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_logXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_logXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_logXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_logXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_logXn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_logXn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_logXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_logXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_logXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_logXn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_logXn" targetname: "__divdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_logXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_logXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_logXn" targetname: "__adddf3" }
+node: { title: "system__libm_double__long_float_approximations__approx_power_logXn" label: "Approx_Power_Log\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:342:7\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_power_logXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_power_logXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_power_logXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_power_logXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_power_logXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_power_logXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_power_logXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_power_logXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_power_logXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_power_logXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_power_logXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_power_logXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_power_logXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_power_logXn" targetname: "__adddf3" }
+node: { title: "system__libm_double__long_float_approximations__approx_exp2Xn" label: "Approx_Exp2\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:369:7\n96 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_exp2Xn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_exp2Xn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_exp2Xn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_exp2Xn" targetname: "__adddf3" }
+node: { title: "system__libm_double__long_float_approximations__approx_sinXn" label: "Approx_Sin\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:392:7\n96 bytes (static)\n0 dynamic objects" }
+node: { title: "__ledf2" label: "ledf2\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinXn" targetname: "__ledf2" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinXn" targetname: "__adddf3" }
+node: { title: "system__libm_double__long_float_approximations__approx_sinhXn" label: "Approx_Sinh\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:434:7\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinhXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinhXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinhXn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinhXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinhXn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinhXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinhXn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinhXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinhXn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinhXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinhXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinhXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinhXn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinhXn" targetname: "__divdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinhXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_sinhXn" targetname: "__adddf3" }
+node: { title: "system__libm_double__long_float_approximations__approx_tanXn" label: "Approx_Tan\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:472:7\n80 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanXn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanXn" targetname: "__divdf3" }
+node: { title: "system__libm_double__long_float_approximations__approx_cotXn" label: "Approx_Cot\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:507:7\n80 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_cotXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_cotXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_cotXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_cotXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_cotXn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_cotXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_cotXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_cotXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_cotXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_cotXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_cotXn" targetname: "__divdf3" }
+node: { title: "system__libm_double__long_float_approximations__approx_tanhXn" label: "Approx_Tanh\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:541:7\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanhXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanhXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanhXn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanhXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanhXn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanhXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanhXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanhXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanhXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanhXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanhXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanhXn" targetname: "__divdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanhXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__approx_tanhXn" targetname: "__adddf3" }
+node: { title: "system__libm_double__long_float_approximations__asinXn" label: "Asin\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:577:7\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__libm_double__long_float_approximations__asinXn" targetname: "__ledf2" }
+edge: { sourcename: "system__libm_double__long_float_approximations__asinXn" targetname: "system__libm_double__long_float_approximations__approx_asinXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:587:31" }
+edge: { sourcename: "system__libm_double__long_float_approximations__asinXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__asinXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__asinXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__asinXn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__asinXn" targetname: "__muldf3" }
+node: { title: "sqrt" label: "Sqrt\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-lidosq.ads:40:13" shape : ellipse }
+edge: { sourcename: "system__libm_double__long_float_approximations__asinXn" targetname: "sqrt" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:837:13" }
+edge: { sourcename: "system__libm_double__long_float_approximations__asinXn" targetname: "system__libm_double__long_float_approximations__approx_asinXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:594:57" }
+edge: { sourcename: "system__libm_double__long_float_approximations__asinXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__asinXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__asinXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__asinXn" targetname: "__subdf3" }
+node: { title: "__unorddf2" label: "unorddf2\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__libm_double__long_float_approximations__asinXn" targetname: "__unorddf2" }
+node: { title: "__ltdf2" label: "ltdf2\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__libm_double__long_float_approximations__asinXn" targetname: "__ltdf2" }
+node: { title: "system__libm_double__long_float_approximations__multiply_addXn" label: "Multiply_Add\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:98:7\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__libm_double__long_float_approximations__multiply_addXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__long_float_approximations__multiply_addXn" targetname: "__adddf3" }
+node: { title: "system__libm_double__instantiations__acosXn" label: "Acos\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:610:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__libm_double__instantiations__acosXn" targetname: "__ledf2" }
+edge: { sourcename: "system__libm_double__instantiations__acosXn" targetname: "system__libm_double__long_float_approximations__approx_asinXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:624:41" }
+edge: { sourcename: "system__libm_double__instantiations__acosXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__instantiations__acosXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__instantiations__acosXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__instantiations__acosXn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__instantiations__acosXn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__instantiations__acosXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__instantiations__acosXn" targetname: "sqrt" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:837:13" }
+edge: { sourcename: "system__libm_double__instantiations__acosXn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__instantiations__acosXn" targetname: "system__libm_double__long_float_approximations__approx_asinXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:634:25" }
+edge: { sourcename: "system__libm_double__instantiations__acosXn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__instantiations__acosXn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__instantiations__acosXn" targetname: "__ltdf2" }
+edge: { sourcename: "system__libm_double__instantiations__acosXn" targetname: "__adddf3" }
+node: { title: "system__libm_double__instantiations__atan2Xn" label: "Atan2\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:646:4\n48 bytes (static)\n0 dynamic objects" }
+node: { title: "__eqdf2" label: "eqdf2\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__eqdf2" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__eqdf2" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__ltdf2" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__eqdf2" }
+node: { title: "__gtdf2" label: "gtdf2\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__gtdf2" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__ledf2" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__divdf3" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__ltdf2" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__eqdf2" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__gtdf2" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__ledf2" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__gtdf2" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__ltdf2" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__unorddf2" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__divdf3" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__ledf2" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__ledf2" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__gtdf2" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__ltdf2" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "system__libm_double__long_float_approximations__approx_atanXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:736:20" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__divdf3" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__gtdf2" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__divdf3" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__gtdf2" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__divdf3" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__gtdf2" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "system__libm_double__long_float_approximations__approx_atanXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:736:20" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__divdf3" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "system__libm_double__long_float_approximations__approx_atanXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:736:20" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__ltdf2" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "system__libm_double__long_float_approximations__approx_atanXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:736:20" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__divdf3" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "system__libm_double__long_float_approximations__approx_atanXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:736:20" }
+edge: { sourcename: "system__libm_double__instantiations__atan2Xn" targetname: "__divdf3" }
+node: { title: "system__libm_double__long_float_tableIP" label: "long_float_tableIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__libm_double__reduce_1_16" label: "Reduce_1_16\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:107:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "system__fat_lflt__attr_long_float__machine_rounding" label: "Machine_Rounding\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-fatgen.ads:92:13" shape : ellipse }
+edge: { sourcename: "system__libm_double__reduce_1_16" targetname: "system__fat_lflt__attr_long_float__machine_rounding" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:108:9" }
+edge: { sourcename: "system__libm_double__reduce_1_16" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__reduce_1_16" targetname: "__muldf3" }
+node: { title: "system__libm_double__reconstruct_pow" label: "Reconstruct_Pow\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:170:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "system__fat_lflt__attr_long_float__scaling" label: "Scaling\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-fatgen.ads:147:13" shape : ellipse }
+edge: { sourcename: "system__libm_double__reconstruct_pow" targetname: "system__fat_lflt__attr_long_float__scaling" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:184:24" }
+edge: { sourcename: "system__libm_double__reconstruct_pow" targetname: "__muldf3" }
+node: { title: "system__libm_double__reduce_044" label: "Reduce_044\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:191:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__libm_double__reduce_044" targetname: "__ledf2" }
+edge: { sourcename: "system__libm_double__reduce_044" targetname: "__ledf2" }
+node: { title: "__gedf2" label: "gedf2\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__libm_double__reduce_044" targetname: "__gedf2" }
+edge: { sourcename: "system__libm_double__reduce_044" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__reduce_044" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__reduce_044" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__reduce_044" targetname: "__divdf3" }
+edge: { sourcename: "system__libm_double__reduce_044" targetname: "__adddf3" }
+node: { title: "system__libm_double__split_veltkamp" label: "Split_Veltkamp\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:238:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__libm_double__split_veltkamp" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__split_veltkamp" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__split_veltkamp" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__split_veltkamp" targetname: "__subdf3" }
+node: { title: "system__libm_double__reduce_ln_2" label: "Reduce_Ln_2\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:249:4\n32 bytes (static)\n0 dynamic objects" }
+node: { title: "system__fat_lflt__attr_long_float__rounding" label: "Rounding\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-fatgen.ads:140:13" shape : ellipse }
+edge: { sourcename: "system__libm_double__reduce_ln_2" targetname: "system__fat_lflt__attr_long_float__rounding" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:253:45" }
+edge: { sourcename: "system__libm_double__reduce_ln_2" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__reduce_ln_2" targetname: "__gedf2" }
+edge: { sourcename: "system__libm_double__reduce_ln_2" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__reduce_ln_2" targetname: "__subdf3" }
+node: { title: "__fixdfsi" label: "fixdfsi\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__libm_double__reduce_ln_2" targetname: "__fixdfsi" }
+edge: { sourcename: "system__libm_double__reduce_ln_2" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__reduce_ln_2" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__reduce_ln_2" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__reduce_ln_2" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__reduce_ln_2" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__reduce_ln_2" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__reduce_ln_2" targetname: "__ltdf2" }
+edge: { sourcename: "system__libm_double__reduce_ln_2" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__reduce_ln_2" targetname: "__gtdf2" }
+edge: { sourcename: "system__libm_double__reduce_ln_2" targetname: "__subdf3" }
+node: { title: "system__libm_double__reduce_half_pi_large" label: "Reduce_Half_Pi_Large\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:310:4\n144 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__gedf2" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__subdf3" }
+node: { title: "__fixdfdi" label: "fixdfdi\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__fixdfdi" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__ltdf2" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__ledf2" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__gedf2" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__ledf2" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "system__fat_lflt__attr_long_float__machine_rounding" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:341:17" }
+edge: { sourcename: "system__libm_double__reduce_half_pi_large" targetname: "__muldf3" }
+node: { title: "system__libm_double__reduce_half_pi" label: "Reduce_Half_Pi\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:278:4\n64 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__libm_double__reduce_half_pi" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi" targetname: "system__fat_lflt__attr_long_float__machine_rounding" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:289:28" }
+edge: { sourcename: "system__libm_double__reduce_half_pi" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi" targetname: "__gtdf2" }
+edge: { sourcename: "system__libm_double__reduce_half_pi" targetname: "system__libm_double__reduce_half_pi_large" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:297:10" }
+edge: { sourcename: "system__libm_double__reduce_half_pi" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi" targetname: "__gedf2" }
+edge: { sourcename: "system__libm_double__reduce_half_pi" targetname: "__adddf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi" targetname: "__fixdfsi" }
+edge: { sourcename: "system__libm_double__reduce_half_pi" targetname: "__subdf3" }
+edge: { sourcename: "system__libm_double__reduce_half_pi" targetname: "__fixdfsi" }
+node: { title: "acos" label: "Acos\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:349:4\n0 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "acos" targetname: "system__libm_double__instantiations__acosXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:349:55" }
+node: { title: "asin" label: "Asin\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:375:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "asin" targetname: "__ledf2" }
+edge: { sourcename: "asin" targetname: "system__libm_double__long_float_approximations__approx_asinXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:587:31" }
+edge: { sourcename: "asin" targetname: "__muldf3" }
+edge: { sourcename: "asin" targetname: "__muldf3" }
+edge: { sourcename: "asin" targetname: "__adddf3" }
+edge: { sourcename: "asin" targetname: "__subdf3" }
+edge: { sourcename: "asin" targetname: "__muldf3" }
+edge: { sourcename: "asin" targetname: "sqrt" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:837:13" }
+edge: { sourcename: "asin" targetname: "system__libm_double__long_float_approximations__approx_asinXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:594:57" }
+edge: { sourcename: "asin" targetname: "__muldf3" }
+edge: { sourcename: "asin" targetname: "__adddf3" }
+edge: { sourcename: "asin" targetname: "__adddf3" }
+edge: { sourcename: "asin" targetname: "__subdf3" }
+edge: { sourcename: "asin" targetname: "__unorddf2" }
+edge: { sourcename: "asin" targetname: "__ltdf2" }
+node: { title: "atan" label: "Atan\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:407:4\n0 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "atan" targetname: "system__libm_double__instantiations__atan2Xn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:407:55" }
+node: { title: "atan2" label: "Atan2\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:413:4\n0 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "atan2" targetname: "system__libm_double__instantiations__atan2Xn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:413:59" }
+node: { title: "cos" label: "Cos\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:431:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "cos" targetname: "system__libm_double__reduce_half_pi" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:440:7" }
+edge: { sourcename: "cos" targetname: "system__libm_double__long_float_approximations__approx_cosXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:443:20" }
+edge: { sourcename: "cos" targetname: "system__libm_double__long_float_approximations__approx_sinXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:445:20" }
+node: { title: "exp" label: "Exp\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:513:4\n48 bytes (static)\n0 dynamic objects" }
+node: { title: "__nedf2" label: "nedf2\n<built-in>" shape : ellipse }
+edge: { sourcename: "exp" targetname: "__nedf2" }
+edge: { sourcename: "exp" targetname: "__ltdf2" }
+edge: { sourcename: "exp" targetname: "__gtdf2" }
+edge: { sourcename: "exp" targetname: "__gtdf2" }
+edge: { sourcename: "exp" targetname: "system__libm_double__reduce_ln_2" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:538:7" }
+edge: { sourcename: "exp" targetname: "system__libm_double__long_float_approximations__approx_expXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:539:12" }
+edge: { sourcename: "exp" targetname: "system__fat_lflt__attr_long_float__scaling" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:540:24" }
+node: { title: "cosh" label: "Cosh\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:455:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "cosh" targetname: "__gedf2" }
+edge: { sourcename: "cosh" targetname: "exp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:498:15" }
+edge: { sourcename: "cosh" targetname: "__subdf3" }
+edge: { sourcename: "cosh" targetname: "__divdf3" }
+edge: { sourcename: "cosh" targetname: "__adddf3" }
+edge: { sourcename: "cosh" targetname: "__muldf3" }
+edge: { sourcename: "cosh" targetname: "__adddf3" }
+edge: { sourcename: "cosh" targetname: "exp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:504:15" }
+edge: { sourcename: "cosh" targetname: "__divdf3" }
+edge: { sourcename: "cosh" targetname: "__adddf3" }
+edge: { sourcename: "cosh" targetname: "__muldf3" }
+node: { title: "exp2" label: "Exp2\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:547:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "exp2" targetname: "__nedf2" }
+edge: { sourcename: "exp2" targetname: "__ltdf2" }
+edge: { sourcename: "exp2" targetname: "__gtdf2" }
+edge: { sourcename: "exp2" targetname: "__gtdf2" }
+edge: { sourcename: "exp2" targetname: "__gedf2" }
+edge: { sourcename: "exp2" targetname: "__adddf3" }
+edge: { sourcename: "exp2" targetname: "__subdf3" }
+edge: { sourcename: "exp2" targetname: "__fixdfsi" }
+edge: { sourcename: "exp2" targetname: "system__libm_double__long_float_approximations__approx_exp2Xn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:576:12" }
+node: { title: "__floatsidf" label: "floatsidf\n<built-in>" shape : ellipse }
+edge: { sourcename: "exp2" targetname: "__floatsidf" }
+edge: { sourcename: "exp2" targetname: "__subdf3" }
+edge: { sourcename: "exp2" targetname: "system__fat_lflt__attr_long_float__scaling" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:578:27" }
+edge: { sourcename: "exp2" targetname: "__nedf2" }
+node: { title: "log" label: "Log\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:591:4\n64 bytes (static)\n0 dynamic objects" }
+node: { title: "system__fat_lflt__attr_long_float__decompose" label: "Decompose\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-fatgen.adb:150:14" shape : ellipse }
+edge: { sourcename: "log" targetname: "system__fat_lflt__attr_long_float__decompose" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:595:43" }
+edge: { sourcename: "log" targetname: "__ledf2" }
+edge: { sourcename: "log" targetname: "__ltdf2" }
+edge: { sourcename: "log" targetname: "__gtdf2" }
+edge: { sourcename: "log" targetname: "__floatsidf" }
+edge: { sourcename: "log" targetname: "system__fat_lflt__attr_long_float__scaling" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:597:43" }
+edge: { sourcename: "log" targetname: "__ledf2" }
+edge: { sourcename: "log" targetname: "__subdf3" }
+edge: { sourcename: "log" targetname: "__adddf3" }
+edge: { sourcename: "log" targetname: "system__libm_double__long_float_approximations__approx_logXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:621:17" }
+edge: { sourcename: "log" targetname: "__muldf3" }
+edge: { sourcename: "log" targetname: "__adddf3" }
+edge: { sourcename: "log" targetname: "__muldf3" }
+edge: { sourcename: "log" targetname: "__adddf3" }
+node: { title: "atanh" label: "Atanh\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:419:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "atanh" targetname: "__adddf3" }
+edge: { sourcename: "atanh" targetname: "__gedf2" }
+edge: { sourcename: "atanh" targetname: "__subdf3" }
+edge: { sourcename: "atanh" targetname: "__divdf3" }
+edge: { sourcename: "atanh" targetname: "__adddf3" }
+edge: { sourcename: "atanh" targetname: "__eqdf2" }
+edge: { sourcename: "atanh" targetname: "__muldf3" }
+edge: { sourcename: "atanh" targetname: "__gtdf2" }
+edge: { sourcename: "atanh" targetname: "log" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:643:17" }
+edge: { sourcename: "atanh" targetname: "__subdf3" }
+edge: { sourcename: "atanh" targetname: "__divdf3" }
+edge: { sourcename: "atanh" targetname: "__muldf3" }
+edge: { sourcename: "atanh" targetname: "__muldf3" }
+edge: { sourcename: "atanh" targetname: "__adddf3" }
+edge: { sourcename: "atanh" targetname: "__divdf3" }
+edge: { sourcename: "atanh" targetname: "__subdf3" }
+edge: { sourcename: "atanh" targetname: "__eqdf2" }
+edge: { sourcename: "atanh" targetname: "__muldf3" }
+edge: { sourcename: "atanh" targetname: "__ltdf2" }
+edge: { sourcename: "atanh" targetname: "log" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:643:17" }
+edge: { sourcename: "atanh" targetname: "__subdf3" }
+edge: { sourcename: "atanh" targetname: "__divdf3" }
+edge: { sourcename: "atanh" targetname: "__muldf3" }
+edge: { sourcename: "atanh" targetname: "__muldf3" }
+node: { title: "acosh" label: "Acosh\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:355:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "acosh" targetname: "__gtdf2" }
+edge: { sourcename: "acosh" targetname: "log" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:363:17" }
+edge: { sourcename: "acosh" targetname: "__adddf3" }
+edge: { sourcename: "acosh" targetname: "__subdf3" }
+edge: { sourcename: "acosh" targetname: "__ltdf2" }
+edge: { sourcename: "acosh" targetname: "sqrt" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:837:13" }
+edge: { sourcename: "acosh" targetname: "__adddf3" }
+edge: { sourcename: "acosh" targetname: "__muldf3" }
+edge: { sourcename: "acosh" targetname: "__adddf3" }
+edge: { sourcename: "acosh" targetname: "__adddf3" }
+edge: { sourcename: "acosh" targetname: "__adddf3" }
+edge: { sourcename: "acosh" targetname: "__eqdf2" }
+edge: { sourcename: "acosh" targetname: "__gtdf2" }
+edge: { sourcename: "acosh" targetname: "log" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:643:17" }
+edge: { sourcename: "acosh" targetname: "__subdf3" }
+edge: { sourcename: "acosh" targetname: "__divdf3" }
+edge: { sourcename: "acosh" targetname: "__muldf3" }
+edge: { sourcename: "acosh" targetname: "sqrt" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:837:13" }
+edge: { sourcename: "acosh" targetname: "__adddf3" }
+edge: { sourcename: "acosh" targetname: "__muldf3" }
+edge: { sourcename: "acosh" targetname: "log" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:367:17" }
+edge: { sourcename: "acosh" targetname: "__adddf3" }
+node: { title: "asinh" label: "Asinh\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:381:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "asinh" targetname: "__ltdf2" }
+edge: { sourcename: "asinh" targetname: "__gtdf2" }
+edge: { sourcename: "asinh" targetname: "log" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:393:17" }
+edge: { sourcename: "asinh" targetname: "__adddf3" }
+edge: { sourcename: "asinh" targetname: "__muldf3" }
+edge: { sourcename: "asinh" targetname: "sqrt" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:837:13" }
+edge: { sourcename: "asinh" targetname: "__adddf3" }
+edge: { sourcename: "asinh" targetname: "__ltdf2" }
+edge: { sourcename: "asinh" targetname: "__adddf3" }
+edge: { sourcename: "asinh" targetname: "__divdf3" }
+edge: { sourcename: "asinh" targetname: "__adddf3" }
+edge: { sourcename: "asinh" targetname: "__adddf3" }
+edge: { sourcename: "asinh" targetname: "__eqdf2" }
+edge: { sourcename: "asinh" targetname: "__gtdf2" }
+edge: { sourcename: "asinh" targetname: "log" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:643:17" }
+edge: { sourcename: "asinh" targetname: "__subdf3" }
+edge: { sourcename: "asinh" targetname: "__divdf3" }
+edge: { sourcename: "asinh" targetname: "__muldf3" }
+edge: { sourcename: "asinh" targetname: "log" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:397:17" }
+edge: { sourcename: "asinh" targetname: "__adddf3" }
+node: { title: "log1p" label: "Log1p\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:631:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "log1p" targetname: "__adddf3" }
+edge: { sourcename: "log1p" targetname: "__eqdf2" }
+edge: { sourcename: "log1p" targetname: "__gtdf2" }
+edge: { sourcename: "log1p" targetname: "log" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:643:17" }
+edge: { sourcename: "log1p" targetname: "__subdf3" }
+edge: { sourcename: "log1p" targetname: "__divdf3" }
+edge: { sourcename: "log1p" targetname: "__muldf3" }
+node: { title: "log2" label: "Log2\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:651:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "log2" targetname: "log" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:657:7" }
+edge: { sourcename: "log2" targetname: "__muldf3" }
+node: { title: "pow" label: "Pow\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:663:4\n96 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "pow" targetname: "system__fat_lflt__attr_long_float__decompose" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:672:33" }
+edge: { sourcename: "pow" targetname: "system__fat_lflt__attr_long_float__decompose" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:673:33" }
+edge: { sourcename: "pow" targetname: "__eqdf2" }
+edge: { sourcename: "pow" targetname: "__eqdf2" }
+edge: { sourcename: "pow" targetname: "__nedf2" }
+edge: { sourcename: "pow" targetname: "__eqdf2" }
+edge: { sourcename: "pow" targetname: "system__fat_lflt__attr_long_float__rounding" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:789:25" }
+edge: { sourcename: "pow" targetname: "__ltdf2" }
+edge: { sourcename: "pow" targetname: "__eqdf2" }
+edge: { sourcename: "pow" targetname: "__gedf2" }
+edge: { sourcename: "pow" targetname: "__adddf3" }
+node: { title: "__fixunsdfdi" label: "fixunsdfdi\n<built-in>" shape : ellipse }
+edge: { sourcename: "pow" targetname: "__fixunsdfdi" }
+edge: { sourcename: "pow" targetname: "__divdf3" }
+edge: { sourcename: "pow" targetname: "__eqdf2" }
+edge: { sourcename: "pow" targetname: "__gedf2" }
+edge: { sourcename: "pow" targetname: "__adddf3" }
+edge: { sourcename: "pow" targetname: "__fixunsdfdi" }
+edge: { sourcename: "pow" targetname: "__gtdf2" }
+edge: { sourcename: "pow" targetname: "__eqdf2" }
+edge: { sourcename: "pow" targetname: "__ltdf2" }
+edge: { sourcename: "pow" targetname: "__ltdf2" }
+edge: { sourcename: "pow" targetname: "__gedf2" }
+edge: { sourcename: "pow" targetname: "__ledf2" }
+edge: { sourcename: "pow" targetname: "system__fat_lflt__attr_long_float__rounding" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:811:28" }
+edge: { sourcename: "pow" targetname: "__nedf2" }
+edge: { sourcename: "pow" targetname: "__subdf3" }
+edge: { sourcename: "pow" targetname: "__divdf3" }
+edge: { sourcename: "pow" targetname: "__ltdf2" }
+edge: { sourcename: "pow" targetname: "__gtdf2" }
+edge: { sourcename: "pow" targetname: "__ltdf2" }
+edge: { sourcename: "pow" targetname: "__gtdf2" }
+edge: { sourcename: "pow" targetname: "__ltdf2" }
+edge: { sourcename: "pow" targetname: "__gtdf2" }
+edge: { sourcename: "pow" targetname: "__ltdf2" }
+edge: { sourcename: "pow" targetname: "__ltdf2" }
+edge: { sourcename: "pow" targetname: "system__fat_lflt__attr_long_float__rounding" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:789:25" }
+edge: { sourcename: "pow" targetname: "__gtdf2" }
+edge: { sourcename: "pow" targetname: "__eqdf2" }
+edge: { sourcename: "pow" targetname: "__gedf2" }
+edge: { sourcename: "pow" targetname: "__adddf3" }
+edge: { sourcename: "pow" targetname: "__fixunsdfdi" }
+edge: { sourcename: "pow" targetname: "__nedf2" }
+edge: { sourcename: "pow" targetname: "__gedf2" }
+edge: { sourcename: "pow" targetname: "__adddf3" }
+edge: { sourcename: "pow" targetname: "__fixunsdfdi" }
+edge: { sourcename: "pow" targetname: "__gedf2" }
+edge: { sourcename: "pow" targetname: "__ltdf2" }
+edge: { sourcename: "pow" targetname: "__eqdf2" }
+edge: { sourcename: "pow" targetname: "system__fat_lflt__attr_long_float__rounding" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libm.adb:789:25" }
+edge: { sourcename: "pow" targetname: "__nedf2" }
+edge: { sourcename: "pow" targetname: "__gedf2" }
+edge: { sourcename: "pow" targetname: "__adddf3" }
+edge: { sourcename: "pow" targetname: "__fixunsdfdi" }
+edge: { sourcename: "pow" targetname: "system__libm_double__reduce_044" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:698:10" }
+edge: { sourcename: "pow" targetname: "system__libm_double__long_float_approximations__approx_power_logXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:702:16" }
+edge: { sourcename: "pow" targetname: "__floatsidf" }
+edge: { sourcename: "pow" targetname: "__muldf3" }
+edge: { sourcename: "pow" targetname: "system__fat_lflt__attr_long_float__machine_rounding" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:108:9" }
+edge: { sourcename: "pow" targetname: "__muldf3" }
+edge: { sourcename: "pow" targetname: "__muldf3" }
+edge: { sourcename: "pow" targetname: "__subdf3" }
+edge: { sourcename: "pow" targetname: "__muldf3" }
+edge: { sourcename: "pow" targetname: "__muldf3" }
+edge: { sourcename: "pow" targetname: "__adddf3" }
+edge: { sourcename: "pow" targetname: "system__fat_lflt__attr_long_float__machine_rounding" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:108:9" }
+edge: { sourcename: "pow" targetname: "__muldf3" }
+edge: { sourcename: "pow" targetname: "__muldf3" }
+edge: { sourcename: "pow" targetname: "__subdf3" }
+edge: { sourcename: "pow" targetname: "__muldf3" }
+edge: { sourcename: "pow" targetname: "__adddf3" }
+edge: { sourcename: "pow" targetname: "system__fat_lflt__attr_long_float__machine_rounding" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:108:9" }
+edge: { sourcename: "pow" targetname: "__muldf3" }
+edge: { sourcename: "pow" targetname: "__muldf3" }
+edge: { sourcename: "pow" targetname: "__subdf3" }
+edge: { sourcename: "pow" targetname: "__adddf3" }
+edge: { sourcename: "pow" targetname: "system__fat_lflt__attr_long_float__machine_rounding" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:108:9" }
+edge: { sourcename: "pow" targetname: "__muldf3" }
+edge: { sourcename: "pow" targetname: "__muldf3" }
+edge: { sourcename: "pow" targetname: "__adddf3" }
+edge: { sourcename: "pow" targetname: "__muldf3" }
+edge: { sourcename: "pow" targetname: "__gedf2" }
+edge: { sourcename: "pow" targetname: "__adddf3" }
+edge: { sourcename: "pow" targetname: "__subdf3" }
+edge: { sourcename: "pow" targetname: "__fixdfsi" }
+edge: { sourcename: "pow" targetname: "__subdf3" }
+edge: { sourcename: "pow" targetname: "__gtdf2" }
+edge: { sourcename: "pow" targetname: "__subdf3" }
+edge: { sourcename: "pow" targetname: "system__libm_double__long_float_approximations__approx_exp2Xn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:736:15" }
+edge: { sourcename: "pow" targetname: "system__fat_lflt__attr_long_float__scaling" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:184:24" }
+edge: { sourcename: "pow" targetname: "__muldf3" }
+node: { title: "sin" label: "Sin\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:751:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "sin" targetname: "system__libm_double__reduce_half_pi" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:760:7" }
+edge: { sourcename: "sin" targetname: "system__libm_double__long_float_approximations__approx_sinXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:763:20" }
+edge: { sourcename: "sin" targetname: "system__libm_double__long_float_approximations__approx_cosXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:765:20" }
+edge: { sourcename: "sin" targetname: "__muldf3" }
+node: { title: "sinh" label: "Sinh\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:775:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "sinh" targetname: "__ledf2" }
+edge: { sourcename: "sinh" targetname: "system__libm_double__long_float_approximations__approx_sinhXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:817:17" }
+edge: { sourcename: "sinh" targetname: "__gedf2" }
+edge: { sourcename: "sinh" targetname: "exp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:822:15" }
+edge: { sourcename: "sinh" targetname: "__subdf3" }
+edge: { sourcename: "sinh" targetname: "__divdf3" }
+edge: { sourcename: "sinh" targetname: "__subdf3" }
+edge: { sourcename: "sinh" targetname: "__muldf3" }
+edge: { sourcename: "sinh" targetname: "__adddf3" }
+edge: { sourcename: "sinh" targetname: "__muldf3" }
+edge: { sourcename: "sinh" targetname: "exp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:828:15" }
+edge: { sourcename: "sinh" targetname: "__divdf3" }
+edge: { sourcename: "sinh" targetname: "__subdf3" }
+edge: { sourcename: "sinh" targetname: "__muldf3" }
+edge: { sourcename: "sinh" targetname: "__muldf3" }
+node: { title: "system__libm_double__sqrt" label: "Sqrt\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:837:13\n0 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__libm_double__sqrt" targetname: "sqrt" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:837:13" }
+node: { title: "tan" label: "Tan\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:844:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "tan" targetname: "__ltdf2" }
+edge: { sourcename: "tan" targetname: "system__libm_double__reduce_half_pi" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:853:10" }
+edge: { sourcename: "tan" targetname: "system__libm_double__long_float_approximations__approx_tanXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:862:17" }
+edge: { sourcename: "tan" targetname: "__muldf3" }
+edge: { sourcename: "tan" targetname: "system__libm_double__long_float_approximations__approx_cotXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:865:17" }
+edge: { sourcename: "tan" targetname: "__muldf3" }
+node: { title: "tanh" label: "Tanh\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:873:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "tanh" targetname: "__gtdf2" }
+edge: { sourcename: "tanh" targetname: "__gtdf2" }
+edge: { sourcename: "tanh" targetname: "exp" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:887:36" }
+edge: { sourcename: "tanh" targetname: "__adddf3" }
+edge: { sourcename: "tanh" targetname: "__adddf3" }
+edge: { sourcename: "tanh" targetname: "__divdf3" }
+edge: { sourcename: "tanh" targetname: "__subdf3" }
+edge: { sourcename: "tanh" targetname: "system__libm_double__long_float_approximations__approx_tanhXn" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:889:23" }
+node: { title: "system__libm_double__multiply_add" label: "Multiply_Add\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-libdou.adb:121:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__libm_double__multiply_add" targetname: "__muldf3" }
+edge: { sourcename: "system__libm_double__multiply_add" targetname: "__adddf3" }
+}

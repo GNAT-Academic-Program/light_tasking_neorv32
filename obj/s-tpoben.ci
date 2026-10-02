@@ -1,0 +1,15 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-tpoben.adb"
+node: { title: "system__tasking__protected_objects__entries__protected_entry_body_arrayIP" label: "protected_entry_body_arrayIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__tasking__protected_objects__entries__protected_entry_queue_arrayIP" label: "protected_entry_queue_arrayIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__tasking__protected_objects__entries__protected_entry_queue_max_arrayIP" label: "protected_entry_queue_max_arrayIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__tasking__protected_objects__entries__protection_entriesIP" label: "protection_entriesIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__tasking__protected_objects__entries__initialize_protection_entries" label: "Initialize_Protection_Entries\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-tpoben.adb:50:4\n48 bytes (static)\n0 dynamic objects" }
+node: { title: "system__tasking__protected_objects__initialize_protection" label: "Initialize_Protection\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-taprob.ads:176:14" shape : ellipse }
+edge: { sourcename: "system__tasking__protected_objects__entries__initialize_protection_entries" targetname: "system__tasking__protected_objects__initialize_protection" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-tpoben.adb:59:7" }
+node: { title: "system__tasking__protected_objects__entries__lock_entries" label: "Lock_Entries\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-tpoben.adb:77:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__tasking__protected_objects__lock" label: "Lock\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-taprob.ads:182:14" shape : ellipse }
+edge: { sourcename: "system__tasking__protected_objects__entries__lock_entries" targetname: "system__tasking__protected_objects__lock" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-tpoben.adb:79:7" }
+node: { title: "system__tasking__protected_objects__entries__unlock_entries" label: "Unlock_Entries\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-tpoben.adb:86:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__tasking__protected_objects__unlock" label: "Unlock\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-taprob.ads:196:14" shape : ellipse }
+edge: { sourcename: "system__tasking__protected_objects__entries__unlock_entries" targetname: "system__tasking__protected_objects__unlock" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-tpoben.adb:88:7" }
+}

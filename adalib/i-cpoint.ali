@@ -1,0 +1,162 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_CONVERSION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U interfaces.c.pointers%b  i-cpoint.adb		820a37f4 NE OL PK GE
+W ada%s			ada.ads			ada.ali
+W ada.unchecked_conversion%s
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W system%s		system.ads		system.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+
+U interfaces.c.pointers%s  i-cpoint.ads		656b7c43 BN NE OL PR PK GE
+W interfaces.c%s	i-c.adb			i-c.ali
+W system%s		system.ads		system.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-unccon.ads		20261002145216 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20261002145216 9111f9c1 interfaces%s
+D i-c.ads		20261002145216 8c120e30 interfaces.c%s
+D i-cpoint.ads		20261002145216 ee8a93ec interfaces.c.pointers%s
+D i-cpoint.adb		20261002145216 e467b078 interfaces.c.pointers%b
+D i-cstrin.ads		20261002145216 49eced87 interfaces.c.strings%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-parame.ads		20261002145216 07f3e19f system.parameters%s
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+G a e
+G c Z s b [pointers interfaces__c 44 22 none]
+X 1 ada.ads
+18K9*Ada 22e8 6|36r6 42r31 43r31 44r31 45r31 216r35 260r35
+X 2 a-unccon.ads
+23v14*Unchecked_Conversion 6|36w10 42r35 43r35 44r35 45r35 216r39 260r39
+X 3 interfac.ads
+47K9*Interfaces 247e15 5|44r9 102r5 6|32r6 32r35 38r14 296r5
+X 4 i-c.ads
+36K20*C 3|47k9 4|247e17 5|44r20 102r16 6|32r17 32r46 38r25 296r16
+92I9*ptrdiff_t<integer> 5|60r16 68r44 69r25 70r44 71r62 83r58 88r20 88r33
+. 94r17 6|44r57 45r68 47r25 57r42 66r25 79r42 88r58 104r17 144r20 144r33
+. 147r11 226r16 274r58 277r11
+X 5 i-cpoint.ads
+39E9 Index 41r33 6|51r26 194r34 242r32 242r44 242r60 252r15 253r15 253r26
+. 253r37
+40+9 Element 41r60 42r25 47r31 56r20 83r20 89r20 6|145r20 191r20 274r20
+41A9 Element_Array(40+9)<39E9> 56r58 60r34 6|48r19 191r58 212r26 226r34 242r17
+. 256r26
+42*4 Default_Terminator{40+9} 56r31 83r31 89r31 6|145r31 191r31 274r31
+44k22*Pointers 4|36k20 5|39z9 40z9 41z9 42z4 102l18 102e26 6|38b27 296l18
+. 296t26
+47P9*Pointer(40+9) 48r8 50r31 55r20 59r16 68r25 68r62 69r44 69r62 70r25 70r62
+. 71r25 71r44 73r38 74r38 82r20 86r20 87r20 92r17 93r17 6|42r68 43r57 57r25
+. 57r60 66r44 66r60 79r25 79r60 88r25 88r42 102r17 103r17 106r11 107r11 142r20
+. 143r20 148r11 171r38 180r38 190r20 193r11 216r61 225r16 260r61 273r20 276r11
+54V13*Value{41A9} 55>7 56>7 6|189b13 222l8 222t13
+55p7 Ref{47P9} 6|190b7 198r10 203r15 219r27
+56*7 Terminator{40+9} 6|191b7 206r31
+58V13*Value{41A9} 59>7 60>7 6|224b13 266l8 266t13
+59p7 Ref{47P9} 6|225b7 232r10 263r27
+60i7 Length{4|92I9} 6|226b7 239r13 253r52
+62X4*Pointer_Error 6|60r16 69r16 82r16 91r16
+68V14*"+"{47P9} 68>18 68>36 6|57b14 64l9 64t11 127s22 128s22 182s18
+68p18 Left{47P9} 6|57b18 59r10 63r35
+68i36 Right{4|92I9} 6|57b34 63r66
+69V14*"+"{47P9} 69>18 69>36 6|66b14 73l9 73t11
+69i18 Left{4|92I9} 6|66b18 72r49
+69p36 Right{47P9} 6|66b36 68r10 72r66
+70V14*"-"{47P9} 70>18 70>36 6|79b14 86l9 86t11 173s18
+70p18 Left{47P9} 6|79b18 81r10 85r35
+70i36 Right{4|92I9} 6|79b34 85r54
+71V14*"-"{4|92I9} 71>18 71>36 6|88b14 95l9 95t11
+71p18 Left{47P9} 6|88b18 90r10 94r35
+71p36 Right{47P9} 6|88b34 90r30 94r52
+73U14*Increment 73=25 78r34 100r19 6|120s13 121s13 161s10 180b14 183l8 183t17
+. 208s13 289s13
+73p25 Ref{47P9} 6|180b25 182m7 182r14
+74U14*Decrement 74=25 79r34 99r19 6|130s13 131s13 171b14 174l8 174t17
+74p25 Ref{47P9} 6|171b25 173m7 173r14
+81V13*Virtual_Length{4|92I9} 82>7 83>7 6|272b13 294l8 294t22
+82p7 Ref{47P9} 6|273b7 280r10 285r15
+83*7 Terminator{40+9} 6|274b7 287r25
+85U14*Copy_Terminated_Array 86>7 87>7 88>7 89>7 6|141b14 165l8 165t29
+86p7 Source{47P9} 6|142b7 148r22 151r10 164r19
+87p7 Target{47P9} 6|143b7 151r32 164r27
+88i7 Limit{4|92I9} 6|144b7 158r17
+89*7 Terminator{40+9} 6|145b7 160r28
+91U14*Copy_Array 92>7 93>7 94>7 6|101b14 135l8 135t18 164s7
+92p7 Source{47P9} 6|102b7 110r10 115r42 117r15 128r15
+93p7 Target{47P9} 6|103b7 110r32 115r22 116r15 127r15
+94i7 Length{4|92I9} 6|104b7 118r24 127r24 128r24 129r24
+X 6 i-cpoint.adb
+40I12 Offset{10|54I9} 44r68 45r57
+42V13 To_Pointer[2|23]{5|47P9} 63s14 72s14 85s14
+43V13 To_Addr[2|23]{8|85M9} 63r26 72r57 85r26 94r26 94r43 115s13 115s33
+44V13 To_Offset[2|23]{10|54I9} 63r43 72r26 85r43
+45V13 To_Ptrdiff[2|23]{4|92I9} 94s14
+47i4 Elmt_Size{4|92I9} 63r54 72r37 85r62 94r62
+51E12 Index_Base 194r20 195r11 207r18 228r11 229r11
+106p7 T{5|47P9} 116m10 119r13 120m24 120r24 127m10 130m24 130r24 132r13
+107p7 S{5|47P9} 117m10 119r22 121m24 121r24 128m10 131m24 131r24 132r22
+118i14 J<integer>
+129i14 J<integer>
+147i7 L{4|92I9} 157m7 158r13 159m10 159r15 164r35
+148p7 S{5|47P9} 160r20 161m21 161r21
+193p7 P{5|47P9} 203m10 206r23 208m24 208r24
+194*7 L{51E12} 202r15 212r41
+195*7 H{51E12} 202m10 207m13 207r35 212r46
+212A21 A{5|41A9}<5|39E9> 214r31
+214P18 PA(212A21) 215r17 216r70
+216V22 To_PA[2|23]{214P18} 219s20
+228*7 L{51E12} 252m10 256r41
+229*7 H{51E12} 253m10 256r46
+242*13 X{5|41A9} 246r20
+256A21 A{5|41A9}<5|39E9> 258r31
+258P18 PA(256A21) 259r17 260r70
+260V22 To_PA[2|23]{258P18} 263s20
+276p7 P{5|47P9} 285m10 287r16 289m24 289r24
+277i7 C{4|92I9} 284m10 288m13 288r18 292r17
+X 7 i-cstrin.ads
+48K22*Strings 6|32w19 32w48 7|183e25
+98X4*Dereference_Error 6|111r16 152r16 199r16 233r16 281r16
+X 8 system.ads
+55K9*System 5|36r6 48r25 6|33r6 33r35 34w6 34w35 215r29 259r29 8|176e11
+85M9*Address 6|42r57 43r68
+89N4*Storage_Unit 6|49r22 49r42
+96V14*"<="{boolean} 6|115r30
+X 9 s-parame.ads
+49K16*Parameters 5|36w13 48r32 6|215r36 259r36 9|171e22
+98N4*ptr_bits 5|48r43 6|215r47 259r47
+X 10 s-stoele.ads
+43K16*Storage_Elements 6|33w13 33w42 10|104e28
+54I9*Storage_Offset<integer> 6|40r22
+74V14*"+"{8|85M9} 6|63r41
+75V14*"+"{8|85M9} 6|72r55
+79V14*"-"{8|85M9} 6|85r41
+80V14*"-"{54I9} 6|94r41
+

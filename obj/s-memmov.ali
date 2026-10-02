@@ -1,0 +1,95 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_UNCHECKED_CONVERSION
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.memory_move%b	s-memmov.adb		8b7d5474 NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.unchecked_conversion%s
+W system%s		system.ads		system.ali
+W system.memory_types%s	s-memtyp.ads		s-memtyp.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+
+U system.memory_move%s	s-memmov.ads		523ed04e NE OL PR PK
+W system%s		system.ads		system.ali
+W system.memory_types%s	s-memtyp.ads		s-memtyp.ali
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-unccon.ads		20261002145216 0e9b276f ada.unchecked_conversion%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-memmov.ads		20261002145216 6641a1b1 system.memory_move%s
+D s-memmov.adb		20261002145216 18487ddd system.memory_move%b
+D s-memtyp.ads		20261002145216 37317b9f system.memory_types%s
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+G a e
+G c Z s b [memmove system__memory_move 42 13 none]
+X 1 ada.ads
+18K9*Ada 22e8 5|32r6 45r41
+X 2 a-unccon.ads
+20+9 Source 5|46r10
+21+9 Target 5|47r10
+23v14*Unchecked_Conversion 5|32w10 45r45
+X 3 system.ads
+55K9*System 176e11 4|36r6 38r9 62r5 5|33r6 33r31 34r6 34r35 36r14 47r20 146r5
+85M9*Address 4|43r14 43r29 43r70 5|43r14 43r29 43r57 59r11 60r11
+95V14*"<"{boolean} 5|71r27
+97V14*">"{boolean} 5|71r12
+X 4 s-memmov.ads
+38K16*Memory_Move 3|55k9 4|62l12 62e23 5|36b21 146l12 146t23
+42V13*memmove{3|85M9} 43>7 43>23 43>38 44i<c,memmove>22 5|42b13 144l8 144t15
+43m7 Dest{3|85M9} 5|43b7 59r22 143r14
+43m23 Src{3|85M9} 5|43b23 60r22
+43m38 N{6|40M9} 5|43b38 61r22
+X 5 s-memmov.adb
+45V16 To_Storage_Offset[2|23]{7|54I9} 71s33 75s19 76s19
+59m7 D{3|85M9} 71r10 71r25 75m10 75r15 80r27 83m16 83r21 86r54 99m13 99r18
+. 102r51 113r27 117r54 122m16 122r21 132r51 137m13 137r18
+60m7 S{3|85M9} 71r14 71r29 76m10 76r15 80r45 84m16 84r21 87r54 100m13 100r18
+. 103r51 113r45 118r54 123m16 123r21 133r51 138m13 138r18
+61m7 C{6|40M9} 71r52 75r38 76r38 82r19 92m16 92r21 98r16 108m13 108r18 115r19
+. 124m16 124r21 130r16 139m13 139r18
+86m19 D_W{6|52M9} 89m19
+87m19 S_W{6|52M9} 89r26
+102m16 D_B{6|45M9} 105m16
+103m16 S_B{6|45M9} 105r23
+117m19 D_W{6|52M9} 120m19
+118m19 S_W{6|52M9} 120r26
+132m16 D_B{6|45M9} 135m16
+133m16 S_B{6|45M9} 135r23
+X 6 s-memtyp.ads
+36K16*Memory_Types 4|36w13 43r42 5|33w13 33w38 6|60e24
+40M9*size_t 4|43r55 5|43r42 46r20 61r11
+45M9*Byte 5|102r22 103r22 132r22 133r22
+49N4*Byte_Unit 5|99r37 100r37 108r22 137r37 138r37 139r22
+52M9*Word 5|80r54 86r25 87r25 113r54 117r25 118r25
+57N4*Word_Unit 5|82r24 83r40 84r40 92r25 115r24 122r40 123r40 124r25
+X 7 s-stoele.ads
+43K16*Storage_Elements 5|34w13 34w42 47r27 7|104e28
+54I9*Storage_Offset<integer> 5|47r44
+56I12*Storage_Count{54I9} 5|83r25 84r25 99r22 100r22 122r25 123r25 137r22
+. 138r22
+74V14*"+"{3|85M9} 5|71r31 75r17 76r17 122r23 123r23 137r20 138r20
+79V14*"-"{3|85M9} 5|83r23 84r23 99r20 100r20
+92M9*Integer_Address
+100V13*To_Integer{92M9} 5|80s15 80s33 113s15 113s33
+

@@ -1,0 +1,130 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LONG_LONG_INTEGERS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_CONVERSION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+
+U system.secondary_stack%b  s-secsta.adb	bad0f8d4 NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.unchecked_conversion%s
+Z system%s		system.ads		system.ali
+N A208:7 gnatcheck exempt_on "Improper_Returns" "early returns for performance"
+N A268:16 codepeer false_positive "array index check" "Num_Of_Assigned_Stacks < Binder_SS_Count."
+N A289:7 gnatcheck exempt_off "Improper_Returns"
+
+U system.secondary_stack%s  s-secsta.ads	75ea725c NE OL PR PK
+W system%s		system.ads		system.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+N A167:4 gnatcheck exempt_on "Discriminated_Records" "only variant records are disallowed"
+N A183:4 gnatcheck exempt_off "Discriminated_Records"
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-unccon.ads		20261002145216 0e9b276f ada.unchecked_conversion%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-parame.ads		20261002145216 07f3e19f system.parameters%s
+D s-secsta.ads		20261002145216 bd894d4b system.secondary_stack%s
+D s-secsta.adb		20261002145216 09c292f0 system.secondary_stack%b
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+G a e
+G c Z s b [ss_init system__secondary_stack 108 14 none]
+G c Z s b [ss_allocate system__secondary_stack 117 14 none]
+G c Z s b [ss_mark system__secondary_stack 128 13 none]
+G c Z s b [ss_release system__secondary_stack 131 14 none]
+G c Z s b [ss_get_max system__secondary_stack 134 13 none]
+G c Z s s [memoryIP system__secondary_stack 160 9 none]
+G c Z s s [ss_stackIP system__secondary_stack 169 9 none]
+G c Z b b [get_sec_stack system__secondary_stack 43 13 none]
+X 1 ada.ads
+18K9*Ada 22e8 6|37r6 247r18 251r18
+X 2 a-unccon.ads
+23v14*Unchecked_Conversion 6|37w10 247r22 251r22
+X 3 system.ads
+55K9*System 176e11 5|93r6 94r6 96r9 99r23 100r24 118r26 212r28 220r5 6|39r14
+. 41r13 105r16 256r36 310r5
+85M9*Address 5|118r33 212r35 6|101r26 113r32 117r32 247r44 251r44 256r43
+X 4 s-parame.ads
+49K16*Parameters 171e22 5|93w13 99r30 6|41r20 205r11
+56I9*Size_Type<integer> 5|102r29 110r18 155r25 169r29 206r25 6|41r31 203r18
+63i4*Unspecified_Size{56I9} 5|110r34 6|203r34 221r20
+X 5 s-secsta.ads
+96K16*Secondary_Stack 3|55k9 5|140E4 220l12 220e27 6|39b21 310l12 310t27
+99K12*SP=99:30 102r26 110r15 110r31 155r22 169r26 206r22 6|203r15 203r31
+100K12*SSE=100:31 119r22 120r22 160r46 6|102r22 103r22 107r37 108r10 113r48
+. 117r48 125r30 134r10 135r12 153r10
+102R9*SS_Stack 102d19 105r36 169c9 182e14 6|243r26
+102i19 Size{4|56I9} 169r19 180r37 6|165r19
+105P9*SS_Stack_Ptr(102R9) 109r22 6|43r34 123r24 202r22 251r53
+108U14*SS_Init 109=7 110>7 6|201b14 290l8 290t15
+109p7 Stack{105P9} 6|202b7 218r10 270m16 286r7 287r7
+110i7 Size{4|56I9} 6|203b7 221r13
+117U14*SS_Allocate 118<7 119>7 120>7 6|100b14 182l8 182t19
+118m7 Addr{3|85M9} 6|101b7 179m7
+119i7 Storage_Size{7|56I12} 6|102b7 153r58 159r44 165r49 171r45 181r42
+120i7 Alignment{7|56I12} 6|103b7 108r33
+125I9*Mark_Id<4|56I9> 128r28 131r30 187c9 6|296r28 298r14 305r30
+128V13*SS_Mark{125I9} 6|296b13 299l8 299t15
+131U14*SS_Release 131>26 6|305b14 308l8 308t18
+131i26 M{125I9} 6|305b26 307r36
+134V13*SS_Get_Max{long_long_integer} 6|188b13 195l8 195t18
+140i4 SS_Pool{integer}
+155I12 SS_Ptr{4|56I9} 160r26 170r13 174r13 187r24 6|128r21 134r29 140r34
+. 153r29 159r36 165r41 171r37 181r34 307r28
+160A9 Memory(7|60M9)<4|56I9> 161r8 180r24
+170i7*Top{155I12} 6|126r47 135r37 140r28 181m13 286m13 298r37 307m21
+174i7*Max{155I12} 6|159r16 171m16 194r47 287m13
+180a7*Internal_Chunk{160A9} 6|126m25 175r43 176r43 179m21
+202i4 Binder_SS_Count{natural} 203m24 203r24 6|222r21 223r46 242r51 278r16
+206i4 Default_SS_Size{4|56I9} 207m24 207r24 6|243r36
+212m4 Default_Sized_SS_Pool{3|85M9} 213m24 213r24 6|267r21
+217i4 Num_Of_Assigned_Stacks{natural} 6|223r21 259m16 259r42 261r31 267r45
+X 6 s-secsta.adb
+43V13 Get_Sec_Stack{5|105P9} 44b<c,__gnat_get_secondary_stack>22 123s40 194s33
+. 298s23 307s7
+107i7 Adjusted_Alignment{7|56I12} 119r18 119r49 120r23
+113V16 Padding{7|56I12} 113>25 114r22 117b16 121l11 121t18 126s10
+113m25 Addr{3|85M9} 117b25 119r40
+123p7 Stack{5|105P9} 126r19 126r41 135r31 140r22 159r10 165r13 171r10 175r37
+. 176r37 179r15 181r7
+125i7 Top_Padding{7|56I12} 134r44 140r42
+128i7 Aligned_Top{5|155I12} 140m7 153r43 159r22 165r27 171r23 175r22 176r22
+. 179r37 181r20
+242A21 Stk_Pool_Array(5|102R9)<integer> 244r47
+244P21 Stk_Pool_Access(242A21) 247r53
+246V25 To_Stack_Pool[2|23]{244P21} 266s18
+250V25 To_Global_Ptr[2|23]{5|105P9} 270s25
+256m16 Local_Stk_Address{3|85M9} 265m16 270r40
+X 7 s-stoele.ads
+43K16*Storage_Elements 5|94w13 100r31 6|105r23 7|104e28
+54I9*Storage_Offset<integer>
+56I12*Storage_Count{54I9} 5|119r26 120r26 6|102r26 103r26 105r40 107r41 108r14
+. 113r52 117r52 125r34 134r14 135r16 153r14
+60M9*Storage_Element 5|160r50
+84V14*"mod"{54I9} 6|119r45
+

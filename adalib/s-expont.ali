@@ -1,0 +1,49 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.expont%b	s-expont.adb		0440c2bf NE OL PK GE
+W system%s		system.ads		system.ali
+
+U system.expont%s	s-expont.ads		e6121a6a BN NE OL PU PK GE
+W system%s		system.ads		system.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-expont.ads		20261002145216 e55c100a system.expont%s
+D s-expont.adb		20261002145216 e11cd2b5 system.expont%b
+G a e
+G c Z s b [expont system 38 16 none]
+X 1 system.ads
+55K9*System 176e11 2|38r9 50r5 3|32r14 87r5
+X 2 s-expont.ads
+36I9 Int 41r27 41r56 3|39r27 39r56 44r16 45r16
+38k16*Expont 1|55k9 2|36z9 50l12 50e18 3|32b21 87l12 87t18
+41V13*Expon{36I9} 41>20 41>32 3|39b13 85l8 85t13
+41*20 Left{36I9} 3|39b20 45r27 61r13
+41i32 Right{natural} 3|39b32 46r27 59r10
+X 3 s-expont.adb
+44*7 Result{2|36I9} 60m10 62m10 69m19 69r29 84r14
+45*7 Factor{2|36I9} 69r38 79m16 79r26 79r35
+46i7 Exp{natural} 65r16 73m13 73r20 74r23
+

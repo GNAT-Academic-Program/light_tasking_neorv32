@@ -1,0 +1,154 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF SS ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_LONG_LONG_INTEGERS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U interfaces.c%b	i-c.adb			98401dea NE OL PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W interfaces%s		interfac.ads		interfac.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U interfaces.c%s	i-c.ads			19be1c0e NE OL PU PK
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-except.ads		20261002145216 5b5f0f2f ada.exceptions%s
+D a-except.adb		20261002145216 4da5c77f ada.exceptions%b
+D interfac.ads		20261002145216 9111f9c1 interfaces%s
+D i-c.ads		20261002145216 8c120e30 interfaces.c%s
+D i-c.adb		20261002145216 145213da interfaces.c%b
+D system.ads		20261002145216 034e0a60 system%s
+D s-parame.ads		20261002145216 07f3e19f system.parameters%s
+D s-secsta.ads		20261002145216 bd894d4b system.secondary_stack%s
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+G a e
+G c Z s b [to_c interfaces__c 119 13 none]
+G c Z s b [to_ada interfaces__c 123 13 none]
+G c Z s b [is_nul_terminated interfaces__c 130 13 none]
+G c Z s s [c_length_ghost interfaces__c 136 13 none]
+G c Z s b [to_c interfaces__c 149 13 none]
+G c Z s b [to_ada interfaces__c 167 13 none]
+G c Z s b [to_c interfaces__c 192 14 none]
+G c Z s b [to_ada interfaces__c 216 14 none]
+G c Z s s [char_arrayIP interfaces__c 127 9 none]
+X 4 interfac.ads
+47K9*Interfaces 247e15 5|36r9 247r5 6|32r14 249r5
+X 5 i-c.ads
+36K20*C 4|47k9 5|247l16 247e17 6|32b25 249l16 249t17
+53N4*CHAR_BIT 72r29 80r31 128r38
+54N4*SCHAR_MIN 71r30
+55N4*SCHAR_MAX 71r43
+56N4*UCHAR_MAX 79r31
+65I9*int<integer> 74r40
+66I9*short<short_integer> 75r40
+67I9*long<integer> 76r40
+69I9*long_long<long_long_integer> 77r40
+71I9*signed_char<short_short_integer> 72r8
+74M9*unsigned
+75M9*unsigned_short
+76M9*unsigned_long
+77M9*unsigned_long_long
+79M9*unsigned_char 80r8 86r26
+86M12*plain_char{79M9}
+92I9*ptrdiff_t<integer>
+95M9*size_t 127r30 136r55 158r33 173r53 175r42 181r36 195r24 207r35 225r53
+. 227r42 236r28 6|71r15 97r36 112r14 177r19 205r22 219r24 222r12
+99B9*C_bool<boolean> 100r26
+104F9*C_float<float>
+105F9*double<long_float>
+106F9*long_double<long_long_float>
+112E9*char<character> 114r19 114r27 119r44 121r28 123r28 125r45 127r58 6|59r28
+. 61r29 160r44 162r14 231r28
+114e4*nul{112E9} 132r68 142r61 145r34 159r70 209r68 6|45r24 80r33 121r33
+. 180r27 240r31
+119V13*To_C{112E9} 119>19 158s60 207s62 6|160b13 163l8 163t12 177s47 205s50
+119e19 Item{character} 121r53 6|160b19 162r39
+123V13*To_Ada{character} 123>21 181s22 236s14 6|59b13 62l8 62t14 97s22
+123e21 Item{112E9} 125r55 6|59b21 61r39
+127A9*char_array(112E9)<95M9> 128r8 130r39 136r36 151r44 168r18 194r24 217r18
+. 6|42r39 67r18 107r18 169r44 174r17 202r20 218r24
+130V13*Is_Nul_Terminated{boolean} 130>32 132r14 140s14 172s17 224s17 6|42b13
+. 51l8 51t25
+130a32 Item{127A9} 132r56 6|42b32 44r16 45r13
+132e51 C{112E9} 132r64
+143m26 J{95M9} 144r25 145r28
+149V13*To_C{127A9} 150>7 151>7 6|167b13 212l8 212t12
+150a7 Item{string} 153r47 156r44 156r65 157r31 158r45 158r66 6|168b7 174r34
+. 176r22 177r31 177r53 195r13 202r37 204r25 205r34 205r56
+151b7 Append_Nul{boolean} 153r19 156r14 159r21 6|169b7 172r10
+157i26 J{integer} 158r41 158r72
+167V13*To_Ada{string} 168>7 169>7 6|66b13 102l8 102t14
+168a7 Item{127A9} 172r36 173r44 175r17 175r29 178r44 178r55 181r30 181r53
+. 6|67b7 75r18 78r23 80r19 87r35 90r19 97r30 97r53
+169b7 Trim_Nul{boolean} 171r18 178r14 6|68b7 74r10
+179i26 J{integer} 180r35 181r44
+192U14*To_C 193>7 194<7 195<7 196>7 6|216b14 247l8 247t12
+193a7 Item{string} 200r42 200r63 201r42 201r63 206r24 207r47 207r68 6|217b7
+. 225r26 230r22 231r34 241r25 244r22
+194a7 Target{127A9} 198r32 199r14 204r12 204r20 204r36 207r12 207r20 209r30
+. 209r38 6|218b7 225r10 229r16 231m13 237r21 240m16
+195m7 Count{95M9} 201r14 203r14 204r52 209r54 6|219b7 241m16 244m13
+196b7 Append_Nul{boolean} 200r12 201r26 209r14 6|220b7 236r13
+206i19 J{integer} 207r43 207r74
+216U14*To_Ada 217>7 218<7 219<7 220>7 6|106b14 152l8 152t14
+217a7 Item{127A9} 224r36 225r44 227r17 227r29 229r53 229r65 236r22 236r56
+. 6|107b7 117r18 119r23 121r19 128r35 131r19 138r18 142r39
+218a7 Target{string} 222r32 225r61 227r50 232r12 232r20 232r36 234r24 234r40
+. 235r12 236r40 6|108b7 134r18 139r18 142m13
+219i7 Count{natural} 228r14 231r14 232r52 234r56 6|109b7 128m10 131m10 134r10
+. 141r24 146r27
+220b7 Trim_Nul{boolean} 223r18 229r14 6|110b7 116r10
+234i19 J{integer} 235r20 236r36
+245X4*Terminator_Error 6|79r22 120r22
+X 6 i-c.adb
+44m11 J{5|95M9} 45r19
+70i7 Count{natural} 87m10 90m10 94r27
+71m7 From{5|95M9} 75m10 78r16 80r25 83m16 83r24 87r28
+94a10 R{string} 96r19 97m13 100r17
+96i14 J{integer} 97r16 97r44
+112m7 From{5|95M9} 117m10 119r16 121r25 124m16 124r24 128r28 138m10 142r45
+. 148m13 148r21
+113i7 To{integer} 139m10 142r21 149m13 149r21
+141i14 J{integer} 146r23
+174a13 R{5|127A9} 177m16 180m13 180r16 182r20
+176i17 J{integer} 177r27 177r59
+202a16 R{5|127A9} 205m19 208r23
+204i20 J{integer} 205r30 205r62
+222m7 To{5|95M9} 229m10 231r21 233m13 233r19 237r16 240r24
+230i14 From{integer} 231r40
+X 7 system.ads
+55K9*System 5|33w6 34r6 67r32 68r17 93r13 93r39 95r23 7|176e11
+91N4*Memory_Size 5|93r20 93r46 95r30
+X 8 s-parame.ads
+49K16*Parameters 5|34w13 67r39 68r24 8|171e22
+93N4*long_bits 5|67r50 68r35
+

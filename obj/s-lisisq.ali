@@ -1,0 +1,88 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_UNCHECKED_CONVERSION
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.libm_single.squareroot%b  s-lisisq.adb	0b6703d6 NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.unchecked_conversion%s
+W system%s		system.ads		system.ali
+W system.libm_single%s	s-libsin.adb		s-libsin.ali
+W system.machine_code%s	s-maccod.ads		s-maccod.ali
+
+U system.libm_single.squareroot%s  s-lisisq.ads	d323816b NE OL PU PK
+W system%s		system.ads		system.ali
+W system.libm_prefix%s	s-libpre.ads		s-libpre.ali
+W system.libm_single%s	s-libsin.adb		s-libsin.ali
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-unccon.ads		20261002145216 0e9b276f ada.unchecked_conversion%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-libpre.ads		20261002145216 f93cda94 system.libm_prefix%s
+D s-libsin.ads		20261002145216 543e5b31 system.libm_single%s
+D s-lisisq.ads		20261002145216 7e2100ce system.libm_single.squareroot%s
+D s-lisisq.adb		20261002145216 b6172c69 system.libm_single.squareroot%b
+D s-maccod.ads		20261002145216 cdca081e system.machine_code%s
+G a e
+G c Z s b [sqrt system__libm_single__squareroot 40 13 none]
+G c Z b b [rsqrt system__libm_single__squareroot 40 13 none]
+X 1 ada.ads
+18K9*Ada 22e8 7|34r6 75r41 77r43
+X 2 a-unccon.ads
+23v14*Unchecked_Conversion 7|34w10 75r45 77r47
+X 3 system.ads
+55K9*System 176e11 6|34r6 35r9 38r24 48r5 7|36r6 38r14 62r10 151r5
+X 4 s-libpre.ads
+34K16*Libm_Prefix 38e23 6|34w13 38r31
+37a4*Prefix{string} 6|41r57
+X 5 s-libsin.ads
+40K16*Libm_Single 3|55k9 5|533e23 6|35r16 48r12 7|38r21 151r12
+524V13 Infinity{float} 7|142s54
+527V13 NaN{float} 7|139s20
+X 6 s-lisisq.ads
+35K28*Squareroot 5|40k16 6|48l24 48e34 7|38b33 151l24 151t34
+38K12*SLP=38:31 41r53
+40V13*Sqrt{float} 40>19 7|133b13 150l8 150t12
+40f19 X{float} 7|133b19 135r10 136r13 137r20 142r50 145r17 148r17 148r28
+X 7 s-lisisq.adb
+40V13 Rsqrt{float} 40>20 53b13 127l8 127t13 148s21
+40f20 X{float} 53b20 54r34 64r68 68r13 69r20 82r31
+54f7 X_Half{float} 93r23 97r23 101r24 113r24 121r23
+55f7 Y{float} 63m70 63r70 84m13 93m7 93r12 93r32 93r36 97m7 97r12 97r32 97r36
+. 101r13 101r33 101r37 103r10 106m10 113r13 113r33 113r37 115r10 118m10 121m7
+. 121r12 121r32 121r36 126r14
+55f10 Y1{float} 101m7 103r14 104r17 106r15 113m7 115r14 116r17 118r15
+73M18 Unsigned 76r23 78r16 79r17
+75V22 To_Unsigned[2|23]{73M18} 82s18
+77V22 From_Unsigned[2|23]{float} 84s18
+79m13 U{73M18} 82m13 83m13 83r34 84r33
+X 8 s-maccod.ads
+38K16*Machine_Code 7|36w13 62r17 8|142e24
+47I9*Asm_Input_Operand<integer>
+48I9*Asm_Output_Operand<integer>
+91U14*Asm 7|62s30
+93i6 Outputs{48I9} 7|63r35
+94i6 Inputs{47I9} 7|64r35
+

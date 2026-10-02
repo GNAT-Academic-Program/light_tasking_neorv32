@@ -1,0 +1,188 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_EXCEPTIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_IMPLICIT_LOOPS
+RR NO_ELABORATION_CODE
+
+U system.bb.interrupts%b  s-bbinte.adb		fca4e173 NE OL PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W system%s		system.ads		system.ali
+W system.bb%s		s-bb.ads		s-bb.ali
+W system.bb.board_support%s  s-bbbosu.adb	s-bbbosu.ali
+W system.bb.cpu_primitives%s  s-bbcppr.adb	s-bbcppr.ali
+W system.bb.cpu_specific%s  s-bbcpsp.adb	s-bbcpsp.ali
+W system.bb.threads%s	s-bbthre.adb		s-bbthre.ali
+W system.bb.threads.queues%s  s-bbthqu.adb	s-bbthqu.ali
+W system.bb.time%s	s-bbtime.adb		s-bbtime.ali
+W system.multiprocessors%s  s-multip.adb	s-multip.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+W system.tracing_hooks%s  s-trahoo.adb		s-trahoo.ali
+
+U system.bb.interrupts%s  s-bbinte.ads		1a281ac6 BN NE OL PR PK
+W system%s		system.ads		system.ali
+W system.bb%s		s-bb.ads		s-bb.ali
+W system.bb.parameters%s  s-bbpara.ads		s-bbpara.ali
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-except.ads		20261002145216 5b5f0f2f ada.exceptions%s
+D a-except.adb		20261002145216 4da5c77f ada.exceptions%b
+D interfac.ads		20261002145216 9111f9c1 interfaces%s
+D light_tasking_neorv32_config.ads  20261002145319 ceed05b4 light_tasking_neorv32_config%s
+D neorv32_runtime_config.ads  20261002145216 39990e2a neorv32_runtime_config%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-bb.ads		20261002145216 09e072ae system.bb%s
+D s-bbbopa.ads		20261002145216 b188db9e system.bb.board_parameters%s
+D s-bbbosu.ads		20261002145216 b43d4db6 system.bb.board_support%s
+D s-bbbosu.adb		20261002145216 3082c2fe system.bb.board_support%b
+D s-bbsumu.adb		20261002145216 cbb92b04 system.bb.board_support.multiprocessors
+D s-bbsuti.adb		20261002145216 3eb370fb system.bb.board_support.time
+D s-bbcppr.ads		20261002145216 2fdb8fbb system.bb.cpu_primitives%s
+D s-bbcppr.adb		20261002145216 fdd17c9b system.bb.cpu_primitives%b
+D s-bbcpsp.ads		20261002145216 2319a523 system.bb.cpu_specific%s
+D s-bbinte.ads		20261002145216 cf617f22 system.bb.interrupts%s
+D s-bbinte.adb		20261002145216 43f37836 system.bb.interrupts%b
+D s-bbpara.ads		20261002145216 dca9174a system.bb.parameters%s
+D s-bbprot.ads		20261002145216 f48a7e85 system.bb.protection%s
+D s-bbprot.adb		20261002145216 ca30f44c system.bb.protection%b
+D s-bbthre.ads		20261002145216 5f49caa9 system.bb.threads%s
+D s-bbthre.adb		20261002145216 c45a2a19 system.bb.threads%b
+D s-bbthqu.ads		20261002145216 cd23d79e system.bb.threads.queues%s
+D s-bbthqu.adb		20261002145216 23419af7 system.bb.threads.queues%b
+D s-bbtime.ads		20261002145216 ad086247 system.bb.time%s
+D s-maccod.ads		20261002145216 cdca081e system.machine_code%s
+D s-multip.ads		20261002145216 f33e0e35 system.multiprocessors%s
+D s-parame.ads		20261002145216 07f3e19f system.parameters%s
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+D s-trahoo.ads		20261002145216 3d417f1b system.tracing_hooks%s
+D s-trahoo.adb		20261002145216 a28b0853 system.tracing_hooks%b
+G a e
+G c Z s b [initialize_interrupts system__bb__interrupts 59 14 none]
+G c Z s b [interrupt_wrapper system__bb__interrupts 63 14 none]
+G c Z s b [attach_handler system__bb__interrupts 68 14 none]
+G c Z s b [current_interrupt system__bb__interrupts 77 13 none]
+G c Z s b [within_interrupt_stack system__bb__interrupts 82 13 none]
+G c Z b b [Tinterrupt_stacksBIP system__bb__interrupts 68 4 none]
+G c Z b b [Tinterrupt_stack_tableBIP system__bb__interrupts 96 4 none]
+G c Z b b [Thandlers_tableBIP system__bb__interrupts 100 4 none]
+X 7 system.ads
+55K9*System 176e11 17|42r6 44r9 47r28 83r23 91r5 18|39r6 40r6 41r6 42r6 43r6
+. 44r6 45r6 46r6 47r6 49r14 51r8 52r8 53r8 54r8 55r8 96r43 186r7 187r10 258r7
+. 259r10 268r23 289r5
+85M9*Address 17|83r30 18|96r50 268r30
+124I12*Any_Priority{integer}
+128I12*Interrupt_Priority{124I12} 17|71r17 18|120r17 170r34
+X 8 s-bb.ads
+41K16*BB 7|55k9 8|96e14 17|42r13 44r16 47r35 91r12 18|40r13 41r13 42r13 43r13
+. 44r13 45r13 49r21 53r15 54r15 55r15 289r12
+X 10 s-bbbosu.ads
+47K19*Board_Support 145e28 18|44w16 53r18 141r7 171r27 254r7
+85K12*Interrupts 124e18 18|141r21 171r41 254r21
+86V16*Priority_Of_Interrupt{7|124I12} 18|171s52
+92U17*Install_Interrupt_Handler 18|141s32
+109U17*Set_Current_Priority 18|254s32
+126K12*Multiprocessors 144e23 18|53r32
+135V16*Current_CPU{28|23I12} 18|150s44 172s50
+X 14 s-bbcppr.ads
+45K19*CPU_Primitives 95e29 18|40w16 212r7 222r7 283r10
+58U14*Initialize_Stack 18|283s25
+84U14*Disable_Interrupts 18|222s22
+88U14*Enable_Interrupts 18|212s22
+X 15 s-bbcppr.adb
+65V13 Pre_Context_Switch{51R9} 66i24
+X 16 s-bbcpsp.ads
+39K19*CPU_Specific 143e27 18|41w16 63r34
+89N4*Stack_Alignment 18|63r47
+X 17 s-bbinte.ads
+44K19*Interrupts 8|41k16 17|91l15 91e25 18|49b24 289l15 289t25
+47I12*Interrupt_ID{19|66I12} 51r12 51r34 56r53 63r38 70r17 18|100r34 119r17
+. 167r38
+50I12*Any_Interrupt_ID{integer} 53r28 53r48 77r38 18|106r45 148r38 149r25
+. 173r34
+53i4*No_Interrupt{50I12} 18|107r43 125r28 155r35 159r17 270r29
+56P9*Interrupt_Handler 56>48 69r26 18|100r51 118r26
+56i48 Id{47I12}
+59U14*Initialize_Interrupts 18|279b14 288l8 288t29
+63U14*Interrupt_Wrapper 63>33 18|167b14 261l8 261t25
+63i33 Id{47I12} 18|167b33 171r75 187r57 191r43 216r36 219r36 219r45 259r55
+68U14*Attach_Handler 69>7 70>7 71>7 72r19 18|117b14 142l8 142t22
+69p7 Handler{56P9} 18|118b7 135r40
+70i7 Id{47I12} 18|119b7 125r22 129r36 135r33 141r59
+71i7 Prio{7|128I12} 18|120b7 141r63
+77V13*Current_Interrupt{50I12} 18|148b13 161l8 161t25 270s8
+82V13*Within_Interrupt_Stack{boolean} 83>7 84r19 18|267b13
+83m7 Stack_Address{7|85M9} 18|270r63
+X 18 s-bbinte.adb
+61A9 Stack_Space<30|67A9>(30|60M9)<30|54I9> 63r8 64r36 68r38 271r52 273r51
+. 285r13
+68a4 Interrupt_Stacks(61A9) 69r27 271m23 271r23 273m23 273r23 284m13 284r13
+96a4 Interrupt_Stack_Table(7|85M9) 97m24 97r24 286m13 286r13
+100A9 Handlers_Table(17|56P9)<integer> 103r31
+103a4 Interrupt_Handlers_Table{100A9} 129r10 135m7 216r10 219r10
+106a4 Interrupt_Being_Handled(17|50I12) 108r21 150r19 174r27 191m7 240m7
+149i7 Result{17|50I12} 155r25 156r17
+168p7 Self_Id{22|185P9} 169r67 175r45 207r50 209r7 210r39 236r39 245r7
+169i7 Caller_Priority{integer} 207r10 236r48 254r54
+170i7 Int_Priority{7|128I12} 207r29 210r48 212r41
+172i7 CPU_Id{28|23I12} 174r52 191r32 240r32
+173i7 Previous_Int{17|50I12} 240r43
+175b7 Prev_In_Interr{boolean} 245r31
+281i11 Proc{28|23I12} 284r31 286r36
+X 19 s-bbpara.ads
+49K19*Parameters 17|42w16 47r38 18|62r45 19|98e25
+66I12*Interrupt_Range{natural} 17|47r49
+81N4*Interrupt_Stack_Size 18|62r56
+X 22 s-bbthre.ads
+169K19*Threads 18|42w16 43r16 54r18 153r10 168r34 168r55 169r45 210r7 236r7
+. 22|419e22
+185P9*Thread_Id(182R9) 18|168r42
+191n27*Runnable{191E9} 18|207r67
+243e7*State{191E9} 18|207r58
+246b7*In_Interrupt{boolean} 18|153r30 175r53 209m15 245m15
+360V13*Thread_Self{185P9} 18|153s18 168s63
+375V13*Get_Priority{integer} 18|169s53
+X 24 s-bbthqu.ads
+41K27*Queues 18|43w24 210r15 236r15 24|315e29
+119U14*Change_Priority 18|210s22 236s22
+X 26 s-bbtime.ads
+43K19*Time 18|45w16 55r18 26|184e19
+115p4*Scheduling_Event_Hook 18|180r10 181r10 228r10 229r10
+X 28 s-multip.ads
+18K16*Multiprocessors 18|46w13 51r15 28|31e27
+21I9*CPU_Range<short_short_integer>
+23I12*CPU{21I9} 18|68r30 96r35 106r37 172r34 271r41 273r41 281r19
+X 30 s-stoele.ads
+43K16*Storage_Elements 18|39w13 52r15 61r28 62r12 30|104e28
+54I9*Storage_Offset<integer> 18|62r29
+60M9*Storage_Element
+67A9*Storage_Array(60M9)<54I9> 18|61r45
+92M9*Integer_Address
+100V13*To_Integer{92M9} 18|270s51 271s11 273s11
+X 31 s-trahoo.ads
+38K16*Tracing_Hooks 18|47w13 186r14 187r17 258r14 259r17 31|108e25
+56n7*Interrupt_Start{55E9} 18|187r31
+57n7*Interrupt_End{55E9} 18|259r31
+68U14*Call_Interrupt_Hook 18|186s28 258s28
+

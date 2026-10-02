@@ -1,0 +1,16 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb"
+node: { title: "__gnat_pre_context_switch" label: "Pre_Context_Switch\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:83:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__cpu_primitives__context_switch" label: "Context_Switch\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:110:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "__gnat_context_switch" label: "Context_Switch_Asm\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:112:17" shape : ellipse }
+edge: { sourcename: "system__bb__cpu_primitives__context_switch" targetname: "__gnat_context_switch" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:126:7" }
+node: { title: "system__bb__cpu_primitives__disable_interrupts" label: "Disable_Interrupts\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:134:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__cpu_specific__clear_mstatus_bits" label: "Clear_Mstatus_Bits\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.ads:128:14" shape : ellipse }
+edge: { sourcename: "system__bb__cpu_primitives__disable_interrupts" targetname: "system__bb__cpu_specific__clear_mstatus_bits" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:137:7" }
+node: { title: "system__bb__cpu_primitives__enable_interrupts" label: "Enable_Interrupts\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:144:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__cpu_specific__set_mstatus_bits" label: "Set_Mstatus_Bits\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.ads:129:14" shape : ellipse }
+edge: { sourcename: "system__bb__cpu_primitives__enable_interrupts" targetname: "system__bb__cpu_specific__set_mstatus_bits" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:153:10" }
+node: { title: "system__bb__cpu_primitives__initialize_stack" label: "Initialize_Stack\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:161:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__cpu_primitives__initialize_context" label: "Initialize_Context\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:184:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__cpu_primitives__initialize_cpu" label: "Initialize_Cpu\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:219:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__cpu_primitives__install_error_handlers" label: "Install_Error_Handlers\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:228:4\n0 bytes (static)\n0 dynamic objects" }
+}

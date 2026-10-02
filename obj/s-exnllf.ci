@@ -1,0 +1,72 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads"
+node: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" label: "Expon\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exponr.adb:70:4\n96 bytes (static)\n0 dynamic objects" }
+node: { title: "__muldf3" label: "muldf3\n<built-in>" shape : ellipse }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__muldf3" }
+node: { title: "__subdf3" label: "subdf3\n<built-in>" shape : ellipse }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__subdf3" }
+node: { title: "__nedf2" label: "nedf2\n<built-in>" shape : ellipse }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__nedf2" }
+node: { title: "__eqdf2" label: "eqdf2\n<built-in>" shape : ellipse }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__eqdf2" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__eqdf2" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__subdf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__eqdf2" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__subdf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__muldf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__subdf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__muldf3" }
+node: { title: "__adddf3" label: "adddf3\n<built-in>" shape : ellipse }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__adddf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__muldf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__adddf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__muldf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__adddf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__muldf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__adddf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__muldf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__adddf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__adddf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__subdf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__subdf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__muldf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__subdf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__nedf2" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__eqdf2" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__muldf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__subdf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__eqdf2" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__subdf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__muldf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__subdf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__muldf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__adddf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__muldf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__adddf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__adddf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__adddf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__muldf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__adddf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__muldf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__adddf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__adddf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__subdf3" }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" targetname: "__subdf3" }
+node: { title: "system__exn_llf__exn_long_long_float" label: "Exn_Long_Long_Float\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exponr.adb:52:1\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__exn_llf__exn_long_long_float" targetname: "__muldf3" }
+edge: { sourcename: "system__exn_llf__exn_long_long_float" targetname: "__muldf3" }
+edge: { sourcename: "system__exn_llf__exn_long_long_float" targetname: "__muldf3" }
+edge: { sourcename: "system__exn_llf__exn_long_long_float" targetname: "__muldf3" }
+edge: { sourcename: "system__exn_llf__exn_long_long_float" targetname: "__muldf3" }
+edge: { sourcename: "system__exn_llf__exn_long_long_float" targetname: "__muldf3" }
+edge: { sourcename: "system__exn_llf__exn_long_long_float" targetname: "__muldf3" }
+edge: { sourcename: "system__exn_llf__exn_long_long_float" targetname: "__muldf3" }
+edge: { sourcename: "system__exn_llf__exn_long_long_float" targetname: "__muldf3" }
+edge: { sourcename: "system__exn_llf__exn_long_long_float" targetname: "__muldf3" }
+edge: { sourcename: "system__exn_llf__exn_long_long_float" targetname: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exponr.adb:123:30" }
+node: { title: "__divdf3" label: "divdf3\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__exn_llf__exn_long_long_float" targetname: "__divdf3" }
+edge: { sourcename: "system__exn_llf__exn_long_long_float" targetname: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exponr.adb:123:30" }
+edge: { sourcename: "system__exn_llf__exn_long_long_float" targetname: "__muldf3" }
+edge: { sourcename: "system__exn_llf__exn_long_long_float" targetname: "__divdf3" }
+edge: { sourcename: "system__exn_llf__exn_long_long_float" targetname: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exnllf.ads:system__exn_llf__exn_long_long_float__expon.0" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-exponr.adb:123:30" }
+}

@@ -1,0 +1,94 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.img_fixed_64%s	s-imfi64.ads		63e13222 NE OL PK
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.arith_64%s	s-arit64.adb		s-arit64.ali
+Z system.exn_lli%s	s-exnlli.ads		s-exnlli.ali
+W system.image_f%s
+Z system.image_i%s
+W system.img_util%s	s-imguti.adb		s-imguti.ali
+
+D interfac.ads		20261002145216 9111f9c1 interfaces%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-arit64.ads		20261002145216 60e313f7 system.arith_64%s
+D s-exnlli.ads		20261002145216 cdbd4493 system.exn_lli%s
+D s-exponn.ads		20261002145216 400c98c7 system.exponn%s
+D s-imagef.ads		20261002145216 08b63c8e system.image_f%s
+D s-imagef.adb		20261002145216 0e632318 system.image_f%b
+D s-imagei.ads		20261002145216 11a376a2 system.image_i%s
+D s-imagei.adb		20261002145216 e81b26f1 system.image_i%b
+D s-imfi64.ads		20261002145216 99ebeefa system.img_fixed_64%s
+D s-imguti.ads		20261002145216 7719a4b9 system.img_util%s
+G a e
+G c Z s s [image_fixed system__img_fixed_64__impl 46 14 43_4]
+G c Z s s [set_image_fixed system__img_fixed_64__impl 65 14 43_4]
+G c Z s s [image_integer system__img_fixed_64__impl__image_i 40 14 57_4_43_4]
+G c Z s s [set_image_integer system__img_fixed_64__impl__image_i 48 14 57_4_43_4]
+G c Z s s [set_digits system__img_fixed_64__impl__image_i 36 14 57_4_43_4]
+X 1 interfac.ads
+47K9*Interfaces 247e15 10|35w6 41r21
+68I9*Integer_64<long_long_integer> 10|41r32
+95M9*Unsigned_64
+X 2 system.ads
+55K9*System 176e11 10|36r6 37r6 39r9 87r5
+X 3 s-arit64.ads
+41K16*Arith_64 191e20 10|36w13 43r40
+48I12*Int64{1|68I9}
+74V13*Multiply_With_Ovflo_Check64{48I12} 75i<c,__gnat_mulv64>22
+85U14*Scaled_Divide64 10|43r49
+158M12*Uns64{1|95M9}
+180V13*Uns_Multiply_With_Ovflo_Check64{158M12} 181i<c,__gnat_uns_mulv64>22
+X 6 s-imagef.ads
+44k16*Image_F 86e19 10|37w13 43r24
+46U14*Image_Fixed 10|53r19[43]
+65U14*Set_Image_Fixed 10|76r19[43]
+X 10 s-imfi64.ads
+39K16*Img_Fixed_64 2|55k9 10|87l12 87e24
+41I12*Int64{1|68I9} 43r33 46r14 49r14 50r14 66r14 69r14 70r14
+43K12*Impl[6|44] 53r14 76r14
+45U14*Image_Fixed64=53:19
+46i7 V{1|68I9}
+47a7 S{string}
+48i7 P{natural}
+49i7 Num{1|68I9}
+50i7 Den{1|68I9}
+51i7 For0{natural}
+52i7 Aft0{natural}
+65U14*Set_Image_Fixed64=76:19
+66i7 V{1|68I9}
+67a7 S{string}
+68i7 P{natural}
+69i7 Num{1|68I9}
+70i7 Den{1|68I9}
+71i7 For0{natural}
+72i7 Aft0{natural}
+73i7 Fore{natural}
+74i7 Aft{natural}
+75i7 Exp{natural}
+

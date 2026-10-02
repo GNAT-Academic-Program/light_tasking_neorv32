@@ -1,0 +1,103 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RR NO_ELABORATION_CODE
+
+U interfaces.neorv32%s	i-neorv32.ads		5018a069 NE OL PR PK
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+
+D interfac.ads		20261002145216 9111f9c1 interfaces%s
+D i-neorv32.ads		20261002145216 c24753c8 interfaces.neorv32%s
+D system.ads		20261002145216 034e0a60 system%s
+G a e
+X 1 interfac.ads
+47K9*Interfaces 247e15 2|13r9 21r23 22r23 23r21 108r5
+81M9*Unsigned_8 2|23r32
+84M9*Unsigned_16 2|22r34
+92M9*Unsigned_32 2|21r34
+X 2 i-neorv32.ads
+13K20*NEORV32 1|47k9 2|108l16 108e23
+21M9*UInt32<1|92M9>
+22M9*UInt16<1|84M9>
+23M9*Byte<1|81M9>
+24M9*Bit
+26M9*UInt2
+28M9*UInt3
+30M9*UInt4
+32M9*UInt5
+34M9*UInt6
+36M9*UInt7
+38M9*UInt9
+40M9*UInt10
+42M9*UInt11
+44M9*UInt12
+46M9*UInt13
+48M9*UInt14
+50M9*UInt15
+52M9*UInt17
+54M9*UInt18
+56M9*UInt19
+58M9*UInt20
+60M9*UInt21
+62M9*UInt22
+64M9*UInt23
+66M9*UInt24
+68M9*UInt25
+70M9*UInt26
+72M9*UInt27
+74M9*UInt28
+76M9*UInt29
+78M9*UInt30
+80M9*UInt31
+87m4*CFS_Base{3|85M9}
+88m4*SDI_Base{3|85M9}
+89m4*SLINK_Base{3|85M9}
+90m4*DMA_Base{3|85M9}
+91m4*PWM_Base{3|85M9}
+92m4*GPTMR_Base{3|85M9}
+93m4*ONEWIRE_Base{3|85M9}
+94m4*CLINT_Base{3|85M9}
+95m4*UART0_Base{3|85M9}
+96m4*UART1_Base{3|85M9}
+97m4*SPI_Base{3|85M9}
+98m4*TWI_Base{3|85M9}
+99m4*TWD_Base{3|85M9}
+100m4*TRNG_Base{3|85M9}
+101m4*WDT_Base{3|85M9}
+102m4*GPIO_Base{3|85M9}
+103m4*NEOLED_Base{3|85M9}
+104m4*TRACER_Base{3|85M9}
+105m4*SMC_Base{3|85M9}
+106m4*SYSINFO_Base{3|85M9}
+X 3 system.ads
+55K9*System 2|10w6 87r24 87r42 88r24 88r42 89r26 89r44 90r24 90r42 91r24
+. 91r42 92r26 92r44 93r28 93r46 94r26 94r44 95r26 95r44 96r26 96r44 97r24
+. 97r42 98r24 98r42 99r24 99r42 100r25 100r43 101r24 101r42 102r25 102r43
+. 103r27 103r45 104r27 104r45 105r24 105r42 106r28 106r46 3|176e11
+85M9*Address 2|87r31 87r42 88r31 88r42 89r33 89r44 90r31 90r42 91r31 91r42
+. 92r33 92r44 93r35 93r46 94r33 94r44 95r33 95r44 96r33 96r44 97r31 97r42
+. 98r31 98r42 99r31 99r42 100r32 100r43 101r31 101r42 102r32 102r43 103r34
+. 103r45 104r34 104r45 105r31 105r42 106r35 106r46
+

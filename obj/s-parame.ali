@@ -1,0 +1,61 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.parameters%b	s-parame.adb		ddb39e3c NE OL PK
+W system%s		system.ads		system.ali
+
+U system.parameters%s	s-parame.ads		04bdebff NE OL PU PK
+W system%s		system.ads		system.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-parame.ads		20261002145216 07f3e19f system.parameters%s
+D s-parame.adb		20261002145216 da407fa3 system.parameters%b
+G a e
+G c Z s b [adjust_storage_size system__parameters 72 13 none]
+X 1 system.ads
+55K9*System 176e11 2|49r9 99r25 171r5 3|34r14 51r5
+85M9*Address 2|99r32
+91N4*Memory_Size 2|56r29 56r48
+X 2 s-parame.ads
+49K16*Parameters 1|55k9 2|171l12 171e22 3|34b21 51l12 51t22
+56I9*Size_Type<integer> 63r32 63r45 66r34 69r34 72r41 72r59 85r46 3|40r41
+. 40r59
+63i4*Unspecified_Size{56I9} 3|42r17
+66i4*Default_Stack_Size{56I9} 3|43r17
+69i4*Minimum_Stack_Size{56I9} 3|44r20 45r17
+72V13*Adjust_Storage_Size{56I9} 72>34 3|40b13 49l8 49t27
+72i34 Size{56I9} 3|40b34 42r10 44r13 47r17
+80b4*Stack_Grows_Down{boolean}
+85i4*Runtime_Default_Sec_Stack_Size{56I9}
+93N4*long_bits
+98N4*ptr_bits
+99M12*C_Address{1|85M9}
+102a4*C_Malloc_Linkname{string}
+125b4*Garbage_Collected{boolean}
+140b4*No_Abort{boolean}
+153N4*Max_Attribute_Count
+160N4*Max_Task_Image_Length
+167N4*Default_Exception_Msg_Max_Length
+

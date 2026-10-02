@@ -1,0 +1,35 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-exetim.adb"
+node: { title: "ada__execution_time__Oadd" label: "+\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-exetim.adb:61:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__real_time__Oadd" label: "+\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-reatim.ads:83:13" shape : ellipse }
+edge: { sourcename: "ada__execution_time__Oadd" targetname: "ada__real_time__Oadd" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-exetim.adb:67:50" }
+node: { title: "ada__execution_time__Oadd__2" label: "+\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-exetim.adb:70:4\n0 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__execution_time__Oadd__2" targetname: "ada__real_time__Oadd" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-reatim.ads:91:13" }
+node: { title: "ada__execution_time__Osubtract" label: "-\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-exetim.adb:83:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__real_time__Osubtract" label: "-\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-reatim.ads:85:13" shape : ellipse }
+edge: { sourcename: "ada__execution_time__Osubtract" targetname: "ada__real_time__Osubtract" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-exetim.adb:89:50" }
+node: { title: "ada__execution_time__Osubtract__2" label: "-\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-exetim.adb:92:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__real_time__Osubtract__2" label: "-\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-reatim.ads:87:13" shape : ellipse }
+edge: { sourcename: "ada__execution_time__Osubtract__2" targetname: "ada__real_time__Osubtract__2" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-exetim.adb:98:41" }
+node: { title: "ada__execution_time__clock" label: "Clock\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-exetim.adb:105:4\n32 bytes (static)\n0 dynamic objects" }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+edge: { sourcename: "ada__execution_time__clock" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-exetim.adb:115:10" }
+node: { title: "system__task_primitives__operations__get_thread_id" label: "Get_Thread_Id\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-taprop.ads:90:13" shape : ellipse }
+edge: { sourcename: "ada__execution_time__clock" targetname: "system__task_primitives__operations__get_thread_id" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-exetim.adb:118:46" }
+node: { title: "system__bb__execution_time__read_execution_time_atomic" label: "Read_Execution_Time_Atomic\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbexti.adb:76:13" shape : ellipse }
+edge: { sourcename: "ada__execution_time__clock" targetname: "system__bb__execution_time__read_execution_time_atomic" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbexti.adb:295:14" }
+node: { title: "system__bb__interrupts__current_interrupt" label: "Current_Interrupt\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbinte.ads:77:13" shape : ellipse }
+edge: { sourcename: "ada__execution_time__clock" targetname: "system__bb__interrupts__current_interrupt" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbexti.adb:302:38" }
+node: { title: "system__bb__execution_time__elapsed_time" label: "Elapsed_Time\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbexti.adb:71:13" shape : ellipse }
+edge: { sourcename: "ada__execution_time__clock" targetname: "system__bb__execution_time__elapsed_time" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbexti.adb:305:16" }
+edge: { sourcename: "ada__execution_time__clock" targetname: "system__bb__execution_time__read_execution_time_atomic" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbexti.adb:307:17" }
+edge: { sourcename: "ada__execution_time__clock" targetname: "system__bb__execution_time__read_execution_time_atomic" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbexti.adb:317:20" }
+node: { title: "ada__execution_time__split" label: "Split\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-exetim.adb:127:4\n32 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__real_time__split" label: "Split\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-reatim.ads:158:14" shape : ellipse }
+edge: { sourcename: "ada__execution_time__split" targetname: "ada__real_time__split" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-exetim.adb:133:20" }
+node: { title: "ada__execution_time__time_of" label: "Time_Of\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-exetim.adb:140:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__real_time__time_of" label: "Time_Of\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-reatim.ads:160:13" shape : ellipse }
+edge: { sourcename: "ada__execution_time__time_of" targetname: "ada__real_time__time_of" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-exetim.adb:146:37" }
+node: { title: "ada__execution_time__clock_for_interrupts" label: "Clock_For_Interrupts\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-exetim.adb:153:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__execution_time__global_interrupt_clock" label: "Global_Interrupt_Clock\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbexti.ads:34:13" shape : ellipse }
+edge: { sourcename: "ada__execution_time__clock_for_interrupts" targetname: "system__bb__execution_time__global_interrupt_clock" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-exetim.adb:155:39" }
+}

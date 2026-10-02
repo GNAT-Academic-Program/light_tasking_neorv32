@@ -1,0 +1,14 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-memory.adb"
+node: { title: "__gnat_malloc" label: "Alloc\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-memory.adb:76:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+edge: { sourcename: "__gnat_malloc" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-memory.adb:110:13" }
+edge: { sourcename: "__gnat_malloc" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-memory.adb:125:13" }
+node: { title: "malloc" label: "Malloc\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-memory.adb:144:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "malloc" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-memory.adb:110:13" }
+edge: { sourcename: "malloc" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-memory.adb:125:13" }
+node: { title: "calloc" label: "Calloc\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-memory.adb:153:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "calloc" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-memory.adb:110:13" }
+edge: { sourcename: "calloc" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-memory.adb:125:13" }
+node: { title: "__gnat_free" label: "Free\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-memory.adb:164:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "free" label: "C_Free\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-memory.adb:174:4\n0 bytes (static)\n0 dynamic objects" }
+}

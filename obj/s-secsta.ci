@@ -1,0 +1,19 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.adb"
+node: { title: "system__secondary_stack__memoryIP" label: "memoryIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__secondary_stack__ss_stackIP" label: "ss_stackIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__secondary_stack__ss_allocate" label: "Ss_Allocate\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.adb:100:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "__gnat_get_secondary_stack" label: "Get_Sec_Stack\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.adb:43:13" shape : ellipse }
+edge: { sourcename: "system__secondary_stack__ss_allocate" targetname: "__gnat_get_secondary_stack" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.adb:123:40" }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__secondary_stack__ss_allocate" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.adb:137:10" }
+edge: { sourcename: "system__secondary_stack__ss_allocate" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.adb:154:10" }
+edge: { sourcename: "system__secondary_stack__ss_allocate" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.adb:166:13" }
+node: { title: "system__secondary_stack__ss_get_max" label: "Ss_Get_Max\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.adb:188:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__secondary_stack__ss_get_max" targetname: "__gnat_get_secondary_stack" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.adb:194:33" }
+node: { title: "system__secondary_stack__ss_init" label: "Ss_Init\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.adb:201:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__secondary_stack__ss_init" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.adb:282:13" }
+node: { title: "system__secondary_stack__ss_mark" label: "Ss_Mark\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.adb:296:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__secondary_stack__ss_mark" targetname: "__gnat_get_secondary_stack" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.adb:298:23" }
+node: { title: "system__secondary_stack__ss_release" label: "Ss_Release\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.adb:305:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__secondary_stack__ss_release" targetname: "__gnat_get_secondary_stack" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.adb:307:7" }
+}

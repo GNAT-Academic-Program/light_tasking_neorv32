@@ -1,0 +1,61 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.image_i%b	s-imagei.adb		f9b85053 NE OL PK GE
+W system%s		system.ads		system.ali
+N A56:10 codepeer false_positive "test always false" "V can be positive"
+
+U system.image_i%s	s-imagei.ads		12ed7cc2 BN NE OL PK GE
+W system%s		system.ads		system.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-imagei.ads		20261002145216 11a376a2 system.image_i%s
+D s-imagei.adb		20261002145216 e81b26f1 system.image_i%b
+G a e
+G c Z s b [image_i system 38 16 none]
+X 1 system.ads
+55K9*System 176e11 2|38r9 58r5 3|32r14 128r5
+X 2 s-imagei.ads
+37I9 Int 41r11 49r11 3|34r28 34r38 49r11 112r11
+38k16*Image_I 1|55k9 2|37z9 58l12 58e19 3|32b21 128l12 128t19
+40U14*Image_Integer 41>7 42=7 43<7 3|48b14 68l8 68t21
+41*7 V{37I9} 3|49b7 55r10 67r26
+42a7 S{string} 3|50b7 53r22 58m10 60r29 64r29 67m29
+43i7 P{natural} 3|51b7 59m10 60r25 63m10 64r25 67m32
+48U14*Set_Image_Integer 49>7 50=7 51=7 3|67s7 111b14 126l8 126t25
+49*7 V{37I9} 3|112b7 116r10 117r23 124r22
+50a7 S{string} 3|113b7 117m26 119r30 119r50 123m10 124m25
+51i7 P{natural} 3|114b7 117m29 119r25 119r46 122m10 122r15 123r13 124m28
+X 3 s-imagei.adb
+34I12 Non_Positive{2|37I9} 37r11 75r11 80r19
+36U14 Set_Digits 37>7 38=7 39=7 74b14 105l8 105t18 117s10 124s10
+37*7 T{34I12} 75b7 80r35 96r16
+38a7 S{string} 76b7 82r27 82r47 100m10
+39i7 P{natural} 77b7 82r22 82r43 100r13 104m7 104r12
+79i7 Nb_Digits{natural} 91m10 91r23 99r30 104r16
+80*7 Value{34I12} 90m10 90r19 93r20 96m7 100r44 101m10 101r19
+99i11 J{integer} 100r17
+

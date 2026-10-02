@@ -1,0 +1,81 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF SS ZX
+
+RN
+RV NO_SECONDARY_STACK
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.case_util%b	s-casuti.adb		14fb286b NE OL PK
+W system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U system.case_util%s	s-casuti.ads		ddb6eb0a NE OL PU PK
+W system%s		system.ads		system.ali
+W system.case_util_nss%s  s-cautns.adb		s-cautns.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-casuti.ads		20261002145216 bb976540 system.case_util%s
+D s-casuti.adb		20261002145216 af6c4d2b system.case_util%b
+D s-cautns.ads		20261002145216 656f842a system.case_util_nss%s
+D s-parame.ads		20261002145216 07f3e19f system.parameters%s
+D s-secsta.ads		20261002145216 bd894d4b system.secondary_stack%s
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+G a e
+G c Z s b [to_upper system__case_util 68 13 none]
+G c Z s b [to_lower system__case_util 84 13 none]
+G c Z s b [to_mixed system__case_util 95 13 none]
+X 1 system.ads
+55K9*System 176e11 2|54r6 56r9 110r5 3|32r14 68r5
+X 2 s-casuti.ads
+56K16*Case_Util 1|55k9 2|110l12 110e21 3|32b21 68l12 68t21
+61V13*To_Upper=62:28{character} 73s42 103s45
+61e23 A{character}
+66U14*To_Upper=66:65 3|64s7
+66a24 A{string}
+68V13*To_Upper{string} 68>23 3|61b13 66l8 66t16
+68a23 A{string} 70r38 71r40 72r31 73r52 3|61b23 62r26
+72i26 J{integer} 73r37 73r55
+76V13*To_Lower=77:28{character} 89s42 105s45
+76e23 A{character}
+81U14*To_Lower=82:28 3|42s7
+81a24 A{string}
+84V13*To_Lower{string} 84>23 3|39b13 44l8 44t16
+84a23 A{string} 86r38 87r40 88r31 89r52 3|39b23 40r26
+88i26 J{integer} 89r37 89r55
+92U14*To_Mixed=93:28 3|53s7
+92a24 A{string}
+95V13*To_Mixed{string} 95>23 3|50b13 55l8 55t16
+95a23 A{string} 97r38 98r40 99r31 100r28 101r31 103r55 105r55 3|50b23 51r26
+99i26 J{integer} 100r24 101r34 103r40 103r58 105r40 105r58
+X 3 s-casuti.adb
+40a7 Result{string} 42m17 42r17 43r14
+51a7 Result{string} 53m17 53r17 54r14
+62a7 Result{string} 64m17 64r17 65r14
+X 4 s-cautns.ads
+52K16*Case_Util_NSS 2|54w13 62r14 66r51 77r14 82r14 93r14 4|106e25
+57V13*To_Upper{character} 2|62r28
+72U14*To_Upper 2|66r65
+76V13*To_Lower{character} 2|77r28
+91U14*To_Lower 2|82r28
+95U14*To_Mixed 2|93r28
+

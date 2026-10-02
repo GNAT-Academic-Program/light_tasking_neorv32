@@ -1,0 +1,111 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.val_util%b	s-valuti.adb		0d1904b9 NE OL PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W system%s		system.ads		system.ali
+W system.case_util_nss%s  s-cautns.adb		s-cautns.ali
+N A125:7 codepeer false_positive "test always false" "the slice might be empty or not start with an 'e'"
+
+U system.val_util%s	s-valuti.ads		efe5e843 NE OL PU PK
+W system%s		system.ads		system.ali
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-except.ads		20261002145216 5b5f0f2f ada.exceptions%s
+D a-except.adb		20261002145216 4da5c77f ada.exceptions%b
+D system.ads		20261002145216 034e0a60 system%s
+D s-cautns.ads		20261002145216 656f842a system.case_util_nss%s
+D s-valuti.ads		20261002145216 ecabe223 system.val_util%s
+D s-valuti.adb		20261002145216 84dd62b0 system.val_util%b
+G a e
+G c Z s b [bad_value system__val_util 37 14 none]
+G c Z s b [normalize_string system__val_util 40 14 none]
+G c Z s b [scan_sign system__val_util 51 14 none]
+G c Z s b [scan_plus_sign system__val_util 76 14 none]
+G c Z s b [scan_exponent system__val_util 84 14 none]
+G c Z s b [scan_trailing_blanks system__val_util 104 14 none]
+G c Z s b [scan_underscore system__val_util 108 14 none]
+X 4 system.ads
+55K9*System 176e11 6|34r9 125r5 7|32r6 32r32 34r14 361r5
+97V14*">"{boolean} 7|48r19
+X 5 s-cautns.ads
+52K16*Case_Util_NSS 106e25 7|32w13 32w39
+57V13*To_Upper{character} 7|98s22
+X 6 s-valuti.ads
+34K16*Val_Util 4|55k9 6|125l12 125e20 7|34b21 361l12 361t20
+37U14*Bad_Value 37>25 7|42b14 54l8 54t17 210s10 220s13 233s13 257s10 267s13
+. 281s13 292s13 310s13 343s10 357s10
+37a25 S{string} 7|42b25 48r10 50r12 50r15 50r26 52r67
+40U14*Normalize_String 41=7 42<7 42<10 43>7 7|60b14 101l8 101t24
+41a7 S{string} 7|61b7 65r12 66r12 76r28 83r10 90r13 96r33 98m13 98r32
+42i7 F{integer} 7|62b7 65m7 70r10 76r13 76r31 77m10 77r15 83r13 96r36 97r19
+42i10 L{integer} 7|62b10 66m7 70r14 76r17 84m10 84r15 90r16 91m10 91r15 97r24
+43b7 To_Upper_Case{boolean} 7|63b7 96r10
+51U14*Scan_Sign 52>7 53^7 54>7 55<7 56<7 7|244b14 300l8 300t17
+52a7 Str{string} 7|245b7 257r21 262r13 267r24 275r10 281r24 286r13 292r24
+53p7 Ptr(integer) 7|246b7 251r22 266r13 280r13 291r13 299r7
+54i7 Max{integer} 7|247b7 256r14 265r17 279r17 290r17
+55b7 Minus{boolean} 7|248b7 276m10 287m10 296m10
+56i7 Start{positive} 7|249b7 271m7 280r24 291r24
+76U14*Scan_Plus_Sign 77>7 78^7 79>7 80<7 7|200b14 238l8 238t22
+77a7 Str{string} 7|201b7 210r21 215r13 220r24 228r10 233r24
+78p7 Ptr(integer) 7|202b7 206r22 219r13 232r13 237r7
+79i7 Max{integer} 7|203b7 209r14 218r17 231r17
+80i7 Start{positive} 7|204b7 224m7 232r24
+84U14*Scan_Exponent 85>7 86^7 87>7 88<7 89>7 7|107b14 194l8 194t21
+85a7 Str{string} 7|108b7 120r18 120r42 133r10 143r13 157r10 171r25 174r43
+. 181r13 182r30 184r23
+86p7 Ptr(integer) 7|109b7 114r22 182r38 192r7
+87i7 Max{integer} 7|110b7 119r15 136r17 146r17 179r24 182r43
+88i7 Exp{integer} 7|111b7 122m10 137m13 147m13 158m10 193m7
+89b7 Real{boolean} 7|112b7 146r33
+104U14*Scan_Trailing_Blanks 104>36 104>50 7|306b14 313l8 313t28
+104a36 Str{string} 7|306b36 308r21 309r13 310r24
+104i50 P{positive} 7|306b50 308r16
+108U14*Scan_Underscore 109>7 110=7 111^7 112>7 113>7 7|182s13 319b14 359l8
+. 359t23
+109a7 Str{string} 7|320b7 343r21 349r12 357r21
+110i7 P{natural} 7|321b7 328m7 328r12 341r10 342r21 349r17 356r21
+111p7 Ptr(integer) 7|322b7 342r10 356r10
+112i7 Max{integer} 7|323b7 341r14
+113b7 Ext{boolean} 7|324b7 352r18
+X 7 s-valuti.adb
+97i14 J{integer} 98r16 98r35
+114i7 P{integer} 119r10 120r23 120r47 131m7 131r12 133r15 134m10 134r15 136r13
+. 143r18 144m10 144r15 146r13 157r15 171r30 174r48 177m10 177r15 179r20 181r18
+. 182m35 182r35 184r28 192r18
+115b7 M{boolean} 140m13 150m13 154m10 188r10
+116i7 X{integer} 168m7 173r13 174m13 174r18 189m10 189r16 193r14
+206i7 P{integer} 209r10 215r18 216m10 216r15 218r13 219r24 224r16 228r15
+. 229m10 229r15 231r13 237r18
+251i7 P{integer} 256r10 262r18 263m10 263r15 265r13 266r24 271r16 275r15
+. 277m10 277r15 279r13 286r18 288m10 288r15 290r13 299r18
+308i11 J{integer} 309r18
+326e7 C{character} 349m7 351r10 352r32 352r56
+

@@ -1,0 +1,38 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-lisisq.adb"
+node: { title: "sqrtf" label: "Sqrt\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-lisisq.adb:133:4\n32 bytes (static)\n0 dynamic objects" }
+node: { title: "__lesf2" label: "lesf2\n<built-in>" shape : ellipse }
+edge: { sourcename: "sqrtf" targetname: "__lesf2" }
+node: { title: "__eqsf2" label: "eqsf2\n<built-in>" shape : ellipse }
+edge: { sourcename: "sqrtf" targetname: "__eqsf2" }
+node: { title: "__gtsf2" label: "gtsf2\n<built-in>" shape : ellipse }
+edge: { sourcename: "sqrtf" targetname: "__gtsf2" }
+edge: { sourcename: "sqrtf" targetname: "__eqsf2" }
+node: { title: "__mulsf3" label: "mulsf3\n<built-in>" shape : ellipse }
+edge: { sourcename: "sqrtf" targetname: "__mulsf3" }
+edge: { sourcename: "sqrtf" targetname: "__mulsf3" }
+edge: { sourcename: "sqrtf" targetname: "__mulsf3" }
+node: { title: "__subsf3" label: "subsf3\n<built-in>" shape : ellipse }
+edge: { sourcename: "sqrtf" targetname: "__subsf3" }
+edge: { sourcename: "sqrtf" targetname: "__mulsf3" }
+edge: { sourcename: "sqrtf" targetname: "__mulsf3" }
+edge: { sourcename: "sqrtf" targetname: "__mulsf3" }
+edge: { sourcename: "sqrtf" targetname: "__subsf3" }
+edge: { sourcename: "sqrtf" targetname: "__mulsf3" }
+edge: { sourcename: "sqrtf" targetname: "__mulsf3" }
+edge: { sourcename: "sqrtf" targetname: "__mulsf3" }
+edge: { sourcename: "sqrtf" targetname: "__subsf3" }
+edge: { sourcename: "sqrtf" targetname: "__mulsf3" }
+edge: { sourcename: "sqrtf" targetname: "__eqsf2" }
+edge: { sourcename: "sqrtf" targetname: "__mulsf3" }
+edge: { sourcename: "sqrtf" targetname: "__mulsf3" }
+edge: { sourcename: "sqrtf" targetname: "__mulsf3" }
+edge: { sourcename: "sqrtf" targetname: "__subsf3" }
+edge: { sourcename: "sqrtf" targetname: "__mulsf3" }
+edge: { sourcename: "sqrtf" targetname: "__eqsf2" }
+edge: { sourcename: "sqrtf" targetname: "__mulsf3" }
+edge: { sourcename: "sqrtf" targetname: "__mulsf3" }
+edge: { sourcename: "sqrtf" targetname: "__mulsf3" }
+edge: { sourcename: "sqrtf" targetname: "__subsf3" }
+edge: { sourcename: "sqrtf" targetname: "__mulsf3" }
+edge: { sourcename: "sqrtf" targetname: "__mulsf3" }
+}

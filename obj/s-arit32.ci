@@ -1,0 +1,15 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-arit32.adb"
+node: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-arit32.adb:system__arith_32__raise_error" label: "Raise_Error\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-arit32.adb:84:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__exceptions__call_last_chance_handler_with_message" label: "Call_Last_Chance_Handler_With_Message\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:40:14" shape : ellipse }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-arit32.adb:system__arith_32__raise_error" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-arit32.adb:86:7" }
+node: { title: "system__arith_32__scaled_divide32" label: "Scaled_Divide32\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-arit32.adb:93:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__arith_32__scaled_divide32" targetname: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-arit32.adb:system__arith_32__raise_error" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-arit32.adb:117:10" }
+node: { title: "__udivdi3" label: "udivdi3\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__arith_32__scaled_divide32" targetname: "__udivdi3" }
+node: { title: "__divdi3" label: "divdi3\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__arith_32__scaled_divide32" targetname: "__divdi3" }
+node: { title: "__umoddi3" label: "umoddi3\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__arith_32__scaled_divide32" targetname: "__umoddi3" }
+node: { title: "__moddi3" label: "moddi3\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__arith_32__scaled_divide32" targetname: "__moddi3" }
+}

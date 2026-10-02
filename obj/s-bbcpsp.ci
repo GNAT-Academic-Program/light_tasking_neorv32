@@ -1,0 +1,28 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.adb"
+node: { title: "system__bb__cpu_specific__mie" label: "Mie\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.adb:169:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__cpu_specific__mip" label: "Mip\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.adb:169:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__cpu_specific__mcause" label: "Mcause\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.adb:169:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__cpu_specific__clear_mstatus_bits" label: "Clear_Mstatus_Bits\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.adb:182:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__cpu_specific__set_mstatus_bits" label: "Set_Mstatus_Bits\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.adb:195:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__cpu_specific__set_mie_bits" label: "Set_Mie_Bits\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.adb:195:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__cpu_specific__context_bufferIP" label: "context_bufferIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "__gnat_trap_handler" label: "Trap_Handler\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.adb:84:4\n96 bytes (static)\n0 dynamic objects" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "__gnat_trap_handler" targetname: "__indirect_call" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.adb:98:19" }
+edge: { sourcename: "__gnat_trap_handler" targetname: "__indirect_call" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.adb:111:19" }
+node: { title: "system__img_uns__impl__set_image_unsigned" label: "Set_Image_Unsigned\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-imageu.ads:49:14" shape : ellipse }
+edge: { sourcename: "__gnat_trap_handler" targetname: "system__img_uns__impl__set_image_unsigned" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.adb:115:60" }
+node: { title: "memcpy" label: "builtin_memcpy\n<built-in>" shape : ellipse }
+edge: { sourcename: "__gnat_trap_handler" targetname: "memcpy" }
+node: { title: "ada__exceptions__call_last_chance_handler_with_message" label: "Call_Last_Chance_Handler_With_Message\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:40:14" shape : ellipse }
+edge: { sourcename: "__gnat_trap_handler" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.adb:114:19" }
+node: { title: "abort" label: "Os_Abort\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.adb:66:14" shape : ellipse }
+edge: { sourcename: "__gnat_trap_handler" targetname: "abort" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.adb:124:30" }
+edge: { sourcename: "__gnat_trap_handler" targetname: "system__img_uns__impl__set_image_unsigned" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.adb:126:72" }
+edge: { sourcename: "__gnat_trap_handler" targetname: "memcpy" }
+edge: { sourcename: "__gnat_trap_handler" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.adb:126:22" }
+edge: { sourcename: "__gnat_trap_handler" targetname: "system__img_uns__impl__set_image_unsigned" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.adb:130:65" }
+edge: { sourcename: "__gnat_trap_handler" targetname: "memcpy" }
+edge: { sourcename: "__gnat_trap_handler" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.adb:130:16" }
+node: { title: "system__bb__cpu_specific__install_trap_handler" label: "Install_Trap_Handler\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.adb:139:4\n0 bytes (static)\n0 dynamic objects" }
+}

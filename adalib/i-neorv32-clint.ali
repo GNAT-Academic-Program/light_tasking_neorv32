@@ -1,0 +1,54 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RR NO_ELABORATION_CODE
+
+U interfaces.neorv32.clint%s  i-neorv32-clint.ads  1225c6de NE OL PR PK
+W interfaces.neorv32%s	i-neorv32.ads		i-neorv32.ali
+Z system%s		system.ads		system.ali
+
+D interfac.ads		20261002145216 9111f9c1 interfaces%s
+D i-neorv32.ads		20261002145216 c24753c8 interfaces.neorv32%s
+D i-neorv32-clint.ads	20261002145216 d0629516 interfaces.neorv32.clint%s
+D system.ads		20261002145216 034e0a60 system%s
+G a e
+G c Z s s [clint_peripheralIP interfaces__neorv32__clint 25 9 none]
+X 1 interfac.ads
+47K9*Interfaces 247e15 3|12r9 27r31 29r31 31r31 33r31 35r31 51r5
+92M9*Unsigned_32
+X 2 i-neorv32.ads
+13K20*NEORV32 1|47k9 2|108e23 3|12r20 27r42 29r42 31r42 33r42 35r42 51r16
+21M9*UInt32<1|92M9> 3|27r50 29r50 31r50 33r50 35r50
+94m4*CLINT_Base{4|85M9} 3|49r30
+X 3 i-neorv32-clint.ads
+12K28*CLINT 2|13k20 3|51l24 51e29
+25R9*CLINT_Peripheral 37e6 39r8 48r27
+27m7*MSWI0{2|21M9} 40r7
+29m7*MTIMECMP0_LOW{2|21M9} 41r7
+31m7*MTIMECMP0_HI{2|21M9} 42r7
+33m7*MTIME_LOW{2|21M9} 43r7
+35m7*MTIME_HI{2|21M9} 44r7
+48r4*CLINT_Periph{25R9}
+X 4 system.ads
+85M9*Address
+

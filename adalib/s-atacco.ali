@@ -1,0 +1,46 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_OBSOLESCENT_FEATURES
+
+U system.address_to_access_conversions%s  s-atacco.ads  5b26e9da NE OL PR PK GE
+W system%s		system.ads		system.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-atacco.ads		20261002145216 5868e3ba system.address_to_access_conversions%s
+G a e
+X 1 system.ads
+55K9*System 176e11 2|42r9 76r5
+85M9*Address 2|61r33 67r56
+X 2 s-atacco.ads
+40+9 Object 46r7 50r38
+42k16*Address_To_Access_Conversions 1|55k9 2|40z9 76l12 76e41
+50P9*Object_Pointer(40+9) 51r8 54r31 61r56 67r33
+61V13*To_Pointer{50P9} 61>25 73b30
+61m25 Value{1|85M9}
+67V13*To_Address{1|85M9} 67>25 74b30
+67p25 Value{50P9}
+

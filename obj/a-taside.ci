@@ -1,0 +1,24 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-taside.adb"
+node: { title: "ada__task_identification__Oeq" label: "=\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-taside.adb:69:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__task_identification__abort_task" label: "Abort_Task\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-taside.adb:78:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+edge: { sourcename: "ada__task_identification__abort_task" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-taside.adb:80:7" }
+node: { title: "ada__task_identification__activation_is_complete" label: "Activation_Is_Complete\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-taside.adb:87:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__task_identification__activation_is_complete" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-taside.adb:91:10" }
+node: { title: "ada__task_identification__convert_ids" label: "Convert_Ids\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-taside.adb:101:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__task_identification__convert_ids__2" label: "Convert_Ids\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-taside.adb:106:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__task_identification__current_task" label: "Current_Task\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-taside.adb:115:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__interrupts__current_interrupt" label: "Current_Interrupt\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbinte.ads:77:13" shape : ellipse }
+edge: { sourcename: "ada__task_identification__current_task" targetname: "system__bb__interrupts__current_interrupt" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-taprop.adb:425:33" }
+edge: { sourcename: "ada__task_identification__current_task" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-taside.adb:122:10" }
+node: { title: "ada__task_identification__environment_task" label: "Environment_Task\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-taside.adb:132:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__task_identification__image" label: "Image\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-taside.adb:141:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "system__secondary_stack__ss_allocate" label: "Ss_Allocate\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.ads:117:14" shape : ellipse }
+edge: { sourcename: "ada__task_identification__image" targetname: "system__secondary_stack__ss_allocate" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-taside.adb:144:7" }
+node: { title: "ada__task_identification__is_callable" label: "Is_Callable\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-taside.adb:151:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__task_identification__is_callable" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-taside.adb:154:10" }
+node: { title: "ada__task_identification__is_terminated" label: "Is_Terminated\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-taside.adb:164:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__task_identification__is_terminated" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-taside.adb:167:10" }
+node: { title: "system__tasking__restricted__stages__restricted_terminated" label: "Restricted_Terminated\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-tarest.ads:254:13" shape : ellipse }
+edge: { sourcename: "ada__task_identification__is_terminated" targetname: "system__tasking__restricted__stages__restricted_terminated" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-taside.adb:169:17" }
+}

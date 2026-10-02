@@ -1,0 +1,3 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/i-neorv32-clint.ads"
+node: { title: "interfaces__neorv32__clint__clint_peripheralIP" label: "clint_peripheralIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+}

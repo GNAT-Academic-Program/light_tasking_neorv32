@@ -1,0 +1,59 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+
+U system.bb.parameters%s  s-bbpara.ads		5d58b050 NE OL PU PK
+W neorv32_runtime_config%s  neorv32_runtime_config.ads  neorv32_runtime_config.ali
+W system%s		system.ads		system.ali
+W system.bb%s		s-bb.ads		s-bb.ali
+W system.bb.board_parameters%s  s-bbbopa.ads	s-bbbopa.ali
+
+D light_tasking_neorv32_config.ads  20261002145319 ceed05b4 light_tasking_neorv32_config%s
+D neorv32_runtime_config.ads  20261002145216 39990e2a neorv32_runtime_config%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-bb.ads		20261002145216 09e072ae system.bb%s
+D s-bbbopa.ads		20261002145216 b188db9e system.bb.board_parameters%s
+D s-bbpara.ads		20261002145216 dca9174a system.bb.parameters%s
+G a e
+X 1 light_tasking_neorv32_config.ads
+22N4*Interrupt_Stack_Size 6|82r29
+X 2 neorv32_runtime_config.ads
+6K9*NEORV32_Runtime_Config=7:3 6|47w6 82r6
+X 3 system.ads
+55K9*System 176e11 6|45r6 49r9 98r5
+X 4 s-bb.ads
+41K16*BB 3|55k9 4|96e14 6|45r13 49r16 98r12
+X 5 s-bbbopa.ads
+42K19*Board_Parameters 80e31 6|45w16 56r35
+61i4*Clock_Frequency{positive} 6|56r52
+X 6 s-bbpara.ads
+49K19*Parameters 4|41k16 6|98l15 98e25
+56N4*Ticks_Per_Second
+66I12*Interrupt_Range{natural}
+81N4*Interrupt_Stack_Size
+85N4*Interrupt_Sec_Stack_Size
+92N4*Max_Number_Of_CPUs 95r41
+95b4*Multiprocessor{boolean}
+

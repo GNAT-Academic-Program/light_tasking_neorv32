@@ -1,0 +1,168 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LONG_LONG_INTEGERS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+
+U system.bb.time%b	s-bbtime.adb		b346bd9c NE OL PK
+W system%s		system.ads		system.ali
+W system.bb%s		s-bb.ads		s-bb.ali
+W system.bb.board_support%s  s-bbbosu.adb	s-bbbosu.ali
+W system.bb.interrupts%s  s-bbinte.adb		s-bbinte.ali
+W system.bb.protection%s  s-bbprot.adb		s-bbprot.ali
+W system.bb.threads%s	s-bbthre.adb		s-bbthre.ali
+W system.bb.threads.queues%s  s-bbthqu.adb	s-bbthqu.ali
+W system.bb.timing_events%s  s-bbtiev.adb	s-bbtiev.ali
+
+U system.bb.time%s	s-bbtime.ads		57d61edc BN NE OL PR PK
+W system%s		system.ads		system.ali
+W system.bb%s		s-bb.ads		s-bb.ali
+W system.multiprocessors%s  s-multip.adb	s-multip.ali
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-tags.ads		20261002145216 5d468a85 ada.tags%s
+D a-unccon.ads		20261002145216 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20261002145216 9111f9c1 interfaces%s
+D light_tasking_neorv32_config.ads  20261002145319 ceed05b4 light_tasking_neorv32_config%s
+D neorv32_runtime_config.ads  20261002145216 39990e2a neorv32_runtime_config%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-bb.ads		20261002145216 09e072ae system.bb%s
+D s-bbbopa.ads		20261002145216 b188db9e system.bb.board_parameters%s
+D s-bbbosu.ads		20261002145216 b43d4db6 system.bb.board_support%s
+D s-bbbosu.adb		20261002145216 3082c2fe system.bb.board_support%b
+D s-bbsumu.adb		20261002145216 cbb92b04 system.bb.board_support.multiprocessors
+D s-bbsuti.adb		20261002145216 3eb370fb system.bb.board_support.time
+D s-bbcppr.ads		20261002145216 2fdb8fbb system.bb.cpu_primitives%s
+D s-bbcppr.adb		20261002145216 fdd17c9b system.bb.cpu_primitives%b
+D s-bbcpsp.ads		20261002145216 2319a523 system.bb.cpu_specific%s
+D s-bbinte.ads		20261002145216 cf617f22 system.bb.interrupts%s
+D s-bbpara.ads		20261002145216 dca9174a system.bb.parameters%s
+D s-bbprot.ads		20261002145216 f48a7e85 system.bb.protection%s
+D s-bbprot.adb		20261002145216 ca30f44c system.bb.protection%b
+D s-bbthre.ads		20261002145216 5f49caa9 system.bb.threads%s
+D s-bbthre.adb		20261002145216 c45a2a19 system.bb.threads%b
+D s-bbthqu.ads		20261002145216 cd23d79e system.bb.threads.queues%s
+D s-bbthqu.adb		20261002145216 23419af7 system.bb.threads.queues%b
+D s-bbtime.ads		20261002145216 ad086247 system.bb.time%s
+D s-bbtime.adb		20261002145216 b8bddbbc system.bb.time%b
+D s-bbtiev.ads		20261002145216 110cc417 system.bb.timing_events%s
+D s-bbtiev.adb		20261002145216 67a172c1 system.bb.timing_events%b
+D s-maccod.ads		20261002145216 cdca081e system.machine_code%s
+D s-multip.ads		20261002145216 f33e0e35 system.multiprocessors%s
+D s-parame.ads		20261002145216 07f3e19f system.parameters%s
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+D s-trahoo.ads		20261002145216 3d417f1b system.tracing_hooks%s
+G a e
+G c Z s b [initialize_timers system__bb__time 123 14 none]
+G c Z s b [epoch system__bb__time 131 13 none]
+G c Z s b [clock system__bb__time 134 13 none]
+G c Z s b [delay_until system__bb__time 137 14 none]
+G c Z s b [get_next_timeout system__bb__time 140 13 none]
+G c Z s b [update_alarm system__bb__time 143 14 none]
+G c Z s s [composite_execution_timeIP system__bb__time 166 9 none]
+G c Z b b [alarm_handler system__bb__time 58 14 none]
+X 7 system.ads
+55K9*System 176e11 25|41r6 43r9 140r40 184r5 26|39r6 40r6 41r6 42r6 43r6
+. 45r14 47r8 48r8 201r5
+X 8 s-bb.ads
+41K16*BB 7|55k9 8|96e14 25|43r16 184r12 26|39r13 40r13 41r13 42r13 43r13
+. 45r21 48r15 201r12
+X 10 s-bbbosu.ads
+47K19*Board_Support 145e28 26|40w16 48r18 72r7 104r35 189r7 198r7
+62K12*Time 79e12 26|72r21 104r49 189r21 198r21
+63V16*Read_Clock{25|46M9} 26|104s54
+68U17*Set_Alarm 26|198s26
+73U17*Install_Alarm_Handler 26|189s26
+76U17*Clear_Alarm_Interrupt 26|72s26
+126K12*Multiprocessors 144e23 26|48r32
+135V16*Current_CPU{30|23I12} 26|69s33 125s43
+X 15 s-bbcppr.adb
+65V13 Pre_Context_Switch{51R9} 66i24
+X 17 s-bbinte.ads
+44K19*Interrupts 91e25 26|39w16 58r41 65r41
+47I12*Interrupt_ID{18|66I12} 26|58r52 65r52
+X 18 s-bbpara.ads
+66I12*Interrupt_Range{natural}
+X 19 s-bbprot.ads
+42K19*Protection 58e25 26|41w16 130r7 166r7
+48U14*Enter_Kernel 26|130s18
+54U14*Leave_Kernel 26|166s18
+X 21 s-bbthre.ads
+169K19*Threads 419e22 26|42r16 90r7 123r27 137r15 146r24 148r10 154r10 163r10
+. 175r22
+185P9*Thread_Id(182R9) 26|123r35
+191n48*Delayed{191E9} 26|146r32
+243e7*State{191E9} 26|146m15
+360V13*Thread_Self{185P9} 26|137s23
+X 23 s-bbthqu.ads
+41K27*Queues 315e29 26|42w24 90r15 148r18 154r18 163r18 175r30
+97U14*Extract 26|148s25
+167U14*Yield 26|163s25
+250U14*Insert_Alarm 26|154s25
+286V13*Get_Next_Alarm_Time{25|46M9} 26|175s37
+292U14*Wakeup_Expired_Alarms 26|90s22
+X 25 s-bbtime.ads
+43K19*Time 8|41k16 25|184l15 184e19 26|45b24 201l15 201t19
+46M9*Time 47r8 131r26 134r26 137r31 140r75 143r36 26|68r25 104r26 110r26
+. 121r31 122r27 173r52 174r29 176r29 179r14 196r36
+81I9*Time_Span<long_long_integer> 82r8
+115p4*Scheduling_Event_Hook 26|77r10 78r10
+123U14*Initialize_Timers 26|186b14 190l8 190t25
+131V13*Epoch{46M9} 182r19 26|110b13 115l8 115t13
+134V13*Clock{46M9} 181r19 26|68s33 104b13 135s14
+137U14*Delay_Until 137>27 26|121b14 167l8 167t19
+137m27 T{46M9} 26|121b27 141r10 154r39
+140V13*Get_Next_Timeout{46M9} 140>31 26|94s21 157s27 173b13 180l8 180t24
+140i31 CPU_Id{30|23I12} 26|173b31 175r58 176r69
+143U14*Update_Alarm 143>28 26|94s7 157s13 196b14 199l8 199t20
+143m28 Alarm{46M9} 26|196b28 198r37
+164M9*Word 167r14 171r13
+166R9*Composite_Execution_Time 174e14 176r48
+167m7*High{164M9} 168r22
+171m7*Low{164M9} 172r22
+176r4*Initial_Composite_Execution_Time{166R9}
+X 26 s-bbtime.adb
+58U14 Alarm_Handler 58>29 65b14 98l8 98t21 189r49
+58i29 Interrupt{17|47I12} 65b29 66r28
+68m7 Now{25|46M9} 86r52 90r45
+69i7 CPU_Id{30|23I12} 94r39
+122m7 Now{25|46M9} 135m7 141r14
+123p7 Self{21|185P9} 137m7 146r10 148r34 154r42 163r32
+124b7 Inserted_As_First{boolean} 154m48 156r13
+125i7 CPU_Id{30|23I12} 157r45
+174m7 Alarm_Time{25|46M9} 179r24
+176m7 Event_Time{25|46M9} 179r36
+X 27 s-bbtiev.ads
+32K19*Timing_Events 26|43w16 86r7 176r37 27|94e28
+63V13*Get_Next_Timeout{25|46M9} 26|176s51
+69U14*Execute_Expired_Timing_Events 26|86s21
+X 30 s-multip.ads
+18K16*Multiprocessors 25|41w13 140r47 26|47r15 30|31e27
+21I9*CPU_Range<short_short_integer>
+23I12*CPU{21I9} 25|140r63 26|69r25 125r36 173r40
+

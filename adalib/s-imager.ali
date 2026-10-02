@@ -1,0 +1,153 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.image_r%b	s-imager.adb		5611ac99 NE OL PK GE
+Z interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.double_real%s
+W system.float_control%s  s-flocon.adb		s-flocon.ali
+W system.img_util%s	s-imguti.adb		s-imguti.ali
+N A121:10 codepeer false_positive "condition predetermined" "CodePeer analysis ignores NaN and Inf values"
+N A373:13 codepeer false_positive "dead code" "CodePeer analysis ignores NaN and Inf values"
+N A375:13 codepeer false_positive "test always true" "CodePeer analysis ignores NaN and Inf values"
+
+U system.image_r%s	s-imager.ads		46891f1d BN NE OL PK GE
+W system%s		system.ads		system.ali
+
+D interfac.ads		20261002145216 9111f9c1 interfaces%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-dourea.ads		20261002145216 f1e69250 system.double_real%s
+D s-dourea.adb		20261002145216 e681ed62 system.double_real%b
+D s-dorepr.adb		20261002145216 63f9b9f6 system.double_real.product
+D s-flocon.ads		20261002145216 e0fc433c system.float_control%s
+D s-imager.ads		20261002145216 45c7157d system.image_r%s
+D s-imager.adb		20261002145216 75d5cc31 system.image_r%b
+D s-imguti.ads		20261002145216 7719a4b9 system.img_util%s
+G a e
+G c Z s b [image_r system 50 16 none]
+X 2 system.ads
+55K9*System 176e11 7|41r21 50r9 91r5 8|32r6 33r6 34r6 34r27 36r14 60r31 354r10
+. 475r5
+85M9*Address 7|41r28
+99V14*"="{boolean} 8|353r31
+X 3 s-dourea.ads
+42k16*Double_Real 123e23 8|32w13 60r38
+45R9 Double_T 8|61r25[60] 63r36[60]
+49V13 To_Double{45R9[8|60]} 8|397s24[60]
+71V14 "+"{45R9[8|60]} 8|413s20[60] 423s23[60]
+73V14 "*"{45R9[8|60]} 8|248s31[60] 311s31[60]
+74V14 "/"{45R9[8|60]} 8|259s31[60] 322s31[60]
+79V14 "-"{45R9[8|60]} 8|452s23[60]
+80V14 "*"{45R9[8|60]} 8|212s24[60] 242s24[60] 452s43[60]
+81V14 "/"{45R9[8|60]} 8|282s24[60] 306s24[60] 446s36[60]
+88V14 "="{boolean} 8|401s12[60]
+92V14 "<="{boolean} 8|430s15[60]
+102V14 "<"{boolean} 8|206s15[60] 244s22[60] 283s29[60] 308s22[60]
+108V14 ">="{boolean} 8|213s29[60] 255s25[60] 276s18[60] 319s25[60]
+114v13 From_Unsigned 8|66r46[60]
+119v13 To_Unsigned 8|67r44[60]
+X 6 s-flocon.ads
+34K16*Float_Control 63e25 8|33w13 354r17
+39U14*Reset 8|354s31
+X 7 s-imager.ads
+37F9 Num 53r13 66r14 77r14 8|50r66 60r51 70r30 79r13 104r14 120r44 141r30
+. 149r17 153r17 162r14 353r10 372r17 380r20 430r18
+39i4 Maxpow{positive} 8|169r37 212r34 215r33 238r19 282r34 285r33 302r19
+41m4 Powten_Address{2|85M9} 8|171r30
+43M9 Uns 46r11 8|50r51 66r61 67r57 430r23 441r22
+45U19 Set_Image_Unsigned 46>7 47=7 48=7 8|431s13 447s16 453s16
+46*7 V{43M9}
+47a7 S{string}
+48i7 P{natural}
+50k16*Image_R 2|55k9 7|37z9 39z4 41z4 43z9 45z19 91l12 91e19 8|36b21 475l12
+. 475t19
+52U14*Image_Fixed_Point 53>7 54=7 55<7 56>7 8|78b14 97l8 97t25
+53*7 V{37F9} 8|79b7 89r10 96r23
+54a7 S{string} 8|80b7 84r22 90m10 96m26
+55i7 P{natural} 8|81b7 91m10 93m10 96m29
+56i7 Aft{natural} 8|82b7 96r35
+65U14*Image_Floating_Point 66>7 67=7 68<7 69>7 8|103b14 135l8 135t28
+66*7 V{37F9} 8|104b7 120r27 120r39 134r23
+67a7 S{string} 8|105b7 109r22 123r25 126m10 134m26
+68i7 P{natural} 8|106b7 127m10 130m10 134m29
+69i7 Digs{natural} 8|107b7 134r38
+76U14*Set_Image_Real 77>7 78=7 79=7 80>7 81>7 82>7 8|96s7 134s7 161b14 473l8
+. 473t22
+77*7 V{37F9} 8|162b7 359r14 372r13 380r16 394r36 397r39
+78a7 S{string} 8|163b7 378m51 381m57 386m55 472m40
+79i7 P{natural} 8|164b7 378m54 381m60 386m58 472m43
+80i7 Fore{natural} 8|165b7 378r57 381r63 386r61 472r53
+81i7 Aft{natural} 8|166b7 173r48 378r63 381r69 386r67 472r59
+82i7 Exp{natural} 8|167b7 378r68 381r74 386r72 411r13 472r64
+X 8 s-imager.adb
+50i4 Maxdigs{natural} 52r44 176r31 412r51 421r27 437r47
+52i4 Maxscaling{natural} 213r63 224r24 283r59 294r25
+60K12 Double_Real[3|42] 61r13 63r24 66r34 67r32 397r12
+63R12 Double_T{3|45R9[60]} 169r48 185r11 201r15
+66V13 From_Unsigned[3|114]{3|45R9[60]} 452s25
+67V13 To_Unsigned[3|119]{7|43M9} 431s33 446s21 453s36
+70V13 Is_Negative{boolean} 70>26 120s14 141b13 155l8 155t19 394s23
+70*26 V{7|37F9} 141b26 143r10 146r13 153r37
+111i7 Fore{natural} 128m10 131m10 134r32
+169a7 Powten(63R12) 170r27 171m11 171r11 206r17 212r26 213r32 242r26 244r24
+. 255r28 276r21 282r26 283r31 306r26 308r24 319r28 446r38 452r45
+173i7 NFrac{natural} 412r40 422r25
+176a7 Digs{string} 394m7 402m10 431m50 431r50 447m39 447r39 460m19 464m19
+. 472m27 472r27
+179i7 Ndigs{natural} 395m7 403m10 431m56 431r56 447m45 447r45 460r25 464r25
+. 467m16 467r25 472r33
+182i7 Scale{integer} 213r55 215m16 215r25 224r16 272m13 272r22 283r50 285m16
+. 285r25 294r16 336m13 336r22 422r16 472r46
+185r7 X{63R12} 206r13 212r22 214m16 242r22 271m13 276r16 282r22 284m16 306r22
+. 335m13 397m7 401r10 413m13 413r18 423m16 423r21 430r13 431r46 446r34 452m16
+. 452r21 453r49
+188U17 Adjust_Scale 188>31 199b17 343l11 343t23 412s13 421s13
+188i31 S{natural} 199b31 206r25 213r40 244r32 255r36 276r29 283r39 308r32
+. 319r36
+200i10 Lo{natural} 237m13 241r24 246r22 252m22 257r22 301m13 305r24 310r22
+. 321r22 327m22
+200i14 Mid{natural} 241m16 242r34 247m22 247r29 252r28 258m22 258r29 263r28
+. 272r30 305m16 306r34 312m22 312r29 316r28 323m22 323r29 327r28 336r30
+200i19 Hi{natural} 238m13 241r29 246r28 257r28 263m22 302m13 305r29 310r28
+. 316m22 321r28
+201r10 XP{63R12} 212m16 213r26 214r21 242m16 244r19 248m22 248r28 255r22
+. 259m22 259r28 271r18 282m16 283r26 284r21 306m16 308r19 311m22 311r28 319r22
+. 322m22 322r28 335r18
+437i16 Halfdigs{natural} 439r35 446r46 452r53 454r38 459r30 464r33 467r33
+439a16 Buf{string} 453m53 453r53 464r56
+440i16 Len{natural} 451m16 453m58 453r58 454r31 459r41 463r30 464r44
+441*16 Y{7|43M9} 446m16 447r36 452r40
+459i20 J{integer} 460r33
+463i20 J{integer} 464r50 464r61
+X 9 s-imguti.ads
+36K16*Img_Util 8|34w13 34w34 9|82e20
+43U14*Set_Decimal_Digits 8|472s7
+67n36*Minus_Infinity{67E9} 8|381r41
+67n52*Infinity{67E9} 8|378r41
+67n62*Not_A_Number{67E9} 8|386r41
+69U14*Set_Floating_Invalid_Value 8|378s13 381s13 386s13
+

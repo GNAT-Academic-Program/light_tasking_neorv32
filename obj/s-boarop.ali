@@ -1,0 +1,94 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.boolean_array_operations%s  s-boarop.ads  dba55cd5 NE OL PU PK
+W ada%s			ada.ads			ada.ali
+Z ada.unchecked_conversion%s
+W system%s		system.ads		system.ali
+W system.generic_vector_operations%s
+Z system.storage_elements%s  s-stoele.ads	s-stoele.ali
+W system.vectors%s	s-vector.ads		s-vector.ali
+W system.vectors.boolean_operations%s  s-veboop.adb  s-veboop.ali
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-unccon.ads		20261002145216 0e9b276f ada.unchecked_conversion%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-boarop.ads		20261002145216 853124f2 system.boolean_array_operations%s
+D s-geveop.ads		20261002145216 747f96b6 system.generic_vector_operations%s
+D s-geveop.adb		20261002145216 62d25f93 system.generic_vector_operations%b
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+D s-vector.ads		20261002145216 7dc5afb0 system.vectors%s
+D s-veboop.ads		20261002145216 29a5e4f1 system.vectors.boolean_operations%s
+D s-veboop.adb		20261002145216 1eb07d40 system.vectors.boolean_operations%b
+G a e
+G c Z s s [boolean_arrayIP system__boolean_array_operations 40 9 none]
+G c Z s s [vector_notR system__boolean_array_operations__vector_notGP3073 54 14 none]
+G c Z s s [vector_not system__boolean_array_operations 54 14 none]
+G c Z s s [vector_andR system__boolean_array_operations__vector_andGP3222 58 14 none]
+G c Z s s [vector_and system__boolean_array_operations 58 14 none]
+G c Z s s [vector_orR system__boolean_array_operations__vector_orGP3363 61 14 none]
+G c Z s s [vector_or system__boolean_array_operations 61 14 none]
+G c Z s s [vector_xorR system__boolean_array_operations__vector_xorGP3500 64 14 none]
+G c Z s s [vector_xor system__boolean_array_operations 64 14 none]
+G c Z s s [vector_nandR system__boolean_array_operations__vector_nandGP3641 67 14 none]
+G c Z s s [vector_nand system__boolean_array_operations 67 14 none]
+G c Z s s [vector_norR system__boolean_array_operations__vector_norGP3811 71 14 none]
+G c Z s s [vector_nor system__boolean_array_operations 71 14 none]
+G c Z s s [vector_nxorR system__boolean_array_operations__vector_nxorGP3977 75 14 none]
+G c Z s s [vector_nxor system__boolean_array_operations 75 14 none]
+X 3 system.ads
+55K9*System 176e11 4|34r6 35r6 37r9 43r39 58r57 61r55 64r57 79r5
+X 4 s-boarop.ads
+37K16*Boolean_Array_Operations 3|55k9 4|79l12 79e36
+40A9*Boolean_Array(boolean)<integer> 46r56
+43K12*Boolean_Operations=43:54 55r35 68r29 68r54 72r29 72r53 76r29 76r54
+45K12*Vector_Operations[5|50] 49r15 52r15
+48u22*Binary_Operation 58r32 61r31 64r32 68r11 72r11 76r11
+51u22*Unary_Operation 55r11
+54U14*Vector_Not[5|65]
+58U14*Vector_And[5|56]
+61U14*Vector_Or[5|56]
+64U14*Vector_Xor[5|56]
+67U14*Vector_Nand[5|56]
+71U14*Vector_Nor[5|56]
+75U14*Vector_Nxor[5|56]
+X 5 s-geveop.ads
+50k16*Generic_Vector_Operations 4|34w13 46r11 5|71e37
+56u14*Binary_Operation 4|49r33[45]
+65u14*Unary_Operation 4|52r33[45]
+X 8 s-vector.ads
+42K16*Vectors 4|35r13 43r46 58r64 61r62 64r64 8|52e19
+45M9*Vector
+X 9 s-veboop.ads
+34K24*Boolean_Operations 4|35w21 43r54 9|63e38
+40V14*"not"{8|45M9} 4|55r55
+42V13*Nand{boolean} 4|68r48
+43V13*Nor{boolean} 4|72r48
+44V13*Nxor{boolean} 4|76r48
+46V13*Nand{8|45M9} 4|68r73
+47V13*Nor{8|45M9} 4|72r72
+48V13*Nxor{8|45M9} 4|76r73
+

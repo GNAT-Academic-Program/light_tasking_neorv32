@@ -1,0 +1,48 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.return_stack%s	s-retsta.ads		c0fbd843 NE OL PR PK
+W system%s		system.ads		system.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-retsta.ads		20261002145216 0f6b06cb system.return_stack%s
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+G a e
+G c Z s s [rs_allocate system__return_stack 44 14 none]
+X 1 system.ads
+55K9*System 176e11 2|37r6 39r9 42r24 57r5
+85M9*Address 2|45r26
+X 2 s-retsta.ads
+39K16*Return_Stack 1|55k9 2|53E4 57l12 57e24
+42K12*SSE=42:31 46r22
+44U14*RS_Allocate 45<7 46>7 47b30
+45m7 Addr{1|85M9}
+46i7 Storage_Size{3|56I12}
+53i4 RS_Pool{integer}
+X 3 s-stoele.ads
+43K16*Storage_Elements 2|37w13 42r31 3|104e28
+54I9*Storage_Offset<integer>
+56I12*Storage_Count{54I9} 2|46r26
+

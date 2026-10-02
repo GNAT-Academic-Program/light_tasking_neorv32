@@ -1,0 +1,184 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+
+U system.bb.cpu_specific%b  s-bbcpsp.adb	6ffab3ce NE OL PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W system%s		system.ads		system.ali
+W system.bb%s		s-bb.ads		s-bb.ali
+Z system.img_uns%s	s-imguns.ads		s-imguns.ali
+W system.machine_code%s	s-maccod.ads		s-maccod.ali
+Z system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+U system.bb.cpu_specific%s  s-bbcpsp.ads	e598a8af BN NE OL PR PK
+W system%s		system.ads		system.ali
+W system.bb%s		s-bb.ads		s-bb.ali
+W system.bb.interrupts%s  s-bbinte.adb		s-bbinte.ali
+Z system.machine_code%s	s-maccod.ads		s-maccod.ali
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-except.ads		20261002145216 5b5f0f2f ada.exceptions%s
+D a-except.adb		20261002145216 4da5c77f ada.exceptions%b
+D light_tasking_neorv32_config.ads  20261002145319 ceed05b4 light_tasking_neorv32_config%s
+D neorv32_runtime_config.ads  20261002145216 39990e2a neorv32_runtime_config%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-bb.ads		20261002145216 09e072ae system.bb%s
+D s-bbbopa.ads		20261002145216 b188db9e system.bb.board_parameters%s
+D s-bbcpsp.ads		20261002145216 2319a523 system.bb.cpu_specific%s
+D s-bbcpsp.adb		20261002145216 81291ef3 system.bb.cpu_specific%b
+D s-bbinte.ads		20261002145216 cf617f22 system.bb.interrupts%s
+D s-bbpara.ads		20261002145216 dca9174a system.bb.parameters%s
+D s-imageu.ads		20261002145216 95851461 system.image_u%s
+D s-imageu.adb		20261002145216 2d0619dc system.image_u%b
+D s-imguns.ads		20261002145216 34f2a7d6 system.img_uns%s
+D s-maccod.ads		20261002145216 cdca081e system.machine_code%s
+D s-unstyp.ads		20261002145216 fa2a7f59 system.unsigned_types%s
+G a e
+G c Z s b [install_trap_handler system__bb__cpu_specific 98 14 none]
+G c Z s s [mieR system__bb__cpu_specific__mieGP5145 125 14 none]
+G c Z s s [mie system__bb__cpu_specific 125 14 none]
+G c Z s s [mipR system__bb__cpu_specific__mipGP5202 126 14 none]
+G c Z s s [mip system__bb__cpu_specific 126 14 none]
+G c Z s s [mcauseR system__bb__cpu_specific__mcauseGP5259 127 14 none]
+G c Z s s [mcause system__bb__cpu_specific 127 14 none]
+G c Z s s [clear_mstatus_bitsR system__bb__cpu_specific__clear_mstatus_bitsGP5319 128 14 none]
+G c Z s s [clear_mstatus_bits system__bb__cpu_specific 128 14 none]
+G c Z s s [set_mstatus_bitsR system__bb__cpu_specific__set_mstatus_bitsGP5386 129 14 none]
+G c Z s s [set_mstatus_bits system__bb__cpu_specific 129 14 none]
+G c Z s s [set_mie_bitsR system__bb__cpu_specific__set_mie_bitsGP5451 130 14 none]
+G c Z s s [set_mie_bits system__bb__cpu_specific 130 14 none]
+G c Z s s [context_bufferIP system__bb__cpu_specific 55 9 none]
+G c Z b b [trap_entry_asm system__bb__cpu_specific 57 14 none]
+G c Z b b [trap_handler system__bb__cpu_specific 60 14 none]
+G c Z b b [os_abort system__bb__cpu_specific 66 14 none]
+X 6 system.ads
+55K9*System 176e11 9|37r6 39r9 57r13 61r13 62r13 63r13 64r13 65r13 66r13
+. 67r13 68r13 69r13 70r13 71r13 72r13 73r13 75r14 76r14 77r14 78r14 79r14
+. 80r14 81r14 82r14 83r14 84r14 85r14 86r14 107r33 108r19 143r5 10|48r6 48r31
+. 50r14 204r5
+85M9*Address 9|57r20 61r20 62r20 63r20 64r20 65r20 66r20 67r20 68r20 69r20
+. 70r20 71r20 72r20 73r20 75r21 76r21 77r21 78r21 79r21 80r21 81r21 82r21
+. 83r21 84r21 85r21 86r21 10|159r24
+90N4*Word_Size 9|107r40 108r26
+X 7 s-bb.ads
+41K16*BB 6|55k9 7|96e14 9|37r13 39r16 99r25 143r12 10|50r21 52r13 54r36 76r27
+. 77r27 112r22 140r25 204r12
+X 9 s-bbcpsp.ads
+39K19*CPU_Specific 7|41k16 9|143l15 143e27 10|50b24 204l15 204t27
+55R9*Context_Buffer 87e14
+57m7*RA{6|85M9}
+61m7*SP{6|85M9}
+62m7*S0{6|85M9}
+63m7*S1{6|85M9}
+64m7*S2{6|85M9}
+65m7*S3{6|85M9}
+66m7*S4{6|85M9}
+67m7*S5{6|85M9}
+68m7*S6{6|85M9}
+69m7*S7{6|85M9}
+70m7*S8{6|85M9}
+71m7*S9{6|85M9}
+72m7*S10{6|85M9}
+73m7*S11{6|85M9}
+75m7*FS0{6|85M9}
+76m7*FS1{6|85M9}
+77m7*FS2{6|85M9}
+78m7*FS3{6|85M9}
+79m7*FS4{6|85M9}
+80m7*FS5{6|85M9}
+81m7*FS6{6|85M9}
+82m7*FS7{6|85M9}
+83m7*FS8{6|85M9}
+84m7*FS9{6|85M9}
+85m7*FS10{6|85M9}
+86m7*FS11{6|85M9}
+89N4*Stack_Alignment
+96E9*Trap_Type 96e59 100r25 10|54r22 141r25
+96n23*Timer_Trap{96E9} 10|97r29 98r29 148r15
+96n35*External_Interrupt_Trap{96E9} 10|109r37 111r29 151r15
+98U14*Install_Trap_Handler 99>7 100>7 10|139b14 163l8 163t28
+99p7 Service_Routine{11|56P9} 10|140b7 145r26
+100e7 Trap{96E9} 10|141b7 145r17 147r12
+107M9*Register_Word 112r29 117r37 122r35 132r27 134r24 137r24 140r24 10|60r61
+. 70r29 70r50 75r30 76r12 77r12 84r61 88r24 89r24 169r29 170r13 173r24 182r37
+. 183r16 186r24 187r24 195r35 196r16 199r24 200r24
+111a7 Register_Name{string} 10|172r26
+112v13*Read_CSR 125r40 126r40 127r40 10|169b13 176l8 176t16
+116a7 Register_Name{string} 10|185r27
+117u14*Clear_CSR_Bits 117>30 128r40 10|182b14 189l8 189t22
+117m30 Bits{107M9} 10|182b30 187r54
+121a7 Register_Name{string} 10|198r27
+122u14*Set_CSR_Bits 122>28 129r40 130r40 10|195b14 202l8 202t20
+122m28 Bits{107M9} 10|195b28 200r54
+125V14*Mie[112]{107M9} 10|169b13
+126V14*Mip[112]{107M9} 10|169b13
+127V14*Mcause[112]{107M9} 10|88s41 169b13
+128U14*Clear_Mstatus_Bits[117] 10|182b14
+129U14*Set_Mstatus_Bits[122] 10|195b14
+130U14*Set_Mie_Bits[122] 10|150s13 195b14
+132m4*Mstatus_MIE{107M9}
+134m4*Mie_MTIE{107M9} 10|150r27
+137m4*Mie_MEIE{107M9} 140r41
+140m4*Mip_MEIP{107M9}
+X 10 s-bbcpsp.adb
+54a4 Handlers(11|56P9) 97r19 98r19 109r27 111r19 145m7
+57U14 Trap_Entry_Asm 58b24 160r43
+60U14 Trap_Handler 60>28 60>32 60>36 60>40 60>44 60>48 60>52 60>56 61i24
+. 84b14 133l8 133t20
+60m28 A0{9|107M9} 84b28 86r28
+60m32 A1{9|107M9} 84b32 86r32
+60m36 A2{9|107M9} 84b36 86r36
+60m40 A3{9|107M9} 84b40 86r40
+60m44 A4{9|107M9} 84b44 86r44
+60m48 A5{9|107M9} 84b48 86r48
+60m52 A6{9|107M9} 84b52 86r52
+60m56 A7{9|107M9} 84b56 123r21 126r70
+66U14 OS_Abort 124s30
+70m4 Interrupt_Bit{9|107M9} 89r55 92r21
+72N4 Timer_Interrupt_Code 96r18 98r42
+75M12 Interrupt_Code{9|107M9} 108r27
+88m7 Cause{9|107M9} 89r41 92r11
+89m7 Code{9|107M9} 94r15 108r19 112r50 115r56 120r15 130r61
+170m7 Val{9|107M9} 173m56 173r56 175r14
+183m7 Unused{9|107M9} 186m56 186r56
+196m7 Unused{9|107M9} 199m56 199r56
+X 11 s-bbinte.ads
+44K19*Interrupts 9|37w16 99r28 10|52r16 54r39 76r30 77r30 112r25 140r28 11|91e25
+47I12*Interrupt_ID{12|66I12} 10|76r41 77r41 112r36
+56P9*Interrupt_Handler 9|99r39 10|52r27 54r50 140r39
+X 12 s-bbpara.ads
+66I12*Interrupt_Range{natural}
+X 16 s-maccod.ads
+38K16*Machine_Code 10|48w13 48w38 16|142e24
+47I9*Asm_Input_Operand<integer>
+48I9*Asm_Output_Operand<integer>
+91U14*Asm 10|158s7 172s7 185s7 198s7
+93i6 Outputs{48I9} 10|173r12 186r12 199r12
+94i6 Inputs{47I9} 10|159r12 187r12 200r12
+96b6 Volatile{boolean} 10|161r12 174r12 188r12 201r12
+

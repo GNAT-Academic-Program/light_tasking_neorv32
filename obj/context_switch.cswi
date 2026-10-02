@@ -1,0 +1,7 @@
+20261002145321
+-c
+-x
+assembler-with-cpp
+-march=rv32imac_zicsr_zifencei
+-mabi=ilp32
+-fno-tree-loop-distribute-patterns

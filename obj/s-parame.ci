@@ -1,0 +1,3 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-parame.adb"
+node: { title: "system__parameters__adjust_storage_size" label: "Adjust_Storage_Size\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-parame.adb:40:4\n0 bytes (static)\n0 dynamic objects" }
+}

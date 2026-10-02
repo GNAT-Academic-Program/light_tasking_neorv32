@@ -1,0 +1,187 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_RECURSION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.val_real%b	s-valrea.adb		c9d4ba57 NE OL PK GE
+Z interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.double_real%s
+W system.float_control%s  s-flocon.adb		s-flocon.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+W system.val_util%s	s-valuti.adb		s-valuti.ali
+W system.value_r%s
+
+U system.val_real%s	s-valrea.ads		f3178660 BN NE OL PR PK GE
+W system%s		system.ads		system.ali
+
+D interfac.ads		20261002145216 9111f9c1 interfaces%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-dourea.ads		20261002145216 f1e69250 system.double_real%s
+D s-dourea.adb		20261002145216 e681ed62 system.double_real%b
+D s-dorepr.adb		20261002145216 63f9b9f6 system.double_real.product
+D s-flocon.ads		20261002145216 e0fc433c system.float_control%s
+D s-unstyp.ads		20261002145216 fa2a7f59 system.unsigned_types%s
+D s-valrea.ads		20261002145216 f0598c00 system.val_real%s
+D s-valrea.adb		20261002145216 7877c7e6 system.val_real%b
+D s-valuti.ads		20261002145216 ecabe223 system.val_util%s
+D s-valuer.ads		20261002145216 4661bda7 system.value_r%s
+D s-valuer.adb		20261002145216 4c73af22 system.value_r%b
+G a e
+G c Z s b [val_real system 51 16 none]
+X 2 system.ads
+55K9*System 176e11 8|41r22 43r26 45r26 47r26 51r9 93r5 9|32r6 33r6 34r6 34r33
+. 35r6 35r33 36r6 41r14 79r31 143r10 480r5
+85M9*Address 8|41r29 43r33 45r33 47r33
+96V14*"<="{boolean} 9|43r40
+98V14*">="{boolean} 9|46r61
+99V14*"="{boolean} 9|121r40 126r34 127r34 128r46 142r31 383r25 384r25 385r37
+X 3 s-dourea.ads
+42k16*Double_Real 123e23 9|32w13 79r38
+45R9 Double_T 9|80r25[79] 82r36[79]
+46*7 Hi{8|37F9} 9|419m12[79] 419r33[79]
+46*11 Lo{8|37F9} 9|420m12[79] 420r33[79]
+49V13 To_Double{45R9[9|79]} 9|152s31[79] 181s46[79] 201s46[79] 209s40[79]
+52V13 To_Single{8|37F9} 9|218s31[79] 235s53[79] 277s53[79] 293s40[79]
+55V13 Quick_Two_Sum{45R9[9|79]} 9|177s39[79]
+71V14 "+"{45R9[9|79]} 9|197s70[79]
+73V14 "*"{45R9[9|79]} 9|197s47[79]
+80V14 "*"{45R9[9|79]} 9|256s40[79] 258s40[79] 368s17[79] 376s14[79] 429s17[79]
+. 437s14[79]
+81V14 "/"{45R9[9|79]} 9|263s40[79] 269s40[79] 273s40[79]
+100V14 "="{boolean} 9|369s15[79] 430s15[79]
+X 6 s-flocon.ads
+34K16*Float_Control 63e25 9|33w13 143r17
+39U14*Reset 9|143s31
+X 7 s-unstyp.ads
+38K16*Unsigned_Types 256e26 9|34w13 34w40
+44M9*Unsigned 9|55r22 85r29 97r15 115r15 451r15 453r15 468r15 470r15
+X 8 s-valrea.ads
+37F9 Num 57r29 87r46 9|43r19 46r40 49r41 79r51 99r31 117r31 121r22 126r25
+. 127r25 128r25 133r15 142r10 152r42 157r27 157r34 158r27 158r34 174r35 177r54
+. 197r49 235r28 277r28 290r32 290r39 383r16 384r16 385r16 419r18 420r18 449r29
+. 467r46
+39i4 Maxpow{positive} 9|191r53 196r31 247r50 255r30 262r31 324r38 345r28
+. 360r24 361r21 366r17 368r28 370r18 373r19 389r38 407r21 408r18 417r26 427r17
+. 429r28 431r18 434r19
+41m4 Powfive_Address{2|85M9} 9|193r46 249r43 326r31 391r31
+43m4 Powfive_100_Address{2|85M9} 9|330r35
+45m4 Powfive_200_Address{2|85M9} 9|334r35
+47m4 Powfive_300_Address{2|85M9} 9|338r35
+49M9 Uns 9|43r43 49r31 52r33
+51k16*Val_Real 2|55k9 8|37z9 39z4 41z4 43z4 45z4 47z4 49z9 93l12 93e20 9|41b21
+. 480l12 480t20
+54V13*Scan_Real{37F9} 55>7 56^7 57>7 9|446b13 461l8 461t17
+55a7 Str{string} 9|447b7 458r34 460r31
+56p7 Ptr(integer) 9|448b7 458r39
+57i7 Max{integer} 9|449b7 458r44
+87V13*Value_Real{37F9} 87>25 9|467b13 478l8 478t18
+87a25 Str{string} 9|467b25 475r35 477r31
+X 9 s-valrea.adb
+46b4 Is_Large_Type{boolean} 268r32 347r10 351r13 355r13 404r26
+49*4 Precision_Limit{8|49M9} 52r41
+52K12 Impl[11|48] 96r15 98r15 114r15 116r15 452r15 455r15 458r14 469r15 472r15
+. 475r14
+55M12 Base_T{7|44M9} 61r31 67r31 73r31
+61a4 Maxexp32(positive) 126r56 383r47
+67a4 Maxexp64(positive) 127r56 384r47
+73a4 Maxexp80(positive) 128r56 385r47
+79K12 Double_Real[3|42] 80r13 82r24 152r19 177r27 181r34 201r34 209r28 218r19
+. 235r41 277r41 293r28
+82R12 Double_T{3|45R9[79]} 102r50 105r67 132r15 191r64 247r61 323r50 324r49
+. 328r30 332r30 336r30 340r11 341r11 381r67 389r49 393r11 394r11
+85V13 Exact_Log2{positive} 85b13 85>25 171s47 228s44
+85m25 N{7|44M9} 86r12
+94V13 Integer_To_Real{8|37F9} 95>7 96>7 97>7 98>7 99>7 112b13 317l8 317t23
+. 460s14 477s14
+95a7 Str{string} 113b7 316r43
+96a7 Val{11|57A9[52]} 114b7 151r10 152r47 157r39 158r39 217r10
+97m7 Base{7|44M9} 115b7 119r22 126r66 127r66 128r66 165r18 171r59 221r15
+. 228r56 290r44
+98a7 Scale{11|54A9[52]} 116b7 153r15 163r19 163r31 178r30 182r30 198r30 202r30
+. 210r24
+99b7 Minus{boolean} 117b7 313r18
+102V13 Large_Powfive{82R12} 102>28 258s42 273s42 323b13 379l8 379t21
+102i28 Exp{natural} 323b28 345r22 347r33 349r15 351r36 353r15 355r36 357r15
+. 361r15
+105V13 Large_Powfive{82R12} 105>28 105<43 269s42 381b13 440l8 440t21
+105i28 Exp{natural} 381b28 398r22 408r12 417r10 418r20
+105i43 S{natural} 381b43 418m10 419r38 420r38 422m10
+125i7 Maxexp{positive} 268r60 299r30 300r47 301r34
+132r7 D_Val{82R12} 152m10 176m25 181m25 197m25 201m25 209m19 218r42 235r64
+. 256m25 256r34 258m25 258r34 263m25 263r34 269m25 269r34 273m25 273r34 277r64
+. 293r51
+133*7 R_Val{8|37F9} 218m10 235m19 277m19 293m19 296m22 296r31 300m25 300r34
+. 304m22 304r31 313r30 313r41
+134i7 S{integer} 153m10 178m25 182m25 198m25 202m25 210m19 217r30 231r43
+. 231r54 232m22 232r27 235r72 254r22 255r25 256r51 258r57 262r25 263r52 268r55
+. 269r58 270m25 270r30 273r58 277r72 295r22 296r44 299r25 301m25 301r30 304r46
+157*13 V1{8|37F9} 177r67 181r57 197r62 201r57 209r51
+158*13 V2{8|37F9} 177r76 197r72
+160i13 DS{positive} 163m13 174r25 175m25 175r31 177r71 196r25 197r43 197r66
+171i22 L{positive} 174r58 175r36
+191a22 Powfive(82R12) 192r42 193m26 193r26 197r34
+228i19 L{positive} 231r38 231r74 232r31
+247a19 Powfive(82R12) 248r39 249m23 249r23 256r42 263r42
+251i19 RS{natural} 269m61 269r61 270r34
+290*19 B{8|37F9} 296r39 300r42 304r39
+324a7 Powfive(82R12) 325r27 326m11 326r11 360r15 368r19 376r16
+328r7 Powfive_100{82R12} 329r27 330m11 330r11 356r15
+332r7 Powfive_200{82R12} 333r27 334m11 334r11 352r15
+336r7 Powfive_300{82R12} 337r27 338m11 338r11 348r15
+340r7 H{82R12} 367m10 369r17
+341r7 R{82R12} 348m10 352m10 356m10 360m10 367r15 368m10 368r15 369r13 376m7
+. 376r12 378r14
+342i7 E{natural} 349m10 353m10 357m10 361m10 366r13 370m13 373m10 373r15
+. 376r25
+382i7 Maxexp{positive} 398r28 417r16 418r26
+389a7 Powfive(82R12) 390r27 391m11 391r11 407r12 429r19 437r16
+393r7 H{82R12} 428m10 430r17
+394r7 R{82R12} 407m7 419m10 419r31 420m10 420r31 428r15 429m10 429r15 430r13
+. 437m7 437r12 439r14
+395i7 E{natural} 408m7 427r13 431m13 434m10 434r15 437r25
+451m7 Base{7|44M9} 458m49 458r49 460r41
+452a7 Scale{11|54A9[52]} 458m55 458r55 460r47
+453m7 Extra{7|44M9} 458m62 458r62
+454b7 Minus{boolean} 458m69 458r69 460r54
+455a7 Val{11|57A9[52]} 458m7 460r36
+468m7 Base{7|44M9} 475m40 475r40 477r41
+469a7 Scale{11|54A9[52]} 475m46 475r46 477r47
+470m7 Extra{7|44M9} 475m53 475r53
+471b7 Minus{boolean} 475m60 475r60 477r54
+472a7 Val{11|57A9[52]} 475m7 477r36
+X 10 s-valuti.ads
+34K16*Val_Util 9|35w13 35w40 10|125e20
+37U14*Bad_Value 9|316s32
+X 11 s-valuer.ads
+48k16*Value_R 9|36w13 52r24 11|118e19
+54A9 Scale_Array(integer)<integer> 9|98r20[52] 116r20[52] 452r20[52] 469r20[52]
+57A9 Value_Array(8|49M9)<integer> 9|96r20[52] 114r20[52] 455r20[52] 472r20[52]
+60V13 Scan_Raw_Real{57A9[9|52]} 9|458s19[52]
+108V13 Value_Raw_Real{57A9[9|52]} 9|475s19[52]
+

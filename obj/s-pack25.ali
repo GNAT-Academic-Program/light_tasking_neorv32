@@ -1,0 +1,268 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.pack_25%b	s-pack25.adb		3e5f4d13 NE OL PK
+W system%s		system.ads		system.ali
+W system.address_to_access_conversions%s
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+U system.pack_25%s	s-pack25.ads		3787c72e BN NE OL PR PK
+W system%s		system.ads		system.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-atacco.ads		20261002145216 5868e3ba system.address_to_access_conversions%s
+D s-pack25.ads		20261002145216 34c9cd4e system.pack_25%s
+D s-pack25.adb		20261002145216 640ac856 system.pack_25%b
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+D s-unstyp.ads		20261002145216 fa2a7f59 system.unsigned_types%s
+G a e
+G c Z s b [get_25 system__pack_25 47 13 none]
+G c Z s b [set_25 system__pack_25 54 14 none]
+G c Z b b [cluster0IP system__pack_25 87 9 none]
+G c Z b b [to_pointer system__pack_25__aac0 61 13 104_4]
+G c Z b b [to_address system__pack_25__aac0 67 13 104_4]
+G c Z b b [rev_cluster0IP system__pack_25 109 9 none]
+G c Z b b [to_pointer system__pack_25__rev_aac0 61 13 113_4]
+G c Z b b [to_address system__pack_25__rev_aac0 67 13 113_4]
+G c Z b b [cluster1IP system__pack_25 119 9 none]
+G c Z b b [to_pointer system__pack_25__aac1 61 13 137_4]
+G c Z b b [to_address system__pack_25__aac1 67 13 137_4]
+G c Z b b [rev_cluster1IP system__pack_25 142 9 none]
+G c Z b b [to_pointer system__pack_25__rev_aac1 61 13 146_4]
+G c Z b b [to_address system__pack_25__rev_aac1 67 13 146_4]
+G c Z b b [cluster2IP system__pack_25 152 9 none]
+G c Z b b [to_pointer system__pack_25__aac2 61 13 171_4]
+G c Z b b [to_address system__pack_25__aac2 67 13 171_4]
+G c Z b b [rev_cluster2IP system__pack_25 176 9 none]
+G c Z b b [to_pointer system__pack_25__rev_aac2 61 13 180_4]
+G c Z b b [to_address system__pack_25__rev_aac2 67 13 180_4]
+G c Z b b [cluster3IP system__pack_25 186 9 none]
+G c Z b b [to_pointer system__pack_25__aac3 61 13 206_4]
+G c Z b b [to_address system__pack_25__aac3 67 13 206_4]
+G c Z b b [rev_cluster3IP system__pack_25 211 9 none]
+G c Z b b [to_pointer system__pack_25__rev_aac3 61 13 215_4]
+G c Z b b [to_address system__pack_25__rev_aac3 67 13 215_4]
+G c Z b b [cluster4IP system__pack_25 221 9 none]
+G c Z b b [to_pointer system__pack_25__aac4 61 13 242_4]
+G c Z b b [to_address system__pack_25__aac4 67 13 242_4]
+G c Z b b [rev_cluster4IP system__pack_25 247 9 none]
+G c Z b b [to_pointer system__pack_25__rev_aac4 61 13 251_4]
+G c Z b b [to_address system__pack_25__rev_aac4 67 13 251_4]
+G c Z b b [cluster5IP system__pack_25 257 9 none]
+G c Z b b [to_pointer system__pack_25__aac5 61 13 279_4]
+G c Z b b [to_address system__pack_25__aac5 67 13 279_4]
+G c Z b b [rev_cluster5IP system__pack_25 284 9 none]
+G c Z b b [to_pointer system__pack_25__rev_aac5 61 13 288_4]
+G c Z b b [to_address system__pack_25__rev_aac5 67 13 288_4]
+G c Z b b [cluster6IP system__pack_25 294 9 none]
+G c Z b b [to_pointer system__pack_25__aac6 61 13 317_4]
+G c Z b b [to_address system__pack_25__aac6 67 13 317_4]
+G c Z b b [rev_cluster6IP system__pack_25 322 9 none]
+G c Z b b [to_pointer system__pack_25__rev_aac6 61 13 326_4]
+G c Z b b [to_address system__pack_25__rev_aac6 67 13 326_4]
+G c Z b b [cluster7IP system__pack_25 332 9 none]
+G c Z b b [to_pointer system__pack_25__aac7 61 13 356_4]
+G c Z b b [to_address system__pack_25__aac7 67 13 356_4]
+G c Z b b [rev_cluster7IP system__pack_25 361 9 none]
+G c Z b b [to_pointer system__pack_25__rev_aac7 61 13 365_4]
+G c Z b b [to_address system__pack_25__rev_aac7 67 13 365_4]
+X 1 system.ads
+55K9*System 176e11 3|34r9 48r17 55r17 62r5 4|32r6 33r6 34r6 36r14 72r25 74r40
+. 76r19 77r19 78r19 80r13 81r13 372r17 376r22 425r17 430r22 474r5
+85M9*Address 3|48r24 55r24 4|372r24 376r29 425r24 430r29
+99V14*"="{boolean} 4|99r34 100r34 132r34 133r34 166r34 167r34 201r34 202r34
+. 237r34 238r34 274r34 275r34 312r34 313r34 351r34 352r34
+109E9*Bit_Order 109e57 4|72r32
+110e4*Default_Bit_Order{109E9} 4|74r47
+X 2 s-atacco.ads
+42k16*Address_To_Access_Conversions 76e41 4|32w13 104r24 113r28 137r24 146r28
+. 171r24 180r28 206r24 215r28 242r24 251r28 279r24 288r28 317r24 326r28 356r24
+. 365r28
+50P9*Object_Pointer(4|87R9) 4|377r27[104] 378r27[137] 379r27[171] 380r27[206]
+. 381r27[242] 382r27[279] 383r27[317] 384r27[356] 385r31[113] 386r31[146]
+. 387r31[180] 388r31[215] 389r31[251] 390r31[288] 391r31[326] 392r31[365]
+. 431r27[104] 432r27[137] 433r27[171] 434r27[206] 435r27[242] 436r27[279]
+. 437r27[317] 438r27[356] 439r31[113] 440r31[146] 441r31[180] 442r31[215]
+. 443r31[251] 444r31[288] 445r31[326] 446r31[365]
+61V13*To_Pointer{50P9[4|104]} 4|377s54[104] 378s54[137] 379s54[171] 380s54[206]
+. 381s54[242] 382s54[279] 383s54[317] 384s54[356] 385s58[113] 386s58[146]
+. 387s58[180] 388s58[215] 389s58[251] 390s58[288] 391s58[326] 392s58[365]
+. 431s54[104] 432s54[137] 433s54[171] 434s54[206] 435s54[242] 436s54[279]
+. 437s54[317] 438s54[356] 439s58[113] 440s58[146] 441s58[180] 442s58[215]
+. 443s58[251] 444s58[288] 445s58[326] 446s58[365]
+X 3 s-pack25.ads
+34K16*Pack_25 1|55k9 3|62l12 62e19 4|36b21 474l12 474t19
+39N4*Bits 41r29 42r25 4|92r25 92r37 92r44 95r26 99r23 100r23 124r25 124r37
+. 124r44 125r25 125r37 125r44 128r26 132r23 133r23 157r25 157r37 157r44 158r25
+. 158r37 158r44 159r25 159r37 159r44 162r26 166r23 167r23 191r25 191r37 191r44
+. 192r25 192r37 192r44 193r25 193r37 193r44 194r25 194r37 194r44 197r26 201r23
+. 202r23 226r25 226r37 226r44 227r25 227r37 227r44 228r25 228r37 228r44 229r25
+. 229r37 229r44 230r25 230r37 230r44 233r26 237r23 238r23 262r25 262r37 262r44
+. 263r25 263r37 263r44 264r25 264r37 264r44 265r25 265r37 265r44 266r25 266r37
+. 266r44 267r25 267r37 267r44 270r26 274r23 275r23 299r25 299r37 299r44 300r25
+. 300r37 300r44 301r25 301r37 301r44 302r25 302r37 302r44 303r25 303r37 303r44
+. 304r25 304r37 304r44 305r25 305r37 305r44 308r26 312r23 313r23 337r25 337r37
+. 337r44 338r25 338r37 338r44 339r25 339r37 339r44 340r25 340r37 340r44 341r25
+. 341r37 341r44 342r25 342r37 342r44 343r25 343r37 343r44 344r25 344r37 344r44
+. 347r26 351r23 352r23 376r55 430r55
+41M9*Bits_25 42r8 50r33 57r17 4|88r12 120r16 153r20 187r24 222r28 258r32
+. 295r36 333r40 374r33 427r17
+47V13*Get_25{41M9} 48>7 49>7 50>7 4|371b13 418l8 418t14
+48m7 Arr{1|85M9} 4|372b7 376r49
+49i7 N{natural} 4|373b7 376r72 397r29 408r29
+50b7 Rev_SSO{boolean} 4|374b7 396r14
+54U14*Set_25 55>7 56>7 57>7 58>7 4|424b14 472l8 472t14
+55m7 Arr{1|85M9} 4|425b7 430r49
+56i7 N{natural} 4|426b7 430r72 450r25 461r25
+57m7 E{41M9} 4|427b7 451r33 452r33 453r33 454r33 455r33 456r33 457r33 458r33
+. 462r32 463r32 464r32 465r32 466r32 467r32 468r32 469r32
+58b7 Rev_SSO{boolean} 4|428b7 449r10
+X 4 s-pack25.adb
+72E12 Bit_Order{1|109E9} 73r33 74r6 74r25
+73e4 Reverse_Bit_Order{72E12} 110r35 111r35 143r35 144r35 177r35 178r35 212r35
+. 213r35 248r35 249r35 285r35 286r35 323r35 324r35 362r35 363r35
+76I12 Ofs{5|54I9} 376r62 430r62
+77M12 Uns{6|44M9} 376r67 397r24 408r24 430r67 450r20 461r20
+78M12 N07{6|44M9} 397r19 408r19 450r15 461r15
+87R9 Cluster0 89e14 91r8 95r8 97r8 104r55 109r29
+88m7*E0{3|41M9} 92r7 398r30 409r29 451m27 462m26
+104K12 AAC0[2|42] 377r22 377r49 431r22 431r49
+109R9 Rev_Cluster0<87R9> 113r59
+113K12 Rev_AAC0[2|42] 385r22 385r49 439r22 439r49
+119R9 Cluster1 121e14 123r8 128r8 130r8 137r55 142r29
+120m7*E0{3|41M9} 124r7
+120m11*E1{3|41M9} 125r7 399r30 410r29 452m27 463m26
+137K12 AAC1[2|42] 378r22 378r49 432r22 432r49
+142R9 Rev_Cluster1<119R9> 146r59
+146K12 Rev_AAC1[2|42] 386r22 386r49 440r22 440r49
+152R9 Cluster2 154e14 156r8 162r8 164r8 171r55 176r29
+153m7*E0{3|41M9} 157r7
+153m11*E1{3|41M9} 158r7
+153m15*E2{3|41M9} 159r7 400r30 411r29 453m27 464m26
+171K12 AAC2[2|42] 379r22 379r49 433r22 433r49
+176R9 Rev_Cluster2<152R9> 180r59
+180K12 Rev_AAC2[2|42] 387r22 387r49 441r22 441r49
+186R9 Cluster3 188e14 190r8 197r8 199r8 206r55 211r29
+187m7*E0{3|41M9} 191r7
+187m11*E1{3|41M9} 192r7
+187m15*E2{3|41M9} 193r7
+187m19*E3{3|41M9} 194r7 401r30 412r29 454m27 465m26
+206K12 AAC3[2|42] 380r22 380r49 434r22 434r49
+211R9 Rev_Cluster3<186R9> 215r59
+215K12 Rev_AAC3[2|42] 388r22 388r49 442r22 442r49
+221R9 Cluster4 223e14 225r8 233r8 235r8 242r55 247r29
+222m7*E0{3|41M9} 226r7
+222m11*E1{3|41M9} 227r7
+222m15*E2{3|41M9} 228r7
+222m19*E3{3|41M9} 229r7
+222m23*E4{3|41M9} 230r7 402r30 413r29 455m27 466m26
+242K12 AAC4[2|42] 381r22 381r49 435r22 435r49
+247R9 Rev_Cluster4<221R9> 251r59
+251K12 Rev_AAC4[2|42] 389r22 389r49 443r22 443r49
+257R9 Cluster5 259e14 261r8 270r8 272r8 279r55 284r29
+258m7*E0{3|41M9} 262r7
+258m11*E1{3|41M9} 263r7
+258m15*E2{3|41M9} 264r7
+258m19*E3{3|41M9} 265r7
+258m23*E4{3|41M9} 266r7
+258m27*E5{3|41M9} 267r7 403r30 414r29 456m27 467m26
+279K12 AAC5[2|42] 382r22 382r49 436r22 436r49
+284R9 Rev_Cluster5<257R9> 288r59
+288K12 Rev_AAC5[2|42] 390r22 390r49 444r22 444r49
+294R9 Cluster6 296e14 298r8 308r8 310r8 317r55 322r29
+295m7*E0{3|41M9} 299r7
+295m11*E1{3|41M9} 300r7
+295m15*E2{3|41M9} 301r7
+295m19*E3{3|41M9} 302r7
+295m23*E4{3|41M9} 303r7
+295m27*E5{3|41M9} 304r7
+295m31*E6{3|41M9} 305r7 404r30 415r29 457m27 468m26
+317K12 AAC6[2|42] 383r22 383r49 437r22 437r49
+322R9 Rev_Cluster6<294R9> 326r59
+326K12 Rev_AAC6[2|42] 391r22 391r49 445r22 445r49
+332R9 Cluster7 334e14 336r8 347r8 349r8 356r55 361r29
+333m7*E0{3|41M9} 337r7
+333m11*E1{3|41M9} 338r7
+333m15*E2{3|41M9} 339r7
+333m19*E3{3|41M9} 340r7
+333m23*E4{3|41M9} 341r7
+333m27*E5{3|41M9} 342r7
+333m31*E6{3|41M9} 343r7
+333m35*E7{3|41M9} 344r7 405r30 416r29 458m27 469m26
+356K12 AAC7[2|42] 384r22 384r49 438r22 438r49
+361R9 Rev_Cluster7<332R9> 365r59
+365K12 Rev_AAC7[2|42] 392r22 392r49 446r22 446r49
+376m7 A{1|85M9} 377r66 378r66 379r66 380r66 381r66 382r66 383r66 384r66 385r70
+. 386r70 387r70 388r70 389r70 390r70 391r70 392r70
+377p7 C0{2|50P9[104]} 409r26
+378p7 C1{2|50P9[137]} 410r26
+379p7 C2{2|50P9[171]} 411r26
+380p7 C3{2|50P9[206]} 412r26
+381p7 C4{2|50P9[242]} 413r26
+382p7 C5{2|50P9[279]} 414r26
+383p7 C6{2|50P9[317]} 415r26
+384p7 C7{2|50P9[356]} 416r26
+385p7 RC0{2|50P9[113]} 398r26
+386p7 RC1{2|50P9[146]} 399r26
+387p7 RC2{2|50P9[180]} 400r26
+388p7 RC3{2|50P9[215]} 401r26
+389p7 RC4{2|50P9[251]} 402r26
+390p7 RC5{2|50P9[288]} 403r26
+391p7 RC6{2|50P9[326]} 404r26
+392p7 RC7{2|50P9[365]} 405r26
+430m7 A{1|85M9} 431r66 432r66 433r66 434r66 435r66 436r66 437r66 438r66 439r70
+. 440r70 441r70 442r70 443r70 444r70 445r70 446r70
+431p7 C0{2|50P9[104]} 462r23
+432p7 C1{2|50P9[137]} 463r23
+433p7 C2{2|50P9[171]} 464r23
+434p7 C3{2|50P9[206]} 465r23
+435p7 C4{2|50P9[242]} 466r23
+436p7 C5{2|50P9[279]} 467r23
+437p7 C6{2|50P9[317]} 468r23
+438p7 C7{2|50P9[356]} 469r23
+439p7 RC0{2|50P9[113]} 451r23
+440p7 RC1{2|50P9[146]} 452r23
+441p7 RC2{2|50P9[180]} 453r23
+442p7 RC3{2|50P9[215]} 454r23
+443p7 RC4{2|50P9[251]} 455r23
+444p7 RC5{2|50P9[288]} 456r23
+445p7 RC6{2|50P9[326]} 457r23
+446p7 RC7{2|50P9[365]} 458r23
+X 5 s-stoele.ads
+43K16*Storage_Elements 4|33w13 76r26 80r20 5|104e28
+54I9*Storage_Offset<integer> 4|76r43 80r37
+74V14*"+"{1|85M9} 4|376r53 430r53
+79V14*"-"{1|85M9} 4|92r49 124r49 125r49 157r49 158r49 159r49 191r49 192r49
+. 193r49 194r49 226r49 227r49 228r49 229r49 230r49 262r49 263r49 264r49 265r49
+. 266r49 267r49 299r49 300r49 301r49 302r49 303r49 304r49 305r49 337r49 338r49
+. 339r49 340r49 341r49 342r49 343r49 344r49
+X 6 s-unstyp.ads
+38K16*Unsigned_Types 4|34w13 77r26 78r26 81r20 6|256e26
+44M9*Unsigned 4|77r41 78r41 81r35
+

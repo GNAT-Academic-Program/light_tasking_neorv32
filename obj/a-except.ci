@@ -1,0 +1,8 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb"
+node: { title: "ada__exceptions__call_last_chance_handler_with_message" label: "Call_Last_Chance_Handler_With_Message\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:45:4\n96 bytes (static)\n0 dynamic objects" }
+node: { title: "memcpy" label: "builtin_memcpy\n<built-in>" shape : ellipse }
+edge: { sourcename: "ada__exceptions__call_last_chance_handler_with_message" targetname: "memcpy" }
+edge: { sourcename: "ada__exceptions__call_last_chance_handler_with_message" targetname: "memcpy" }
+node: { title: "__gnat_last_chance_handler" label: "Last_Chance_Handler\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:34:14" shape : ellipse }
+edge: { sourcename: "ada__exceptions__call_last_chance_handler_with_message" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:62:7" }
+}

@@ -1,0 +1,54 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.wid_uns%s	s-widuns.ads		7e8982cc NE OL PK
+W system%s		system.ads		system.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+W system.width_u%s
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-unstyp.ads		20261002145216 fa2a7f59 system.unsigned_types%s
+D s-widuns.ads		20261002145216 42df1db4 system.wid_uns%s
+D s-widthu.ads		20261002145216 c532ea41 system.width_u%s
+D s-widthu.adb		20261002145216 bf1b72bd system.width_u%b
+G a e
+G c Z s s [width system__wid_uns__width_uns 41 13 42_4]
+X 1 system.ads
+55K9*System 176e11 3|34r6 35r6 37r9 47r5
+X 2 s-unstyp.ads
+38K16*Unsigned_Types 256e26 3|35w13 40r24
+44M9*Unsigned 3|40r39
+X 3 s-widuns.ads
+37K16*Wid_Uns 1|55k9 3|47l12 47e19
+40M12*Unsigned{2|44M9} 42r38 44r38
+42K12*Width_Uns[4|38] 45r14
+44V13*Width_Unsigned=45:24{natural}
+44m29 Lo{2|44M9}
+44m33 Hi{2|44M9}
+X 4 s-widthu.ads
+38k16*Width_U 3|34w13 42r29 4|42e19
+41V13*Width{natural} 3|45r24[42]
+

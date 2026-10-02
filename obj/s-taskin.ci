@@ -1,0 +1,31 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-taskin.adb"
+node: { title: "system__tasking__E5sIP" label: "E5sIP\n<built-in>\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "system__tasking__task_statesH" label: "task_statesH\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__tasking__call_modesH" label: "call_modesH\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__tasking__entry_queueIP" label: "entry_queueIP\n<built-in>\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "system__tasking__activation_chainIP" label: "activation_chainIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "__gnat_get_secondary_stack" label: "Get_Sec_Stack\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-taskin.adb:70:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__tasking__initialize_atcb" label: "Initialize_Atcb\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-taskin.adb:79:4\n32 bytes (static)\n0 dynamic objects" }
+node: { title: "system__parameters__adjust_storage_size" label: "Adjust_Storage_Size\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-parame.ads:72:13" shape : ellipse }
+edge: { sourcename: "system__tasking__initialize_atcb" targetname: "system__parameters__adjust_storage_size" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-taskin.adb:113:22" }
+node: { title: "system__tasking__initialize" label: "Initialize\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-taskin.adb:123:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__tasking__initialize" targetname: "system__parameters__adjust_storage_size" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-taskin.adb:113:22" }
+node: { title: "system__bb__threads__initialize" label: "Initialize\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbthre.ads:282:14" shape : ellipse }
+edge: { sourcename: "system__tasking__initialize" targetname: "system__bb__threads__initialize" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-taprop.adb:349:26" }
+node: { title: "system__bb__cpu_specific__clear_mstatus_bits" label: "Clear_Mstatus_Bits\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.ads:128:14" shape : ellipse }
+edge: { sourcename: "system__tasking__initialize" targetname: "system__bb__cpu_specific__clear_mstatus_bits" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:137:7" }
+node: { title: "system__bb__threads__queues__change_priority" label: "Change_Priority\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbthqu.ads:119:14" shape : ellipse }
+edge: { sourcename: "system__tasking__initialize" targetname: "system__bb__threads__queues__change_priority" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbthre.adb:300:13" }
+node: { title: "system__bb__protection__leave_kernel" label: "Leave_Kernel\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbprot.ads:54:14" shape : ellipse }
+edge: { sourcename: "system__tasking__initialize" targetname: "system__bb__protection__leave_kernel" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbthre.adb:302:17" }
+node: { title: "system__task_primitives__operations__initialize_idle" label: "Initialize_Idle\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-taprop.adb:61:14" shape : ellipse }
+edge: { sourcename: "system__tasking__initialize" targetname: "system__task_primitives__operations__initialize_idle" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-taprop.adb:381:10" }
+node: { title: "system__bb__threads__thread_create" label: "Thread_Create\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbthre.ads:340:14" shape : ellipse }
+edge: { sourcename: "system__tasking__initialize" targetname: "system__bb__threads__thread_create" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-taprop.adb:315:26" }
+node: { title: "system__secondary_stack__ss_init" label: "Ss_Init\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-secsta.ads:108:14" shape : ellipse }
+edge: { sourcename: "system__tasking__initialize" targetname: "system__secondary_stack__ss_init" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-taskin.adb:162:7" }
+node: { title: "ada__exceptions__call_last_chance_handler_with_message" label: "Call_Last_Chance_Handler_With_Message\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-except.adb:40:14" shape : ellipse }
+edge: { sourcename: "system__tasking__initialize" targetname: "ada__exceptions__call_last_chance_handler_with_message" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-taskin.adb:184:10" }
+node: { title: "system__tasking__self" label: "Self\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-taskin.adb:192:13\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__tasking__storage_size" label: "Storage_Size\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-taskin.adb:198:4\n0 bytes (static)\n0 dynamic objects" }
+}

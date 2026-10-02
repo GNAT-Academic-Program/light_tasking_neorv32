@@ -1,0 +1,6 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/i-neorv32-uart0.ads"
+node: { title: "interfaces__neorv32__uart0__ctrl_registerIP" label: "ctrl_registerIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "interfaces__neorv32__uart0__data_registerIP" label: "data_registerIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "interfaces__neorv32__uart0__uart0_peripheralIP" label: "uart0_peripheralIP\n<built-in>\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "interfaces__neorv32__uart0__uart0_peripheralIP" targetname: "interfaces__neorv32__uart0__ctrl_registerIP" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/i-neorv32-uart0.ads:130:7" }
+}

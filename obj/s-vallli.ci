@@ -1,0 +1,15 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-vallli.ads"
+node: { title: "system__val_lli__impl__scan_integer" label: "Scan_Integer\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-valuei.adb:40:4\n48 bytes (static)\n0 dynamic objects" }
+node: { title: "system__val_util__scan_sign" label: "Scan_Sign\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-valuti.ads:51:14" shape : ellipse }
+edge: { sourcename: "system__val_lli__impl__scan_integer" targetname: "system__val_util__scan_sign" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-valuei.adb:56:7" }
+node: { title: "system__val_util__bad_value" label: "Bad_Value\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-valuti.ads:37:14" shape : ellipse }
+edge: { sourcename: "system__val_lli__impl__scan_integer" targetname: "system__val_util__bad_value" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-valuei.adb:60:10" }
+node: { title: "system__val_llu__impl__scan_raw_unsigned" label: "Scan_Raw_Unsigned\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-valueu.ads:40:14" shape : ellipse }
+edge: { sourcename: "system__val_lli__impl__scan_integer" targetname: "system__val_llu__impl__scan_raw_unsigned" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-valuei.adb:63:7" }
+edge: { sourcename: "system__val_lli__impl__scan_integer" targetname: "system__val_util__bad_value" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-valuei.adb:71:13" }
+node: { title: "system__val_lli__impl__value_integer" label: "Value_Integer\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-valuei.adb:90:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "system__val_lli__impl__value_integer" targetname: "system__val_lli__impl__value_integer" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-valuei.adb:100:20" }
+edge: { sourcename: "system__val_lli__impl__value_integer" targetname: "system__val_lli__impl__scan_integer" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-valuei.adb:113:16" }
+node: { title: "system__val_util__scan_trailing_blanks" label: "Scan_Trailing_Blanks\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-valuti.ads:104:14" shape : ellipse }
+edge: { sourcename: "system__val_lli__impl__value_integer" targetname: "system__val_util__scan_trailing_blanks" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-valuei.adb:116:13" }
+}

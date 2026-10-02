@@ -1,0 +1,47 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.width_u%b	s-widthu.adb		7a2998fc NE OL PK GE
+W system%s		system.ads		system.ali
+
+U system.width_u%s	s-widthu.ads		c67ce021 BN NE OL PU PK GE
+W system%s		system.ads		system.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-widthu.ads		20261002145216 c532ea41 system.width_u%s
+D s-widthu.adb		20261002145216 bf1b72bd system.width_u%b
+G a e
+G c Z s b [width_u system 38 16 none]
+X 1 system.ads
+55K9*System 176e11 2|38r9 42r5 3|32r14 60r5
+X 2 s-widthu.ads
+36M9 Uns 41r29 3|34r29 36r11 47r15
+38k16*Width_U 1|55k9 2|36z9 42l12 42e19 3|32b21 60l12 60t19
+41V13*Width{natural} 41>20 41>24 3|34b13 58l8 58t13
+41*20 Lo{36M9} 3|34b20 38r10 47r24
+41*24 Hi{36M9} 3|34b24 38r15 47r28
+X 3 s-widthu.adb
+35i7 W{natural} 43m10 53m13 53r18 56r17
+36*7 T{2|36M9} 47m10 51r16 52m13 52r18
+

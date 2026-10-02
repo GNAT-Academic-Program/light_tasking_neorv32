@@ -1,0 +1,20 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-pack09.adb"
+node: { title: "system__pack_09__cluster0IP" label: "cluster0IP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__pack_09__rev_cluster0IP__2" label: "rev_cluster0IP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__pack_09__cluster1IP" label: "cluster1IP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__pack_09__rev_cluster1IP__2" label: "rev_cluster1IP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__pack_09__cluster2IP" label: "cluster2IP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__pack_09__rev_cluster2IP__2" label: "rev_cluster2IP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__pack_09__cluster3IP" label: "cluster3IP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__pack_09__rev_cluster3IP__2" label: "rev_cluster3IP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__pack_09__cluster4IP" label: "cluster4IP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__pack_09__rev_cluster4IP__2" label: "rev_cluster4IP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__pack_09__cluster5IP" label: "cluster5IP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__pack_09__rev_cluster5IP__2" label: "rev_cluster5IP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__pack_09__cluster6IP" label: "cluster6IP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__pack_09__rev_cluster6IP__2" label: "rev_cluster6IP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__pack_09__cluster7IP" label: "cluster7IP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__pack_09__rev_cluster7IP__2" label: "rev_cluster7IP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__pack_09__get_09" label: "Get_09\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-pack09.adb:371:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__pack_09__set_09" label: "Set_09\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-pack09.adb:424:4\n0 bytes (static)\n0 dynamic objects" }
+}

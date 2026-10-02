@@ -1,0 +1,8 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-tasque.adb"
+node: { title: "system__tasking__queuing__count_waiting" label: "Count_Waiting\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-tasque.adb:115:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "system__tasking__queuing__enqueue" label: "Enqueue\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-tasque.adb:194:4\n32 bytes (static)\n0 dynamic objects" }
+node: { title: "system__tasking__queuing__select_protected_entry_call" label: "Select_Protected_Entry_Call\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-tasque.adb:233:4\n32 bytes (static)\n0 dynamic objects" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "system__tasking__queuing__select_protected_entry_call" targetname: "__indirect_call" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-tasque.adb:255:23" }
+edge: { sourcename: "system__tasking__queuing__select_protected_entry_call" targetname: "__indirect_call" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-tasque.adb:256:45" }
+}

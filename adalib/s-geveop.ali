@@ -1,0 +1,119 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_CONVERSION
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.generic_vector_operations%b  s-geveop.adb  d4e83aa2 NE OL PK GE
+W ada%s			ada.ads			ada.ali
+W ada.unchecked_conversion%s
+W system%s		system.ads		system.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+
+U system.generic_vector_operations%s  s-geveop.ads  c62ae78e BN NE OL PU PK GE
+W system%s		system.ads		system.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+W system.vectors%s	s-vector.ads		s-vector.ali
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-unccon.ads		20261002145216 0e9b276f ada.unchecked_conversion%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-geveop.ads		20261002145216 747f96b6 system.generic_vector_operations%s
+D s-geveop.adb		20261002145216 62d25f93 system.generic_vector_operations%b
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+D s-vector.ads		20261002145216 7dc5afb0 system.vectors%s
+G a e
+G c Z s b [generic_vector_operations system 50 16 none]
+X 1 ada.ads
+18K9*Ada 22e8 5|34r6 60r26 61r26 113r26 114r26
+X 2 a-unccon.ads
+23v14*Unchecked_Conversion 5|34w10 60r30 61r30 113r30 114r30
+X 3 system.ads
+55K9*System 176e11 4|42r6 43r6 50r9 57r17 58r17 66r17 67r17 71r5 5|32r6 32r35
+. 36r14 48r17 49r17 101r17 102r17 146r5
+85M9*Address 4|57r24 66r24 5|48r24 60r52 61r52 70r21 75r12 76r12 77r12 101r24
+. 113r52 114r52 123r21 128r12 129r12
+89N4*Storage_Unit 5|38r44
+95V14*"<"{boolean} 5|81r16 88r16 133r16 139r16
+X 4 s-geveop.ads
+46E9 Element 48r52 54r40 54r56 63r37 63r53 5|58r38 111r38
+47E9 Index 48r33
+48A9 Element_Array(46E9)<47E9> 5|41r26
+50k16*Generic_Vector_Operations 3|55k9 4|46z9 47z9 48z9 71l12 71e37 5|36b21
+. 146l12 146t37
+54V21 Element_Op{46E9} 54>33 54>36 5|89s25
+54*33 X{46E9}
+54*36 Y{46E9}
+55V21 Vector_Op{7|45M9} 55>32 55>35 5|82s25
+55m32 X{7|45M9}
+55m35 Y{7|45M9}
+56u14*Binary_Operation 57>7 57>10 57>13 58>7 5|47b14 94l8 94t24
+57m7 R{3|85M9} 5|48b7 54r13 75r23
+57m10 X{3|85M9} 5|48b10 54r30 71r14 76r23 88r18
+57m13 Y{3|85M9} 5|48b13 54r47 77r23
+58i7 Length{6|56I12} 5|49b7 72r39 88r22
+63V21 Element_Op{46E9} 63>33 5|140s25
+63*33 X{46E9}
+64V21 Vector_Op{7|45M9} 64>32 5|134s25
+64m32 X{7|45M9}
+65u14*Unary_Operation 66>7 66>10 67>7 5|100b14 144l8 144t23
+66m7 R{3|85M9} 5|101b7 107r13 128r23
+66m10 X{3|85M9} 5|101b10 107r30 124r14 129r23 139r18
+67i7 Length{6|56I12} 5|102b7 125r39 139r22
+X 5 s-geveop.adb
+38i4 IU{integer} 39r72 41r57
+39i4 VU{6|56I12} 51r57 54r19 54r36 54r53 83r21 84r21 85r21 104r57 107r19
+. 107r36 135r21 136r21
+40i4 EU{6|56I12} 90r21 91r21 92r21 141r21 142r21
+51m7 VI{6|92M9} 63r22 72r49 72r54
+53m7 Unaligned{6|92M9} 72r62
+57P12 Vector_Ptr(7|45M9) 60r61
+58P12 Element_Ptr(4|46E9) 61r61
+60V16 VP[2|23]{57P12} 82s10 82s36 82s49
+61V16 EP[2|23]{58P12} 89s10 89s37 89s50
+70m7 SA{3|85M9} 81r18
+75m7 RA{3|85M9} 82r14 85m10 85r16 89r14 92m10 92r16
+76m7 XA{3|85M9} 81r13 82r40 83m10 83r16 88r13 89r41 90m10 90r16
+77m7 YA{3|85M9} 82r53 84m10 84r16 89r54 91m10 91r16
+104m7 VI{6|92M9} 116r22 125r49 125r54
+106m7 Unaligned{6|92M9} 125r62
+110P12 Vector_Ptr(7|45M9) 113r61
+111P12 Element_Ptr(4|46E9) 114r61
+113V16 VP[2|23]{110P12} 134s10 134s36
+114V16 EP[2|23]{111P12} 140s10 140s37
+123m7 SA{3|85M9} 133r18
+128m7 RA{3|85M9} 134r14 136m10 136r16 140r14 142m10 142r16
+129m7 XA{3|85M9} 133r13 134r40 135m10 135r16 139r13 140r41 141m10 141r16
+X 6 s-stoele.ads
+43K16*Storage_Elements 4|43w13 58r24 67r24 5|32w13 32w42 49r24 102r24 6|104e28
+54I9*Storage_Offset<integer> 5|71r18 124r18
+56I12*Storage_Count{54I9} 4|58r41 67r41 5|39r18 39r35 40r18 41r11 49r41 102r41
+74V14*"+"{3|85M9} 5|71r16 83r19 84r19 85r19 88r20 90r19 91r19 92r19 124r16
+. 135r19 136r19 139r20 141r19 142r19
+84V14*"mod"{54I9} 5|54r15 54r32 54r49 107r15 107r32
+92M9*Integer_Address 5|51r21 51r40 53r28 72r22 104r21 104r40 106r28 125r22
+X 7 s-vector.ads
+42K16*Vectors 4|42w13 55r39 55r62 64r36 64r59 5|39r50 57r37 110r37 7|52e19
+45M9*Vector 4|55r47 55r70 64r44 64r67 5|39r58 57r45 110r45
+

@@ -1,0 +1,14 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-atopri.adb"
+node: { title: "system__atomic_primitives__lock_free_read_8" label: "Lock_Free_Read_8\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-atopri.adb:38:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__atomic_primitives__lock_free_read_16" label: "Lock_Free_Read_16\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-atopri.adb:38:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__atomic_primitives__lock_free_read_32" label: "Lock_Free_Read_32\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-atopri.adb:38:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__atomic_primitives__lock_free_read_64" label: "Lock_Free_Read_64\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-atopri.adb:38:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "__atomic_load_8" label: "atomic_load_8\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__atomic_primitives__lock_free_read_64" targetname: "__atomic_load_8" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-atopri.adb:43:17" }
+node: { title: "system__atomic_primitives__lock_free_try_write_8" label: "Lock_Free_Try_Write_8\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-atopri.adb:53:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "system__atomic_primitives__lock_free_try_write_16" label: "Lock_Free_Try_Write_16\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-atopri.adb:53:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__atomic_primitives__lock_free_try_write_32" label: "Lock_Free_Try_Write_32\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-atopri.adb:53:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "system__atomic_primitives__lock_free_try_write_64" label: "Lock_Free_Try_Write_64\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-atopri.adb:53:4\n32 bytes (static)\n0 dynamic objects" }
+node: { title: "__atomic_compare_exchange_8" label: "atomic_compare_exchange_8\n<built-in>" shape : ellipse }
+edge: { sourcename: "system__atomic_primitives__lock_free_try_write_64" targetname: "__atomic_compare_exchange_8" }
+}

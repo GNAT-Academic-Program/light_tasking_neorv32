@@ -1,0 +1,162 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+
+U system.arith_64%b	s-arit64.adb		27732c71 NE OL PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.unchecked_conversion%s
+W system%s		system.ads		system.ali
+W system.arith_double%s
+
+U system.arith_64%s	s-arit64.ads		f2bce056 NE OL PU PK
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-except.ads		20261002145216 5b5f0f2f ada.exceptions%s
+D a-except.adb		20261002145216 4da5c77f ada.exceptions%b
+D a-unccon.ads		20261002145216 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20261002145216 9111f9c1 interfaces%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-arit64.ads		20261002145216 60e313f7 system.arith_64%s
+D s-arit64.adb		20261002145216 3373cac9 system.arith_64%b
+D s-aridou.ads		20261002145216 74e3f54f system.arith_double%s
+D s-aridou.adb		20261002145216 63f74e46 system.arith_double%b
+G a e
+G c Z s b [add_with_ovflo_check64 system__arith_64 50 13 none]
+G c Z s b [subtract_with_ovflo_check64 system__arith_64 65 13 none]
+G c Z s b [multiply_with_ovflo_check64 system__arith_64 74 13 none]
+G c Z s b [scaled_divide64 system__arith_64 85 14 none]
+G c Z s b [double_divide64 system__arith_64 122 14 none]
+G c Z s b [uns_add_with_ovflo_check64 system__arith_64 160 13 none]
+G c Z s b [uns_subtract_with_ovflo_check64 system__arith_64 169 13 none]
+G c Z s b [uns_multiply_with_ovflo_check64 system__arith_64 180 13 none]
+G c Z b b [add_with_ovflo_check system__arith_64__impl 60 13 41_4]
+G c Z b b [subtract_with_ovflo_check system__arith_64__impl 75 13 41_4]
+G c Z b b [multiply_with_ovflo_check system__arith_64__impl 84 13 41_4]
+G c Z b b [scaled_divide system__arith_64__impl 95 14 41_4]
+G c Z b b [double_divide system__arith_64__impl 126 14 41_4]
+G c Z b b [add_with_ovflo_check system__arith_64__impl 156 13 41_4]
+G c Z b b [subtract_with_ovflo_check system__arith_64__impl 165 13 41_4]
+G c Z b b [multiply_with_ovflo_check system__arith_64__impl 174 13 41_4]
+G c Z b b [to_uns system__arith_64__impl 40 13 41_4]
+G c Z b b [to_int system__arith_64__impl 41 13 41_4]
+G c Z b b [Oadd system__arith_64__impl 53 13 41_4]
+G c Z b b [Oadd system__arith_64__impl 55 13 41_4]
+G c Z b b [Omultiply system__arith_64__impl 59 13 41_4]
+G c Z b b [Odivide system__arith_64__impl 63 13 41_4]
+G c Z b b [Oconcat system__arith_64__impl 67 13 41_4]
+G c Z b b [Oabs system__arith_64__impl 71 13 41_4]
+G c Z b b [Orem system__arith_64__impl 78 13 41_4]
+G c Z b b [le3 system__arith_64__impl 82 13 41_4]
+G c Z b b [lo system__arith_64__impl 85 13 41_4]
+G c Z b b [hi system__arith_64__impl 89 13 41_4]
+G c Z b b [sub3 system__arith_64__impl 93 14 41_4]
+G c Z b b [to_neg_int system__arith_64__impl 96 13 41_4]
+G c Z b b [to_pos_int system__arith_64__impl 102 13 41_4]
+G c Z b b [raise_error system__arith_64__impl 107 14 41_4]
+X 5 interfac.ads
+47K9*Interfaces 247e15 7|39w6 48r21 158r21 8|37r21 39r8
+68I9*Integer_64<long_long_integer> 7|48r32
+92M9*Unsigned_32 8|37r32
+95M9*Unsigned_64 7|158r32
+154V13*Shift_Left{92M9} 9|50i18
+179V13*Shift_Left{95M9} 9|44i18
+184V13*Shift_Right{95M9} 9|47i18
+X 6 system.ads
+55K9*System 176e11 7|41r9 191r5 8|32r6 34r14 73r5
+X 7 s-arit64.ads
+41K16*Arith_64 6|55k9 7|191l12 191e20 8|34b21 73l12 73t20
+48I12*Int64{5|68I9} 50r44 50r58 65r49 65r63 74r49 74r63 86r17 87r21 117r17
+. 118r21 123r17 124r21 149r17 150r21 8|41r38 43r44 43r58 46r49 46r63 49r49
+. 49r63 53r17 54r21 59r17 60r21
+50V13*Add_With_Ovflo_Check64{48I12} 50>37 50>40 8|43b13
+50i37 X{48I12} 8|43b37
+50i40 Y{48I12} 8|43b40
+65V13*Subtract_With_Ovflo_Check64{48I12} 65>42 65>45 8|46b13
+65i42 X{48I12} 8|46b42
+65i45 Y{48I12} 8|46b45
+74V13*Multiply_With_Ovflo_Check64{48I12} 74>42 74>45 75i<c,__gnat_mulv64>22
+. 8|49b13
+74i42 X{48I12} 8|49b42
+74i45 Y{48I12} 8|49b45
+85U14*Scaled_Divide64 86>7 86>10 86>13 87<7 87<10 88>7 119r34 8|52b14
+86i7 X{48I12} 8|53b7
+86i10 Y{48I12} 8|53b10
+86i13 Z{48I12} 8|53b13
+87i7 Q{48I12} 8|54b7
+87i10 R{48I12} 8|54b10
+88b7 Round{boolean} 8|55b7
+116U14*Scaled_Divide=119:34
+117i7 X{48I12}
+117i10 Y{48I12}
+117i13 Z{48I12}
+118i7 Q{48I12}
+118i10 R{48I12}
+119b7 Round{boolean}
+122U14*Double_Divide64 123>7 123>10 123>13 124<7 124<10 125>7 151r34 8|58b14
+123i7 X{48I12} 8|59b7
+123i10 Y{48I12} 8|59b10
+123i13 Z{48I12} 8|59b13
+124i7 Q{48I12} 8|60b7
+124i10 R{48I12} 8|60b10
+125b7 Round{boolean} 8|61b7
+148U14*Double_Divide=151:34
+149i7 X{48I12}
+149i10 Y{48I12}
+149i13 Z{48I12}
+150i7 Q{48I12}
+150i10 R{48I12}
+151b7 Round{boolean}
+158M12*Uns64{5|95M9} 160r48 160r62 169r53 169r67 180r53 180r67 8|41r45 64r48
+. 64r62 67r53 67r67 70r53 70r67
+160V13*Uns_Add_With_Ovflo_Check64{158M12} 160>41 160>44 8|64b13
+160m41 X{158M12} 8|64b41
+160m44 Y{158M12} 8|64b44
+169V13*Uns_Subtract_With_Ovflo_Check64{158M12} 169>46 169>49 8|67b13
+169m46 X{158M12} 8|67b46
+169m49 Y{158M12} 8|67b49
+180V13*Uns_Multiply_With_Ovflo_Check64{158M12} 180>46 180>49 181i<c,__gnat_uns_mulv64>22
+. 8|70b13
+180m46 X{158M12} 8|70b46
+180m49 Y{158M12} 8|70b49
+X 8 s-arit64.adb
+37M12 Uns32{5|92M9} 41r52
+41K12 Impl[9|53] 44r14 47r14 50r14 56r14 62r14 65r14 68r14 71r14
+X 9 s-aridou.ads
+53k16*Arith_Double 8|32w13 41r24 9|184e24
+60V13 Add_With_Ovflo_Check{5|68I9} 8|44r19[41]
+75V13 Subtract_With_Ovflo_Check{5|68I9} 8|47r19[41]
+84V13 Multiply_With_Ovflo_Check{5|68I9} 8|50r19[41]
+95U14 Scaled_Divide 8|56r19[41]
+126U14 Double_Divide 8|62r19[41]
+156V13 Add_With_Ovflo_Check{5|95M9} 8|65r19[41]
+165V13 Subtract_With_Ovflo_Check{5|95M9} 8|68r19[41]
+174V13 Multiply_With_Ovflo_Check{5|95M9} 8|71r19[41]
+

@@ -1,0 +1,46 @@
+# THIS FILE IS GENERATED. DO NOT EDIT.
+
+[solution]
+[solution.context]
+solved = true
+[[solution.state]]
+crate = "gnat_riscv64_elf"
+fulfilment = "solved"
+pinned = false
+transitivity = "direct"
+versions = "^16"
+[solution.state.release]
+auto-gpr-with = false
+description = "The GNAT Ada compiler - RISC-V cross-compiler"
+licenses = "GPL-3.0-or-later AND GPL-3.0-or-later WITH GCC-exception-3.1"
+maintainers = [
+"chouteau@adacore.com",
+"sagaert@adacore.com",
+]
+maintainers-logins = [
+"Fabien-Chouteau",
+"AldanTanneo",
+]
+name = "gnat_riscv64_elf"
+provides = [
+"gnat=16.1.0",
+]
+version = "16.1.0"
+website = "https://github.com/alire-project/GNAT-FSF-builds"
+[solution.state.release.configuration]
+auto_gpr_with = true
+disabled = true
+generate_ada = true
+generate_c = true
+generate_gpr = true
+output_dir = "config"
+[solution.state.release.environment]
+[solution.state.release.environment.PATH]
+prepend = "${CRATE_ROOT}/bin"
+[solution.state.release.origin]
+binary = true
+hashes = [
+"sha256:01cb5e97d6b51ed21f677912bc09bd6caca430515d09c8feda171c17b4fa95db",
+]
+url = "https://github.com/alire-project/GNAT-FSF-builds/releases/download/gnat-16.1.0-1/gnat-riscv64-elf-linux64-x86_64-16.1.0-1.tar.gz"
+

@@ -1,0 +1,13 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbthqu.adb"
+node: { title: "system__bb__threads__queues__change_priority" label: "Change_Priority\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbthqu.adb:56:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "__gnat_context_switch_needed" label: "Context_Switch_Needed\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbthqu.adb:183:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__threads__queues__current_priority" label: "Current_Priority\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbthqu.adb:196:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__threads__queues__extract" label: "Extract\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbthqu.adb:212:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__threads__queues__first_thread" label: "First_Thread\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbthqu.adb:228:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__threads__queues__get_next_alarm_time" label: "Get_Next_Alarm_Time\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbthqu.adb:237:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__threads__queues__insert" label: "Insert\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbthqu.adb:258:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__threads__queues__insert_alarm" label: "Insert_Alarm\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbthqu.adb:337:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__threads__queues__running_thread" label: "Running_Thread\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbthqu.adb:387:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__threads__queues__wakeup_expired_alarms" label: "Wakeup_Expired_Alarms\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbthqu.adb:396:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__threads__queues__yield" label: "Yield\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbthqu.adb:431:4\n0 bytes (static)\n0 dynamic objects" }
+}

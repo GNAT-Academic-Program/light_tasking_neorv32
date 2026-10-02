@@ -1,0 +1,16 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-tpobmu.adb"
+node: { title: "system__tasking__protected_objects__multiprocessors__wakeup_served_entry" label: "Wakeup_Served_Entry\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-tpobmu.adb:129:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__threads__wakeup" label: "Wakeup\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbthre.ads:389:14" shape : ellipse }
+edge: { sourcename: "system__tasking__protected_objects__multiprocessors__wakeup_served_entry" targetname: "system__bb__threads__wakeup" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-taprop.adb:151:26" }
+node: { title: "system__tasking__protected_objects__multiprocessors__entry_call_listIP" label: "entry_call_listIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__tasking__protected_objects__multiprocessors__served" label: "Served\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-tpobmu.adb:69:4\n32 bytes (static)\n0 dynamic objects" }
+node: { title: "system__task_primitives__operations__get_cpu" label: "Get_Cpu\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-taprop.ads:88:13" shape : ellipse }
+edge: { sourcename: "system__tasking__protected_objects__multiprocessors__served" targetname: "system__task_primitives__operations__get_cpu" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-tpobmu.adb:71:44" }
+node: { title: "system__bb__cpu_specific__clear_mstatus_bits" label: "Clear_Mstatus_Bits\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.ads:128:14" shape : ellipse }
+edge: { sourcename: "system__tasking__protected_objects__multiprocessors__served" targetname: "system__bb__cpu_specific__clear_mstatus_bits" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:137:7" }
+node: { title: "system__bb__cpu_specific__set_mstatus_bits" label: "Set_Mstatus_Bits\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.ads:129:14" shape : ellipse }
+edge: { sourcename: "system__tasking__protected_objects__multiprocessors__served" targetname: "system__bb__cpu_specific__set_mstatus_bits" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:153:10" }
+node: { title: "system__bb__board_support__multiprocessors__poke_cpu" label: "Poke_Cpu\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbbosu.ads:139:17" shape : ellipse }
+edge: { sourcename: "system__tasking__protected_objects__multiprocessors__served" targetname: "system__bb__board_support__multiprocessors__poke_cpu" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-tpobmu.adb:121:49" }
+node: { title: "system__tasking__protected_objects__multiprocessors___elabb" label: "Multiprocessors\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-tpobmu.adb:45:1\n0 bytes (static)\n0 dynamic objects" }
+}

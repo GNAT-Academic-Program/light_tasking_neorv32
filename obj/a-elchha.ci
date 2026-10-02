@@ -1,0 +1,21 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-elchha.adb"
+node: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-elchha.adb:ada__exceptions__last_chance_handler__put.0" label: "Put\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-elchha.adb:53:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "gnat__io__put__2" label: "PUT\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/g-io.ads:55:14" shape : ellipse }
+edge: { sourcename: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-elchha.adb:ada__exceptions__last_chance_handler__put.0" targetname: "gnat__io__put__2" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-elchha.adb:63:10" }
+node: { title: "__gnat_last_chance_handler" label: "Last_Chance_Handler\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-elchha.adb:43:1\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "gnat__io__put_line" label: "PUT_LINE\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/g-io.ads:65:14" shape : ellipse }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "gnat__io__put_line" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-elchha.adb:68:4" }
+node: { title: "gnat__io__put__3" label: "PUT\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/g-io.ads:60:14" shape : ellipse }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "gnat__io__put__3" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-elchha.adb:71:7" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-elchha.adb:ada__exceptions__last_chance_handler__put.0" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-elchha.adb:72:7" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "gnat__io__put__2" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-elchha.adb:73:7" }
+node: { title: "gnat__io__put" label: "PUT\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/g-io.ads:49:14" shape : ellipse }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "gnat__io__put" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-elchha.adb:74:7" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "gnat__io__put__3" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-elchha.adb:76:7" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-elchha.adb:ada__exceptions__last_chance_handler__put.0" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-elchha.adb:77:7" }
+node: { title: "gnat__io__new_line" label: "NEW_LINE\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/g-io.ads:71:14" shape : ellipse }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "gnat__io__new_line" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-elchha.adb:80:4" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "gnat__io__put_line" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-elchha.adb:81:4" }
+node: { title: "__gnat_stop" label: "Stop\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-macres.ads:39:14" shape : ellipse }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "__gnat_stop" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/a-elchha.adb:85:24" }
+}

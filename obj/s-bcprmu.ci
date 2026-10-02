@@ -1,0 +1,14 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bcprmu.adb"
+node: { title: "__gnat_start_slave_cpus" label: "Start_All_Cpus\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bcprmu.adb:46:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__cpu_primitives__multiprocessors__poke_handler" label: "Poke_Handler\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bcprmu.adb:61:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__cpu_specific__clear_mstatus_bits" label: "Clear_Mstatus_Bits\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.ads:128:14" shape : ellipse }
+edge: { sourcename: "system__bb__cpu_primitives__multiprocessors__poke_handler" targetname: "system__bb__cpu_specific__clear_mstatus_bits" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:137:7" }
+node: { title: "system__bb__board_support__time__read_clock" label: "Read_Clock\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbbosu.ads:63:16" shape : ellipse }
+edge: { sourcename: "system__bb__cpu_primitives__multiprocessors__poke_handler" targetname: "system__bb__board_support__time__read_clock" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbtime.adb:104:53" }
+node: { title: "system__bb__timing_events__execute_expired_timing_events" label: "Execute_Expired_Timing_Events\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbtiev.ads:69:14" shape : ellipse }
+edge: { sourcename: "system__bb__cpu_primitives__multiprocessors__poke_handler" targetname: "system__bb__timing_events__execute_expired_timing_events" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bcprmu.adb:75:20" }
+node: { title: "system__bb__threads__queues__wakeup_expired_alarms" label: "Wakeup_Expired_Alarms\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbthqu.ads:292:14" shape : ellipse }
+edge: { sourcename: "system__bb__cpu_primitives__multiprocessors__poke_handler" targetname: "system__bb__threads__queues__wakeup_expired_alarms" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bcprmu.adb:79:21" }
+node: { title: "system__bb__protection__leave_kernel" label: "Leave_Kernel\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbprot.ads:54:14" shape : ellipse }
+edge: { sourcename: "system__bb__cpu_primitives__multiprocessors__poke_handler" targetname: "system__bb__protection__leave_kernel" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bcprmu.adb:81:17" }
+}

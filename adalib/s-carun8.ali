@@ -1,0 +1,98 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_CONVERSION
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.compare_array_unsigned_8%b  s-carun8.adb  b650faa3 NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.unchecked_conversion%s
+W system%s		system.ads		system.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+N A60:4 gnatcheck exempt_on "Improper_Returns" "early returns for performance"
+N A155:4 gnatcheck exempt_off "Improper_Returns"
+
+U system.compare_array_unsigned_8%s  s-carun8.ads  93a89403 NE OL PK
+W system%s		system.ads		system.ali
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-unccon.ads		20261002145216 0e9b276f ada.unchecked_conversion%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-carun8.ads		20261002145216 90e69e63 system.compare_array_unsigned_8%s
+D s-carun8.adb		20261002145216 e4f39747 system.compare_array_unsigned_8%b
+D s-stoele.ads		20261002145216 ccded4e8 system.storage_elements%s
+G a e
+G c Z s b [compare_array_u8 system__compare_array_unsigned_8 41 13 none]
+G c Z s b [compare_array_u8_unaligned system__compare_array_unsigned_8 57 13 none]
+G c Z b b [to_big_words system__compare_array_unsigned_8 54 13 none]
+G c Z b b [to_big_bytes system__compare_array_unsigned_8 57 13 none]
+G c Z b b [Tbig_wordsBIP system__compare_array_unsigned_8 41 4 none]
+G c Z b b [Tbig_bytesBIP system__compare_array_unsigned_8 49 4 none]
+X 1 ada.ads
+18K9*Ada 22e8 5|34r6 55r6 58r6
+X 2 a-unccon.ads
+23v14*Unchecked_Conversion 5|34w10 55r10 58r10
+X 3 system.ads
+55K9*System 176e11 4|35r9 42r19 43r19 58r19 59r19 69r5 5|32r6 32r35 36r14
+. 55r32 58r32 68r19 69r19 125r19 126r19 156r5
+85M9*Address 4|42r26 43r26 58r26 59r26 5|55r39 58r39 68r26 69r26 125r26 126r26
+X 4 s-carun8.ads
+35K16*Compare_Array_Unsigned_8 3|55k9 4|69l12 69e36 5|36b21 156l12 156t36
+41V13*Compare_Array_U8{integer} 42>7 43>7 44>7 45>7 5|67b13 118l8 118t24
+42m7 Left{3|85M9} 5|68b7 78r10 82r45 89r52 99r26 113r20
+43m7 Right{3|85M9} 5|69b7 79r17 82r51 91r52 100r26 114r20
+44i7 Left_Len{natural} 5|70b7 73r54 82r58 105r25 115r20
+45i7 Right_Len{natural} 5|71b7 73r64 82r68 106r25 116r20
+57V13*Compare_Array_U8_Unaligned{integer} 58>7 59>7 60>7 61>7 5|82s17 98s23
+. 112s17 124b13 153l8 153t34
+58m7 Left{3|85M9} 5|125b7 132r56
+59m7 Right{3|85M9} 5|126b7 133r56
+60i7 Left_Len{natural} 5|127b7 130r54 146r10 148r13
+61i7 Right_Len{natural} 5|128b7 130r64 146r21 148r24
+X 5 s-carun8.adb
+38M9 Word 41r41
+41A9 Big_Words(38M9)<integer> 42r33
+42P9 Big_Words_Ptr(41A9) 43r8 55r48 88r45 90r45
+46M9 Byte 49r41
+49A9 Big_Bytes(46M9)<integer> 50r33
+50P9 Big_Bytes_Ptr(49A9) 51r8 58r48 132r25 133r25
+54V13 To_Big_Words[2|23]{42P9} 89s38 91s38
+57V13 To_Big_Bytes[2|23]{50P9} 132s42 133s42
+73i7 Compare_Len{natural} 80r17 92r56
+88p10 LeftP{42P9} 97r16
+90p10 RightP{42P9} 97r29
+92i10 Words_To_Compare{natural} 93r56 96r24
+93i10 Bytes_Compared_As_Words{natural} 105r37 106r38 113r44 114r44 115r32
+. 116r32
+96i14 J{integer} 97r23 97r37 99r54 100r54
+130i7 Compare_Len{natural} 136r21
+132p7 LeftP{50P9} 137r13 138r16
+133p7 RightP{50P9} 137r26 138r28
+136i11 J{integer} 137r20 137r34 138r23 138r36
+X 6 s-stoele.ads
+43K16*Storage_Elements 5|32w13 32w42 6|104e28
+54I9*Storage_Offset<integer> 5|78r19 79r27 99r34 100r34 113r28 114r28
+74V14*"+"{3|85M9} 5|99r32 100r32 113r26 114r26
+84V14*"mod"{54I9} 5|78r15 79r23
+

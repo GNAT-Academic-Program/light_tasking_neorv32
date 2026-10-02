@@ -1,0 +1,7 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-macres.adb"
+node: { title: "_exit" label: "Os_Exit\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-macres.adb:68:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "abort" label: "Os_Abort\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-macres.adb:59:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "abort" targetname: "_exit" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-macres.adb:61:7" }
+node: { title: "__gnat_stop" label: "Stop\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-macres.adb:85:4\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "__gnat_stop" targetname: "_exit" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-macres.adb:87:7" }
+}

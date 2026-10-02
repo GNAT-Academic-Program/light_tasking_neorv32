@@ -1,0 +1,8 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-retide.adb"
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-retide.adb:49:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+edge: { sourcename: "ada__real_time__delays__delay_until" targetname: "__gnat_last_chance_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-retide.adb:56:10" }
+node: { title: "system__bb__time__delay_until" label: "Delay_Until\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbtime.ads:137:14" shape : ellipse }
+edge: { sourcename: "ada__real_time__delays__delay_until" targetname: "system__bb__time__delay_until" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-taprop.adb:131:26" }
+node: { title: "ada__real_time__delays__to_duration" label: "To_Duration\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-retide.adb:71:4\n0 bytes (static)\n0 dynamic objects" }
+}

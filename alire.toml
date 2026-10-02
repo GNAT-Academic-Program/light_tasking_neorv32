@@ -1,0 +1,80 @@
+name = "light_tasking_neorv32"
+description = "light-tasking runtime for the NEORV32 RISC-V soft-core"
+version = "1.0.0-dev"
+
+long-description = """
+## Usage
+
+First edit your `alire.toml` file and add the following elements:
+ - Add `light_tasking_neorv32` in the dependency list:
+   ```toml
+   [[depends-on]]
+   light_tasking_neorv32 = "*"
+   ```
+ - if applicable, apply any runtime configuration variables (see below).
+
+Then edit your project file to add the following elements:
+ - "with" the run-time project files. With this, gprbuild will compile the run-time before your application
+   ```ada
+   with "runtime_build.gpr";
+   with "ravenscar_build.gpr";
+   ```
+ - Specify the `Target` and `Runtime` attributes:
+   ```ada
+      for Target use runtime_build'Target;
+      for Runtime ("Ada") use runtime_build'Runtime ("Ada");
+   ```
+ - specify the `Linker` switches:
+   ```ada
+   package Linker is
+     for Switches ("Ada") use Runtime_Build.Linker_Switches;
+   end Linker;
+   ```
+
+The runtime is configurable via Alire crate configuration variables.
+See the project website for full details of the available options.
+
+By default, the runtime is configured for the SoC of
+[neorv32_mercury2](https://github.com/GNAT-Academic-Program/neorv32_mercury2):
+NEORV32 v1.13.6, 50 MHz, 128 KiB IMEM, 64 KiB DMEM, UART0 at 19200 baud.
+A NEORV32 with other memory sizes or another clock is described by adding the
+following to your `alire.toml` (values are examples):
+```toml
+[configuration.values]
+light_tasking_neorv32.Clock_Frequency = 100000000
+light_tasking_neorv32.IMEM_Size       = 65536
+light_tasking_neorv32.DMEM_Size       = 32768
+light_tasking_neorv32.UART0_Baud_Rate = 115200
+```
+
+The stack sizes are also configurable:
+```toml
+[configuration.values]
+light_tasking_neorv32.Main_Stack_Size      = 4096
+light_tasking_neorv32.Interrupt_Stack_Size = 2048
+```
+"""
+
+authors = ["AdaCore", "Olivier Henley"]
+maintainers = ["Olivier Henley <olivier.henley@gmail.com>"]
+maintainers-logins = ["ohenley"]
+licenses = "GPL-3.0-or-later WITH GCC-exception-3.1"
+tags = ["embedded", "runtime", "riscv", "neorv32", "fpga"]
+website = "https://github.com/GNAT-Academic-Program/neorv32_runtimes"
+
+project-files = ['runtime_build.gpr', 'ravenscar_build.gpr']
+
+[configuration]
+generate_c = false
+output_dir = "gnat_user"
+
+[configuration.variables]
+Clock_Frequency = { type = "Integer", first = 1, last = 1000000000, default = 50000000 }
+IMEM_Size = { type = "Integer", first = 4096, last = 1073741824, default = 131072 }
+DMEM_Size = { type = "Integer", first = 4096, last = 1073741824, default = 65536 }
+Main_Stack_Size = { type = "Integer", first = 1024, default = 8192 }
+Interrupt_Stack_Size = { type = "Integer", first = 256, default = 4096 }
+UART0_Baud_Rate = { type = "Integer", first = 300, last = 10000000, default = 19200 }
+
+[[depends-on]]
+gnat_riscv64_elf = "^16"

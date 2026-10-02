@@ -1,0 +1,94 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_RECURSION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.val_decimal_32%s  s-vade32.ads		fc4633b3 NE OL PR PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.arith_32%s	s-arit32.adb		s-arit32.ali
+Z system.exn_int%s	s-exnint.ads		s-exnint.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+W system.val_util%s	s-valuti.adb		s-valuti.ali
+W system.value_d%s
+Z system.value_r%s
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-except.ads		20261002145216 5b5f0f2f ada.exceptions%s
+D a-except.adb		20261002145216 4da5c77f ada.exceptions%b
+D interfac.ads		20261002145216 9111f9c1 interfaces%s
+D system.ads		20261002145216 034e0a60 system%s
+D s-arit32.ads		20261002145216 efa0b417 system.arith_32%s
+D s-exnint.ads		20261002145216 a1b0c4b7 system.exn_int%s
+D s-exponn.ads		20261002145216 400c98c7 system.exponn%s
+D s-unstyp.ads		20261002145216 fa2a7f59 system.unsigned_types%s
+D s-vade32.ads		20261002145216 28f7eebf system.val_decimal_32%s
+D s-valuti.ads		20261002145216 ecabe223 system.val_util%s
+D s-valued.ads		20261002145216 a94e9aba system.value_d%s
+D s-valued.adb		20261002145216 52413747 system.value_d%b
+D s-valuer.ads		20261002145216 4661bda7 system.value_r%s
+D s-valuer.adb		20261002145216 4c73af22 system.value_r%b
+G a e
+G c Z s s [scan_decimal system__val_decimal_32__impl 50 13 46_4]
+G c Z s s [value_decimal system__val_decimal_32__impl 82 13 46_4]
+G c Z s s [scan_raw_real system__val_decimal_32__impl__impl 60 13 41_4_46_4]
+G c Z s s [value_raw_real system__val_decimal_32__impl__impl 108 13 41_4_46_4]
+G c Z s s [Tscale_arrayBIP system__val_decimal_32__impl__impl 54 4 41_4_46_4]
+G c Z s s [Tvalue_arrayBIP system__val_decimal_32__impl__impl 57 4 41_4_46_4]
+G c Z s s [as_digit system__val_decimal_32__impl__impl 42 13 41_4_46_4]
+G c Z s s [scan_decimal_digits system__val_decimal_32__impl__impl 45 14 41_4_46_4]
+G c Z s s [scan_integral_digits system__val_decimal_32__impl__impl 70 14 41_4_46_4]
+G c Z s s [integer_to_decimal system__val_decimal_32__impl 45 13 46_4]
+X 4 interfac.ads
+47K9*Interfaces 247e15 10|36w6 43r21 44r21
+65I9*Integer_32<integer> 10|43r32
+92M9*Unsigned_32 10|44r32
+X 5 system.ads
+55K9*System 176e11 10|37r6 38r6 40r9 58r5
+X 6 s-arit32.ads
+38K16*Arith_32 76e20 10|37w13 46r47
+45U14*Scaled_Divide32 10|46r56
+X 10 s-vade32.ads
+40K16*Val_Decimal_32 5|55k9 10|58l12 58e26
+43I12*Int32{4|65I9} 46r33 52r31 55r68
+44M12*Uns32{4|92M9} 46r40
+46K12*Impl[12|47] 53r14 56r14
+48V13*Scan_Decimal32=53:19{4|65I9}
+49a7 Str{string}
+50p7 Ptr(integer)
+51i7 Max{integer}
+52i7 Scale{integer}
+55V13*Value_Decimal32=56:19{4|65I9}
+55a30 Str{string}
+55i44 Scale{integer}
+X 12 s-valued.ads
+47k16*Value_D 10|38w13 46r24 12|90e19
+50V13*Scan_Decimal{4|65I9} 10|53r19[46]
+82V13*Value_Decimal{4|65I9} 10|56r19[46]
+

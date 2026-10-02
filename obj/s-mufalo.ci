@@ -1,0 +1,10 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-mufalo.adb"
+node: { title: "system__multiprocessors__fair_locks__Tspinning_arrayBIP" label: "Tspinning_arrayBIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__multiprocessors__fair_locks__fair_lockIP" label: "fair_lockIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__multiprocessors__fair_locks__initialize" label: "Initialize\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-mufalo.adb:47:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__multiprocessors__fair_locks__lock" label: "Lock\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-mufalo.adb:57:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__multiprocessors__fair_locks__locked" label: "Locked\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-mufalo.adb:96:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__multiprocessors__fair_locks__next_spinning" label: "Next_Spinning\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-mufalo.adb:105:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__multiprocessors__fair_locks__try_lock" label: "Try_Lock\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-mufalo.adb:133:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__multiprocessors__fair_locks__unlock" label: "Unlock\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-mufalo.adb:142:4\n0 bytes (static)\n0 dynamic objects" }
+}

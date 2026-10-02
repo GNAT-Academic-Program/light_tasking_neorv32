@@ -1,0 +1,8 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-textio.adb"
+node: { title: "system__text_io__initialize" label: "Initialize\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-textio.adb:66:4\n48 bytes (static)\n0 dynamic objects" }
+node: { title: "system__text_io__is_tx_ready" label: "Is_Tx_Ready\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-textio.adb:126:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__text_io__is_rx_ready" label: "Is_Rx_Ready\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-textio.adb:135:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__text_io__get" label: "Get\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-textio.adb:144:4\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "system__text_io__put" label: "Put\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-textio.adb:153:4\n32 bytes (static)\n0 dynamic objects" }
+node: { title: "system__text_io__use_cr_lf_for_new_line" label: "Use_Cr_Lf_For_New_Line\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnat/s-textio.adb:165:4\n0 bytes (static)\n0 dynamic objects" }
+}

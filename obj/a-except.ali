@@ -1,0 +1,68 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -O1
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -g
+A -fno-inline
+A -fno-toplevel-reorder
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_OBSOLESCENT_FEATURES
+
+U ada.exceptions%b	a-except.adb		16fac850 NE OL PK
+W ada%s			ada.ads			ada.ali
+Z system%s		system.ads		system.ali
+
+U ada.exceptions%s	a-except.ads		2e6998ee BN NE OL PR PK
+W ada%s			ada.ads			ada.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20261002145216 76789da1 ada%s
+D a-except.ads		20261002145216 5b5f0f2f ada.exceptions%s
+D a-except.adb		20261002145216 4da5c77f ada.exceptions%b
+D system.ads		20261002145216 034e0a60 system%s
+G a e
+G c Z s b [raise_exception ada__exceptions 70 14 none]
+G c Z b b [last_chance_handler ada__exceptions 34 14 none]
+G c Z b b [call_last_chance_handler_with_message ada__exceptions 40 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 2|57r9 103r5 3|32r14 99r5
+X 2 a-except.ads
+57K13*Exceptions 1|18k9 2|98E9 103l9 103e19 3|32b18 99l9 99t19
+61P9*Exception_Id 62r41 67r23 70r35 98c9 99r23 3|69r35
+67p4*Null_Id{61P9} 99c4
+70U14*Raise_Exception 70>31 70>49 71r22 101r26 3|69b14 97l8 97t23
+70p31 E{61P9} 3|69b31 70r28
+70a49 Message{string} 3|69b49 82r10 95r49
+X 3 a-except.adb
+34U14 Last_Chance_Handler 34>35 34>57 35b<c,__gnat_last_chance_handler>22
+. 36r22 62s7 86s10
+34m35 Msg{4|85M9}
+34i57 Line{integer}
+38a4 Empty_C_String{string} 86r31
+40U14 Call_Last_Chance_Handler_With_Message 40>53 41r22 45b14 63l8 63t45
+. 95s10
+40a53 Message{string} 45b53 51r10 55r12 55r21 55r38 58r26 58r45 59r21
+46a7 C_Message{string} 51r28 54m10 56m10 58m10 59m10 62m28 62r28
+X 4 system.ads
+55K9*System 2|55w6 98r36 3|34r41 4|176e11
+85M9*Address 2|98r43 3|34r48
+

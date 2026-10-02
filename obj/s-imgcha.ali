@@ -1,0 +1,59 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/
+A -mabi=ilp32
+A -fno-tree-loop-distribute-patterns
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -ffunction-sections
+A -fdata-sections
+A -fcallgraph-info=su,da
+A -gnaty-
+A -gnatyd
+A -misa-spec=20191213
+A -march=rv32imac_zicsr_zifencei_zmmul_zaamo_zalrsc_zca
+A -mcmodel=medany
+P DB LC TF ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.img_char%b	s-imgcha.adb		7c5a5793 NE OL PK
+W system%s		system.ads		system.ali
+
+U system.img_char%s	s-imgcha.ads		9f7a5287 NE OL PU PK
+W system%s		system.ads		system.ali
+
+D system.ads		20261002145216 034e0a60 system%s
+D s-imgcha.ads		20261002145216 9c3458e7 system.img_char%s
+D s-imgcha.adb		20261002145216 e06e0f74 system.img_char%b
+G a e
+G c Z s b [image_character system__img_char 40 14 none]
+G c Z s b [image_character_05 system__img_char 49 14 none]
+X 1 system.ads
+55K9*System 176e11 2|37r9 61r5 3|32r14 185r5
+X 2 s-imgcha.ads
+37K16*Img_Char 1|55k9 2|61l12 61e20 3|32b21 185l12 185t20
+40U14*Image_Character 41>7 42=7 43<7 3|38b14 164l8 164t23 181s10
+41e7 V{character} 3|39b7 125r10 126r28 129r13 130r28 141r56 160r19
+42a7 S{string} 3|40b7 43r22 126m10 127r19 130m10 132r13 133r22 143r31 143r47
+. 147m16 149m16 150m16 159m10 160m10 161m10
+43i7 P{natural} 3|41b7 127m10 133m13 151m16 162m10
+49U14*Image_Character_05 50>7 51=7 52<7 3|170b14 183l8 183t26
+50e7 V{character} 3|171b7 177r10 181r27
+51a7 S{string} 3|172b7 175r22 179m10 181m30
+52i7 P{natural} 3|173b7 178m10 179r18 181m33
+X 3 s-imgcha.adb
+45A15 Cname{string}<integer> 50r41 87r41
+47E15 C0_Range{character} 50r28 125r15
+50a7 C0(45A15) 126r24
+84E15 C1_Range{character} 87r28 129r18
+87a7 C1(45A15) 130r24
+141i16 VP{natural} 149r47 150r46
+

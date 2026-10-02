@@ -1,0 +1,38 @@
+graph: { title: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-rttiev.adb"
+class {
+  classname: "ada__real_time__timing_events__timing_event"
+  label: "ada__real_time__timing_events__timing_event\a-rttiev.ads:45:9"
+  parent: "ada__real_time__timing_events__timing_event"
+  virtuals: "2:ada__real_time__timing_events__cancel_handler,2:system__bb__timing_events__timing_event\n
+             -1:ada__real_time__timing_events___size__2,-1:system__bb__timing_events__timing_event\n
+             4:ada__real_time__timing_events__set_handler\n
+             5:ada__real_time__timing_events__current_handler\n
+             6:ada__real_time__timing_events__time_of_event"
+}
+node: { title: "ada__real_time__timing_events___size__2" label: "timing_events\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__real_time__timing_events__handler_wrapper" label: "Handler_Wrapper\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-rttiev.adb:55:4\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "ada__real_time__timing_events__handler_wrapper" targetname: "__indirect_call" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-rttiev.adb:66:18" }
+node: { title: "ada__real_time__timing_events__set_handler" label: "Set_Handler\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-rttiev.adb:74:4\n48 bytes (static)\n0 dynamic objects" }
+node: { title: "system__bb__cpu_specific__clear_mstatus_bits" label: "Clear_Mstatus_Bits\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcpsp.ads:128:14" shape : ellipse }
+edge: { sourcename: "ada__real_time__timing_events__set_handler" targetname: "system__bb__cpu_specific__clear_mstatus_bits" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:137:7" }
+node: { title: "system__bb__timing_events__set_handler" label: "Set_Handler\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbtiev.ads:42:14" shape : ellipse }
+edge: { sourcename: "ada__real_time__timing_events__set_handler" targetname: "system__bb__timing_events__set_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-rttiev.adb:95:11" }
+node: { title: "system__bb__protection__leave_kernel" label: "Leave_Kernel\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbprot.ads:54:14" shape : ellipse }
+edge: { sourcename: "ada__real_time__timing_events__set_handler" targetname: "system__bb__protection__leave_kernel" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-rttiev.adb:99:27" }
+node: { title: "ada__real_time__timing_events__current_handler" label: "Current_Handler\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-rttiev.adb:106:4\n48 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__real_time__timing_events__current_handler" targetname: "system__bb__cpu_specific__clear_mstatus_bits" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:137:7" }
+edge: { sourcename: "ada__real_time__timing_events__current_handler" targetname: "system__bb__protection__leave_kernel" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-rttiev.adb:117:27" }
+node: { title: "ada__real_time__timing_events__cancel_handler" label: "Cancel_Handler\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-rttiev.adb:126:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__real_time__timing_events__cancel_handler" targetname: "system__bb__cpu_specific__clear_mstatus_bits" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:137:7" }
+node: { title: "system__bb__timing_events__cancel_handler" label: "Cancel_Handler\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbtiev.ads:54:14" shape : ellipse }
+edge: { sourcename: "ada__real_time__timing_events__cancel_handler" targetname: "system__bb__timing_events__cancel_handler" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-rttiev.adb:135:11" }
+edge: { sourcename: "ada__real_time__timing_events__cancel_handler" targetname: "system__bb__protection__leave_kernel" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-rttiev.adb:138:27" }
+node: { title: "ada__real_time__timing_events__time_of_event" label: "Time_Of_Event\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-rttiev.adb:145:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "ada__real_time__timing_events__time_of_event" targetname: "system__bb__cpu_specific__clear_mstatus_bits" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbcppr.adb:137:7" }
+node: { title: "system__bb__timing_events__time_of_event" label: "Time_Of_Event\n/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/s-bbtiev.ads:60:13" shape : ellipse }
+edge: { sourcename: "ada__real_time__timing_events__time_of_event" targetname: "system__bb__timing_events__time_of_event" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-rttiev.adb:152:24" }
+edge: { sourcename: "ada__real_time__timing_events__time_of_event" targetname: "system__bb__protection__leave_kernel" label: "/home/ohenley/capstones_2026_2027/neorv32_runtimes/install/light-tasking-neorv32/gnarl/a-rttiev.adb:154:27" }
+node: { title: "ada__real_time__timing_events__E3sIP" label: "E3sIP\n<built-in>\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "ada__real_time__timing_events__timing_eventIP" label: "timing_eventIP\n<built-in>\n0 bytes (static)\n0 dynamic objects" }
+}
